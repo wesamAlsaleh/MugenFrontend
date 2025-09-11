@@ -1,6 +1,8 @@
-import { Stack } from "expo-router";
 import { View, Text, StyleSheet, Button, useColorScheme } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import FeaturedSection from "@/components/FeaturedSection";
+
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function HomePage() {
   // Detect the color scheme (light or dark) of the device using built-in hook
@@ -17,6 +19,9 @@ export default function HomePage() {
       <Text style={[styles.text, themeTextStyle]}>
         Color scheme: {colorScheme}
       </Text>
+      {/* Adjust status bar style based on theme */}
+      <StatusBar style={colorScheme === "light" ? "dark" : "light"} />{" "}
+      <FeaturedSection />
     </View>
   );
 }
@@ -31,15 +36,15 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   lightContainer: {
-    backgroundColor: "#d0d0c0",
+    backgroundColor: "#ffffff",
   },
   darkContainer: {
-    backgroundColor: "#242c40",
+    backgroundColor: "#1f1f1f",
   },
   lightThemeText: {
-    color: "#242c40",
+    color: "#22c55e",
   },
   darkThemeText: {
-    color: "#d0d0c0",
+    color: "#ffffff",
   },
 });

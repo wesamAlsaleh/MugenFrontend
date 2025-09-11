@@ -1,12 +1,17 @@
+import { Colors } from "@/constants/theme";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
+import { useColorScheme, StyleSheet } from "react-native";
 
 export default function TabLayout() {
+  // Get the current color scheme (light or dark)
+  const colorScheme = useColorScheme();
+
   return (
     <Tabs
       initialRouteName="home" // Set initial route to "index"
       screenOptions={{
-        tabBarActiveTintColor: "green", // active tab color
+        tabBarActiveTintColor: "#10b981", // active tab color
         tabBarInactiveTintColor: "gray", // inactive tab color
 
         tabBarShowLabel: true, // tab bar labels
@@ -27,8 +32,24 @@ export default function TabLayout() {
         name="home"
         options={{
           title: "Home",
+          headerStyle: {
+            backgroundColor: "#262626", // header background
+          },
+          headerTintColor: "#10b981", // text & back button color
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
           tabBarIcon: ({ color }) => (
             <FontAwesome size={28} name="home" color={color} />
+          ),
+          headerRight: () => (
+            <FontAwesome
+              name="search"
+              size={22}
+              color="#10b981"
+              style={{ marginRight: 15 }}
+              onPress={() => alert("Search button pressed")}
+            />
           ),
         }}
       />
@@ -67,3 +88,27 @@ export default function TabLayout() {
     </Tabs>
   );
 }
+
+//
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  text: {
+    fontSize: 20,
+  },
+  lightContainer: {
+    backgroundColor: Colors.light.foreground,
+  },
+  darkContainer: {
+    backgroundColor: "#242c40",
+  },
+  lightThemeText: {
+    color: "#15803d",
+  },
+  darkThemeText: {
+    color: "#ffffff",
+  },
+});
