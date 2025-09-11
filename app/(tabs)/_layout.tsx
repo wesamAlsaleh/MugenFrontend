@@ -8,14 +8,14 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: "green", // active tab color
         tabBarInactiveTintColor: "gray", // inactive tab color
+
         tabBarShowLabel: true, // tab bar labels
         tabBarStyle: {
-          backgroundColor: "#1a1a1a",
-          height: 70, // increase height of tab bar
-          position: "absolute", // ensure absolute positioning to overlap content (tab bar overlaps content)
-          paddingBottom: 0, // remove bottom padding
-          display: "flex", // ensure flex display
-          flexDirection: "row", // arrange items in a row
+          backgroundColor: "#262626ff",
+          height: 70, // height of tab bar
+          position: "absolute", // ensure absolute positioning to overlap content
+          paddingBottom: 10, // add bottom padding
+          borderTopWidth: 0, // remove default border (removes the white line)
           marginHorizontal: 0, // remove horizontal margin
           marginTop: 0, // remove top margin
           paddingTop: 5, // add top padding
@@ -30,7 +30,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <FontAwesome size={28} name="home" color={color} />
           ),
-          headerShown: false,
         }}
       />
 
@@ -63,7 +62,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <FontAwesome size={28} name="user" color={color} />
           ),
-          headerShown: false,
         }}
       />
     </Tabs>

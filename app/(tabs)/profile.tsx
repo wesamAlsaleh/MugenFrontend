@@ -1,10 +1,28 @@
-import { View, Text, StyleSheet } from "react-native";
+import { Stack } from "expo-router";
+import { Button, Text, Image, StyleSheet, View } from "react-native";
+import { useState } from "react";
 
 export default function ProfilePage() {
+  const [count, setCount] = useState(0);
   return (
-    <View style={styles.container}>
-      <Text>Profile Tab</Text>
-    </View>
+    <>
+      <Stack.Screen
+        options={{
+          headerTitle: "Profile Page",
+          headerRight: () => (
+            <Button
+              onPress={() => setCount((c) => c + 1)}
+              title="Update count"
+            />
+          ),
+        }}
+      />
+
+      <View style={styles.container}>
+        <Text>Profile Tab</Text>
+        <Text>Count: {count}</Text>
+      </View>
+    </>
   );
 }
 

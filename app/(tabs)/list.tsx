@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function ListPage() {
+export default function HomePage() {
   return (
     <View style={styles.container}>
       <Text>List Tab</Text>
