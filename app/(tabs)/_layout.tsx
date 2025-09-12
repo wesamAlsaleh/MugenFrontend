@@ -3,6 +3,8 @@ import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
 import { useColorScheme, StyleSheet } from "react-native";
 
+import { House, List, User, Tv, Search } from "lucide-react-native";
+
 export default function TabLayout() {
   // Get the current color scheme (light or dark)
   const colorScheme = useColorScheme();
@@ -39,13 +41,10 @@ export default function TabLayout() {
           headerTitleStyle: {
             fontWeight: "bold",
           },
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="home" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <House size={28} color={color} />,
           headerRight: () => (
-            <FontAwesome
-              name="search"
-              size={22}
+            <Search
+              size={28}
               color="#10b981"
               style={{ marginRight: 15 }}
               onPress={() => alert("Search button pressed")}
@@ -58,9 +57,7 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: "Explore",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="fire" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <Tv size={28} color={color} />,
           headerShown: false,
         }}
       />
@@ -69,9 +66,7 @@ export default function TabLayout() {
         name="list"
         options={{
           title: "List",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="list" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <List size={28} color={color} />,
           headerShown: false,
         }}
       />
@@ -80,9 +75,7 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: "Profile",
-          tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="user" color={color} />
-          ),
+          tabBarIcon: ({ color }) => <User size={28} color={color} />,
         }}
       />
     </Tabs>

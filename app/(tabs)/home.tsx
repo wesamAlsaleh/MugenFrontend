@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import FeaturedSection from "@/components/FeaturedSection";
 
 import { LinearGradient } from "expo-linear-gradient";
+import { dummyData } from "@/constants/dummyData";
 
 export default function HomePage() {
   // Detect the color scheme (light or dark) of the device using built-in hook
@@ -16,12 +17,10 @@ export default function HomePage() {
 
   return (
     <View style={[styles.container, themeContainerStyle]}>
-      <Text style={[styles.text, themeTextStyle]}>
-        Color scheme: {colorScheme}
-      </Text>
       {/* Adjust status bar style based on theme */}
-      <StatusBar style={colorScheme === "light" ? "dark" : "light"} />{" "}
+      <StatusBar style={colorScheme === "light" ? "dark" : "light"} />
       <FeaturedSection />
+      <Text style={[styles.text, themeTextStyle]}>Home Page</Text>
     </View>
   );
 }
@@ -29,8 +28,7 @@ export default function HomePage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    paddingHorizontal: 16,
   },
   text: {
     fontSize: 20,
