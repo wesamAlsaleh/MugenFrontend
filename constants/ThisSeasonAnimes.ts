@@ -1,4 +1,4 @@
-export const dummyData = [
+export const ThisSeasonAnimes = [
   {
     id: 185407,
     title: {

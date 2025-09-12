@@ -1,9 +1,8 @@
 import { Colors } from "@/constants/theme";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
-import { useColorScheme, StyleSheet } from "react-native";
+import { StyleSheet, useColorScheme } from "react-native";
 
-import { House, List, User, Tv, Search } from "lucide-react-native";
+import { House, List, Search, Tv, User } from "lucide-react-native";
 
 export default function TabLayout() {
   // Get the current color scheme (light or dark)

@@ -1,37 +1,13 @@
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
-import { Percent } from "lucide-react-native";
+"use client";
+
 import Countdown from "react-countdown";
+import { Image, StyleSheet, Text, View } from "react-native";
 
-import { secondsToWeekDay, secondsToDate } from "@/Utility/secondsToDate";
+import { ThisSeasonAnimes } from "@/constants/ThisSeasonAnimes";
+import { secondsToWeekDay } from "@/Utility/secondsToDate";
+import { useEffect, useState } from "react";
 
-// Dummy featured anime data
-const featuredAnime = {
-  id: 181444,
-  title: {
-    english: "The Fragrant Flower Blooms With Dignity",
-    native: "薫る花は凛と咲く",
-    romaji: "Kaoru Hana wa Rin to Saku",
-    userPreferred: "Kaoru Hana wa Rin to Saku",
-  },
-  coverImage: {
-    color: "#a1d6f1",
-    extraLarge:
-      "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181444-Ut9DDUZdfHwg.jpg",
-    large:
-      "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181444-Ut9DDUZdfHwg.jpg",
-    medium:
-      "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181444-Ut9DDUZdfHwg.jpg",
-  },
-  averageScore: 86,
-  meanScore: 86,
-  status: "RELEASING",
-  nextAiringEpisode: {
-    airingAt: 1757777400,
-    episode: 11,
-    timeUntilAiring: 138925,
-  },
-};
+import { ThisSeasonTopAnimes } from "@/types/thisSeasonTopAnimes";
 
 // Countdown renderer for formatting the countdown display
 const renderer = ({
@@ -39,12 +15,19 @@ const renderer = ({
   hours,
   minutes,
   seconds,
+  completed,
 }: {
   days: number;
   hours: number;
   minutes: number;
   seconds: number;
+  completed: boolean;
 }) => {
+  if (completed) {
+    // Render a completed state (if needed)
+    return <Text style={styles.countDownText}>Aired</Text>;
+  }
+
   return (
     <Text style={styles.countDownText}>
       {days}d {hours}h {minutes}m {seconds}s
@@ -84,9 +67,42 @@ const getRatingColor = (score: number): string => {
 };
 
 export default function FeaturedSection() {
+  const [data, setData] = useState<ThisSeasonTopAnimes[]>(ThisSeasonAnimes);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Set the data on component mount
+  useEffect(() => {
+    setData(ThisSeasonAnimes);
+  }, []);
+
+  // Cycle through featured animes every 15 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % data.length); // Loop back to start (% data.length to loop back to 0 when it reaches the last anime)
+    }, 15000); // 15 seconds
+
+    // Clear interval on component unmount
+    return () => clearInterval(interval);
+  }, [data]);
+
+  // Current featured anime based on index
+  const featuredAnime = data[currentIndex];
+
+  // Safety check (in case data is empty or undefined)
+  if (!featuredAnime) {
+    return <Text>No anime available</Text>; // or return a fallback
+  }
+
+  // Handle potential null values gracefully
+  const noImageAvailable = featuredAnime.coverImage === null;
+  const noAverageScore = featuredAnime.averageScore === null;
+  const noMeanScore = featuredAnime.meanScore === null;
+  const noNextAiringEpisode = featuredAnime.nextAiringEpisode === null;
+
   return (
     <View style={styles.container}>
       <View style={styles.cardContainer}>
+        {/* Left Section Container */}
         <View style={styles.animeDetailsContainer}>
           <View style={styles.animeHeaderContainer}>
             {/* Anime Status */}
@@ -109,20 +125,27 @@ export default function FeaturedSection() {
             </View>
 
             {/* Anime Rating */}
-            <View
-              style={[
-                styles.animeRatingContainer,
-                { backgroundColor: getRatingColor(featuredAnime.averageScore) },
-              ]}
-            >
-              <Text style={styles.animeRatingText}>
-                {featuredAnime.averageScore ?? "N/A"}
-              </Text>
-            </View>
+            {noAverageScore && noMeanScore ? null : (
+              <View
+                style={[
+                  styles.animeRatingContainer,
+                  {
+                    backgroundColor: getRatingColor(
+                      featuredAnime.averageScore!
+                    ),
+                  },
+                ]}
+              >
+                <Text style={styles.animeRatingText}>
+                  {featuredAnime.averageScore || featuredAnime.meanScore}
+                </Text>
+              </View>
+            )}
           </View>
 
           {/* Anime Details */}
           <View style={styles.animeInfoContainer}>
+            {/* Anime Title */}
             <Text
               style={styles.animeTitleText}
               numberOfLines={3}
@@ -130,32 +153,49 @@ export default function FeaturedSection() {
             >
               {featuredAnime.title.english}
             </Text>
-            <Text style={styles.animeAiringWeekdayText}>
-              {featuredAnime.status === "RELEASING"
-                ? `New episode every ${secondsToWeekDay(
-                    featuredAnime.nextAiringEpisode.airingAt || 0
-                  )}`
-                : "All episodes released"}
-            </Text>
 
-            <View style={styles.animeAiringTimeContainer}>
-              <Text
-                style={styles.countDownText}
-              >{`Ep ${featuredAnime.nextAiringEpisode.episode} in`}</Text>
-              <Countdown
-                date={featuredAnime.nextAiringEpisode.airingAt * 1000} // Convert seconds to ms
-                renderer={renderer}
-              />
-            </View>
+            {/* Anime release day section */}
+            {noNextAiringEpisode ? (
+              <Text style={styles.animeAiringWeekdayText}>
+                All episodes released
+              </Text>
+            ) : (
+              <Text style={styles.animeAiringWeekdayText}>
+                {featuredAnime.status === "RELEASING"
+                  ? `New episode every ${secondsToWeekDay(
+                      featuredAnime.nextAiringEpisode!.airingAt || 0
+                    )}`
+                  : "All episodes released"}
+              </Text>
+            )}
+
+            {/* Anime next episode counter */}
+            {noNextAiringEpisode ? null : (
+              <View style={styles.animeAiringTimeContainer}>
+                {/* Ep Number */}
+                <Text style={styles.countDownText}>{`Ep ${
+                  featuredAnime.nextAiringEpisode!.episode
+                } in`}</Text>
+
+                {/* Ep countdown */}
+                <Countdown
+                  date={featuredAnime.nextAiringEpisode!.airingAt * 1000} // Convert seconds to ms
+                  renderer={renderer}
+                />
+              </View>
+            )}
           </View>
         </View>
 
+        {/* Right Section Container */}
         <View style={styles.animeImageContainer}>
           {/* Anime Image */}
-          <Image
-            source={{ uri: featuredAnime.coverImage.extraLarge }}
-            style={styles.animeImage}
-          />
+          {noImageAvailable ? null : (
+            <Image
+              source={{ uri: featuredAnime.coverImage.extraLarge! }}
+              style={styles.animeImage}
+            />
+          )}
         </View>
       </View>
     </View>

@@ -1,9 +1,6 @@
-import { View, Text, StyleSheet, Button, useColorScheme } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import FeaturedSection from "@/components/FeaturedSection";
-
-import { LinearGradient } from "expo-linear-gradient";
-import { dummyData } from "@/constants/dummyData";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, useColorScheme, View } from "react-native";
 
 export default function HomePage() {
   // Detect the color scheme (light or dark) of the device using built-in hook
