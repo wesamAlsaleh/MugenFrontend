@@ -66,7 +66,7 @@ const getRatingColor = (score: number): string => {
   }
 };
 
-export default function FeaturedSection() {
+export default function FeaturedAnimeCarousel() {
   const [data, setData] = useState<ThisSeasonTopAnimes[]>(ThisSeasonAnimes);
 
   // Start at a random index (if data is not empty)

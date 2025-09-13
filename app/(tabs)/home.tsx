@@ -1,4 +1,4 @@
-import FeaturedSection from "@/components/FeaturedSection";
+import FeaturedAnimeCarousel from "@/components/FeaturedAnimeCarousel";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, useColorScheme, View } from "react-native";
 
@@ -16,7 +16,10 @@ export default function HomePage() {
     <View style={[styles.container, themeContainerStyle]}>
       {/* Adjust status bar style based on theme */}
       <StatusBar style={colorScheme === "light" ? "dark" : "light"} />
-      <FeaturedSection />
+
+      {/*  */}
+      <FeaturedAnimeCarousel />
+
       <Text style={[styles.text, themeTextStyle]}>Home Page</Text>
     </View>
   );
