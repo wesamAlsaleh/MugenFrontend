@@ -1,18 +1,15 @@
-import { Colors } from "@/constants/theme";
 import { Tabs } from "expo-router";
-import { StyleSheet, useColorScheme } from "react-native";
+import { StyleSheet } from "react-native";
 
+import { Colors } from "@/constants/theme";
 import { House, List, Search, Tv, User } from "lucide-react-native";
 
 export default function TabLayout() {
-  // Get the current color scheme (light or dark)
-  const colorScheme = useColorScheme();
-
   return (
     <Tabs
       initialRouteName="home" // Set initial route to "index"
       screenOptions={{
-        tabBarActiveTintColor: "#10b981", // active tab color
+        tabBarActiveTintColor: Colors.light.primary, // active tab color
         tabBarInactiveTintColor: "gray", // inactive tab color
 
         tabBarShowLabel: true, // tab bar labels
@@ -90,23 +87,5 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 20,
-  },
-  lightActiveTintColor: {
-    color: "#15803d",
-  },
-  darkActiveTintColor: {
-    color: "#15803d",
-  },
-  lightContainer: {
-    backgroundColor: Colors.light.foreground,
-  },
-  darkContainer: {
-    backgroundColor: "#242c40",
-  },
-  lightThemeText: {
-    color: "#15803d",
-  },
-  darkThemeText: {
-    color: "#ffffff",
   },
 });

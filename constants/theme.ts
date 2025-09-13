@@ -1,30 +1,67 @@
 import { Platform } from "react-native";
 
-const tintColorLight = "#10b981";
-const tintColorDark = "#10b981";
-
 export const Colors = {
   light: {
-    text: "#11181C",
-    background: "#ffffff", // White: "ffffff"
-    foreground: "1f2937", // Gray-800: "1f2937"
-    tint: tintColorLight, //
-    icon: "#687076", // Gray-400: "687076"
-    tabIconDefault: "#687076", // Gray-400: "687076"
-    tabIconSelected: tintColorLight,
-    primary: "#15803d", // Green-700: "15803d"
-    accent: "#22c55e", // Green-500: "22c55e"
+    primary: "#F37600",
+    secondary: "#FCDFC2",
   },
   dark: {
-    text: "#ffffff", // White
-    background: "#1f1f1f", // Dark Gray
-    tint: tintColorDark, // Emerald-500
-    icon: "#9BA1A6", // Gray-400
-    tabIconDefault: "#9BA1A6", // Gray-400
-    tabIconSelected: tintColorDark, // Emerald-500
-    accent: "#22c55e", // Green-500: "22c55e"
+    primary: "#F37600",
+    secondary: "#FCDFC2",
   },
 };
+
+export const themes = {
+  light: {
+    // Background colors
+    cardBackground: "#f9f9f9",
+    containerBackground: "#ffffff",
+
+    // Border colors
+    cardBorder: "#e5e7eb",
+
+    // Text colors
+    primaryText: "#000000",
+    secondaryText: "#6b7280",
+    mutedText: "#9ca3af",
+
+    // Status colors
+    airingStatus: "#06b6d4",
+    finishedStatus: "#6b7280",
+    countdownText: "#22c55e",
+
+    // Interactive colors
+    success: "#22c55e",
+    warning: "#fbbf24",
+    error: "#ef4444",
+  },
+  dark: {
+    // Background colors
+    cardBackground: "#2f2f2f",
+    containerBackground: "#1f1f1f",
+
+    // Border colors
+    cardBorder: "#3d3d3d",
+
+    // Text colors
+    primaryText: "#ffffff",
+    secondaryText: "#d1d5db",
+    mutedText: "#9ca3af",
+
+    // Status colors
+    airingStatus: "#06b6d4",
+    finishedStatus: "#6b7280",
+    countdownText: "#22c55e",
+
+    // Interactive colors
+    success: "#22c55e",
+    warning: "#fbbf24",
+    error: "#ef4444",
+  },
+} as const;
+
+export type ThemeKey = keyof typeof themes; // "light" | "dark"
+export type Theme = (typeof themes)[ThemeKey]; // Both themes share the same structure
 
 export const Fonts = Platform.select({
   ios: {
