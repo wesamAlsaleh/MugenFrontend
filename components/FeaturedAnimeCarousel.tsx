@@ -1,7 +1,7 @@
 "use client";
 
 import Countdown from "react-countdown";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, useColorScheme, View } from "react-native";
 
 import { ThisSeasonAnimes } from "@/constants/ThisSeasonAnimes";
 import { secondsToWeekDay } from "@/Utility/secondsToDate";
@@ -67,6 +67,9 @@ const getRatingColor = (score: number): string => {
 };
 
 export default function FeaturedAnimeCarousel() {
+  // Get the current color scheme (light or dark)
+  const colorScheme = useColorScheme();
+
   const [data, setData] = useState<ThisSeasonTopAnimes[]>(ThisSeasonAnimes);
 
   // Start at a random index (if data is not empty)
@@ -120,7 +123,15 @@ export default function FeaturedAnimeCarousel() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.cardContainer}>
+      <View
+        style={[
+          styles.cardContainer,
+          {
+            backgroundColor: colorScheme === "light" ? "#f9f9f9" : "#2f2f2f",
+            borderColor: colorScheme === "light" ? "#e5e7eb" : "#3d3d3d",
+          },
+        ]}
+      >
         {/* Left Section Container */}
         <View style={styles.animeDetailsContainer}>
           <View style={styles.animeHeaderContainer}>
@@ -136,7 +147,12 @@ export default function FeaturedAnimeCarousel() {
                 },
               ]}
             >
-              <Text style={styles.animeAiringStatusText}>
+              <Text
+                style={[
+                  styles.animeAiringStatusText,
+                  { color: colorScheme === "light" ? "#000000" : "#ffffff" },
+                ]}
+              >
                 {featuredAnime.status === "RELEASING"
                   ? "Airing Now"
                   : "Finished"}
@@ -166,7 +182,10 @@ export default function FeaturedAnimeCarousel() {
           <View style={styles.animeInfoContainer}>
             {/* Anime Title */}
             <Text
-              style={styles.animeTitleText}
+              style={[
+                styles.animeTitleText,
+                { color: colorScheme === "light" ? "#000000" : "#ffffff" },
+              ]}
               numberOfLines={3}
               ellipsizeMode="tail"
             >
@@ -175,11 +194,21 @@ export default function FeaturedAnimeCarousel() {
 
             {/* Anime release day section */}
             {noNextAiringEpisode ? (
-              <Text style={styles.animeAiringWeekdayText}>
+              <Text
+                style={[
+                  styles.animeAiringWeekdayText,
+                  { color: colorScheme === "light" ? "#6b7280" : "#d1d5db" },
+                ]}
+              >
                 All episodes released
               </Text>
             ) : (
-              <Text style={styles.animeAiringWeekdayText}>
+              <Text
+                style={[
+                  styles.animeAiringWeekdayText,
+                  { color: colorScheme === "light" ? "#6b7280" : "#d1d5db" },
+                ]}
+              >
                 {featuredAnime.status === "RELEASING"
                   ? `New episode every ${secondsToWeekDay(
                       featuredAnime.nextAiringEpisode!.airingAt || 0
@@ -232,9 +261,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    backgroundColor: "#2f2f2f",
     borderWidth: 1,
-    borderColor: "#444857",
     padding: 5,
     overflow: "hidden",
     position: "relative",
@@ -262,7 +289,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   animeAiringStatusText: {
-    color: "#ffffff",
     fontWeight: "600",
   },
   animeRatingContainer: {
@@ -284,7 +310,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   animeTitleText: {
-    color: "#ffffff",
     fontSize: 18,
     fontWeight: "bold",
     lineHeight: 22, // make sure every line is the same vertical spacing

@@ -91,6 +91,12 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
   },
+  lightActiveTintColor: {
+    color: "#15803d",
+  },
+  darkActiveTintColor: {
+    color: "#15803d",
+  },
   lightContainer: {
     backgroundColor: Colors.light.foreground,
   },
