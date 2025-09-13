@@ -68,7 +68,13 @@ const getRatingColor = (score: number): string => {
 
 export default function FeaturedSection() {
   const [data, setData] = useState<ThisSeasonTopAnimes[]>(ThisSeasonAnimes);
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Start at a random index (if data is not empty)
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    return ThisSeasonAnimes.length > 0
+      ? Math.floor(Math.random() * ThisSeasonAnimes.length)
+      : 0;
+  });
 
   // Set the data on component mount
   useEffect(() => {
@@ -78,14 +84,27 @@ export default function FeaturedSection() {
   // Cycle through featured animes every 15 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % data.length); // Loop back to start (% data.length to loop back to 0 when it reaches the last anime)
+      setCurrentIndex(() => {
+        // If data is empty, do nothing
+        if (data.length === 0) return 0;
+
+        // Pick a random index different from the current one
+        let randomIndex;
+
+        do {
+          // Set the index to the next one in the list (cycling through)
+          randomIndex = Math.floor(Math.random() * data.length);
+        } while (randomIndex === currentIndex && data.length > 1); // To avoid showing the same anime twice in a row, loop until the new index is different from the current one
+
+        return randomIndex;
+      });
     }, 15000); // 15 seconds
 
     // Clear interval on component unmount
     return () => clearInterval(interval);
-  }, [data]);
+  }, [data, currentIndex]);
 
-  // Current featured anime based on index
+  // Current featured anime based on random index
   const featuredAnime = data[currentIndex];
 
   // Safety check (in case data is empty or undefined)
