@@ -1,20 +1,23 @@
 import { Tabs } from "expo-router";
 import { StyleSheet } from "react-native";
 
-import { Colors } from "@/constants/theme";
+import { useTheme } from "@/hooks/use-theme";
 import { House, List, Search, Tv, User } from "lucide-react-native";
 
 export default function TabLayout() {
+  // Get the current theme (light or dark) based on system preferences
+  const theme = useTheme();
+
   return (
     <Tabs
       initialRouteName="home" // Set initial route to "index"
       screenOptions={{
-        tabBarActiveTintColor: Colors.light.primary, // active tab color
-        tabBarInactiveTintColor: "gray", // inactive tab color
+        tabBarActiveTintColor: theme.primary, // active tab color
+        tabBarInactiveTintColor: "#9ca3af", // inactive tab color
 
         tabBarShowLabel: true, // tab bar labels
         tabBarStyle: {
-          backgroundColor: "#262626ff",
+          backgroundColor: theme.tabBarBackgroundColor, // tab bar background
           height: 70, // height of tab bar
           position: "absolute", // ensure absolute positioning to overlap content
           paddingBottom: 10, // add bottom padding
@@ -31,9 +34,9 @@ export default function TabLayout() {
         options={{
           title: "Home",
           headerStyle: {
-            backgroundColor: "#262626", // header background
+            backgroundColor: theme.headerBackgroundColor, // header background
           },
-          headerTintColor: "#10b981", // text & back button color
+          headerTintColor: theme.primary, // text & back button color
           headerTitleStyle: {
             fontWeight: "bold",
           },
@@ -41,7 +44,7 @@ export default function TabLayout() {
           headerRight: () => (
             <Search
               size={28}
-              color="#10b981"
+              color={theme.primary}
               style={{ marginRight: 15 }}
               onPress={() => alert("Search button pressed")}
             />

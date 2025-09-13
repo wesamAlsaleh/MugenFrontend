@@ -2,23 +2,30 @@ import { Platform } from "react-native";
 
 export const Colors = {
   light: {
-    primary: "#F37600",
+    primary: "#22c55e",
     secondary: "#FCDFC2",
   },
   dark: {
-    primary: "#F37600",
+    primary: "#ef4444",
     secondary: "#FCDFC2",
   },
 };
 
 export const themes = {
   light: {
-    // Background colors
-    cardBackground: "#f9f9f9",
-    containerBackground: "#ffffff",
+    // Primary brand colors
+    primary: "#22c55e",
 
-    // Border colors
-    cardBorder: "#e5e7eb",
+    // Background colors
+    backgroundColor: "#ffffff",
+    headerBackgroundColor: "#f3f4f6",
+
+    // Tab bar background
+    tabBarBackgroundColor: "#f3f4f6",
+
+    // Card colors
+    cardBackgroundColor: "#f9f9f9",
+    cardBorderColor: "#e5e7eb",
 
     // Text colors
     primaryText: "#000000",
@@ -28,7 +35,6 @@ export const themes = {
     // Status colors
     airingStatus: "#06b6d4",
     finishedStatus: "#6b7280",
-    countdownText: "#22c55e",
 
     // Interactive colors
     success: "#22c55e",
@@ -36,12 +42,19 @@ export const themes = {
     error: "#ef4444",
   },
   dark: {
-    // Background colors
-    cardBackground: "#2f2f2f",
-    containerBackground: "#1f1f1f",
+    // Primary brand colors
+    primary: "#ef4444",
 
-    // Border colors
-    cardBorder: "#3d3d3d",
+    // Background colors
+    backgroundColor: "#1f1f1f",
+    headerBackgroundColor: "#262626",
+
+    // Tab bar background
+    tabBarBackgroundColor: "#262626",
+
+    // Card colors
+    cardBackgroundColor: "#2f2f2f",
+    cardBorderColor: "#3d3d3d",
 
     // Text colors
     primaryText: "#ffffff",
@@ -51,7 +64,6 @@ export const themes = {
     // Status colors
     airingStatus: "#06b6d4",
     finishedStatus: "#6b7280",
-    countdownText: "#22c55e",
 
     // Interactive colors
     success: "#22c55e",

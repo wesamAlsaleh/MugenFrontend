@@ -1,12 +1,13 @@
 "use client";
 
 import Countdown from "react-countdown";
-import { Image, StyleSheet, Text, useColorScheme, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 import { ThisSeasonAnimes } from "@/constants/ThisSeasonAnimes";
 import { secondsToWeekDay } from "@/Utility/secondsToDate";
 import { useEffect, useState } from "react";
 
+import { useTheme } from "@/hooks/use-theme";
 import { ThisSeasonTopAnimes } from "@/types/thisSeasonTopAnimes";
 
 // Countdown renderer for formatting the countdown display
@@ -25,7 +26,7 @@ const renderer = ({
 }) => {
   if (completed) {
     // Render a completed state (if needed)
-    return <Text style={styles.countDownText}>Aired</Text>;
+    return <Text style={[styles.countDownText]}>Aired</Text>;
   }
 
   return (
@@ -68,7 +69,7 @@ const getRatingColor = (score: number): string => {
 
 export default function FeaturedAnimeCarousel() {
   // Get the current color scheme (light or dark)
-  const colorScheme = useColorScheme();
+  const theme = useTheme();
 
   const [data, setData] = useState<ThisSeasonTopAnimes[]>(ThisSeasonAnimes);
 
@@ -123,7 +124,15 @@ export default function FeaturedAnimeCarousel() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.cardContainer}>
+      <View
+        style={[
+          styles.cardContainer,
+          {
+            backgroundColor: theme.cardBackgroundColor,
+            borderColor: theme.cardBorderColor,
+          },
+        ]}
+      >
         {/* Left Section Container */}
         <View style={styles.animeDetailsContainer}>
           <View style={styles.animeHeaderContainer}>
@@ -169,7 +178,7 @@ export default function FeaturedAnimeCarousel() {
           <View style={styles.animeInfoContainer}>
             {/* Anime Title */}
             <Text
-              style={styles.animeTitleText}
+              style={[styles.animeTitleText, { color: theme.primaryText }]}
               numberOfLines={3}
               ellipsizeMode="tail"
             >
@@ -178,11 +187,21 @@ export default function FeaturedAnimeCarousel() {
 
             {/* Anime release day section */}
             {noNextAiringEpisode ? (
-              <Text style={styles.animeAiringWeekdayText}>
+              <Text
+                style={[
+                  styles.animeAiringWeekdayText,
+                  { color: theme.primaryText },
+                ]}
+              >
                 All episodes released
               </Text>
             ) : (
-              <Text style={styles.animeAiringWeekdayText}>
+              <Text
+                style={[
+                  styles.animeAiringWeekdayText,
+                  { color: theme.secondaryText },
+                ]}
+              >
                 {featuredAnime.status === "RELEASING"
                   ? `New episode every ${secondsToWeekDay(
                       featuredAnime.nextAiringEpisode!.airingAt || 0
@@ -197,7 +216,7 @@ export default function FeaturedAnimeCarousel() {
                 {/* Ep Number */}
                 <Text style={styles.countDownText}>{`Ep ${
                   featuredAnime.nextAiringEpisode!.episode
-                } in`}</Text>
+                }:`}</Text>
 
                 {/* Ep countdown */}
                 <Countdown
@@ -235,8 +254,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    backgroundColor: "#2f2f2f",
-    borderColor: "#3d3d3d",
     borderWidth: 1,
     padding: 5,
     overflow: "hidden",
