@@ -1,8 +1,5 @@
 import { Dimensions } from "react-native";
 
-// Get screen width
-const screenWidth = Dimensions.get("window").width;
-
 // Function to determine number of columns based on screen width
 export const getNumColumns = (): number => {
   const screenWidth = Dimensions.get("window").width;
@@ -15,4 +12,14 @@ export const getNumColumns = (): number => {
   } else {
     return 5; // Tablets and larger screens
   }
+};
+
+// Function to get the screen width
+export const getScreenWidth = (): number => {
+  return Dimensions.get("window").width;
+};
+
+// Function to get the screen height
+export const getScreenHeight = (): number => {
+  return Dimensions.get("window").height;
 };

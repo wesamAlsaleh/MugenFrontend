@@ -18,7 +18,7 @@ export default function AnimeCard({
   const imageHeight = cardWidth * 1.4; // Maintain aspect ratio
   const cardHeight = imageHeight + 70; // Add space for text content
 
-  // D
+  // Dynamic styles based on props and theme
   const dynamicStyles = {
     container: {
       width: cardWidth,

@@ -36,6 +36,7 @@ export default function TabLayout() {
           headerStyle: {
             backgroundColor: theme.headerBackgroundColor, // header background
           },
+          headerTitle: "Mugen", // Set a custom title for the header
           headerTintColor: theme.primary, // text & back button color
           headerTitleStyle: {
             fontWeight: "bold",
@@ -56,8 +57,15 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: "Explore",
-          tabBarIcon: ({ color }) => <Tv size={28} color={color} />,
-          headerShown: false,
+          headerStyle: {
+            backgroundColor: theme.headerBackgroundColor, // header background
+          },
+          headerTitle: "Explore Anime", // Set a custom title for the header
+          headerTintColor: theme.primary, // text & back button color
+          headerTitleStyle: {
+            fontWeight: "bold",
+          }, // Make the header title bold
+          tabBarIcon: ({ color }) => <Tv size={28} color={color} />, // Tab icon
         }}
       />
 
@@ -65,6 +73,13 @@ export default function TabLayout() {
         name="list"
         options={{
           title: "List",
+          headerStyle: {
+            backgroundColor: theme.headerBackgroundColor, // header background
+          },
+          headerTintColor: theme.primary, // text & back button color
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
           tabBarIcon: ({ color }) => <List size={28} color={color} />,
           headerShown: false,
         }}
@@ -74,6 +89,13 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: "Profile",
+          headerStyle: {
+            backgroundColor: theme.headerBackgroundColor, // header background
+          },
+          headerTintColor: theme.primary, // text & back button color
+          headerTitleStyle: {
+            fontWeight: "bold",
+          },
           tabBarIcon: ({ color }) => <User size={28} color={color} />,
         }}
       />

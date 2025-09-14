@@ -35,7 +35,4 @@ const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 16, // Home screen padding (16 on left and right, total 32)
   },
-  text: {
-    fontSize: 20,
-  },
 });

@@ -1,48 +1,37 @@
-import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
+import AnimeFilter from "@/components/AnimeFilter";
+import Card from "@/components/Card";
+import { useTheme } from "@/hooks/use-theme";
+import { getScreenHeight } from "@/Utility/screenUtils";
+import { ScrollView, StyleSheet } from "react-native";
 
 export default function ExplorePage() {
-  const images = [
-    "https://picsum.photos/200/300?random=1",
-    "https://picsum.photos/200/300?random=2",
-    "https://picsum.photos/200/300?random=3",
-    "https://picsum.photos/200/300?random=4",
-    "https://picsum.photos/200/300?random=5",
-    "https://picsum.photos/200/300?random=6",
-    "https://picsum.photos/200/300?random=7",
-    "https://picsum.photos/200/300?random=8",
-    "https://picsum.photos/200/300?random=9",
-  ];
+  // get the theme
+  const theme = useTheme();
+
+  // dynamic styles
+  const dynamicStyles = {
+    container: {
+      backgroundColor: theme.backgroundColor,
+    },
+  };
+
+  // Calculate card height to get the 20% of the screen height
+  const cardHeight = getScreenHeight() * 0.2;
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Explore Tab</Text>
-      <ScrollView contentContainerStyle={styles.scrollContent}>
-        {images.map((uri, index) => (
-          <Image key={index} source={{ uri }} style={styles.image} />
-        ))}
-      </ScrollView>
-    </View>
+    <ScrollView
+      style={dynamicStyles.container} // Set background color based on theme and make it take full height "screen"
+      contentContainerStyle={styles.container} // Add padding to the container
+      showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
+    >
+      {/* Filter Card */}
+      <Card cardContent={<AnimeFilter />} height={cardHeight as number} />
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    paddingVertical: 20,
-    alignItems: "center",
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: "bold",
-    marginBottom: 20,
-  },
-  scrollContent: {
-    alignItems: "center",
-  },
-  image: {
-    width: 300,
-    height: 200,
-    borderRadius: 12,
-    marginBottom: 15,
+    paddingHorizontal: 16, // Home screen padding (16 on left and right, total 32)
   },
 });
