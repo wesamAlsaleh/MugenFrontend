@@ -1,7 +1,9 @@
+import AnimesGrid from "@/components/AnimesGrid";
+import CurrentSeason from "@/components/CurrentSeason";
 import FeaturedAnimeCarousel from "@/components/FeaturedAnimeCarousel";
 import { useTheme } from "@/hooks/use-theme";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, useColorScheme, View } from "react-native";
+import { ScrollView, StyleSheet, useColorScheme } from "react-native";
 
 export default function HomePage() {
   // Detect the color scheme (light or dark) of the device using built-in hook
@@ -9,24 +11,31 @@ export default function HomePage() {
   const theme = useTheme();
 
   return (
-    <View
-      style={[styles.container, { backgroundColor: theme.backgroundColor }]}
+    <ScrollView
+      style={[{ backgroundColor: theme.backgroundColor }]} // Set background color based on theme and make it take full height "screen"
+      contentContainerStyle={styles.container} // Add padding to the container
+      showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
     >
       {/* Adjust status bar style based on theme */}
       <StatusBar style={colorScheme === "light" ? "dark" : "light"} />
 
-      {/*  */}
+      {/* Anime Carousel */}
       <FeaturedAnimeCarousel />
 
-      <Text style={[styles.text, { color: theme.primaryText }]}>Home Page</Text>
-    </View>
+      {/* Current Season Component with animation */}
+      <CurrentSeason season="Summer" year={2025} />
+
+      {/* Animes Grid */}
+      <AnimesGrid />
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1, // Ensure the container can grow to fill the ScrollView
     paddingHorizontal: 16,
+    paddingBottom: 80, // Add some bottom padding to avoid content being cut off (tab bar height is 70)
   },
   text: {
     fontSize: 20,

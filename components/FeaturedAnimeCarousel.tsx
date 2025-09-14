@@ -3,12 +3,12 @@
 import Countdown from "react-countdown";
 import { Image, StyleSheet, Text, View } from "react-native";
 
-import { ThisSeasonAnimes } from "@/constants/ThisSeasonAnimes";
+import { ThisSeasonTopAnimes } from "@/constants/dummyData";
 import { secondsToWeekDay } from "@/Utility/secondsToDate";
 import { useEffect, useState } from "react";
 
 import { useTheme } from "@/hooks/use-theme";
-import { ThisSeasonTopAnimes } from "@/types/thisSeasonTopAnimes";
+import { ThisSeasonTopAnimeType } from "@/types/thisSeasonTopAnime";
 
 // Countdown renderer for formatting the countdown display
 const renderer = ({
@@ -71,18 +71,19 @@ export default function FeaturedAnimeCarousel() {
   // Get the current color scheme (light or dark)
   const theme = useTheme();
 
-  const [data, setData] = useState<ThisSeasonTopAnimes[]>(ThisSeasonAnimes);
+  const [data, setData] =
+    useState<ThisSeasonTopAnimeType[]>(ThisSeasonTopAnimes); // Array of this season's top animes
 
   // Start at a random index (if data is not empty)
   const [currentIndex, setCurrentIndex] = useState(() => {
-    return ThisSeasonAnimes.length > 0
-      ? Math.floor(Math.random() * ThisSeasonAnimes.length)
+    return ThisSeasonTopAnimes.length > 0
+      ? Math.floor(Math.random() * ThisSeasonTopAnimes.length)
       : 0;
   });
 
   // Set the data on component mount
   useEffect(() => {
-    setData(ThisSeasonAnimes);
+    setData(ThisSeasonTopAnimes);
   }, []);
 
   // Cycle through featured animes every 15 seconds

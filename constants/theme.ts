@@ -14,7 +14,7 @@ export const Colors = {
 export const themes = {
   light: {
     // Primary brand colors
-    primary: "#22c55e",
+    primary: "#f97316",
 
     // Background colors
     backgroundColor: "#ffffff",

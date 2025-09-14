@@ -1,4 +1,4 @@
-interface ThisSeasonTopAnimes {
+type ThisSeasonTopAnimeType = {
   id: number;
   title: {
     english: string | null;
@@ -20,6 +20,6 @@ interface ThisSeasonTopAnimes {
     episode: number;
     timeUntilAiring: number;
   } | null;
-}
+};
 
-export { ThisSeasonTopAnimes };
+export { ThisSeasonTopAnimeType };
