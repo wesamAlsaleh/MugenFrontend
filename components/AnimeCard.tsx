@@ -4,9 +4,30 @@ import { capitalizeFirstLetter } from "@/Utility/capitalizeFirstLetter";
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function AnimeCard({ anime }: { anime: ThisSeasonAnimeType }) {
+export default function AnimeCard({
+  anime,
+  cardWidth, // Default width to 120 to show 3 columns on phone
+}: {
+  anime: ThisSeasonAnimeType;
+  cardWidth: number; // Prop to set card width to adjust number of columns
+}) {
   // Set the theme based on the device's color scheme
   const theme = useTheme();
+
+  // Calculate responsive dimensions based on card width
+  const imageHeight = cardWidth * 1.4; // Maintain aspect ratio
+  const cardHeight = imageHeight + 80; // Add space for text content
+
+  const dynamicStyles = {
+    container: {
+      width: cardWidth,
+      height: cardHeight,
+    },
+    animeImage: {
+      width: cardWidth,
+      height: imageHeight,
+    },
+  };
 
   const handlePress = () => {
     alert(`You pressed on ${anime.title.userPreferred}`);
@@ -14,12 +35,12 @@ export default function AnimeCard({ anime }: { anime: ThisSeasonAnimeType }) {
 
   return (
     <TouchableOpacity onPress={handlePress} activeOpacity={0.8}>
-      <View style={styles.container}>
+      <View style={[styles.container, dynamicStyles.container]}>
         {/* Anime Image */}
         <View style={styles.animeImageContainer}>
           <Image
             source={{ uri: anime.coverImage.extraLarge! }}
-            style={styles.animeImage}
+            style={[styles.animeImage, dynamicStyles.animeImage]} // Combine static and dynamic styles
           />
         </View>
 
@@ -80,13 +101,14 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "column",
-    height: 250,
-    width: 130,
+    // height: 250, // Dynamic based on screen size
+    // width: 120, // Dynamic based on screen size
+    // backgroundColor: "#fefefe",
   },
   animeImageContainer: {},
   animeImage: {
-    width: "100%",
-    height: 170,
+    // width: "100%", // Dynamic width based on parent container
+    // height: 170, // Dynamic height based on width to maintain aspect ratio
     resizeMode: "cover",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,

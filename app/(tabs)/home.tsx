@@ -33,9 +33,7 @@ export default function HomePage() {
 
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1, // Ensure the container can grow to fill the ScrollView
-    paddingHorizontal: 16,
-    paddingBottom: 80, // Add some bottom padding to avoid content being cut off (tab bar height is 70)
+    paddingHorizontal: 16, // Home screen padding (16 on left and right, total 32)
   },
   text: {
     fontSize: 20,

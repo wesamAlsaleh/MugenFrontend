@@ -1,32 +1,39 @@
+import { thisSeasonAnimes } from "@/constants/dummyData";
 import { ThisSeasonAnimeType } from "@/types/thisSeasonAnime";
+import { getNumColumns } from "@/Utility/screenUtils";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Dimensions, StyleSheet, View } from "react-native";
 import AnimeCard from "./AnimeCard";
 
-import { thisSeasonAnimes } from "@/constants/dummyData";
-
-// TODO: If AnimesGrid is itself scrollable (like a FlatList or ScrollView), don’t wrap it again in another scroll container — otherwise you’ll get nested scroll issues.
-
 export default function AnimesGrid() {
+  // Determine number of columns
+  const numColumns = getNumColumns();
+
+  // Get the screen width
+  const screenWidth = Dimensions.get("window").width;
+
+  // Calculate card width based on number of columns and padding
+  const cardWidth = (screenWidth - 32 - (numColumns - 1) * 8) / numColumns; // (16 padding on each side and 8 gap between cards)
+
   return (
     <View style={styles.container}>
-      {thisSeasonAnimes.map((anime) => {
-        return (
-          <AnimeCard key={anime.id} anime={anime as ThisSeasonAnimeType} />
-        );
-      })}
+      {thisSeasonAnimes.map((anime) => (
+        <View key={anime.id}>
+          <AnimeCard
+            anime={anime as ThisSeasonAnimeType}
+            cardWidth={cardWidth}
+          />
+        </View>
+      ))}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexDirection: "column",
-    direction: "ltr", // Ensures left-to-right layout
-    gap: 10,
-  },
-  text: {
-    fontSize: 20,
+    flexDirection: "row", // Arrange items in a row
+    flexWrap: "wrap", // Allow items to wrap to the next line
+    justifyContent: "space-between", // Distribute space between items
+    marginBottom: 70, // Add bottom margin to avoid content being cut off by bottom tab bar (tab bar height is 70 so we add 70 margin)
   },
 });
