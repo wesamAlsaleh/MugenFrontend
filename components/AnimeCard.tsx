@@ -16,8 +16,9 @@ export default function AnimeCard({
 
   // Calculate responsive dimensions based on card width
   const imageHeight = cardWidth * 1.4; // Maintain aspect ratio
-  const cardHeight = imageHeight + 80; // Add space for text content
+  const cardHeight = imageHeight + 70; // Add space for text content
 
+  // D
   const dynamicStyles = {
     container: {
       width: cardWidth,
@@ -49,7 +50,7 @@ export default function AnimeCard({
           {/* Anime Title */}
           <Text
             style={[styles.animeTitleText, { color: theme.primaryText }]} // Set text color based on theme
-            numberOfLines={2}
+            numberOfLines={1} // Limit title to one line
             ellipsizeMode="tail" // Add ellipsis if the title is too long (ellipsizeMode to "tail" adds "..." at the end)
           >
             {anime.title.userPreferred}
