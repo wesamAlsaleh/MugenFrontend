@@ -1,44 +1,34 @@
 import { useTheme } from "@/hooks/use-theme";
-import { Funnel, FunnelPlus } from "lucide-react-native";
+import { Filters } from "@/types/filter";
+import { FunnelPlus, FunnelX } from "lucide-react-native";
 import React, { useState } from "react";
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 
-export default function AnimeFilter() {
+// Define the props for the AnimeFilter component
+type Props = {
+  onOpenFilter: () => void; // Function to open the filter bottom sheet
+  filters: Filters;
+  setFilters: React.Dispatch<React.SetStateAction<Filters>>;
+};
+
+export default function AnimeFilter({
+  onOpenFilter,
+  filters,
+  setFilters,
+}: Props) {
   // Get the theme of the app
   const theme = useTheme();
 
-  // Filter states
-  const [selectedSeason, setSelectedSeason] = useState<string>("");
-  const [selectedYear, setSelectedYear] = useState<string>("");
-  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
-  const [searchQuery, setSearchQuery] = useState("");
+  // Does the user have any active filters?
+  const hasActiveFilters =
+    Boolean(filters.season) ||
+    Boolean(filters.year) ||
+    Boolean(filters.searchQuery) ||
+    (filters.genres && filters.genres.length > 0);
 
   // Dropdown states
   const [showSeasonDropdown, setShowSeasonDropdown] = useState(false);
   const [showYearDropdown, setShowYearDropdown] = useState(false);
-
-  // Function to toggle genre selection
-  const toggleGenre = (genre: string) => {
-    // If the genre is already selected, remove it
-    if (selectedGenres.includes(genre)) {
-      // Return all genres except the one that was clicked
-      setSelectedGenres((prev) => prev.filter((g) => g !== genre));
-    } else {
-      // Add the genre to the selected genres
-      setSelectedGenres((prev) => [...prev, genre]);
-    }
-  };
-
-  // Function to clear all filters
-  const clearAllFilters = () => {
-    setSelectedSeason("");
-    setSelectedYear("");
-    setSelectedGenres([]);
-  };
-
-  // Does the user have any active filters?
-  const hasActiveFilters =
-    selectedSeason !== "" || selectedYear !== "" || selectedGenres.length > 0;
 
   const dynamicStyles = {
     headerText: {
@@ -48,9 +38,7 @@ export default function AnimeFilter() {
       color: theme.mutedText,
     },
     filterButton: {
-      BackgroundColor: hasActiveFilters
-        ? theme.primary
-        : theme.cardBackgroundColor,
+      BackgroundColor: theme.cardBackgroundColor,
       borderColor: hasActiveFilters ? theme.primary : theme.cardBorderColor,
     },
     filterIcon: {
@@ -72,8 +60,10 @@ export default function AnimeFilter() {
           placeholderTextColor={
             dynamicStyles.searchBarInput.placeholderTextColor
           }
-          value={searchQuery}
-          onChangeText={setSearchQuery}
+          value={filters.searchQuery ?? ""}
+          onChangeText={(text) =>
+            setFilters((prev) => ({ ...prev, searchQuery: text }))
+          }
         />
       </View>
 
@@ -82,9 +72,10 @@ export default function AnimeFilter() {
         {/* Filter Button */}
         <TouchableOpacity
           style={[styles.filterButton, dynamicStyles.filterButton]}
+          onPress={onOpenFilter}
         >
-          {!hasActiveFilters ? (
-            <Funnel color={dynamicStyles.filterIcon.color} />
+          {hasActiveFilters ? (
+            <FunnelX color={dynamicStyles.filterIcon.color} />
           ) : (
             <FunnelPlus color={dynamicStyles.filterIcon.color} />
           )}
