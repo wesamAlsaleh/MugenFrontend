@@ -15,8 +15,8 @@ export default function ExplorePage() {
     },
   };
 
-  // Calculate card height to get the 20% of the screen height
-  const cardHeight = getScreenHeight() * 0.2;
+  // Calculate card height to get the 10% of the screen height
+  const cardHeight = getScreenHeight() * 0.1;
 
   return (
     <ScrollView
@@ -25,7 +25,7 @@ export default function ExplorePage() {
       showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
     >
       {/* Filter Card */}
-      <Card cardContent={<AnimeFilter />} height={cardHeight as number} />
+      <Card cardContent={<AnimeFilter />} />
     </ScrollView>
   );
 }

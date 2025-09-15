@@ -5,8 +5,8 @@ import { StyleSheet, View } from "react-native";
 
 interface CardProps {
   cardContent: React.ReactNode;
-  width?: number;
-  height?: number;
+  width?: number; // only fixed if provided
+  height?: number; // only fixed if provided
 }
 
 export default function Card(props: CardProps) {
@@ -17,10 +17,10 @@ export default function Card(props: CardProps) {
   const screenWidth = getScreenWidth();
 
   // Calculate card width based on screen width and padding (16 on each side)
-  const cardWidth = !props.width ? screenWidth - 32 : props.width; // Default full width minus padding, or fixed width if provided
+  const cardWidth = props.width ?? screenWidth - 32; // Default full width minus padding, or fixed width if provided
 
-  // Calculate card height to maintain a 16:9 aspect ratio
-  const cardHeight = !props.height ? (cardWidth * 9) / 16 : props.height; // Default 16:9 ratio, or fixed height if provided
+  // Calculate card height
+  const cardHeight = props.height ?? undefined;
 
   // Dynamic styles
   const dynamicStyles = {
@@ -28,7 +28,7 @@ export default function Card(props: CardProps) {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
       width: cardWidth,
-      height: cardHeight,
+      ...(cardHeight ? { height: cardHeight } : {}), // Only set height if provided
     },
   };
 
@@ -43,7 +43,10 @@ export default function Card(props: CardProps) {
 }
 
 const styles = StyleSheet.create({
-  container: { marginVertical: 20, marginBottom: 10 },
+  container: {
+    marginVertical: 20,
+    marginBottom: 10,
+  },
   cardContainer: {
     borderRadius: 12,
     display: "flex",

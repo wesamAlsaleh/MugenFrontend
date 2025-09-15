@@ -1,7 +1,7 @@
 import { useTheme } from "@/hooks/use-theme";
 import { FunnelPlus } from "lucide-react-native";
 import React, { useState } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { LayoutAnimation, StyleSheet, View } from "react-native";
 
 export default function AnimeFilter() {
   // Get the theme of the app
@@ -22,7 +22,7 @@ export default function AnimeFilter() {
     // If the genre is already selected, remove it
     if (selectedGenres.includes(genre)) {
       // Return all genres except the one that was clicked
-      setSelectedGenres((prev) => prev.filter((genre) => genre !== genre));
+      setSelectedGenres((prev) => prev.filter((g) => g !== genre));
     } else {
       // Add the genre to the selected genres
       setSelectedGenres((prev) => [...prev, genre]);
@@ -36,6 +36,14 @@ export default function AnimeFilter() {
     setSelectedGenres([]);
   };
 
+  const toggleExpand = () => {
+    // Animate the expansion/collapse
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
+
+    // Toggle the expanded state
+    setIsExpanded((prev) => !prev);
+  };
+
   // Does the user have any active filters?
   const hasActiveFilters =
     selectedSeason !== "" || selectedYear !== "" || selectedGenres.length > 0;
@@ -47,31 +55,15 @@ export default function AnimeFilter() {
     subHeaderText: {
       color: theme.mutedText,
     },
-    activeFilterChip: {
-      backgroundColor: theme.primary + "20",
-      borderColor: theme.primary,
-    },
   };
 
   return (
     <View style={styles.container}>
-      {/* Filter Header Button (expand/collapse) */}
-      <TouchableOpacity
-        style={styles.toggleButtonContainer}
-        onPress={() => setIsExpanded(!isExpanded)} // Toggle expand/collapse
-        activeOpacity={0.7} // Decrease opacity on press
-      >
-        {/* Header Left Section */}
-        <View style={styles.headerLeftContainer}>
-          {/* Button Icon */}
-          <FunnelPlus size={18} color={theme.mutedText} />
-
-          {/* Title */}
-          <Text style={[styles.headerText, dynamicStyles.headerText]}>
-            Filters
-          </Text>
-        </View>
-      </TouchableOpacity>
+      {/* Header Section */}
+      <View style={styles.headerContainer}>
+        {/* Filter Icon */}
+        <FunnelPlus color={theme.mutedText} />
+      </View>
     </View>
   );
 }
@@ -82,27 +74,17 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 12,
   },
-  toggleButtonContainer: {
+  headerContainer: {
+    display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "flex-start",
-    marginVertical: 8,
-  },
-  headerLeftContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
+    gap: 12,
   },
   activeFiltersContainer: {
     paddingHorizontal: 16,
     paddingBottom: 12,
   },
-  activeFilterChip: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 16,
-    borderWidth: 1,
-  },
+
   // Text Styles
   headerText: {
     fontSize: 16,
