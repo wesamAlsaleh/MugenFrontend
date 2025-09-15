@@ -42,7 +42,6 @@ interface Props {
 export default function CustomBottomSheet({
   bottomSheetRef,
   snapPoints,
-
   children,
 }: Props) {
   // get the theme

@@ -1,7 +1,7 @@
 import { useTheme } from "@/hooks/use-theme";
 import { Filters } from "@/types/filter";
 import { FunnelPlus, FunnelX } from "lucide-react-native";
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 
 // Define the props for the AnimeFilter component
@@ -11,6 +11,7 @@ type Props = {
   setFilters: React.Dispatch<React.SetStateAction<Filters>>;
 };
 
+// AnimeFilter component to render the filter section (handle search input and filter button that opens the bottom sheet)
 export default function AnimeFilter({
   onOpenFilter,
   filters,
@@ -25,10 +26,6 @@ export default function AnimeFilter({
     Boolean(filters.year) ||
     Boolean(filters.searchQuery) ||
     (filters.genres && filters.genres.length > 0);
-
-  // Dropdown states
-  const [showSeasonDropdown, setShowSeasonDropdown] = useState(false);
-  const [showYearDropdown, setShowYearDropdown] = useState(false);
 
   const dynamicStyles = {
     headerText: {

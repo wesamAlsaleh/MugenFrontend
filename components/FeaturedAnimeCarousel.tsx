@@ -10,6 +10,8 @@ import { useEffect, useState } from "react";
 import { useTheme } from "@/hooks/use-theme";
 import { ThisSeasonTopAnimeType } from "@/types/thisSeasonTopAnime";
 
+// TODO: Refactor this component to use Card component, and enhance the styles structure to be more readable and maintainable
+
 // Countdown renderer for formatting the countdown display
 const renderer = ({
   days,

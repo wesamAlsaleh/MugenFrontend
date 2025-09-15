@@ -15,6 +15,10 @@ export const themes = {
   light: {
     // Primary brand colors
     primary: "#f97316",
+    primaryDark: "#ea580c",
+    primaryDarker: "#c2410c",
+    primaryLight: "#ffedd5",
+    primaryExtraLight: "#fff7ed",
 
     // Background colors
     backgroundColor: "#ffffff",
@@ -44,6 +48,10 @@ export const themes = {
   dark: {
     // Primary brand colors
     primary: "#ef4444",
+    primaryDark: "#dc2626",
+    primaryDarker: "#b91c1c",
+    primaryLight: "#fee2e2",
+    primaryExtraLight: "#fef2f2",
 
     // Background colors
     backgroundColor: "#1f1f1f",

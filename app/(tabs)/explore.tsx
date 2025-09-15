@@ -1,11 +1,12 @@
 import AnimeFilter from "@/components/AnimeFilter";
 import CustomBottomSheet from "@/components/BottomSheet";
+import FilterSheetContent from "@/components/FilterSheetContent";
 import { useTheme } from "@/hooks/use-theme";
 import { Filters } from "@/types/filter";
 import { getScreenHeight } from "@/Utility/screenUtils";
 import BottomSheet from "@gorhom/bottom-sheet";
 import { useMemo, useRef, useState } from "react";
-import { ScrollView, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { ScrollView, StyleSheet, Text } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function ExplorePage() {
@@ -25,14 +26,11 @@ export default function ExplorePage() {
     },
   };
 
-  // Calculate card height to get the 10% of the screen height
-  const cardHeight = getScreenHeight() * 0.1;
-
   // Ref to control the BottomSheet
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   // Snap points for the BottomSheet (useMemo to avoid recalculating on every render)
-  const snapPoints = useMemo(() => ["60%", "90%"], []);
+  const snapPoints = useMemo(() => ["80%"], []);
 
   // Function to open the BottomSheet
   const openFilterSheet = () => bottomSheetRef.current?.expand();
@@ -47,6 +45,9 @@ export default function ExplorePage() {
     genres: null,
     searchQuery: null,
   });
+
+  // Calculate card height to get the 10% of the screen height
+  const cardHeight = getScreenHeight() * 0.1;
 
   return (
     <GestureHandlerRootView>
@@ -64,6 +65,11 @@ export default function ExplorePage() {
         />
 
         <Text>{filters.season || "No"}</Text>
+        <Text>
+          {filters.genres?.map((g) => {
+            return g;
+          }) || "No genres selected"}
+        </Text>
       </ScrollView>
 
       {/* Filter BottomSheet Component */}
@@ -71,37 +77,11 @@ export default function ExplorePage() {
         bottomSheetRef={bottomSheetRef}
         snapPoints={snapPoints}
         children={
-          <>
-            <TouchableOpacity
-              onPress={() =>
-                setFilters({
-                  season: "Spring",
-                  year: "2025",
-                  genres: [],
-                  searchQuery: null,
-                })
-              }
-            >
-              <Text>Apply Spring 2025</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              onPress={() =>
-                setFilters({
-                  season: null,
-                  year: null,
-                  genres: [],
-                  searchQuery: null,
-                })
-              }
-            >
-              <Text>Clear</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={() => closeFilterSheet()}>
-              <Text>Close</Text>
-            </TouchableOpacity>
-          </>
+          <FilterSheetContent
+            filters={filters}
+            setFilters={setFilters}
+            closeFilterSheet={closeFilterSheet}
+          />
         }
       />
     </GestureHandlerRootView>
@@ -110,10 +90,10 @@ export default function ExplorePage() {
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 16, // Home screen padding (16 on left and right, total 32)
+    paddingHorizontal: 16, // Screen padding (16 on left and right, total 32)
   },
   filterBottomSheetInnerView: {
     flex: 1,
-    paddingHorizontal: 16, // Screen padding (16 on left and right, total 32)
+    // paddingHorizontal: 16, // Screen padding (16 on left and right, total 32)
   },
 });
