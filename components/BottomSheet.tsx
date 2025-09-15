@@ -1,58 +1,100 @@
 import { useTheme } from "@/hooks/use-theme";
-import React, { useEffect, useRef } from "react";
+import BottomSheet, {
+  BottomSheetBackdrop,
+  BottomSheetView,
+} from "@gorhom/bottom-sheet";
+import React, { useCallback } from "react";
+import { StyleSheet } from "react-native";
 
-import BottomSheet from "@gorhom/bottom-sheet";
-import { StyleSheet, View } from "react-native";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-
-export default function CustomBottomSheet({
-  isOpen,
-  toggleSheet,
-  duration = 500,
-  children,
-  snapPoints = ["25%", "50%", "75%", "90%"], // Available snap points at 25%, 50%, 75%, and 90% of the screen height
-}: {
-  isOpen: boolean;
-  toggleSheet?: () => void;
-  duration?: number;
+interface Props {
+  bottomSheetRef: React.RefObject<any>;
+  snapPoints: string[];
   children: React.ReactNode;
-  snapPoints?: string[];
-}) {
-  // Get the theme of the app
+}
+
+/**
+ *
+ * Custom Bottom Sheet component that have themed styles based on the device theme, and backdrop to close when clicking outside.
+ *
+ * @import `BottomSheet` from `@gorhom/bottom-sheet`
+ * @import `BottomSheetBackdrop` from `@gorhom/bottom-sheet`
+ * @import `BottomSheetView` from `@gorhom/bottom-sheet`
+ * @import `GestureHandlerRootView` from `react-native-gesture-handler`
+ * @requires GestureHandlerRootView component, `<CustomBottomSheet />` must be wrapped inside `<GestureHandlerRootView />` to work as expected!
+ *
+ * @param bottomSheetRef Ref to control the BottomSheet (used to control the sheet from outside, e.g., open/close)
+ * @param snapPoints Snap points for the BottomSheet
+ * @param children Content to be rendered inside the BottomSheet
+ * @returns Bottom sheet component to be used in various screens (page)
+ *
+ * @example
+ * const bottomSheetRef = useRef<BottomSheet>(null);
+ *
+ * <GestureHandlerRootView>
+ *   <CustomBottomSheet
+ *     bottomSheetRef={bottomSheetRef}
+ *     snapPoints={snapPoints}
+ *   >
+ *    {children}
+ *   </CustomBottomSheet>
+ * </GestureHandlerRootView>
+ */
+export default function CustomBottomSheet({
+  bottomSheetRef,
+  snapPoints,
+
+  children,
+}: Props) {
+  // get the theme
   const theme = useTheme();
 
-  // ref to the bottom sheet (reference to a DOM element)
-  const bottomSheetRef = useRef<BottomSheet>(null);
+  // dynamic styles
+  const dynamicStyles = {
+    bottomSheetBackgroundStyle: {
+      backgroundColor: theme.cardBackgroundColor,
+    },
+    bottomSheetIndicatorStyle: {
+      backgroundColor: theme.primary,
+    },
+  };
 
-  useEffect(() => {
-    if (isOpen) {
-      bottomSheetRef.current?.expand(); // open to first snap point
-    } else {
-      bottomSheetRef.current?.close(); // close when state = false
-    }
-  }, [isOpen]);
+  // Function to render the backdrop (click outside to close)
+  const renderBackdrop = useCallback(
+    (props: any) => (
+      <BottomSheetBackdrop
+        disappearsOnIndex={-1} // Disappear when the bottom sheet is closed
+        appearsOnIndex={0} // Appear when the bottom sheet is open
+        opacity={0.2} // Dim the background a bit
+        pressBehavior="close"
+        {...props}
+      />
+    ),
+    []
+  );
 
   return (
-    <GestureHandlerRootView>
-      {/* Container */}
-      <View></View>
-
-      {/* Bottom Sheet Container */}
-      <BottomSheet
-        ref={bottomSheetRef}
-        snapPoints={snapPoints || ["40%", "85%"]}
-        index={-1} // start closed
-        enablePanDownToClose={true} // allow closing by swiping down
-        keyboardBehavior="extend" // this will allow the bottom sheet to extend when a keyboard is open
-      >
+    <BottomSheet
+      ref={bottomSheetRef}
+      index={-1} // Start closed
+      snapPoints={snapPoints}
+      enablePanDownToClose // Allow closing by swiping down
+      backdropComponent={renderBackdrop}
+      backgroundStyle={dynamicStyles.bottomSheetBackgroundStyle}
+      handleIndicatorStyle={dynamicStyles.bottomSheetIndicatorStyle}
+    >
+      <BottomSheetView style={styles.filterBottomSheetInnerView}>
         {children}
-      </BottomSheet>
-    </GestureHandlerRootView>
+      </BottomSheetView>
+    </BottomSheet>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    paddingHorizontal: 16, // Home screen padding (16 on left and right, total 32)
+  },
+  filterBottomSheetInnerView: {
+    flex: 1,
     paddingHorizontal: 16, // Screen padding (16 on left and right, total 32)
   },
 });

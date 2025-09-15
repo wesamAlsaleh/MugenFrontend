@@ -1,12 +1,10 @@
 import AnimeFilter from "@/components/AnimeFilter";
+import CustomBottomSheet from "@/components/BottomSheet";
 import { useTheme } from "@/hooks/use-theme";
 import { Filters } from "@/types/filter";
 import { getScreenHeight } from "@/Utility/screenUtils";
-import BottomSheet, {
-  BottomSheetBackdrop,
-  BottomSheetView,
-} from "@gorhom/bottom-sheet";
-import { useCallback, useMemo, useRef, useState } from "react";
+import BottomSheet from "@gorhom/bottom-sheet";
+import { useMemo, useRef, useState } from "react";
 import { ScrollView, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
@@ -42,20 +40,6 @@ export default function ExplorePage() {
   // Function to close the BottomSheet
   const closeFilterSheet = () => bottomSheetRef.current?.close();
 
-  // Function to render the backdrop (click outside to close)
-  const renderBackdrop = useCallback(
-    (props: any) => (
-      <BottomSheetBackdrop
-        disappearsOnIndex={-1} // Disappear when the bottom sheet is closed
-        appearsOnIndex={0} // Appear when the bottom sheet is open
-        opacity={0.2} // Dim the background a bit
-        pressBehavior="close"
-        {...props}
-      />
-    ),
-    []
-  );
-
   // Filters (from bottom sheet)
   const [filters, setFilters] = useState<Filters>({
     season: null,
@@ -82,49 +66,44 @@ export default function ExplorePage() {
         <Text>{filters.season || "No"}</Text>
       </ScrollView>
 
-      {/* Filter BottomSheet Configuration */}
-      <BottomSheet
-        ref={bottomSheetRef}
-        index={-1} // Start closed
+      {/* Filter BottomSheet Component */}
+      <CustomBottomSheet
+        bottomSheetRef={bottomSheetRef}
         snapPoints={snapPoints}
-        enablePanDownToClose // Allow closing by swiping down
-        backdropComponent={renderBackdrop}
-        backgroundStyle={dynamicStyles.bottomSheetBackgroundStyle}
-        handleIndicatorStyle={dynamicStyles.bottomSheetIndicatorStyle}
-      >
-        <BottomSheetView style={styles.filterBottomSheetInnerView}>
-          {/* Pass back chosen filters */}
-          <TouchableOpacity
-            onPress={() =>
-              setFilters({
-                season: "Spring",
-                year: "2025",
-                genres: [],
-                searchQuery: null,
-              })
-            }
-          >
-            <Text>Apply Spring 2025</Text>
-          </TouchableOpacity>
+        children={
+          <>
+            <TouchableOpacity
+              onPress={() =>
+                setFilters({
+                  season: "Spring",
+                  year: "2025",
+                  genres: [],
+                  searchQuery: null,
+                })
+              }
+            >
+              <Text>Apply Spring 2025</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity
-            onPress={() =>
-              setFilters({
-                season: null,
-                year: null,
-                genres: [],
-                searchQuery: null,
-              })
-            }
-          >
-            <Text>Clear</Text>
-          </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() =>
+                setFilters({
+                  season: null,
+                  year: null,
+                  genres: [],
+                  searchQuery: null,
+                })
+              }
+            >
+              <Text>Clear</Text>
+            </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => closeFilterSheet()}>
-            <Text>Close</Text>
-          </TouchableOpacity>
-        </BottomSheetView>
-      </BottomSheet>
+            <TouchableOpacity onPress={() => closeFilterSheet()}>
+              <Text>Close</Text>
+            </TouchableOpacity>
+          </>
+        }
+      />
     </GestureHandlerRootView>
   );
 }
