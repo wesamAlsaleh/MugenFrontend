@@ -1,5 +1,4 @@
 import AnimeFilter from "@/components/AnimeFilter";
-import Card from "@/components/Card";
 import { useTheme } from "@/hooks/use-theme";
 import { getScreenHeight } from "@/Utility/screenUtils";
 import { ScrollView, StyleSheet } from "react-native";
@@ -24,8 +23,8 @@ export default function ExplorePage() {
       contentContainerStyle={styles.container} // Add padding to the container
       showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
     >
-      {/* Filter Card */}
-      <Card cardContent={<AnimeFilter />} />
+      {/* Filter Section */}
+      <AnimeFilter />
     </ScrollView>
   );
 }

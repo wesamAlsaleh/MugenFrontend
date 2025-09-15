@@ -2,7 +2,7 @@ import { Tabs } from "expo-router";
 import { StyleSheet } from "react-native";
 
 import { useTheme } from "@/hooks/use-theme";
-import { House, List, Search, Tv, User } from "lucide-react-native";
+import { House, List, Tv, User } from "lucide-react-native";
 
 export default function TabLayout() {
   // Get the current theme (light or dark) based on system preferences
@@ -42,14 +42,6 @@ export default function TabLayout() {
             fontWeight: "bold",
           },
           tabBarIcon: ({ color }) => <House size={28} color={color} />,
-          headerRight: () => (
-            <Search
-              size={28}
-              color={theme.primary}
-              style={{ marginRight: 15 }}
-              onPress={() => alert("Search button pressed")}
-            />
-          ),
         }}
       />
 
@@ -60,7 +52,7 @@ export default function TabLayout() {
           headerStyle: {
             backgroundColor: theme.headerBackgroundColor, // header background
           },
-          headerTitle: "Explore Anime", // Set a custom title for the header
+          headerTitle: "Explore", // Set a custom title for the header
           headerTintColor: theme.primary, // text & back button color
           headerTitleStyle: {
             fontWeight: "bold",

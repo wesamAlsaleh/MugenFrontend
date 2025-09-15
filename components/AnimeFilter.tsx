@@ -1,7 +1,7 @@
 import { useTheme } from "@/hooks/use-theme";
-import { FunnelPlus } from "lucide-react-native";
+import { Funnel, FunnelPlus } from "lucide-react-native";
 import React, { useState } from "react";
-import { LayoutAnimation, StyleSheet, View } from "react-native";
+import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 
 export default function AnimeFilter() {
   // Get the theme of the app
@@ -11,7 +11,7 @@ export default function AnimeFilter() {
   const [selectedSeason, setSelectedSeason] = useState<string>("");
   const [selectedYear, setSelectedYear] = useState<string>("");
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Dropdown states
   const [showSeasonDropdown, setShowSeasonDropdown] = useState(false);
@@ -36,14 +36,6 @@ export default function AnimeFilter() {
     setSelectedGenres([]);
   };
 
-  const toggleExpand = () => {
-    // Animate the expansion/collapse
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
-
-    // Toggle the expanded state
-    setIsExpanded((prev) => !prev);
-  };
-
   // Does the user have any active filters?
   const hasActiveFilters =
     selectedSeason !== "" || selectedYear !== "" || selectedGenres.length > 0;
@@ -55,14 +47,48 @@ export default function AnimeFilter() {
     subHeaderText: {
       color: theme.mutedText,
     },
+    filterButton: {
+      BackgroundColor: hasActiveFilters
+        ? theme.primary
+        : theme.cardBackgroundColor,
+      borderColor: hasActiveFilters ? theme.primary : theme.cardBorderColor,
+    },
+    filterIcon: {
+      color: hasActiveFilters ? theme.primary : theme.mutedText,
+    },
+    searchBarInput: {
+      backgroundColor: theme.cardBackgroundColor,
+      borderColor: theme.cardBorderColor,
+      placeholderTextColor: theme.mutedText,
+    },
   };
 
   return (
     <View style={styles.container}>
-      {/* Header Section */}
-      <View style={styles.headerContainer}>
-        {/* Filter Icon */}
-        <FunnelPlus color={theme.mutedText} />
+      <View style={styles.searchBarContainer}>
+        <TextInput
+          style={[styles.searchBarInput, dynamicStyles.searchBarInput]}
+          placeholder="Search anime / manga..."
+          placeholderTextColor={
+            dynamicStyles.searchBarInput.placeholderTextColor
+          }
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+        />
+      </View>
+
+      {/* Buttons Section */}
+      <View>
+        {/* Filter Button */}
+        <TouchableOpacity
+          style={[styles.filterButton, dynamicStyles.filterButton]}
+        >
+          {!hasActiveFilters ? (
+            <Funnel color={dynamicStyles.filterIcon.color} />
+          ) : (
+            <FunnelPlus color={dynamicStyles.filterIcon.color} />
+          )}
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -70,32 +96,40 @@ export default function AnimeFilter() {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: "column",
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-  },
-  headerContainer: {
     display: "flex",
     flexDirection: "row",
+    justifyContent: "space-between",
     alignItems: "center",
-    gap: 12,
+    marginVertical: 20,
+    marginBottom: 10,
+    gap: 10,
   },
-  activeFiltersContainer: {
-    paddingHorizontal: 16,
-    paddingBottom: 12,
+  searchBarContainer: {
+    flex: 1, // Take up remaining space
+  },
+  searchBarInput: {
+    height: 45,
+    borderWidth: 1,
+    padding: 10,
+    borderRadius: 8,
+  },
+  filterButton: {
+    padding: 8,
+    borderRadius: 8,
+    borderWidth: 1.3,
+    alignItems: "center",
+    justifyContent: "center",
+    width: 45, // Fixed width
+    height: 45, // Fixed height
   },
 
   // Text Styles
   headerText: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: "600",
   },
   subHeaderText: {
     fontSize: 14,
-    fontWeight: "500",
-  },
-  activeFilterText: {
-    fontSize: 12,
     fontWeight: "500",
   },
 });
