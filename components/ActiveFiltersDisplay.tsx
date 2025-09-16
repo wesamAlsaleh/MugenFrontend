@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "column",
-    gap: 12, // Space between filters results and the separator
   },
   filtersContainer: {
     flexDirection: "row",
     alignItems: "center",
     gap: 12, // Space between icon and the list
-    marginTop: 4,
+    marginTop: 8, // Space above the filters
+    marginBottom: 12, // Space below the filters
   },
   iconContainer: {
     alignItems: "center",

@@ -152,10 +152,10 @@ export default function FilterSheetContent({
               }}
             >
               <Picker.Item label="Any" value="null" />
-              <Picker.Item label="Winter" value="winter" />
-              <Picker.Item label="Spring" value="spring" />
-              <Picker.Item label="Summer" value="summer" />
-              <Picker.Item label="Fall" value="fall" />
+              <Picker.Item label="Winter" value="Winter" />
+              <Picker.Item label="Spring" value="Spring" />
+              <Picker.Item label="Summer" value="Summer" />
+              <Picker.Item label="Fall" value="Fall" />
             </Picker>
           </View>
 

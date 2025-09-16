@@ -10,7 +10,9 @@ import { useMemo, useRef, useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
-import { exploreAnimes } from "@/constants/dummyData"; // Importing mock data for demonstration
+import AnimesGrid from "@/components/AnimesGrid";
+import { exploreAnimes } from "@/constants/dummyData";
+import { Anime } from "@/types/Anime";
 
 export default function ExplorePage() {
   // get the theme
@@ -66,14 +68,10 @@ export default function ExplorePage() {
           filters={filters}
           setFilters={setFilters}
         />
-
         {/* Selected Filters Display */}
         <ActiveFiltersDisplay filters={filters} />
-
         {/* Anime Results Grid */}
-        {exploreAnimes.map((anime) => {
-          return null;
-        })}
+        <AnimesGrid animes={exploreAnimes as Anime[]} />
       </ScrollView>
 
       {/* Filter BottomSheet Component */}

@@ -45,6 +45,7 @@ export default function AnimeFilter({
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
       placeholderTextColor: theme.mutedText,
+      color: theme.primaryText,
     },
   };
 
