@@ -10,7 +10,6 @@ export default function Separator() {
   const styles = {
     separator: {
       height: 1,
-      marginTop: 8,
       backgroundColor: theme.separatorColor,
     },
   };

@@ -1,24 +1,9 @@
 import { Platform } from "react-native";
 
-export const Colors = {
-  light: {
-    primary: "#22c55e",
-    secondary: "#FCDFC2",
-  },
-  dark: {
-    primary: "#ef4444",
-    secondary: "#FCDFC2",
-  },
-};
-
 export const themes = {
   light: {
     // Primary brand colors
     primary: "#f97316",
-    primaryDark: "#ea580c",
-    primaryDarker: "#c2410c",
-    primaryLight: "#ffedd5",
-    primaryExtraLight: "#fff7ed",
 
     // Background colors
     backgroundColor: "#ffffff",
@@ -45,16 +30,15 @@ export const themes = {
     warning: "#fbbf24",
     error: "#ef4444",
 
-    // Separator color (light gray)
+    // Separator color
     separatorColor: "#e5e7eb",
+
+    // Active filter chip colors
+    chipBackgroundColor: "#f97316",
   },
   dark: {
     // Primary brand colors
     primary: "#ef4444",
-    primaryDark: "#dc2626",
-    primaryDarker: "#b91c1c",
-    primaryLight: "#fee2e2",
-    primaryExtraLight: "#fef2f2",
 
     // Background colors
     backgroundColor: "#1f1f1f",
@@ -81,8 +65,11 @@ export const themes = {
     warning: "#fbbf24",
     error: "#ef4444",
 
-    // Separator color (dark gray)
+    // Separator color
     separatorColor: "#3d3d3d",
+
+    // Active filter chip colors
+    chipBackgroundColor: "#ef4444",
   },
 } as const;
 
