@@ -1,15 +1,11 @@
 import { useTheme } from "@/hooks/use-theme";
-import { Filters } from "@/types/filter";
+import { Filter } from "@/types/Filter";
 import { Tags } from "lucide-react-native";
 import React from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 import FilterChip from "./FilterChip";
 
-export default function ActiveFiltersDisplay({
-  filters,
-}: {
-  filters: Filters;
-}) {
+export default function ActiveFiltersDisplay({ filters }: { filters: Filter }) {
   // Get the theme colors
   const theme = useTheme();
 

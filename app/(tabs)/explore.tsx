@@ -3,12 +3,14 @@ import AnimeFilter from "@/components/AnimeFilter";
 import CustomBottomSheet from "@/components/BottomSheet";
 import FilterSheetContent from "@/components/FilterSheetContent";
 import { useTheme } from "@/hooks/use-theme";
-import { Filters } from "@/types/filter";
+import { Filter } from "@/types/Filter";
 import { getScreenHeight } from "@/Utility/screenUtils";
 import BottomSheet from "@gorhom/bottom-sheet";
 import { useMemo, useRef, useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+
+import { exploreAnimes } from "@/constants/dummyData"; // Importing mock data for demonstration
 
 export default function ExplorePage() {
   // get the theme
@@ -40,7 +42,7 @@ export default function ExplorePage() {
   const closeFilterSheet = () => bottomSheetRef.current?.close();
 
   // Filters (from bottom sheet)
-  const [filters, setFilters] = useState<Filters>({
+  const [filters, setFilters] = useState<Filter>({
     season: null,
     year: null,
     genres: null,
@@ -69,6 +71,9 @@ export default function ExplorePage() {
         <ActiveFiltersDisplay filters={filters} />
 
         {/* Anime Results Grid */}
+        {exploreAnimes.map((anime) => {
+          return null;
+        })}
       </ScrollView>
 
       {/* Filter BottomSheet Component */}

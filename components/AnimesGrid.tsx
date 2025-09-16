@@ -1,11 +1,15 @@
-import { thisSeasonAnimes } from "@/constants/dummyData";
-import { ThisSeasonAnimeType } from "@/types/thisSeasonAnime";
+import { Anime } from "@/types/Anime";
 import { getNumColumns } from "@/Utility/screenUtils";
 import React from "react";
 import { Dimensions, StyleSheet, View } from "react-native";
 import AnimeCard from "./AnimeCard";
 
-export default function AnimesGrid() {
+// AnimesGrid Props
+type Props = {
+  animes: Anime[]; // Array of anime objects
+};
+
+export default function AnimesGrid({ animes }: Props) {
   // Determine number of columns
   const numColumns = getNumColumns();
 
@@ -17,12 +21,9 @@ export default function AnimesGrid() {
 
   return (
     <View style={styles.container}>
-      {thisSeasonAnimes.map((anime) => (
+      {animes.map((anime) => (
         <View key={anime.id}>
-          <AnimeCard
-            anime={anime as ThisSeasonAnimeType}
-            cardWidth={cardWidth}
-          />
+          <AnimeCard anime={anime} cardWidth={cardWidth} />
         </View>
       ))}
     </View>

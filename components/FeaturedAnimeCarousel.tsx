@@ -8,7 +8,7 @@ import { secondsToWeekDay } from "@/Utility/secondsToDate";
 import { useEffect, useState } from "react";
 
 import { useTheme } from "@/hooks/use-theme";
-import { ThisSeasonTopAnimeType } from "@/types/thisSeasonTopAnime";
+import { Anime } from "@/types/Anime";
 
 // TODO: Refactor this component to use Card component, and enhance the styles structure to be more readable and maintainable
 
@@ -73,8 +73,7 @@ export default function FeaturedAnimeCarousel() {
   // Get the current color scheme (light or dark)
   const theme = useTheme();
 
-  const [data, setData] =
-    useState<ThisSeasonTopAnimeType[]>(ThisSeasonTopAnimes); // Array of this season's top animes
+  const [data, setData] = useState<Anime[]>(ThisSeasonTopAnimes); // Array of this season's top animes
 
   // Start at a random index (if data is not empty)
   const [currentIndex, setCurrentIndex] = useState(() => {

@@ -1,5 +1,5 @@
 import { useTheme } from "@/hooks/use-theme";
-import { ThisSeasonAnimeType } from "@/types/thisSeasonAnime";
+import { Anime } from "@/types/Anime";
 import { capitalizeFirstLetter } from "@/Utility/capitalizeFirstLetter";
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
@@ -8,7 +8,7 @@ export default function AnimeCard({
   anime,
   cardWidth, // Default width to 120 to show 3 columns on phone
 }: {
-  anime: ThisSeasonAnimeType;
+  anime: Anime; // Anime object to display
   cardWidth: number; // Prop to set card width to adjust number of columns
 }) {
   // Set the theme based on the device's color scheme
@@ -64,7 +64,7 @@ export default function AnimeCard({
                 { color: theme.secondaryText },
               ]}
             >
-              {anime.genres[0] || "--"}
+              {anime.genres![0] || "--"}
             </Text>
 
             <Text

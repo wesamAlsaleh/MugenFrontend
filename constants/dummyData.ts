@@ -822,4 +822,264 @@ const genres = [
   "Thriller",
 ];
 
-export { genres, thisSeasonAnimes, ThisSeasonTopAnimes };
+const exploreAnimes = [
+  {
+    id: 156092,
+    title: {
+      english: "To Be Hero X",
+      native: "凸变英雄X",
+      romaji: "Tu Bian Yingxiong X",
+      userPreferred: "Tu Bian Yingxiong X",
+    },
+    coverImage: {
+      color: "#d61a1a",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx156092-yHqgQZOF2mbg.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx156092-yHqgQZOF2mbg.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx156092-yHqgQZOF2mbg.jpg",
+    },
+    averageScore: 85,
+    meanScore: 85,
+    type: "ANIME",
+    status: "FINISHED",
+    episodes: 24,
+    genres: ["Action", "Drama", "Mystery", "Supernatural"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 137667,
+    title: {
+      english: "Lord of Mysteries",
+      native: "诡秘之主",
+      romaji: "Guimi Zhi Zhu",
+      userPreferred: "Guimi Zhi Zhu",
+    },
+    coverImage: {
+      color: "#aed6e4",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx137667-zHFOF6qbpksP.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx137667-zHFOF6qbpksP.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx137667-zHFOF6qbpksP.jpg",
+    },
+    averageScore: 84,
+    meanScore: 84,
+    type: "ANIME",
+    status: "FINISHED",
+    episodes: 13,
+    genres: [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Mystery",
+      "Supernatural",
+      "Thriller",
+    ],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 126403,
+    title: {
+      english: "Link Click",
+      native: "时光代理人",
+      romaji: "Shiguang Dailiren",
+      userPreferred: "Shiguang Dailiren",
+    },
+    coverImage: {
+      color: null,
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126403-BfVSRzWUtVFW.png",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx126403-BfVSRzWUtVFW.png",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126403-BfVSRzWUtVFW.png",
+    },
+    averageScore: 86,
+    meanScore: 86,
+    type: "ANIME",
+    status: "FINISHED",
+    episodes: 11,
+    genres: ["Drama", "Mystery", "Supernatural", "Thriller"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 195200,
+    title: {
+      english: "Demon Slayer: Kimetsu no Yaiba Infinity Castle Part 2",
+      native: "劇場版「鬼滅の刃」無限城編 第二章",
+      romaji: "Kimetsu no Yaiba: Mugenjou-hen Movie 2",
+      userPreferred: "Kimetsu no Yaiba: Mugenjou-hen Movie 2",
+    },
+    coverImage: {
+      color: null,
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/default.jpg",
+    },
+    averageScore: null,
+    meanScore: null,
+    type: "ANIME",
+    status: "NOT_YET_RELEASED",
+    episodes: 1,
+    genres: ["Action", "Adventure", "Drama", "Supernatural"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 136484,
+    title: {
+      english: "Link Click Season 2",
+      native: "时光代理人 第二季",
+      romaji: "Shiguang Dailiren II",
+      userPreferred: "Shiguang Dailiren II",
+    },
+    coverImage: {
+      color: "#e45078",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx136484-QiHcF64PVWQi.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx136484-QiHcF64PVWQi.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx136484-QiHcF64PVWQi.jpg",
+    },
+    averageScore: 86,
+    meanScore: 86,
+    type: "ANIME",
+    status: "FINISHED",
+    episodes: 12,
+    genres: ["Drama", "Mystery", "Supernatural", "Thriller"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 198692,
+    title: {
+      english: null,
+      native: "いずれ最強の錬金術師？ 第2期",
+      romaji: "Izure Saikyou no Renkinjutsushi? 2nd Season",
+      userPreferred: "Izure Saikyou no Renkinjutsushi? 2nd Season",
+    },
+    coverImage: {
+      color: "#5dd6f1",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198692-QmXyp7pcQJpL.png",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198692-QmXyp7pcQJpL.png",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198692-QmXyp7pcQJpL.png",
+    },
+    averageScore: null,
+    meanScore: null,
+    type: "ANIME",
+    status: "NOT_YET_RELEASED",
+    episodes: null,
+    genres: ["Adventure", "Fantasy"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 189323,
+    title: {
+      english: null,
+      native: "シャングリラ・フロンティア 3rd season",
+      romaji: "Shangri-La Frontier 3rd Season",
+      userPreferred: "Shangri-La Frontier 3rd Season",
+    },
+    coverImage: {
+      color: "#5da1e4",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189323-6wQiLu9f4oSK.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189323-6wQiLu9f4oSK.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189323-6wQiLu9f4oSK.jpg",
+    },
+    averageScore: null,
+    meanScore: null,
+    type: "ANIME",
+    status: "NOT_YET_RELEASED",
+    episodes: null,
+    genres: ["Action", "Adventure", "Comedy", "Fantasy", "Sci-Fi"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 195604,
+    title: {
+      english: "Black Clover Season 2",
+      native: "ブラッククローバー 第2期",
+      romaji: "Black Clover 2nd Season",
+      userPreferred: "Black Clover 2nd Season",
+    },
+    coverImage: {
+      color: "#e40d35",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tPjTyqwfrfne.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tPjTyqwfrfne.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tPjTyqwfrfne.jpg",
+    },
+    averageScore: null,
+    meanScore: null,
+    type: "ANIME",
+    status: "NOT_YET_RELEASED",
+    episodes: null,
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 195600,
+    title: {
+      english: "Daemons of the Shadow Realm",
+      native: "黄泉のツガイ",
+      romaji: "Yomi no Tsugai",
+      userPreferred: "Yomi no Tsugai",
+    },
+    coverImage: {
+      color: "#febb50",
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-KfuPU2Xhy5kG.png",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-KfuPU2Xhy5kG.png",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-KfuPU2Xhy5kG.png",
+    },
+    averageScore: null,
+    meanScore: null,
+    type: "ANIME",
+    status: "NOT_YET_RELEASED",
+    episodes: null,
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
+    nextAiringEpisode: null,
+  },
+  {
+    id: 195201,
+    title: {
+      english: null,
+      native: "劇場版「鬼滅の刃」無限城編 第終章",
+      romaji: "Kimetsu no Yaiba: Mugenjou-hen Movie 3",
+      userPreferred: "Kimetsu no Yaiba: Mugenjou-hen Movie 3",
+    },
+    coverImage: {
+      color: null,
+      extraLarge:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
+      large:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/default.jpg",
+      medium:
+        "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/default.jpg",
+    },
+    averageScore: null,
+    meanScore: null,
+    type: "ANIME",
+    status: "NOT_YET_RELEASED",
+    episodes: 1,
+    genres: ["Action", "Adventure", "Drama", "Supernatural"],
+    nextAiringEpisode: null,
+  },
+];
+
+export { exploreAnimes, genres, thisSeasonAnimes, ThisSeasonTopAnimes };

@@ -77,7 +77,7 @@ export default function CustomBottomSheet({
       index={-1} // Start closed
       snapPoints={snapPoints}
       enablePanDownToClose // Allow closing by swiping down
-      backdropComponent={renderBackdrop}
+      // backdropComponent={renderBackdrop} // Render the backdrop to close when clicking outside
       backgroundStyle={dynamicStyles.bottomSheetBackgroundStyle}
       handleIndicatorStyle={dynamicStyles.bottomSheetIndicatorStyle}
     >

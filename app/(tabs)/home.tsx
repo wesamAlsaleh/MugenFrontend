@@ -1,7 +1,9 @@
 import AnimesGrid from "@/components/AnimesGrid";
 import CurrentSeason from "@/components/CurrentSeason";
 import FeaturedAnimeCarousel from "@/components/FeaturedAnimeCarousel";
+import { thisSeasonAnimes } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
+import { Anime } from "@/types/Anime";
 import { StatusBar } from "expo-status-bar";
 import { ScrollView, StyleSheet, useColorScheme } from "react-native";
 
@@ -26,7 +28,7 @@ export default function HomePage() {
       <CurrentSeason season="Summer" year={2025} />
 
       {/* Animes Grid */}
-      <AnimesGrid />
+      <AnimesGrid animes={thisSeasonAnimes as Anime[]} />
     </ScrollView>
   );
 }

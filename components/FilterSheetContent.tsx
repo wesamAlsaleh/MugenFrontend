@@ -1,6 +1,6 @@
 import { genres } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
-import { Filters } from "@/types/filter";
+import { Filter } from "@/types/Filter";
 import { Picker } from "@react-native-picker/picker";
 import { CalendarDays, Leaf, Tag } from "lucide-react-native";
 import React from "react";
@@ -8,8 +8,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 // Define the props for the FilterSheetContent component
 type Props = {
-  filters: Filters;
-  setFilters: React.Dispatch<React.SetStateAction<Filters>>;
+  filters: Filter;
+  setFilters: React.Dispatch<React.SetStateAction<Filter>>;
   closeFilterSheet: () => void; // Function to open the filter bottom sheet
 };
 
@@ -241,6 +241,7 @@ const styles = StyleSheet.create({
     height: "100%", // Take full height of the bottom sheet
     flex: 1, // Make the container take full height to push the buttons to the bottom
     gap: 16, // Space between sections (like between filters and buttons)
+    paddingVertical: 5, // Vertical padding for the entire container
   },
   filtersContainer: {
     gap: 12, // Space between different filter sections (like between release time and genres)

@@ -1,5 +1,5 @@
 import { useTheme } from "@/hooks/use-theme";
-import { Filters } from "@/types/filter";
+import { Filter } from "@/types/Filter";
 import { FunnelPlus, FunnelX } from "lucide-react-native";
 import React from "react";
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
@@ -7,8 +7,8 @@ import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 // Define the props for the AnimeFilter component
 type Props = {
   onOpenFilter: () => void; // Function to open the filter bottom sheet
-  filters: Filters;
-  setFilters: React.Dispatch<React.SetStateAction<Filters>>;
+  filters: Filter;
+  setFilters: React.Dispatch<React.SetStateAction<Filter>>;
 };
 
 // AnimeFilter component to render the filter section (handle search input and filter button that opens the bottom sheet)
