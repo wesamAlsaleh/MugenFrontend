@@ -2,7 +2,7 @@ import { genres } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
 import { Filters } from "@/types/filter";
 import { Picker } from "@react-native-picker/picker";
-import { CalendarDays, CircleX, Leaf, Tag } from "lucide-react-native";
+import { CalendarDays, Leaf, Tag } from "lucide-react-native";
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
@@ -211,9 +211,8 @@ export default function FilterSheetContent({
         </View>
       </View>
 
-      {/* Buttons Section */}
-      <View style={styles.resetButtonContainer}>
-        {/* Clear Filters Button */}
+      {/* Reset Button Section */}
+      {/* <View style={styles.resetButtonContainer}>
         <TouchableOpacity
           onPress={() => handleResetFilters()}
           style={[
@@ -230,7 +229,7 @@ export default function FilterSheetContent({
             </Text>
           </View>
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 }

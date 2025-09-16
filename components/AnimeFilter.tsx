@@ -70,6 +70,15 @@ export default function AnimeFilter({
         <TouchableOpacity
           style={[styles.filterButton, dynamicStyles.filterButton]}
           onPress={onOpenFilter}
+          onLongPress={() => {
+            // Clear all filters except search query
+            setFilters((prev) => ({
+              ...prev,
+              season: null,
+              year: null,
+              genres: null,
+            }));
+          }}
         >
           {hasActiveFilters ? (
             <FunnelX color={dynamicStyles.filterIcon.color} />

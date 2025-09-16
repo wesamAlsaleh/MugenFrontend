@@ -44,6 +44,9 @@ export const themes = {
     success: "#22c55e",
     warning: "#fbbf24",
     error: "#ef4444",
+
+    // Separator color (light gray)
+    separatorColor: "#e5e7eb",
   },
   dark: {
     // Primary brand colors
@@ -77,6 +80,9 @@ export const themes = {
     success: "#22c55e",
     warning: "#fbbf24",
     error: "#ef4444",
+
+    // Separator color (dark gray)
+    separatorColor: "#3d3d3d",
   },
 } as const;
 

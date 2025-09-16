@@ -1,3 +1,4 @@
+import ActiveFiltersDisplay from "@/components/ActiveFiltersDisplay";
 import AnimeFilter from "@/components/AnimeFilter";
 import CustomBottomSheet from "@/components/BottomSheet";
 import FilterSheetContent from "@/components/FilterSheetContent";
@@ -6,7 +7,7 @@ import { Filters } from "@/types/filter";
 import { getScreenHeight } from "@/Utility/screenUtils";
 import BottomSheet from "@gorhom/bottom-sheet";
 import { useMemo, useRef, useState } from "react";
-import { ScrollView, StyleSheet, Text } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function ExplorePage() {
@@ -30,7 +31,7 @@ export default function ExplorePage() {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   // Snap points for the BottomSheet (useMemo to avoid recalculating on every render)
-  const snapPoints = useMemo(() => ["80%"], []);
+  const snapPoints = useMemo(() => ["63%"], []);
 
   // Function to open the BottomSheet
   const openFilterSheet = () => bottomSheetRef.current?.expand();
@@ -64,12 +65,10 @@ export default function ExplorePage() {
           setFilters={setFilters}
         />
 
-        <Text>{filters.season || "No"}</Text>
-        <Text>
-          {filters.genres?.map((g) => {
-            return g;
-          }) || "No genres selected"}
-        </Text>
+        {/* Selected Filters Display */}
+        <ActiveFiltersDisplay filters={filters} />
+
+        {/* Anime Results Grid */}
       </ScrollView>
 
       {/* Filter BottomSheet Component */}
