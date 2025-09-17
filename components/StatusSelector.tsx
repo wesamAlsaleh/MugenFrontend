@@ -41,7 +41,7 @@ export default function StatusSelector({
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
       height: scaleHeight(55),
-      width: isTablet ? screenWidth * 0.5 : null, // 50% width for tablets, auto for phones
+      width: isTablet ? screenWidth * 0.45 : null, // 45% width for tablets, auto for phones
     },
     activeChip: {
       backgroundColor: theme.primary,

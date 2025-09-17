@@ -3,7 +3,7 @@ import CustomBottomSheet from "@/components/BottomSheet";
 import FilterSheetContent from "@/components/FilterSheetContent";
 import { useTheme } from "@/hooks/use-theme";
 import { Filter } from "@/types/Filter";
-import { getScreenHeight } from "@/Utility/screenUtils";
+import { getScreenHeight, getScreenWidth } from "@/Utility/screenUtils";
 import BottomSheet from "@gorhom/bottom-sheet";
 import { useMemo, useRef, useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
@@ -16,6 +16,12 @@ import { Anime } from "@/types/Anime";
 export default function ExploreScreen() {
   // get the theme
   const theme = useTheme();
+
+  // Get screen width
+  const screenWidth = getScreenWidth();
+
+  // If its tablet, decrease the width of the selector
+  const isTablet = screenWidth >= 768; // Consider tablets 768px and above
 
   // dynamic styles
   const dynamicStyles = {
@@ -34,7 +40,15 @@ export default function ExploreScreen() {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   // Snap points for the BottomSheet (useMemo to avoid recalculating on every render)
-  const snapPoints = useMemo(() => ["63%"], []);
+  const snapPoints = useMemo(() => {
+    // If tablet, make the bottom sheet 42% of the screen height, else 63%
+    if (isTablet) {
+      return ["42%"];
+    }
+
+    // Else, return 63%
+    return ["63%"];
+  }, []);
 
   // Function to open the BottomSheet
   const openFilterSheet = () => bottomSheetRef.current?.expand();

@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 
 import { useTheme } from "@/hooks/use-theme";
 import { House, List, Search, Tv, User } from "lucide-react-native";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
   // Get the current theme (light or dark) based on system preferences
@@ -10,6 +11,9 @@ export default function TabLayout() {
 
   // Router Instance (For navigation)
   const router = useRouter();
+
+  // Safe Area Insets (For handling notches and safe areas)
+  const insets = useSafeAreaInsets();
 
   return (
     <Tabs
@@ -22,8 +26,8 @@ export default function TabLayout() {
         tabBarStyle: {
           backgroundColor: theme.tabBarBackgroundColor, // tab bar background
           height: 70, // height of tab bar
-          position: "absolute", // ensure absolute positioning to overlap content
-          paddingBottom: 10, // add bottom padding
+          // position: "absolute", // ensure absolute positioning to overlap content (commented out to test if it causes issues with android nav bar)
+          paddingBottom: insets.bottom > 0 ? insets.bottom : 10, // keep spacing TODO: Test on devices with and without notches
           borderTopWidth: 0, // remove default border (removes the white line)
           marginHorizontal: 0, // remove horizontal margin
           marginTop: 0, // remove top margin
