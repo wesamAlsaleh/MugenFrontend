@@ -1,5 +1,5 @@
 import { useTheme } from "@/hooks/use-theme";
-import { scaleHeight } from "@/Utility/screenUtils";
+import { getScreenWidth, scaleHeight } from "@/Utility/screenUtils";
 import React, { useEffect, useRef } from "react";
 import {
   FlatList,
@@ -29,12 +29,19 @@ export default function StatusSelector({
   // Get the theme
   const theme = useTheme();
 
+  // Get screen width
+  const screenWidth = getScreenWidth();
+
+  // If its tablet, decrease the width of the selector
+  const isTablet = screenWidth >= 768; // Consider tablets 768px and above
+
   // Dynamic styles based on the theme
   const dynamicStyles = {
     container: {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
       height: scaleHeight(55),
+      width: isTablet ? screenWidth * 0.5 : null, // 50% width for tablets, auto for phones
     },
     activeChip: {
       backgroundColor: theme.primary,
@@ -98,8 +105,13 @@ export default function StatusSelector({
             </TouchableOpacity>
           );
         }}
-        ItemSeparatorComponent={() => <View style={{ width: 6 }} />}
-        // contentContainerStyle={{ backgroundColor: theme.primary }}
+        ItemSeparatorComponent={() => <View style={{ width: 4 }} />}
+        contentContainerStyle={{
+          flexGrow: 1, // Ensure it takes full width
+          // Make the list vertically centered
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       />
     </View>
   );
@@ -112,7 +124,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 8,
     marginTop: 12, // Spacing from the top
-    // marginBottom: 4, // Spacing from the bottom
+    alignSelf: "center", // Center the selector horizontally
   },
   chip: {
     flexDirection: "row",
@@ -121,7 +133,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 6,
     paddingHorizontal: 12,
-    // height: 32, // TODO: adjust based on screen size
+    minWidth: 80, // Set minimum width for consistency
   },
 
   icon: {

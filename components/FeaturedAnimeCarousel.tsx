@@ -333,6 +333,7 @@ const styles = StyleSheet.create({
   animeImageContainer: {
     width: "50%", // Let it take half of the card width
     height: "100%", // Let it take full height of the card
+
     padding: 5, // Padding inside the image container
     alignItems: "center", // Center the image horizontally
     justifyContent: "center", // Center the image vertically

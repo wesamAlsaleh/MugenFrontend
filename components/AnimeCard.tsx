@@ -1,7 +1,9 @@
 import { useTheme } from "@/hooks/use-theme";
 import { Anime } from "@/types/Anime";
 import { capitalizeFirstLetter } from "@/Utility/capitalizeFirstLetter";
+import { scaleHeight } from "@/Utility/screenUtils";
 import { useRouter } from "expo-router";
+import { Star } from "lucide-react-native";
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
@@ -19,8 +21,8 @@ export default function AnimeCard({
   const router = useRouter();
 
   // Calculate responsive dimensions based on card width
-  const imageHeight = cardWidth * 1.4; // Maintain aspect ratio
-  const cardHeight = imageHeight + 70; // Add space for text content
+  const imageHeight = scaleHeight(1.4 * cardWidth);
+  const cardHeight = scaleHeight(imageHeight + 70);
 
   // Dynamic styles based on props and theme
   const dynamicStyles = {
@@ -77,7 +79,8 @@ export default function AnimeCard({
                 { color: theme.secondaryText },
               ]}
             >
-              {anime.averageScore ? `${anime.averageScore}%` : ""}
+              <Star size={10} color={theme.warning} />{" "}
+              {anime.averageScore ? `${anime.averageScore / 10}` : "--"}
             </Text>
           </View>
 
@@ -141,7 +144,7 @@ const styles = StyleSheet.create({
   },
   animeStatusText: {
     fontSize: 10,
-    fontWeight: "300",
+    fontWeight: "400",
     textAlign: "left",
     marginTop: 2, // Add some spacing between genre and status
   },

@@ -26,15 +26,15 @@ export default function ListScreen() {
       icon: <Clock size={18} color={dynamicStyles.iconColor.color} />,
     },
     {
-      label: "Paused",
-      value: "Paused",
-      icon: <Pause size={18} color={dynamicStyles.iconColor.color} />,
-    },
-    {
       label: "Watching",
       value: "Watching",
       icon: <Play size={18} color={dynamicStyles.iconColor.color} />,
       default: true,
+    },
+    {
+      label: "Paused",
+      value: "Paused",
+      icon: <Pause size={18} color={dynamicStyles.iconColor.color} />,
     },
     {
       label: "Completed",
