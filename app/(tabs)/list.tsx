@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function HomePage() {
+export default function ListScreen() {
   return (
     <View style={styles.container}>
       <Text>My List</Text>

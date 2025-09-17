@@ -7,9 +7,11 @@ import { Anime } from "@/types/Anime";
 import { StatusBar } from "expo-status-bar";
 import { ScrollView, StyleSheet, useColorScheme } from "react-native";
 
-export default function HomePage() {
+export default function HomeScreen() {
   // Detect the color scheme (light or dark) of the device using built-in hook
   const colorScheme = useColorScheme();
+
+  // Get the theme (light or dark) based on system preferences
   const theme = useTheme();
 
   return (

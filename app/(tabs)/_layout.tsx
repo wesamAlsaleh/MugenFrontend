@@ -48,14 +48,15 @@ export default function TabLayout() {
         name="home"
         options={{
           title: "Home",
-          headerStyle: {
-            backgroundColor: theme.headerBackgroundColor, // header background
-          },
           headerTitle: "Mugen", // Set a custom title for the header
-          headerTintColor: theme.primary, // text & back button color
           headerTitleStyle: {
             fontWeight: "bold",
+          }, // Header title style
+          headerStyle: {
+            backgroundColor: theme.headerBackgroundColor, // Header background
           },
+          headerTintColor: theme.primary, // Header text & back button color
+          headerShadowVisible: false, // Remove header shadow
           tabBarIcon: ({ color }) => <House size={28} color={color} />,
         }}
       />
@@ -64,14 +65,15 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: "Explore",
+          headerTitle: "Explore", // Set a custom title for the header
+          headerTitleStyle: {
+            fontWeight: "bold",
+          }, // Header title style
           headerStyle: {
             backgroundColor: theme.headerBackgroundColor, // header background
           },
-          headerTitle: "Explore", // Set a custom title for the header
-          headerTintColor: theme.primary, // text & back button color
-          headerTitleStyle: {
-            fontWeight: "bold",
-          }, // Make the header title bold
+          headerTintColor: theme.primary, // Header text & back button color
+          headerShadowVisible: false, // Remove header shadow
           tabBarIcon: ({ color }) => <Tv size={28} color={color} />, // Tab icon
         }}
       />
@@ -81,15 +83,15 @@ export default function TabLayout() {
         options={{
           title: "List",
           headerTitle: "My List",
-          headerStyle: {
-            backgroundColor: theme.headerBackgroundColor, // header background
-          },
-          headerTintColor: theme.primary, // text & back button color
           headerTitleStyle: {
             fontWeight: "bold",
           },
+          headerStyle: {
+            backgroundColor: theme.headerBackgroundColor, // header background
+          },
+          headerTintColor: theme.primary, // Header text & back button color
+          headerShadowVisible: false, // Remove header shadow
           tabBarIcon: ({ color }) => <List size={28} color={color} />,
-          headerShown: true,
         }}
       />
 
@@ -97,13 +99,15 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: "Profile",
-          headerStyle: {
-            backgroundColor: theme.headerBackgroundColor, // header background
-          },
-          headerTintColor: theme.primary, // text & back button color
+          headerTitle: "Profile",
           headerTitleStyle: {
             fontWeight: "bold",
           },
+          headerStyle: {
+            backgroundColor: theme.headerBackgroundColor, // header background
+          },
+          headerTintColor: theme.primary, // Header text & back button color
+          headerShadowVisible: false, // Remove header shadow
           tabBarIcon: ({ color }) => <User size={28} color={color} />,
         }}
       />

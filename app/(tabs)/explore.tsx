@@ -13,7 +13,7 @@ import AnimesGrid from "@/components/AnimesGrid";
 import { exploreAnimes } from "@/constants/dummyData";
 import { Anime } from "@/types/Anime";
 
-export default function ExplorePage() {
+export default function ExploreScreen() {
   // get the theme
   const theme = useTheme();
 

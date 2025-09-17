@@ -41,12 +41,6 @@ export default function AnimeFilter({
     filterIcon: {
       color: hasActiveFilters ? theme.primary : theme.mutedText,
     },
-    searchBarInput: {
-      backgroundColor: theme.cardBackgroundColor,
-      borderColor: theme.cardBorderColor,
-      placeholderTextColor: theme.mutedText,
-      color: theme.primaryText,
-    },
   };
 
   return (
@@ -59,7 +53,7 @@ export default function AnimeFilter({
         style={[styles.filterButton, dynamicStyles.filterButton]}
         onPress={onOpenFilter}
         onLongPress={() => {
-          // Clear all filters except search query
+          // Clear all filters
           setFilters((prev) => ({
             ...prev,
             season: null,
@@ -94,8 +88,8 @@ const styles = StyleSheet.create({
     borderWidth: 1.3,
     alignItems: "center",
     justifyContent: "center",
-    width: 45, // Fixed width
-    height: 45, // Fixed height
+    width: 45, // Fixed width TODO: make it dynamic based on the screen size
+    height: 45, // Fixed height TODO: make it dynamic based on the screen size
   },
 
   // Text Styles
