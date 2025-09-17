@@ -1,6 +1,7 @@
 import { useTheme } from "@/hooks/use-theme";
 import { Anime } from "@/types/Anime";
 import { capitalizeFirstLetter } from "@/Utility/capitalizeFirstLetter";
+import { useRouter } from "expo-router";
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
@@ -13,6 +14,9 @@ export default function AnimeCard({
 }) {
   // Set the theme based on the device's color scheme
   const theme = useTheme();
+
+  // Router Instance for navigation
+  const router = useRouter();
 
   // Calculate responsive dimensions based on card width
   const imageHeight = cardWidth * 1.4; // Maintain aspect ratio
@@ -31,7 +35,7 @@ export default function AnimeCard({
   };
 
   const handlePress = () => {
-    alert(`You pressed on ${anime.title.userPreferred}`);
+    router.push({ pathname: "/anime/[id]", params: { id: anime.id } });
   };
 
   return (
