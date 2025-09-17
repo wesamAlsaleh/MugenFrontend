@@ -115,7 +115,6 @@ export default function FilterSheetContent({
       season: null,
       year: null,
       genres: null,
-      searchQuery: null,
     });
 
     // Close the bottom sheet
