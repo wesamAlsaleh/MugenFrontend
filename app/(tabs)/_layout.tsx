@@ -1,12 +1,15 @@
-import { Tabs } from "expo-router";
+import { Tabs, useRouter } from "expo-router";
 import { StyleSheet } from "react-native";
 
 import { useTheme } from "@/hooks/use-theme";
-import { House, List, Tv, User } from "lucide-react-native";
+import { House, List, Search, Tv, User } from "lucide-react-native";
 
 export default function TabLayout() {
   // Get the current theme (light or dark) based on system preferences
   const theme = useTheme();
+
+  // Router Instance (For navigation)
+  const router = useRouter();
 
   return (
     <Tabs
@@ -26,6 +29,18 @@ export default function TabLayout() {
           marginTop: 0, // remove top margin
           paddingTop: 5, // add top padding
           overflow: "hidden", // hide tab bar overflow "overflow is the content that is outside the tab bar"
+        },
+        headerRight: () => {
+          return (
+            <Search
+              size={24}
+              color={theme.primary}
+              style={{ marginRight: 15 }}
+              onPress={() => {
+                router.push("/anime/search");
+              }}
+            />
+          );
         },
       }}
     >
@@ -65,6 +80,7 @@ export default function TabLayout() {
         name="list"
         options={{
           title: "List",
+          headerTitle: "My List",
           headerStyle: {
             backgroundColor: theme.headerBackgroundColor, // header background
           },
@@ -73,7 +89,7 @@ export default function TabLayout() {
             fontWeight: "bold",
           },
           tabBarIcon: ({ color }) => <List size={28} color={color} />,
-          headerShown: false,
+          headerShown: true,
         }}
       />
 

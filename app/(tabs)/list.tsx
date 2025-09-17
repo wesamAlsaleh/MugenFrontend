@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function HomePage() {
   return (
     <View style={styles.container}>
-      <Text>List Tab</Text>
+      <Text>My List</Text>
     </View>
   );
 }

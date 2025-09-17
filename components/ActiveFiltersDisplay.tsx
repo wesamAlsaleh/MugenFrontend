@@ -5,6 +5,7 @@ import React from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 import FilterChip from "./FilterChip";
 
+// Component to display active filters as chips
 export default function ActiveFiltersDisplay({ filters }: { filters: Filter }) {
   // Get the theme colors
   const theme = useTheme();
@@ -17,20 +18,18 @@ export default function ActiveFiltersDisplay({ filters }: { filters: Filter }) {
   const hasActiveFilters =
     Boolean(filters.season) ||
     Boolean(filters.year) ||
-    Boolean(filters.searchQuery) ||
     (filters.genres && filters.genres.length > 0);
 
   // Convert filters object to an array of active filters
   const filtersArray = [
-    filters.searchQuery,
     filters.year,
     filters.season,
     ...(filters.genres || []), // Spread genres array if it exists
   ].filter(Boolean); // Remove null/undefined values
 
-  // If there are no active filters, don't render anything
+  // If there are no active filters, render empty view to avoid button misalignment
   if (!hasActiveFilters) {
-    return null;
+    return <View />;
   }
 
   return (
@@ -64,13 +63,13 @@ const styles = StyleSheet.create({
   container: {
     display: "flex",
     flexDirection: "column",
+    flexWrap: "wrap",
+    flex: 1, // Take up remaining space in the parent container (AnimeFilter component have filter button on the right) [take the full width minus the button width]
   },
   filtersContainer: {
     flexDirection: "row",
     alignItems: "center",
     gap: 12, // Space between icon and the list
-    marginTop: 8, // Space above the filters
-    marginBottom: 12, // Space below the filters
   },
   iconContainer: {
     alignItems: "center",

@@ -1,4 +1,3 @@
-import ActiveFiltersDisplay from "@/components/ActiveFiltersDisplay";
 import AnimeFilter from "@/components/AnimeFilter";
 import CustomBottomSheet from "@/components/BottomSheet";
 import FilterSheetContent from "@/components/FilterSheetContent";
@@ -48,7 +47,6 @@ export default function ExplorePage() {
     season: null,
     year: null,
     genres: null,
-    searchQuery: null,
   });
 
   // Calculate card height to get the 10% of the screen height
@@ -68,8 +66,7 @@ export default function ExplorePage() {
           filters={filters}
           setFilters={setFilters}
         />
-        {/* Selected Filters Display */}
-        <ActiveFiltersDisplay filters={filters} />
+
         {/* Anime Results Grid */}
         <AnimesGrid animes={exploreAnimes as Anime[]} />
       </ScrollView>

@@ -7,6 +7,10 @@ export default function AnimeLayout() {
         name="[id]"
         options={{ headerShown: true, headerTitle: "" }}
       />
+      <Stack.Screen
+        name="search"
+        options={{ headerShown: true, headerTitle: "" }}
+      />
     </Stack>
   );
 }

@@ -2,7 +2,8 @@ import { useTheme } from "@/hooks/use-theme";
 import { Filter } from "@/types/Filter";
 import { FunnelPlus, FunnelX } from "lucide-react-native";
 import React from "react";
-import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
+import ActiveFiltersDisplay from "./ActiveFiltersDisplay";
 
 // Define the props for the AnimeFilter component
 type Props = {
@@ -11,7 +12,7 @@ type Props = {
   setFilters: React.Dispatch<React.SetStateAction<Filter>>;
 };
 
-// AnimeFilter component to render the filter section (handle search input and filter button that opens the bottom sheet)
+// AnimeFilter component to render the filter section (button and active filters)
 export default function AnimeFilter({
   onOpenFilter,
   filters,
@@ -24,7 +25,6 @@ export default function AnimeFilter({
   const hasActiveFilters =
     Boolean(filters.season) ||
     Boolean(filters.year) ||
-    Boolean(filters.searchQuery) ||
     (filters.genres && filters.genres.length > 0);
 
   const dynamicStyles = {
@@ -51,43 +51,29 @@ export default function AnimeFilter({
 
   return (
     <View style={styles.container}>
-      <View style={styles.searchBarContainer}>
-        <TextInput
-          style={[styles.searchBarInput, dynamicStyles.searchBarInput]}
-          placeholder="Search anime / manga..."
-          placeholderTextColor={
-            dynamicStyles.searchBarInput.placeholderTextColor
-          }
-          value={filters.searchQuery ?? ""}
-          onChangeText={(text) =>
-            setFilters((prev) => ({ ...prev, searchQuery: text }))
-          }
-        />
-      </View>
+      {/* Selected Filters Display */}
+      <ActiveFiltersDisplay filters={filters} />
 
-      {/* Buttons Section */}
-      <View>
-        {/* Filter Button */}
-        <TouchableOpacity
-          style={[styles.filterButton, dynamicStyles.filterButton]}
-          onPress={onOpenFilter}
-          onLongPress={() => {
-            // Clear all filters except search query
-            setFilters((prev) => ({
-              ...prev,
-              season: null,
-              year: null,
-              genres: null,
-            }));
-          }}
-        >
-          {hasActiveFilters ? (
-            <FunnelX color={dynamicStyles.filterIcon.color} />
-          ) : (
-            <FunnelPlus color={dynamicStyles.filterIcon.color} />
-          )}
-        </TouchableOpacity>
-      </View>
+      {/* Filter Button */}
+      <TouchableOpacity
+        style={[styles.filterButton, dynamicStyles.filterButton]}
+        onPress={onOpenFilter}
+        onLongPress={() => {
+          // Clear all filters except search query
+          setFilters((prev) => ({
+            ...prev,
+            season: null,
+            year: null,
+            genres: null,
+          }));
+        }}
+      >
+        {hasActiveFilters ? (
+          <FunnelX color={dynamicStyles.filterIcon.color} />
+        ) : (
+          <FunnelPlus color={dynamicStyles.filterIcon.color} />
+        )}
+      </TouchableOpacity>
     </View>
   );
 }
@@ -98,18 +84,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginVertical: 20,
-    marginBottom: 10,
-    gap: 10,
-  },
-  searchBarContainer: {
-    flex: 1, // Take up remaining space
-  },
-  searchBarInput: {
-    height: 45,
-    borderWidth: 1,
-    padding: 10,
-    borderRadius: 8,
+    width: "100%", // Full width of the screen minus the padding (16 on each side, total 32)
+    marginVertical: 20, // Vertical margin to separate from header and the results
+    gap: 10, // Space between the filters display and the button
   },
   filterButton: {
     padding: 8,
