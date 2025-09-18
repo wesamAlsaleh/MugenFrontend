@@ -3,7 +3,7 @@
 import Countdown from "react-countdown";
 import { Image, StyleSheet, Text, View } from "react-native";
 
-import { ThisSeasonTopAnimes } from "@/constants/dummyData";
+import { thisSeasonAnimes, ThisSeasonTopAnimes } from "@/constants/dummyData";
 import { secondsToWeekDay } from "@/Utility/secondsToDate";
 import { useEffect, useState } from "react";
 
@@ -27,7 +27,7 @@ export default function FeaturedAnimeCarousel() {
 
   // Set the data on component mount
   useEffect(() => {
-    setData(ThisSeasonTopAnimes);
+    setData(thisSeasonAnimes as Anime[]);
   }, []);
 
   // Cycle through featured animes every 15 seconds
@@ -109,6 +109,7 @@ export default function FeaturedAnimeCarousel() {
     cardContainer: {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
+      height: IsTablet ? 350 : 300, // Slightly taller card on tablets
     },
     animeAiringStatusContainer: {
       backgroundColor:
@@ -130,10 +131,6 @@ export default function FeaturedAnimeCarousel() {
     },
     countDownText: {
       color: theme.countDownTextColor,
-    },
-    animeImageTabletContainer: {
-      width: Math.min(screenWidth * 0.2, 300), // 20% of screen width on tablets (max 300px), 50% on phones
-      height: 290, // Fixed height for the image container on tablets
     },
   };
 
@@ -265,9 +262,9 @@ export default function FeaturedAnimeCarousel() {
         <View
           style={[
             styles.animeImageContainer,
-            IsTablet
-              ? dynamicStyles.animeImageTabletContainer
-              : { width: "50%", height: "auto" },
+            {
+              width: IsTablet ? "20%" : "50%", // Image Container is 20% on tablets, 50% on phones
+            },
           ]}
         >
           {/* Anime Image */}
@@ -289,7 +286,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   cardContainer: {
-    height: 300,
     borderRadius: 12,
     display: "flex",
     flexDirection: "row",
@@ -376,7 +372,7 @@ const styles = StyleSheet.create({
     height: "100%", // Custom height for the image based on screen height
     alignSelf: "center", // Center the image horizontally
     borderRadius: 8, // Rounded corners for the image inside the container
-    // resizeMode: "cover", // Ensure the image covers the container without distortion
+    resizeMode: "stretch", // Cover the entire container
   },
   countDownText: {
     fontSize: 13,
