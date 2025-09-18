@@ -3,7 +3,7 @@ import CustomBottomSheet from "@/components/BottomSheet";
 import FilterSheetContent from "@/components/FilterSheetContent";
 import { useTheme } from "@/hooks/use-theme";
 import { Filter } from "@/types/Filter";
-import { getScreenHeight, getScreenWidth } from "@/Utility/screenUtils";
+import { getScreenWidth } from "@/Utility/screenUtils";
 import BottomSheet from "@gorhom/bottom-sheet";
 import { useMemo, useRef, useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
@@ -62,9 +62,6 @@ export default function ExploreScreen() {
     year: null,
     genres: null,
   });
-
-  // Calculate card height to get the 10% of the screen height
-  const cardHeight = getScreenHeight() * 0.1;
 
   return (
     <GestureHandlerRootView>

@@ -3,13 +3,13 @@ import { useTheme } from "@/hooks/use-theme";
 import { Filter } from "@/types/Filter";
 import { Picker } from "@react-native-picker/picker";
 import { CalendarDays, Leaf, Tag } from "lucide-react-native";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 // Define the props for the FilterSheetContent component
 type Props = {
   filters: Filter;
-  setFilters: React.Dispatch<React.SetStateAction<Filter>>;
+  setFilters: Dispatch<SetStateAction<Filter>>;
   closeFilterSheet: () => void; // Function to open the filter bottom sheet
 };
 
