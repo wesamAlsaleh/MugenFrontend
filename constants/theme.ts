@@ -22,8 +22,8 @@ export const themes = {
     mutedText: "#9ca3af",
 
     // Status colors
-    airingStatus: "#06b6d4",
-    finishedStatus: "#6b7280",
+    airingStatus: "#20b9d4ff",
+    finishedStatus: "#797c82ff",
 
     // Interactive colors
     success: "#22c55e",
@@ -35,6 +35,9 @@ export const themes = {
 
     // Active filter chip colors
     chipBackgroundColor: "#f97316",
+
+    // Count Down Text Color
+    countDownTextColor: "#22c55e",
   },
   dark: {
     // Primary brand colors
@@ -70,6 +73,9 @@ export const themes = {
 
     // Active filter chip colors
     chipBackgroundColor: "#ef4444",
+
+    // Count Down Text Color
+    countDownTextColor: "#22c55e",
   },
 } as const;
 

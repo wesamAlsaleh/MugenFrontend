@@ -54,3 +54,12 @@ export const scaleFont = (size: number): number => {
   // Scale the size based on the ratio of current screen width to baseline width
   return (screenWidth / BASELINE_WIDTH) * size;
 };
+
+// Function to check if the device is a tablet based on screen width
+export const isTablet = (): boolean => {
+  // Get screen width
+  const screenWidth = getScreenWidth();
+
+  // Consider tablets 768px and above
+  return screenWidth >= 768;
+};

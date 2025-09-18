@@ -9,70 +9,13 @@ import { useEffect, useState } from "react";
 
 import { useTheme } from "@/hooks/use-theme";
 import { Anime } from "@/types/Anime";
-
-// TODO: Refactor this component to use Card component, and enhance the styles structure to be more readable and maintainable
-
-// Countdown renderer for formatting the countdown display
-const renderer = ({
-  days,
-  hours,
-  minutes,
-  seconds,
-  completed,
-}: {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-  completed: boolean;
-}) => {
-  if (completed) {
-    // Render a completed state (if needed)
-    return <Text style={[styles.countDownText]}>Aired</Text>;
-  }
-
-  return (
-    <Text style={styles.countDownText}>
-      {days}d {hours}h {minutes}m {seconds}s
-    </Text>
-  );
-};
-
-// Function to render the rating container color based on score
-const getRatingColor = (score: number): string => {
-  // If no score, return gray
-  if (!score) return "#6b7280";
-
-  //   if (score === 86) return "#fbbf24";
-
-  if (score >= 95) {
-    // Darker green for very high scores (95-100)
-    return "#16a34a";
-  } else if (score >= 90) {
-    // Bright green for high scores (90-94)
-    return "#22c55e";
-  } else if (score >= 80) {
-    // Greenish yellow shade for moderately high scores (80-89)
-    return "#a3e635";
-  } else if (score >= 70) {
-    // Yellowish orange shade for moderate scores (70-79)
-    return "#fbbf24";
-  } else if (score >= 60) {
-    // Orange shade for moderately low scores (60-69)
-    return "#f97316";
-  } else if (score >= 50) {
-    // Reddish orange shade for low scores(50-59)
-    return "#ef4444";
-  } else {
-    // Deep red for low scores
-    return "#dc2626";
-  }
-};
+import { getScreenWidth, isTablet } from "@/Utility/screenUtils";
 
 export default function FeaturedAnimeCarousel() {
   // Get the current color scheme (light or dark)
   const theme = useTheme();
 
+  // Data state
   const [data, setData] = useState<Anime[]>(ThisSeasonTopAnimes); // Array of this season's top animes
 
   // Start at a random index (if data is not empty)
@@ -124,17 +67,109 @@ export default function FeaturedAnimeCarousel() {
   const noMeanScore = featuredAnime.meanScore === null;
   const noNextAiringEpisode = featuredAnime.nextAiringEpisode === null;
 
+  // Function to render the rating container color based on score
+  const getRatingColor = (score: number): string => {
+    // If no score, return gray
+    if (!score) return "#6b7280";
+
+    //   if (score === 86) return "#fbbf24";
+
+    if (score >= 95) {
+      // Darker green for very high scores (95-100)
+      return "#16a34a";
+    } else if (score >= 90) {
+      // Bright green for high scores (90-94)
+      return "#22c55e";
+    } else if (score >= 80) {
+      // Greenish yellow shade for moderately high scores (80-89)
+      return "#a3e635";
+    } else if (score >= 70) {
+      // Yellowish orange shade for moderate scores (70-79)
+      return "#fbbf24";
+    } else if (score >= 60) {
+      // Orange shade for moderately low scores (60-69)
+      return "#f97316";
+    } else if (score >= 50) {
+      // Reddish orange shade for low scores(50-59)
+      return "#ef4444";
+    } else {
+      // Deep red for low scores
+      return "#dc2626";
+    }
+  };
+
+  // Get screen width for responsive design
+  const screenWidth = getScreenWidth();
+
+  // Check if this device is a tablet
+  const IsTablet = isTablet();
+
+  // Dynamic styles
+  const dynamicStyles = {
+    cardContainer: {
+      backgroundColor: theme.cardBackgroundColor,
+      borderColor: theme.cardBorderColor,
+    },
+    animeAiringStatusContainer: {
+      backgroundColor:
+        featuredAnime.status === "RELEASING"
+          ? theme.airingStatus
+          : theme.finishedStatus,
+    },
+    animeAiringStatusText: {
+      color: theme.primaryText,
+    },
+    animeRatingContainer: {
+      backgroundColor: getRatingColor(featuredAnime.averageScore!), // Use averageScore for color coding
+    },
+    animeTitleText: {
+      color: theme.primaryText,
+    },
+    animeAiringWeekdayText: {
+      color: theme.primaryText,
+    },
+    countDownText: {
+      color: theme.countDownTextColor,
+    },
+    animeImageTabletContainer: {
+      width: Math.min(screenWidth * 0.2, 300), // 20% of screen width on tablets (max 300px), 50% on phones
+      height: 290, // Fixed height for the image container on tablets
+    },
+  };
+
+  // Countdown renderer for formatting the countdown display
+  const renderer = ({
+    days,
+    hours,
+    minutes,
+    seconds,
+    completed,
+  }: {
+    days: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+    completed: boolean;
+  }) => {
+    if (completed) {
+      // Render a completed state (if needed)
+      return (
+        <Text style={[styles.countDownText, dynamicStyles.countDownText]}>
+          Aired
+        </Text>
+      );
+    }
+
+    return (
+      <Text style={[styles.countDownText, dynamicStyles.countDownText]}>
+        {days}d {hours}h {minutes}m {seconds}s
+      </Text>
+    );
+  };
+
   return (
     <View style={styles.container}>
-      <View
-        style={[
-          styles.cardContainer,
-          {
-            backgroundColor: theme.cardBackgroundColor,
-            borderColor: theme.cardBorderColor,
-          },
-        ]}
-      >
+      <View style={[styles.cardContainer, dynamicStyles.cardContainer]}>
         {/* Left Section Container */}
         <View style={styles.animeDetailsContainer}>
           <View style={styles.animeHeaderContainer}>
@@ -142,15 +177,15 @@ export default function FeaturedAnimeCarousel() {
             <View
               style={[
                 styles.animeAiringStatusContainer,
-                {
-                  backgroundColor:
-                    featuredAnime.status === "RELEASING"
-                      ? "#06b6d4"
-                      : "#6b7280",
-                },
+                dynamicStyles.animeAiringStatusContainer,
               ]}
             >
-              <Text style={styles.animeAiringStatusText}>
+              <Text
+                style={[
+                  styles.animeAiringStatusText,
+                  dynamicStyles.animeAiringStatusText,
+                ]}
+              >
                 {featuredAnime.status === "RELEASING"
                   ? "Airing Now"
                   : "Finished"}
@@ -162,11 +197,7 @@ export default function FeaturedAnimeCarousel() {
               <View
                 style={[
                   styles.animeRatingContainer,
-                  {
-                    backgroundColor: getRatingColor(
-                      featuredAnime.averageScore!
-                    ),
-                  },
+                  dynamicStyles.animeRatingContainer,
                 ]}
               >
                 <Text style={styles.animeRatingText}>
@@ -180,7 +211,7 @@ export default function FeaturedAnimeCarousel() {
           <View style={styles.animeInfoContainer}>
             {/* Anime Title */}
             <Text
-              style={[styles.animeTitleText, { color: theme.primaryText }]}
+              style={[styles.animeTitleText, dynamicStyles.animeTitleText]}
               numberOfLines={3}
               ellipsizeMode="tail"
             >
@@ -192,7 +223,7 @@ export default function FeaturedAnimeCarousel() {
               <Text
                 style={[
                   styles.animeAiringWeekdayText,
-                  { color: theme.primaryText },
+                  dynamicStyles.animeAiringWeekdayText,
                 ]}
               >
                 All episodes released
@@ -201,7 +232,7 @@ export default function FeaturedAnimeCarousel() {
               <Text
                 style={[
                   styles.animeAiringWeekdayText,
-                  { color: theme.secondaryText },
+                  dynamicStyles.animeAiringWeekdayText,
                 ]}
               >
                 {featuredAnime.status === "RELEASING"
@@ -216,9 +247,9 @@ export default function FeaturedAnimeCarousel() {
             {noNextAiringEpisode ? null : (
               <View style={styles.animeAiringTimeContainer}>
                 {/* Ep Number */}
-                <Text style={styles.countDownText}>{`Ep ${
-                  featuredAnime.nextAiringEpisode!.episode
-                }:`}</Text>
+                <Text
+                  style={[styles.countDownText, dynamicStyles.countDownText]}
+                >{`Ep ${featuredAnime.nextAiringEpisode!.episode}:`}</Text>
 
                 {/* Ep countdown */}
                 <Countdown
@@ -231,7 +262,14 @@ export default function FeaturedAnimeCarousel() {
         </View>
 
         {/* Right Section Container */}
-        <View style={styles.animeImageContainer}>
+        <View
+          style={[
+            styles.animeImageContainer,
+            IsTablet
+              ? dynamicStyles.animeImageTabletContainer
+              : { width: "50%", height: "auto" },
+          ]}
+        >
           {/* Anime Image */}
           {noImageAvailable ? null : (
             <Image
@@ -284,7 +322,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   animeAiringStatusText: {
-    color: "#ffffff",
     fontWeight: "600",
   },
   animeRatingContainer: {
@@ -292,7 +329,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     borderRadius: 8,
     borderWidth: 0,
-    borderColor: "#2f2f2f",
   },
   animeRatingText: {
     color: "black",
@@ -306,14 +342,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   animeTitleText: {
-    color: "#ffffff",
     fontSize: 18,
     fontWeight: "bold",
     lineHeight: 22, // make sure every line is the same vertical spacing
     height: 22 * 4, // locks the <Text> box to always fit exactly 3 lines
   },
   animeAiringWeekdayText: {
-    color: "#d1d5db",
     fontWeight: "500",
     fontSize: 14,
   },
@@ -331,9 +365,6 @@ const styles = StyleSheet.create({
     gap: 5,
   },
   animeImageContainer: {
-    width: "50%", // Let it take half of the card width
-    height: "100%", // Let it take full height of the card
-
     padding: 5, // Padding inside the image container
     alignItems: "center", // Center the image horizontally
     justifyContent: "center", // Center the image vertically
@@ -341,14 +372,13 @@ const styles = StyleSheet.create({
     position: "relative", // Let it be relative for absolute children
   },
   animeImage: {
-    width: "100%", // Let the image take 90% of the animeImageContainer width
-    height: "100%", // Let the image take 90% of the animeImageContainer height
+    width: "100%", // Let the image take full width of the container
+    height: "100%", // Custom height for the image based on screen height
     alignSelf: "center", // Center the image horizontally
-    borderRadius: 12, // Rounded corners for the image inside the container
-    resizeMode: "cover", // Ensure the image covers the container without distortion
+    borderRadius: 8, // Rounded corners for the image inside the container
+    // resizeMode: "cover", // Ensure the image covers the container without distortion
   },
   countDownText: {
-    color: "#22c55e",
     fontSize: 13,
     fontWeight: "600",
   },

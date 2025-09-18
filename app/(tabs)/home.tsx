@@ -14,9 +14,16 @@ export default function HomeScreen() {
   // Get the theme (light or dark) based on system preferences
   const theme = useTheme();
 
+  // Dynamic styles
+  const dynamicStyles = {
+    container: {
+      backgroundColor: theme.backgroundColor,
+    },
+  };
+
   return (
     <ScrollView
-      style={[{ backgroundColor: theme.backgroundColor }]} // Set background color based on theme and make it take full height "screen"
+      style={[dynamicStyles.container]} // Set background color based on theme and make it take full height "screen"
       contentContainerStyle={styles.container} // Add padding to the container
       showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
     >
