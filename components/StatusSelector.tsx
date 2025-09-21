@@ -1,5 +1,5 @@
 import { useTheme } from "@/hooks/use-theme";
-import { getScreenWidth, isTablet, scaleHeight } from "@/Utility/screenUtils";
+import { getScreenWidth, IsTablet, scaleHeight } from "@/Utility/screenUtils";
 import React, { useEffect, useRef } from "react";
 import {
   FlatList,
@@ -33,7 +33,7 @@ export default function StatusSelector({
   const screenWidth = getScreenWidth();
 
   // If its tablet, decrease the width of the selector
-  const IsTablet = isTablet();
+  const isTablet = IsTablet();
 
   // Dynamic styles based on the theme
   const dynamicStyles = {
@@ -41,7 +41,7 @@ export default function StatusSelector({
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
       height: scaleHeight(55),
-      width: IsTablet ? screenWidth * 0.45 : null, // 45% width for tablets, auto for phones
+      width: isTablet ? screenWidth * 0.45 : null, // 45% width for tablets, auto for phones
     },
     activeChip: {
       backgroundColor: theme.primary,

@@ -56,7 +56,7 @@ export const scaleFont = (size: number): number => {
 };
 
 // Function to check if the device is a tablet based on screen width
-export const isTablet = (): boolean => {
+export const IsTablet = (): boolean => {
   // Get screen width
   const screenWidth = getScreenWidth();
 

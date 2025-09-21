@@ -1,8 +1,16 @@
 import { useTheme } from "@/hooks/use-theme";
 import { SearchParam } from "@/types/SearchParam";
+import { IsTablet, scaleHeight, scaleWidth } from "@/Utility/screenUtils";
 import { Funnel } from "lucide-react-native";
-import React, { Dispatch, SetStateAction } from "react";
-import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
+import React, { Dispatch, SetStateAction, useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import CustomModal from "./CustomModal";
 
 // Define props for the AnimeSearch component
 type Props = {
@@ -13,6 +21,12 @@ type Props = {
 export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
   // Get the theme
   const theme = useTheme();
+
+  // State to manage modal visibility
+  const [modalVisible, setModalVisible] = useState(false);
+
+  // Check if the device is tablet
+  const isTablet = IsTablet();
 
   // Dynamic styles
   const dynamicStyles = {
@@ -28,6 +42,17 @@ export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
     },
   };
 
+  // Function to handle search input change
+  const handleSearchInputChange = (text: string) => {
+    setSearchParams((prev) => ({ ...prev, searchQuery: text }));
+  };
+
+  // Function to handle filter button press
+  const handleFilterButtonPress = () => {
+    // Open the modal
+    setModalVisible(true);
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.searchBarContainer}>
@@ -36,20 +61,32 @@ export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
           placeholder="Search anime / manga..."
           placeholderTextColor={dynamicStyles.searchBar.placeholderTextColor}
           value={searchParams.searchQuery ?? ""}
-          onChangeText={(text) =>
-            setSearchParams((prev) => ({ ...prev, searchQuery: text }))
-          }
+          onChangeText={(text) => handleSearchInputChange(text)}
         />
       </View>
 
       {/* Filter Button */}
       <TouchableOpacity
         style={[styles.filterButton, dynamicStyles.filterButton]}
-        onPress={() => {}}
+        onPress={() => handleFilterButtonPress()}
         onLongPress={() => {}}
       >
         <Funnel color={dynamicStyles.filterButton.color} />
       </TouchableOpacity>
+
+      {/* Modal Component */}
+      <CustomModal
+        modalVisible={modalVisible}
+        setModalVisible={setModalVisible}
+        width={scaleWidth(300)}
+        height={scaleHeight(isTablet ? 500 : 350)}
+        closeButtonText="Save"
+        children={
+          <View>
+            <Text>Hello World!</Text>
+          </View>
+        }
+      />
     </View>
   );
 }

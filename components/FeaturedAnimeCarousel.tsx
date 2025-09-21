@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 import { useTheme } from "@/hooks/use-theme";
 import { Anime } from "@/types/Anime";
-import { isTablet } from "@/Utility/screenUtils";
+import { IsTablet } from "@/Utility/screenUtils";
 import { Link } from "expo-router";
 
 export default function FeaturedAnimeCarousel() {
@@ -100,14 +100,14 @@ export default function FeaturedAnimeCarousel() {
   };
 
   // Check if this device is a tablet
-  const IsTablet = isTablet();
+  const isTablet = IsTablet();
 
   // Dynamic styles
   const dynamicStyles = {
     cardContainer: {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
-      height: IsTablet ? 350 : 300, // Slightly taller card on tablets
+      height: isTablet ? 350 : 300, // Slightly taller card on tablets
     },
     animeAiringStatusContainer: {
       backgroundColor:
@@ -263,7 +263,7 @@ export default function FeaturedAnimeCarousel() {
             style={[
               styles.animeImageContainer,
               {
-                width: IsTablet ? "20%" : "50%", // Image Container is 20% on tablets, 50% on phones
+                width: isTablet ? "20%" : "50%", // Image Container is 20% on tablets, 50% on phones
               },
             ]}
           >
