@@ -3,13 +3,14 @@
 import Countdown from "react-countdown";
 import { Image, StyleSheet, Text, View } from "react-native";
 
-import { thisSeasonAnimes, ThisSeasonTopAnimes } from "@/constants/dummyData";
+import { ThisSeasonTopAnimes } from "@/constants/dummyData";
 import { secondsToWeekDay } from "@/Utility/secondsToDate";
 import { useEffect, useState } from "react";
 
 import { useTheme } from "@/hooks/use-theme";
 import { Anime } from "@/types/Anime";
-import { getScreenWidth, isTablet } from "@/Utility/screenUtils";
+import { isTablet } from "@/Utility/screenUtils";
+import { Link } from "expo-router";
 
 export default function FeaturedAnimeCarousel() {
   // Get the current color scheme (light or dark)
@@ -27,7 +28,7 @@ export default function FeaturedAnimeCarousel() {
 
   // Set the data on component mount
   useEffect(() => {
-    setData(thisSeasonAnimes as Anime[]);
+    setData(ThisSeasonTopAnimes);
   }, []);
 
   // Cycle through featured animes every 15 seconds
@@ -98,9 +99,6 @@ export default function FeaturedAnimeCarousel() {
     }
   };
 
-  // Get screen width for responsive design
-  const screenWidth = getScreenWidth();
-
   // Check if this device is a tablet
   const IsTablet = isTablet();
 
@@ -166,116 +164,119 @@ export default function FeaturedAnimeCarousel() {
 
   return (
     <View style={styles.container}>
-      <View style={[styles.cardContainer, dynamicStyles.cardContainer]}>
-        {/* Left Section Container */}
-        <View style={styles.animeDetailsContainer}>
-          <View style={styles.animeHeaderContainer}>
-            {/* Anime Status */}
-            <View
-              style={[
-                styles.animeAiringStatusContainer,
-                dynamicStyles.animeAiringStatusContainer,
-              ]}
-            >
-              <Text
-                style={[
-                  styles.animeAiringStatusText,
-                  dynamicStyles.animeAiringStatusText,
-                ]}
-              >
-                {featuredAnime.status === "RELEASING"
-                  ? "Airing Now"
-                  : "Finished"}
-              </Text>
-            </View>
-
-            {/* Anime Rating */}
-            {noAverageScore && noMeanScore ? null : (
+      {/* Card Container */}
+      <Link href={`/anime/${featuredAnime.id}`}>
+        <View style={[styles.cardContainer, dynamicStyles.cardContainer]}>
+          {/* Left Section Container */}
+          <View style={styles.animeDetailsContainer}>
+            <View style={styles.animeHeaderContainer}>
+              {/* Anime Status */}
               <View
                 style={[
-                  styles.animeRatingContainer,
-                  dynamicStyles.animeRatingContainer,
+                  styles.animeAiringStatusContainer,
+                  dynamicStyles.animeAiringStatusContainer,
                 ]}
               >
-                <Text style={styles.animeRatingText}>
-                  {featuredAnime.averageScore || featuredAnime.meanScore}
+                <Text
+                  style={[
+                    styles.animeAiringStatusText,
+                    dynamicStyles.animeAiringStatusText,
+                  ]}
+                >
+                  {featuredAnime.status === "RELEASING"
+                    ? "Airing Now"
+                    : "Finished"}
                 </Text>
               </View>
-            )}
-          </View>
 
-          {/* Anime Details */}
-          <View style={styles.animeInfoContainer}>
-            {/* Anime Title */}
-            <Text
-              style={[styles.animeTitleText, dynamicStyles.animeTitleText]}
-              numberOfLines={3}
-              ellipsizeMode="tail"
-            >
-              {featuredAnime.title.english}
-            </Text>
+              {/* Anime Rating */}
+              {noAverageScore && noMeanScore ? null : (
+                <View
+                  style={[
+                    styles.animeRatingContainer,
+                    dynamicStyles.animeRatingContainer,
+                  ]}
+                >
+                  <Text style={styles.animeRatingText}>
+                    {featuredAnime.averageScore || featuredAnime.meanScore}
+                  </Text>
+                </View>
+              )}
+            </View>
 
-            {/* Anime release day section */}
-            {noNextAiringEpisode ? (
+            {/* Anime Details */}
+            <View style={styles.animeInfoContainer}>
+              {/* Anime Title */}
               <Text
-                style={[
-                  styles.animeAiringWeekdayText,
-                  dynamicStyles.animeAiringWeekdayText,
-                ]}
+                style={[styles.animeTitleText, dynamicStyles.animeTitleText]}
+                numberOfLines={3}
+                ellipsizeMode="tail"
               >
-                All episodes released
+                {featuredAnime.title.english}
               </Text>
-            ) : (
-              <Text
-                style={[
-                  styles.animeAiringWeekdayText,
-                  dynamicStyles.animeAiringWeekdayText,
-                ]}
-              >
-                {featuredAnime.status === "RELEASING"
-                  ? `New episode every ${secondsToWeekDay(
-                      featuredAnime.nextAiringEpisode!.airingAt || 0
-                    )}`
-                  : "All episodes released"}
-              </Text>
-            )}
 
-            {/* Anime next episode counter */}
-            {noNextAiringEpisode ? null : (
-              <View style={styles.animeAiringTimeContainer}>
-                {/* Ep Number */}
+              {/* Anime release day section */}
+              {noNextAiringEpisode ? (
                 <Text
-                  style={[styles.countDownText, dynamicStyles.countDownText]}
-                >{`Ep ${featuredAnime.nextAiringEpisode!.episode}:`}</Text>
+                  style={[
+                    styles.animeAiringWeekdayText,
+                    dynamicStyles.animeAiringWeekdayText,
+                  ]}
+                >
+                  All episodes released
+                </Text>
+              ) : (
+                <Text
+                  style={[
+                    styles.animeAiringWeekdayText,
+                    dynamicStyles.animeAiringWeekdayText,
+                  ]}
+                >
+                  {featuredAnime.status === "RELEASING"
+                    ? `New episode every ${secondsToWeekDay(
+                        featuredAnime.nextAiringEpisode!.airingAt || 0
+                      )}`
+                    : "All episodes released"}
+                </Text>
+              )}
 
-                {/* Ep countdown */}
-                <Countdown
-                  date={featuredAnime.nextAiringEpisode!.airingAt * 1000} // Convert seconds to ms
-                  renderer={renderer}
-                />
-              </View>
+              {/* Anime next episode counter */}
+              {noNextAiringEpisode ? null : (
+                <View style={styles.animeAiringTimeContainer}>
+                  {/* Ep Number */}
+                  <Text
+                    style={[styles.countDownText, dynamicStyles.countDownText]}
+                  >{`Ep ${featuredAnime.nextAiringEpisode!.episode}:`}</Text>
+
+                  {/* Ep countdown */}
+                  <Countdown
+                    date={featuredAnime.nextAiringEpisode!.airingAt * 1000} // Convert seconds to ms
+                    renderer={renderer}
+                  />
+                </View>
+              )}
+            </View>
+          </View>
+
+          {/* Right Section Container */}
+          <View
+            style={[
+              styles.animeImageContainer,
+              {
+                width: IsTablet ? "20%" : "50%", // Image Container is 20% on tablets, 50% on phones
+              },
+            ]}
+          >
+            {/* Anime Image */}
+            {noImageAvailable ? null : (
+              <Image
+                source={{ uri: featuredAnime.coverImage.extraLarge! }}
+                style={styles.animeImage}
+              />
             )}
           </View>
         </View>
-
-        {/* Right Section Container */}
-        <View
-          style={[
-            styles.animeImageContainer,
-            {
-              width: IsTablet ? "20%" : "50%", // Image Container is 20% on tablets, 50% on phones
-            },
-          ]}
-        >
-          {/* Anime Image */}
-          {noImageAvailable ? null : (
-            <Image
-              source={{ uri: featuredAnime.coverImage.extraLarge! }}
-              style={styles.animeImage}
-            />
-          )}
-        </View>
-      </View>
+      </Link>
     </View>
   );
 }

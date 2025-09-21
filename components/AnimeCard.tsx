@@ -138,14 +138,14 @@ const styles = StyleSheet.create({
     marginTop: 2, // Add some spacing between title and genre
   },
   animeGenresAndRatingText: {
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: "300",
     textAlign: "left",
   },
   animeStatusText: {
-    fontSize: 10,
+    fontSize: 11,
     fontWeight: "400",
     textAlign: "left",
-    marginTop: 2, // Add some spacing between genre and status
+    // marginTop: 1, // Add some spacing between genre and status
   },
 });
