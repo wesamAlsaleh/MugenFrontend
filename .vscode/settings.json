@@ -4,5 +4,13 @@
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
   },
-  "cSpell.words": ["dtos", "ellipsize", "gorhom", "Mugen", "Naruto", "romaji"]
+  "cSpell.words": [
+    "dtos",
+    "ellipsize",
+    "gorhom",
+    "Mugen",
+    "Naruto",
+    "Pressable",
+    "romaji"
+  ]
 }

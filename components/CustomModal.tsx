@@ -16,6 +16,7 @@ type Props = {
   setModalVisible: Dispatch<React.SetStateAction<boolean>>;
   children?: React.ReactNode;
   closeButtonText?: string;
+  closeButtonAction?: () => void;
   height: DimensionValue | undefined;
   width: DimensionValue | undefined;
 };
@@ -25,11 +26,16 @@ export default function CustomModal({
   setModalVisible,
   children,
   closeButtonText = "Close",
+  closeButtonAction,
   height,
   width,
 }: Props) {
   // Function to handle closing the modal
   const closeModal = () => {
+    // Perform any additional actions if needed
+    closeButtonAction?.();
+
+    // Close the modal
     setModalVisible(false);
   };
 
@@ -64,7 +70,7 @@ export default function CustomModal({
             style={[styles.childrenContainer, dynamicStyles.childrenContainer]}
           >
             {/* Modal content goes here */}
-            <View>{children}</View>
+            {children}
 
             {/* Bottom Section */}
             <View style={styles.bottomSection}>
@@ -103,13 +109,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   childrenContainer: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    // margin: 20,
-    // padding: 50,
-    borderRadius: 20,
-    alignItems: "center", // Center children horizontally
+    borderRadius: 8,
     shadowColor: "#000", // For iOS shadow
     shadowOffset: {
       width: 0,
@@ -124,6 +124,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     width: "100%", // Full width of the children container
     gap: 10, // Space between elements in the bottom section
+
+    // Always stick to the bottom
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   closeButtonContainer: {
     alignItems: "center",

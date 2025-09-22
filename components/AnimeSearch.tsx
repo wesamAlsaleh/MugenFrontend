@@ -1,16 +1,12 @@
 import { useTheme } from "@/hooks/use-theme";
+import { SortBy } from "@/types/Filter";
 import { SearchParam } from "@/types/SearchParam";
-import { IsTablet, scaleHeight, scaleWidth } from "@/Utility/screenUtils";
-import { Funnel } from "lucide-react-native";
+import { IsTablet, scaleHeight } from "@/Utility/screenUtils";
+import { ArrowDownWideNarrow } from "lucide-react-native";
 import React, { Dispatch, SetStateAction, useState } from "react";
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import CustomModal from "./CustomModal";
+import SortByFilter from "./SortByFilter";
 
 // Define props for the AnimeSearch component
 type Props = {
@@ -18,12 +14,25 @@ type Props = {
   setSearchParams: Dispatch<SetStateAction<{}>>;
 };
 
+const filterOptions: SortBy[] = [
+  { label: "Trending", value: "TRENDING_DESC" }, // Default
+  { label: "Title (A-Z)", value: "TITLE_ENGLISH" },
+  { label: "Title (Z-A)", value: "TITLE_ENGLISH_DESC" },
+  { label: "Start Date (Oldest)", value: "START_DATE" },
+  { label: "Start Date (Newest)", value: "START_DATE_DESC" },
+];
+
 export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
   // Get the theme
   const theme = useTheme();
 
   // State to manage modal visibility
   const [modalVisible, setModalVisible] = useState(false);
+
+  // State to manage selected filters
+  const [selectedFilter, setSelectedFilter] = useState<string | null>(
+    filterOptions[0].value
+  );
 
   // Check if the device is tablet
   const isTablet = IsTablet();
@@ -48,9 +57,21 @@ export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
   };
 
   // Function to handle filter button press
-  const handleFilterButtonPress = () => {
+  const handleOpenModalPress = () => {
     // Open the modal
     setModalVisible(true);
+  };
+
+  // Function to handle filter selection
+  const handleFilterSelect = (value: string) => {
+    // Set the selected filter state
+    setSelectedFilter(value);
+  };
+
+  // Function to handle applying the selected filter
+  const handleApplyFilter = () => {
+    // Update the search parameters with the selected filter
+    setSearchParams((prev) => ({ ...prev, sort: selectedFilter }));
   };
 
   return (
@@ -68,23 +89,26 @@ export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
       {/* Filter Button */}
       <TouchableOpacity
         style={[styles.filterButton, dynamicStyles.filterButton]}
-        onPress={() => handleFilterButtonPress()}
+        onPress={() => handleOpenModalPress()}
         onLongPress={() => {}}
       >
-        <Funnel color={dynamicStyles.filterButton.color} />
+        <ArrowDownWideNarrow color={dynamicStyles.filterButton.color} />
       </TouchableOpacity>
 
       {/* Modal Component */}
       <CustomModal
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}
-        width={scaleWidth(300)}
-        height={scaleHeight(isTablet ? 500 : 350)}
-        closeButtonText="Save"
+        width={scaleHeight(300)}
+        height={scaleHeight(isTablet ? 300 : 270)}
+        closeButtonText="Apply"
+        closeButtonAction={handleApplyFilter}
         children={
-          <View>
-            <Text>Hello World!</Text>
-          </View>
+          <SortByFilter
+            filters={filterOptions}
+            selectedFilter={selectedFilter}
+            setSelectedFilter={handleFilterSelect}
+          />
         }
       />
     </View>

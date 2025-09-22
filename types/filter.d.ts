@@ -4,4 +4,10 @@ type Filter = {
   genres: string[] | null;
 };
 
-export { Filter };
+type SortBy = {
+  label: string;
+  value: string;
+  selected?: boolean;
+};
+
+export { Filter, SortBy };
