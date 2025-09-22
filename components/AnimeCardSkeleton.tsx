@@ -2,9 +2,9 @@ import { useTheme } from "@/hooks/use-theme";
 import { scaleHeight } from "@/Utility/screenUtils";
 import { Star } from "lucide-react-native";
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function AnimeCardSkeleton({
+export default function SkeletonAnimeCard({
   cardWidth, // Default width to 120 to show 3 columns on phone
 }: {
   cardWidth: number; // Prop to set card width to adjust number of columns
@@ -29,48 +29,53 @@ export default function AnimeCardSkeleton({
   };
 
   return (
-    <View style={[styles.container, dynamicStyles.container]}>
-      {/* Anime Image */}
-      <View style={styles.animeImageContainer}>
-        <Image
-          source={{ uri: null! }}
-          style={[styles.animeImage, dynamicStyles.animeImage]} // Combine static and dynamic styles
-        />
-      </View>
+    <TouchableOpacity activeOpacity={0.8}>
+      <View style={[styles.container, dynamicStyles.container]}>
+        {/* Anime Image */}
+        <View style={styles.animeImageContainer}>
+          <Image
+            source={{ uri: "" }}
+            style={[styles.animeImage, dynamicStyles.animeImage]} // Combine static and dynamic styles
+          />
+        </View>
 
-      {/* Anime Details */}
-      <View style={styles.animeDetailsContainer}>
-        {/* Anime Title */}
-        <Text
-          style={[styles.animeTitleText, { color: theme.primaryText }]} // Set text color based on theme
-          numberOfLines={1} // Limit title to one line
-          ellipsizeMode="tail" // Add ellipsis if the title is too long (ellipsizeMode to "tail" adds "..." at the end)
-        >
-          {"Loading..."}
-        </Text>
-
-        {/* Anime main genre and rating */}
-        <View style={styles.animeGenresAndRatingContainer}>
+        {/* Anime Details */}
+        <View style={styles.animeDetailsContainer}>
+          {/* Anime Title */}
           <Text
-            style={[
-              styles.animeGenresAndRatingText,
-              { color: theme.secondaryText },
-            ]}
+            style={[styles.animeTitleText, { color: theme.primaryText }]} // Set text color based on theme
+            numberOfLines={1} // Limit title to one line
+            ellipsizeMode="tail" // Add ellipsis if the title is too long (ellipsizeMode to "tail" adds "..." at the end)
           >
             {"--"}
           </Text>
 
-          <Text
-            style={[
-              styles.animeGenresAndRatingText,
-              { color: theme.secondaryText },
-            ]}
-          >
-            <Star size={10} color={theme.warning} /> {"--"}
-          </Text>
+          {/* Anime main genre and rating */}
+          <View style={styles.animeGenresAndRatingContainer}>
+            <Text
+              style={[
+                styles.animeGenresAndRatingText,
+                { color: theme.secondaryText },
+              ]}
+            >
+              {"--"}
+            </Text>
+
+            <Text
+              style={[
+                styles.animeGenresAndRatingText,
+                { color: theme.secondaryText },
+              ]}
+            >
+              <Star size={10} color={theme.warning} /> {"--"}
+            </Text>
+          </View>
+
+          {/* Anime Episodes Status */}
+          {"--"}
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
 

@@ -38,6 +38,10 @@ export const themes = {
 
     // Count Down Text Color
     countDownTextColor: "#22c55e",
+
+    // Skeleton Placeholder Highlight Color
+    skeletonBackgroundColor: "#ffffff",
+    skeletonHighlightColor: "#f3f4f6",
   },
   dark: {
     // Primary brand colors
@@ -76,6 +80,10 @@ export const themes = {
 
     // Count Down Text Color
     countDownTextColor: "#22c55e",
+
+    // Skeleton Placeholder Highlight Color
+    skeletonBackgroundColor: "#1f1f1f",
+    skeletonHighlightColor: "#262626",
   },
 } as const;
 

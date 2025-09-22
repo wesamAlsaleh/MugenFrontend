@@ -1,7 +1,7 @@
 "use client";
 
 import Countdown from "react-countdown";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { DimensionValue, Image, StyleSheet, Text, View } from "react-native";
 
 import { ThisSeasonTopAnimes } from "@/constants/dummyData";
 import { secondsToWeekDay } from "@/Utility/secondsToDate";
@@ -19,17 +19,17 @@ export default function FeaturedAnimeCarousel() {
   // Data state
   const [data, setData] = useState<Anime[]>(ThisSeasonTopAnimes); // Array of this season's top animes
 
+  // Set the data on component mount
+  useEffect(() => {
+    setData(ThisSeasonTopAnimes);
+  }, []);
+
   // Start at a random index (if data is not empty)
   const [currentIndex, setCurrentIndex] = useState(() => {
     return ThisSeasonTopAnimes.length > 0
       ? Math.floor(Math.random() * ThisSeasonTopAnimes.length)
       : 0;
   });
-
-  // Set the data on component mount
-  useEffect(() => {
-    setData(ThisSeasonTopAnimes);
-  }, []);
 
   // Cycle through featured animes every 15 seconds
   useEffect(() => {
@@ -107,7 +107,7 @@ export default function FeaturedAnimeCarousel() {
     cardContainer: {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
-      height: isTablet ? 350 : 300, // Slightly taller card on tablets
+      height: isTablet ? 350 : 270, // Slightly taller card on tablets
     },
     animeAiringStatusContainer: {
       backgroundColor:
@@ -126,6 +126,9 @@ export default function FeaturedAnimeCarousel() {
     },
     animeAiringWeekdayText: {
       color: theme.primaryText,
+    },
+    animeImageContainer: {
+      width: isTablet ? ("20%" as DimensionValue) : ("50%" as DimensionValue), // Image Container is 20% on tablets, 50% on phones
     },
     countDownText: {
       color: theme.countDownTextColor,
@@ -262,9 +265,7 @@ export default function FeaturedAnimeCarousel() {
           <View
             style={[
               styles.animeImageContainer,
-              {
-                width: isTablet ? "20%" : "50%", // Image Container is 20% on tablets, 50% on phones
-              },
+              dynamicStyles.animeImageContainer,
             ]}
           >
             {/* Anime Image */}

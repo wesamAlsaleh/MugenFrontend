@@ -6,7 +6,6 @@ import { useRouter } from "expo-router";
 import { Star } from "lucide-react-native";
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import AnimeCardSkeleton from "./AnimeCardSkeleton";
 
 export default function AnimeCard({
   anime,
@@ -45,9 +44,9 @@ export default function AnimeCard({
     router.push({ pathname: "/anime/[id]", params: { id: anime.id } });
   };
 
-  // If loading, show a skeleton
+  // TODO: If loading, show a skeleton
   if (loading) {
-    return <AnimeCardSkeleton cardWidth={cardWidth} />;
+    // return <SkeletonAnimeCard cardWidth={cardWidth} />;
   }
 
   return (
