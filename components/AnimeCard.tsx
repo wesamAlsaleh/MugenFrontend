@@ -4,8 +4,9 @@ import { capitalizeFirstLetter } from "@/Utility/capitalizeFirstLetter";
 import { scaleHeight } from "@/Utility/screenUtils";
 import { useRouter } from "expo-router";
 import { Star } from "lucide-react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import AnimeCardSkeleton from "./AnimeCardSkeleton";
 
 export default function AnimeCard({
   anime,
@@ -19,6 +20,9 @@ export default function AnimeCard({
 
   // Router Instance for navigation
   const router = useRouter();
+
+  // State
+  const [loading, setLoading] = useState(true);
 
   // Calculate responsive dimensions based on card width
   const imageHeight = scaleHeight(1.4 * cardWidth);
@@ -36,9 +40,15 @@ export default function AnimeCard({
     },
   };
 
+  // Function to handle card press and navigate to anime details page
   const handlePress = () => {
     router.push({ pathname: "/anime/[id]", params: { id: anime.id } });
   };
+
+  // If loading, show a skeleton
+  if (loading) {
+    return <AnimeCardSkeleton cardWidth={cardWidth} />;
+  }
 
   return (
     <TouchableOpacity onPress={handlePress} activeOpacity={0.8}>
