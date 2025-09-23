@@ -51,7 +51,10 @@ export default function SortByFilter({
         <View style={styles.filterOptionsContainer}>
           {filters.map((filter) => {
             return (
-              <Pressable onPress={() => handleFilterSelect(filter.value)}>
+              <Pressable
+                onPress={() => handleFilterSelect(filter.value)}
+                key={filter.value}
+              >
                 <View style={styles.filterOptionContainer} key={filter.value}>
                   {/* Radio Icon */}
                   <RadioButton selected={filter.value === selectedFilter} />
@@ -101,6 +104,6 @@ const styles = StyleSheet.create({
     gap: 12, // Space between radio button and text
   },
   filterLabel: {
-    fontSize: 14,
+    fontSize: 15,
   },
 });

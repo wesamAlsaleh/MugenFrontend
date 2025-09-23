@@ -1,11 +1,12 @@
-import { RelationDto } from "./dtos/(small_dtos)/RelationDto";
 import { AnimeSeasons } from "./dtos/AnimeSeasons";
 import { CharactersDto } from "./dtos/CharactersDto";
 import { CoverImageDto } from "./dtos/CoverImageDto";
 import { EndDateDto } from "./dtos/EndDateDto";
+import { MediaFormat } from "./dtos/MediaFormat";
 import { MediaType } from "./dtos/MediaType";
 import { NextAiringEpisodeDto } from "./dtos/NextAiringEpisodeDto";
 import { RecommendationsDto } from "./dtos/RecommendationsDto";
+import { RelationsDto } from "./dtos/RelationsDto";
 import { StartDateDto } from "./dtos/StartDateDto";
 import { StudiosDto } from "./dtos/StudiosDto";
 import { TitleDto } from "./dtos/TitleDto";
@@ -27,10 +28,11 @@ type Anime = {
 // Specific type for AnimeDetails which extends Anime type
 type AnimeDetails = Anime & {
   idMal: number | null;
+  format: MediaFormat | string;
   description: string | null;
-  startDate: StartDateDto;
-  endDate: EndDateDto;
-  season: AnimeSeasons;
+  startDate: StartDateDto | null;
+  endDate: EndDateDto | null;
+  season: AnimeSeasons | string | null;
   seasonYear: number | null;
   duration: number | null;
   countryOfOrigin: string | null;
@@ -44,7 +46,7 @@ type AnimeDetails = Anime & {
   characters: CharactersDto | null;
   isAdult: boolean | null;
   siteUrl: string | null;
-  relations: RelationDto | null;
+  relations: RelationsDto | null;
   recommendations: RecommendationsDto | null;
 };
 

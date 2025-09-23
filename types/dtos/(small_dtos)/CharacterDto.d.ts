@@ -1,4 +1,5 @@
 import { CharacterNodeDto } from "./CharacterNodeDto";
+import { VoiceActorDto } from "./VoiceActorDto";
 
 export type CharacterDto = {
   role: string;

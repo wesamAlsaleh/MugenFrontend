@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
+    backgroundColor: "#e0e0e0", // Fallback background in case image fails
   },
   animeDetailsContainer: {
     display: "flex",

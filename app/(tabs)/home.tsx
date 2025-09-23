@@ -5,12 +5,9 @@ import { thisSeasonAnimes } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
 import { Anime } from "@/types/Anime";
 import { StatusBar } from "expo-status-bar";
-import { ScrollView, StyleSheet, useColorScheme } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 
 export default function HomeScreen() {
-  // Detect the color scheme (light or dark) of the device using built-in hook
-  const colorScheme = useColorScheme();
-
   // Get the theme (light or dark) based on system preferences
   const theme = useTheme();
 
@@ -28,7 +25,7 @@ export default function HomeScreen() {
       showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
     >
       {/* Adjust status bar style based on theme */}
-      <StatusBar style={colorScheme === "light" ? "dark" : "light"} />
+      <StatusBar style={theme.mode === "light" ? "dark" : "light"} />
 
       {/* Anime Carousel */}
       <FeaturedAnimeCarousel />

@@ -2,6 +2,9 @@ import { Platform } from "react-native";
 
 export const themes = {
   light: {
+    // Mode
+    mode: "light",
+
     // Primary brand colors
     primary: "#f97316",
 
@@ -44,6 +47,9 @@ export const themes = {
     skeletonHighlightColor: "#f3f4f6",
   },
   dark: {
+    // Mode
+    mode: "dark",
+
     // Primary brand colors
     primary: "#ef4444",
 

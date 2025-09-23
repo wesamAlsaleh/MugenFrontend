@@ -284,8 +284,8 @@ export default function FeaturedAnimeCarousel() {
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: 20,
-    marginBottom: 10,
+    marginTop: 20,
+    // marginBottom: 10,
   },
   cardContainer: {
     borderRadius: 12,

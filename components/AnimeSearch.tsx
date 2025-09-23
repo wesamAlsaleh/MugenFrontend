@@ -18,8 +18,8 @@ const filterOptions: SortBy[] = [
   { label: "Trending", value: "TRENDING_DESC" }, // Default
   { label: "Title (A-Z)", value: "TITLE_ENGLISH" },
   { label: "Title (Z-A)", value: "TITLE_ENGLISH_DESC" },
-  { label: "Start Date (Oldest)", value: "START_DATE" },
-  { label: "Start Date (Newest)", value: "START_DATE_DESC" },
+  { label: "Start Date (Oldest First)", value: "START_DATE" },
+  { label: "Start Date (Newest First)", value: "START_DATE_DESC" },
 ];
 
 export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
@@ -43,6 +43,7 @@ export default function AnimeSearch({ searchParams, setSearchParams }: Props) {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
       placeholderTextColor: theme.secondaryText,
+      color: theme.primary,
     },
     filterButton: {
       backgroundColor: theme.cardBackgroundColor,
