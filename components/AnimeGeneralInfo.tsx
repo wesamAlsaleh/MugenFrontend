@@ -6,6 +6,7 @@ import {
   formatMediaStudios,
   formatMediaType,
 } from "@/Utility/mediaUtils";
+import { useRouter } from "expo-router";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Badge from "./Badge";
@@ -17,6 +18,9 @@ export default function AnimeGeneralInfo({
 }) {
   // Get the theme colors
   const theme = useTheme();
+
+  // Router Instance
+  const router = useRouter();
 
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
@@ -117,7 +121,14 @@ export default function AnimeGeneralInfo({
         <RowItem
           label="Studios"
           value={mainStudios.map((ms, i) => {
-            return <Badge content={ms} key={i} />;
+            return (
+              <Badge
+                content={ms.name}
+                key={i}
+                onPress={() => router.push(`/anime/studio/${ms.id}`)}
+                borderColor={theme.primary}
+              />
+            );
           })}
         />
 

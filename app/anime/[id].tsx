@@ -1,6 +1,6 @@
 import ActionBar from "@/components/ActionBar";
-import AnimeDetailsCard from "@/components/AnimeDetailsCard";
 import AnimeDetailsHeader from "@/components/AnimeDetailsHeader";
+import AnimeDetailsSection from "@/components/AnimeDetailsSection";
 import { singleAnime } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
 import { AnimeDetails } from "@/types/Anime";
@@ -35,6 +35,7 @@ export default function AnimeDetailScreen() {
       justifyContent: "flex-start", // Align items to the top to keep content stacked
       backgroundColor: theme.backgroundColor, // optional for contrast
       // paddingHorizontal: 16, // Horizontal padding for the screen
+      paddingBottom: 16, // Bottom padding to avoid content being cut off
     },
     pageContent: {
       display: "flex",
@@ -84,7 +85,7 @@ export default function AnimeDetailScreen() {
           <ActionBar />
 
           {/* Anime Details */}
-          <AnimeDetailsCard animeDetails={animeDetails!} />
+          <AnimeDetailsSection animeDetails={animeDetails!} />
         </View>
       </ScrollView>
     </SafeAreaView>

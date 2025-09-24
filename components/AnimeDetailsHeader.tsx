@@ -1,9 +1,13 @@
 import { useTheme } from "@/hooks/use-theme";
 import { AnimeDetails } from "@/types/Anime";
-import { formatMediaFormat, formatMediaStatus } from "@/Utility/mediaUtils";
+import {
+  formatMediaFormat,
+  formatMediaSeason,
+  formatMediaStatus,
+} from "@/Utility/mediaUtils";
 import { IsTablet } from "@/Utility/screenUtils";
 import { useRouter } from "expo-router";
-import { ArrowLeft, Star } from "lucide-react-native";
+import { ArrowLeft } from "lucide-react-native";
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Badge from "./Badge";
@@ -123,15 +127,19 @@ export default function AnimeDetailsHeader({
 
             {/* Anime Format */}
             <Badge
-              content={formatMediaFormat(animeDetails?.format!)}
+              content={formatMediaSeason({
+                season: animeDetails?.season,
+                year: animeDetails?.seasonYear,
+              })}
               textColor={theme.secondaryText}
             />
           </View>
 
-          {/* Anime Rating */}
+          {/* Anime Release Season */}
           <Text style={{ color: theme.primaryText }}>
-            <Star color={theme.primary} size={12} />{" "}
-            {(animeDetails?.averageScore || 0) / 10}
+            {formatMediaFormat(animeDetails?.format!)}
+            {" | "}
+            {animeDetails.episodes || "?"} Episodes
           </Text>
         </View>
       </View>

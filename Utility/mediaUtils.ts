@@ -186,13 +186,16 @@ const formatMediaStudios = (studios: StudiosDto | null) => {
   if (!studios) return { mainStudios: [], producers: [] };
 
   // Filter the studios to get the main studios and the producers
-  let main: string[] = [];
+  let main: Array<{
+    id?: number;
+    name: string;
+  }> = [];
   let producers: string[] = [];
 
   // Iterate through the edges to separate main studios and producers
   studios.edges.forEach((studio) => {
     if (studio.isMain) {
-      main.push(studio.node.name);
+      main.push({ name: studio.node.name, id: studio.id });
     } else {
       producers.push(studio.node.name);
     }
@@ -205,11 +208,46 @@ const formatMediaStudios = (studios: StudiosDto | null) => {
   };
 };
 
+/**
+ * Formats a media season and year into a readable string.
+ *
+ * @param params - An object containing the season and year to format.
+ * @param params.season - The season of the media (e.g., "WINTER", "SPRING", "SUMMER", "FALL").
+ *                        If null or invalid, the function will return "?".
+ * @param params.year - The year of the media. If null or invalid, the function will return "?".
+ * @returns A formatted string in the format "Season Year" (e.g., "Winter 2023").
+ *          Returns "?" if either the season or year is invalid.
+ */
+const formatMediaSeason = ({
+  season,
+  year,
+}: {
+  season: string | null;
+  year: number | null;
+}) => {
+  // Type check to ensure season and year are valid
+  if (!season || !year) return "?";
+
+  switch (season) {
+    case "WINTER":
+      return `Winter ${year}`;
+    case "SPRING":
+      return `Spring ${year}`;
+    case "SUMMER":
+      return `Summer ${year}`;
+    case "FALL":
+      return `Fall ${year}`;
+    default:
+      return "TBD"; // To Be Decided
+  }
+};
+
 export {
   formatMediaDates,
   formatMediaDescription,
   FormatMediaDuration,
   formatMediaFormat,
+  formatMediaSeason,
   formatMediaStatus,
   formatMediaStudios,
   formatMediaType,

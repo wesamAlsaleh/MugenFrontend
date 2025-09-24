@@ -1,12 +1,13 @@
 import { useTheme } from "@/hooks/use-theme";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 interface Props {
   content?: string | null; // Content to display inside the badge
   bgColor?: string; // Optional background color for the badge
   borderColor?: string; // Optional border color for the badge
   textColor?: string; // Optional text color for the badge
+  onPress?: () => void; // Optional onPress handler for interactivity
 }
 
 export default function Badge({
@@ -14,6 +15,7 @@ export default function Badge({
   bgColor,
   borderColor,
   textColor,
+  onPress,
 }: Props) {
   // Get the theme styles
   const theme = useTheme();
@@ -39,6 +41,22 @@ export default function Badge({
       color: textColor || theme.primaryText,
     },
   });
+
+  // If there's no content, don't render anything
+  if (!content) return <View></View>;
+
+  // If onPress is provided, make the badge interactive
+  if (onPress) {
+    return (
+      <TouchableOpacity onPress={onPress}>
+        <View style={styles.statusBadgeContainer}>
+          <Text style={styles.statusText} onPress={onPress}>
+            {content}
+          </Text>
+        </View>
+      </TouchableOpacity>
+    );
+  }
 
   return (
     <View style={styles.statusBadgeContainer}>

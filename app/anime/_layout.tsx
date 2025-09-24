@@ -26,6 +26,7 @@ export default function AnimeLayout() {
           headerShadowVisible: false, // Remove header shadow
         }}
       />
+      <Stack.Screen name="studio" options={{ headerShown: false }} />
     </Stack>
   );
 }
