@@ -1,3 +1,5 @@
+import { StudiosDto } from "@/types/dtos/StudiosDto";
+
 /**
  * Formats a media status string into a more user-friendly representation.
  *
@@ -104,7 +106,7 @@ const formatMediaType = (type: string) => {
  * @param description - The input string that may contain HTML tags.
  * @returns A string with all HTML tags removed.
  */
-const formatDescription = (description: string) => {
+const formatMediaDescription = (description: string) => {
   // Type check to ensure description is valid
   if (!description) return "";
 
@@ -113,9 +115,102 @@ const formatDescription = (description: string) => {
   return description.replace(regex, "");
 };
 
+/**
+ * Formats a media duration (in minutes) into a human-readable string.
+ *
+ * @param duration - The duration of the media in minutes. Must be a positive number.
+ * @returns A formatted string representing the duration in minutes, or "N/A" if the duration is invalid.
+ */
+const FormatMediaDuration = (duration: number) => {
+  // Type check to ensure duration is valid
+  if (!duration || duration <= 0) return "N/A";
+
+  return `${duration} mins`;
+};
+
+/**
+ * Formats a date object from individual day, month, and year components into a readable string.
+ *
+ * @param params - An object containing the date components.
+ * @param params.day - The day of the month (1-31).
+ * @param params.month - The month of the year (1-12).
+ * @param params.year - The full year (e.g., 2023).
+ * @returns A formatted date string in the "MMM DD, YYYY" format (e.g., "Jan 1, 2023")
+ *          or "N/A" if any of the date components are invalid.
+ */
+const formatMediaDates = ({
+  day,
+  month,
+  year,
+}: {
+  day: number | null;
+  month: number | null;
+  year: number | null;
+}) => {
+  // Type check to ensure date parts are valid
+  if (!day || !month || !year) return "?";
+
+  // Create a date object
+  const date = new Date(year, month - 1, day); // Month is 0-indexed
+
+  // Format the date to a more readable format
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+};
+
+/**
+ * Formats a list of studios into main studios and producers.
+ *
+ * @param studios - An object of type `StudiosDto` or `null` representing the studios data.
+ *                  If `null`, the function returns default empty values.
+ *
+ * @returns An object containing:
+ * - `mainStudios`: An array of strings representing the names of the main studios.
+ * - `producers`: A single string of producer names, joined by commas.
+ *
+ * @example
+ * const studios = {
+ *   edges: [
+ *     { isMain: true, node: { name: "Studio A" } },
+ *     { isMain: false, node: { name: "Producer B" } },
+ *   ],
+ * };
+ * const result = formatMediaStudios(studios);
+ * // result: { mainStudios: ["Studio A"], producers: "Producer B" }
+ */
+const formatMediaStudios = (studios: StudiosDto | null) => {
+  // Type check to ensure studios is valid
+  if (!studios) return { mainStudios: [], producers: [] };
+
+  // Filter the studios to get the main studios and the producers
+  let main: string[] = [];
+  let producers: string[] = [];
+
+  // Iterate through the edges to separate main studios and producers
+  studios.edges.forEach((studio) => {
+    if (studio.isMain) {
+      main.push(studio.node.name);
+    } else {
+      producers.push(studio.node.name);
+    }
+  });
+
+  // Format the output
+  return {
+    mainStudios: main, // Return main studios as an array to map over later
+    producers: producers.join(", "), // Join producers into a single string
+  };
+};
+
 export {
-  formatDescription,
+  formatMediaDates,
+  formatMediaDescription,
+  FormatMediaDuration,
   formatMediaFormat,
   formatMediaStatus,
+  formatMediaStudios,
   formatMediaType,
 };

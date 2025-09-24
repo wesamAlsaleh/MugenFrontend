@@ -1,34 +1,27 @@
 import { useTheme } from "@/hooks/use-theme";
-import { getScreenWidth } from "@/Utility/screenUtils";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { DimensionValue, StyleSheet, View } from "react-native";
 
 interface CardProps {
   cardContent: React.ReactNode;
-  width?: number; // only fixed if provided
-  height?: number; // only fixed if provided
+  width?: DimensionValue; // only fixed if provided
+  height?: DimensionValue; // only fixed if provided
 }
 
 export default function Card(props: CardProps) {
   // Get the current color scheme (light or dark)
   const theme = useTheme();
 
-  // Get screen width
-  const screenWidth = getScreenWidth();
-
-  // Calculate card width based on screen width and padding (16 on each side)
-  const cardWidth = props.width ?? screenWidth - 32; // Default full width minus padding, or fixed width if provided
-
   // Calculate card height
-  const cardHeight = props.height ?? undefined;
+  const cardHeight = props.height ?? "auto";
 
   // Dynamic styles
   const dynamicStyles = {
     cardContainer: {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
-      width: cardWidth,
-      ...(cardHeight ? { height: cardHeight } : {}), // Only set height if provided
+      width: props.width ? props.width : "100%",
+      height: cardHeight,
     },
   };
 

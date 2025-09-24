@@ -273,7 +273,7 @@ const styles = StyleSheet.create({
   },
   genreButtonStyle: {
     padding: 8,
-    borderRadius: 5,
+    borderRadius: 8,
     borderWidth: 1,
   },
   resetButtonContainer: {
