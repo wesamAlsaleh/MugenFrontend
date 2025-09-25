@@ -3948,7 +3948,7 @@ const singleAnime = {
       },
     ],
   },
-  isAdult: false,
+  isAdult: true,
   nextAiringEpisode: null,
   siteUrl: "https://anilist.co/anime/20605",
   relations: {

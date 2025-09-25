@@ -1,7 +1,8 @@
 import { useTheme } from "@/hooks/use-theme";
 import { formatMediaDescription } from "@/Utility/mediaUtils";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
+import DetailsSection from "./DetailsSection";
 
 export default function AnimeDescription({ desc }: { desc: string }) {
   // Get the theme colors
@@ -22,10 +23,13 @@ export default function AnimeDescription({ desc }: { desc: string }) {
   });
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.descriptionText}>
-        {desc ? formatMediaDescription(desc) : "No description available."}
-      </Text>
-    </View>
+    <DetailsSection
+      title="Synopsis"
+      children={
+        <Text style={styles.descriptionText}>
+          {desc ? formatMediaDescription(desc) : "No description available."}
+        </Text>
+      }
+    />
   );
 }

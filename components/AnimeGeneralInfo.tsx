@@ -33,13 +33,13 @@ export default function AnimeGeneralInfo({
     rowContainer: {
       flexDirection: "row",
       justifyContent: "space-between", // Space between items
-      gap: 16, // Space between items
+      gap: 10, // Space between items
       marginBottom: 8, // Space below the row
       flexWrap: "nowrap", // Prevent wrapping
     },
     columnContainer: {
       flexDirection: "column",
-      gap: 8, // Space between items
+      gap: 4, // Space between items
     },
   });
 

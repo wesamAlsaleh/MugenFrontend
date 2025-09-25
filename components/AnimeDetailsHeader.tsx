@@ -34,6 +34,7 @@ export default function AnimeDetailsHeader({
       flexDirection: "column", // Stack children vertically
       position: "relative", // TODO: Add comment
       overflow: "hidden", // Ensures children don’t overflow (important for animations or parallax)
+      marginBottom: isTablet ? 10 : 20, // Space below header to accommodate overlapping anime image
     },
     headerBackground: {
       width: "100%",

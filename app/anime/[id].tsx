@@ -1,4 +1,5 @@
 import ActionBar from "@/components/ActionBar";
+import AnimeAdultsContentWarning from "@/components/AnimeAdultsContentWarning";
 import AnimeDetailsHeader from "@/components/AnimeDetailsHeader";
 import AnimeDetailsSection from "@/components/AnimeDetailsSection";
 import { singleAnime } from "@/constants/dummyData";
@@ -79,11 +80,11 @@ export default function AnimeDetailScreen() {
 
         {/* Page Content */}
         <View style={styles.pageContent}>
-          {/* TODO: Adult Warning */}
+          {/* Adult Content Warning */}
+          <AnimeAdultsContentWarning adultContent={animeDetails?.isAdult!} />
 
           {/* TODO: Action Buttons */}
           <ActionBar />
-
           {/* Anime Details */}
           <AnimeDetailsSection animeDetails={animeDetails!} />
         </View>

@@ -48,7 +48,7 @@ export default function Badge({
   // If onPress is provided, make the badge interactive
   if (onPress) {
     return (
-      <TouchableOpacity onPress={onPress}>
+      <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
         <View style={styles.statusBadgeContainer}>
           <Text style={styles.statusText} onPress={onPress}>
             {content}

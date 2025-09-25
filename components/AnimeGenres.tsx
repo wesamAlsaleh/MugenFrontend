@@ -2,6 +2,7 @@ import { useTheme } from "@/hooks/use-theme";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Badge from "./Badge";
+import DetailsSection from "./DetailsSection";
 
 interface Props {
   genres?: string[]; // Array of genre strings
@@ -36,20 +37,19 @@ export default function AnimeGenres({ genres }: Props) {
   });
 
   return (
-    <View style={styles.container}>
-      {/* Section Title */}
-      <Text style={styles.title}>Genres</Text>
-
-      {/* Genres list */}
-      <View style={styles.genresContainer}>
-        {genres && genres.length > 0 ? (
-          genres.map((g, i) => {
-            return <Badge key={i} content={g} />;
-          })
-        ) : (
-          <Text style={styles.text}>No genres available.</Text>
-        )}
-      </View>
-    </View>
+    <DetailsSection
+      title="Genres"
+      children={
+        <View style={styles.genresContainer}>
+          {genres && genres.length > 0 ? (
+            genres.map((g, i) => {
+              return <Badge key={i} content={g} />;
+            })
+          ) : (
+            <Text style={styles.text}>No genres available.</Text>
+          )}
+        </View>
+      }
+    />
   );
 }

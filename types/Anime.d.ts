@@ -19,7 +19,7 @@ type Anime = {
   averageScore: number | null;
   meanScore: number | null;
   status: MediaStatus | string;
-  type?: MediaType | string;
+  type?: MediaType | string | null;
   episodes?: number | null;
   genres?: string[] | null; // Array of genre strings, sometimes can be null
   nextAiringEpisode?: NextAiringEpisodeDto | null;

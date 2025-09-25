@@ -242,11 +242,59 @@ const formatMediaSeason = ({
   }
 };
 
+/**
+ * Formats a media relation string into a more user-friendly representation.
+ *
+ * @param relation - The media relation string to format. Expected values include:
+ *   - "ADAPTATION": Returns "Adaptation".
+ *   - "PREQUEL": Returns "Prequel".
+ *   - "SEQUEL": Returns "Sequel".
+ *   - "PARENT": Returns "Parent Story".
+ *   - "SIDE_STORY": Returns "Side Story".
+ *   - "CHARACTER": Returns "Character".
+ *   - "SUMMARY": Returns "Summary".
+ *   - "ALTERNATIVE": Returns "Alternative Version".
+ *   - "SPIN_OFF": Returns "Spin-off".
+ *   If the input does not match any of these values, the function returns the input as-is.
+ *
+ * @returns A formatted string representing the media relation, or an empty string if the input is invalid.
+ */
+const formatMediaRelations = (relation: string) => {
+  // Type check to ensure relation is valid
+  if (!relation) return "";
+
+  switch (relation) {
+    case "ADAPTATION":
+      return "Adaptation";
+    case "PREQUEL":
+      return "Prequel";
+    case "SEQUEL":
+      return "Sequel";
+    case "PARENT":
+      return "Parent Story";
+    case "SIDE_STORY":
+      return "Side Story";
+    case "CHARACTER":
+      return "Character";
+    case "SUMMARY":
+      return "Summary";
+    case "ALTERNATIVE":
+      return "Alternative Version";
+    case "SPIN_OFF":
+      return "Spin-off";
+    case "OTHER":
+      return "Other";
+    default:
+      return relation;
+  }
+};
+
 export {
   formatMediaDates,
   formatMediaDescription,
   FormatMediaDuration,
   formatMediaFormat,
+  formatMediaRelations,
   formatMediaSeason,
   formatMediaStatus,
   formatMediaStudios,

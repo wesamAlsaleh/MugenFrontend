@@ -4,6 +4,7 @@ import { StyleSheet, View } from "react-native";
 import AnimeDescription from "./AnimeDescription";
 import AnimeGeneralInfo from "./AnimeGeneralInfo";
 import AnimeGenres from "./AnimeGenres";
+import AnimeRelations from "./AnimeRelations";
 import AnimeTrailer from "./AnimeTrailer";
 import Card from "./Card";
 
@@ -17,7 +18,7 @@ export default function AnimeDetailsSection({ animeDetails }: Props) {
     container: {
       display: "flex",
       flexDirection: "column",
-      gap: 10, // Space between sections
+      gap: 16, // Space between sections in the details section
     },
   });
 
@@ -35,7 +36,8 @@ export default function AnimeDetailsSection({ animeDetails }: Props) {
       {/* Anime Trailer Section */}
       <AnimeTrailer trailer={animeDetails?.trailer!} />
 
-      {/* TODO: Anime Related Section */}
+      {/* Anime Related Section */}
+      <AnimeRelations relations={animeDetails?.relations!} />
 
       {/* TODO: Anime Recommendations Section */}
     </View>

@@ -8,9 +8,9 @@ export type RelationNodeDto = {
   id: number;
   title: TitleDto;
   coverImage: CoverImageDto;
-  type: MediaType;
-  format: MediaFormat;
-  status: MediaStatus;
+  type: MediaType | string | null;
+  format: MediaFormat | string | null;
+  status: MediaStatus | string | null;
   episodes: number | null;
-  siteUrl: string;
+  siteUrl: string | null;
 };

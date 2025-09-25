@@ -45,6 +45,11 @@ export const themes = {
     // Skeleton Placeholder Highlight Color
     skeletonBackgroundColor: "#ffffff",
     skeletonHighlightColor: "#f3f4f6",
+
+    // Adult Content Warning Background
+    adultContentWarningBackground: "#FFF0F0",
+    adultContentWarningBorder: "#FF4C4C",
+    adultContentWarningText: "#B00020",
   },
   dark: {
     // Mode
@@ -90,6 +95,11 @@ export const themes = {
     // Skeleton Placeholder Highlight Color
     skeletonBackgroundColor: "#1f1f1f",
     skeletonHighlightColor: "#262626",
+
+    // Adult Content Warning Background
+    adultContentWarningBackground: "#2B1B1B",
+    adultContentWarningBorder: "#FF4C4C",
+    adultContentWarningText: "#FFFFFF",
   },
 } as const;
 
