@@ -1,7 +1,7 @@
 import { useTheme } from "@/hooks/use-theme";
 import { formatMediaDescription } from "@/Utility/mediaUtils";
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import DetailsSection from "./DetailsSection";
 
 export default function AnimeDescription({ desc }: { desc: string }) {
@@ -21,6 +21,11 @@ export default function AnimeDescription({ desc }: { desc: string }) {
       textAlign: "justify", // Horizontal centering
     },
   });
+
+  // If no description, return nothing
+  if (!desc) {
+    return <View></View>;
+  }
 
   return (
     <DetailsSection

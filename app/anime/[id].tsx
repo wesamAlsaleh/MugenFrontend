@@ -85,6 +85,7 @@ export default function AnimeDetailScreen() {
 
           {/* TODO: Action Buttons */}
           <ActionBar />
+
           {/* Anime Details */}
           <AnimeDetailsSection animeDetails={animeDetails!} />
         </View>

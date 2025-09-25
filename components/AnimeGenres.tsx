@@ -36,6 +36,11 @@ export default function AnimeGenres({ genres }: Props) {
     },
   });
 
+  // If no genres, return nothing
+  if (!genres || genres.length === 0) {
+    return <View></View>;
+  }
+
   return (
     <DetailsSection
       title="Genres"

@@ -289,7 +289,24 @@ const formatMediaRelations = (relation: string) => {
   }
 };
 
+const formatMediaCharacterRole = (role: string) => {
+  // Type check to ensure role is valid
+  if (!role) return "";
+
+  switch (role) {
+    case "MAIN":
+      return "Main";
+    case "SUPPORTING":
+      return "Supporting";
+    case "ANTAGONIST":
+      return "Antagonist";
+    default:
+      return role;
+  }
+};
+
 export {
+  formatMediaCharacterRole,
   formatMediaDates,
   formatMediaDescription,
   FormatMediaDuration,

@@ -1,7 +1,6 @@
-import { useTheme } from "@/hooks/use-theme";
 import { RelationsDto } from "@/types/dtos/RelationsDto";
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 import AnimeRelationsGrid from "./AnimeRelationsGrid";
 import DetailsSection from "./DetailsSection";
 
@@ -10,12 +9,6 @@ interface Props {
 }
 
 export default function AnimeRelations({ relations }: Props) {
-  // Get the theme
-  const theme = useTheme();
-
-  // Dynamic styles based on theme
-  const styles = StyleSheet.create({});
-
   // If no relations, return nothing
   if (!relations || relations.edges.length === 0) {
     return <View></View>;
@@ -23,7 +16,7 @@ export default function AnimeRelations({ relations }: Props) {
 
   return (
     <DetailsSection
-      title="Anime Relations"
+      title="Relations"
       children={<AnimeRelationsGrid edges={relations.edges} />}
     />
   );

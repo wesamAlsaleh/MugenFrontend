@@ -16,10 +16,11 @@ export default function AnimeRelationCard({ edge }: { edge: RelationDto }) {
   // Dynamic styles
   const styles = StyleSheet.create({
     cardContainer: {
-      width: IsTablet() ? 120 : 120, // bigger width on tablets
-      height: IsTablet() ? 220 : 220, // bigger height on tablets
+      width: IsTablet() ? 140 : 120, // bigger width on tablets
+      height: IsTablet() ? 215 : 200, // bigger height on tablets
       display: "flex",
       flexDirection: "column",
+      // backgroundColor: theme.primary + "11", // Slightly transparent background
     },
     animeImageContainer: {
       flexDirection: "column",
@@ -41,7 +42,7 @@ export default function AnimeRelationCard({ edge }: { edge: RelationDto }) {
     },
     animeImage: {
       width: "100%",
-      height: IsTablet() ? 170 : 170,
+      height: IsTablet() ? 160 : 150,
       borderRadius: 8,
     },
     relationDetailsContainer: {
