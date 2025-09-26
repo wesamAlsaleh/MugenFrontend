@@ -113,7 +113,12 @@ export default function AnimeDetailsHeader({
         {/* Anime Details */}
         <View style={styles.animeDetailsContainer}>
           {/* Anime Title */}
-          <Text style={styles.animeName} numberOfLines={2}>
+          <Text style={styles.animeName} numberOfLines={2} ellipsizeMode="tail">
+            {animeDetails?.title.userPreferred}
+            {animeDetails?.title.userPreferred}
+            {animeDetails?.title.userPreferred}
+            {animeDetails?.title.userPreferred}
+            {animeDetails?.title.userPreferred}
             {animeDetails?.title.userPreferred}
           </Text>
 

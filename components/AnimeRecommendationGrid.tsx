@@ -1,13 +1,13 @@
-import { CharacterDto } from "@/types/dtos/(small_dtos)/CharacterDto";
+import { RecommendationDto } from "@/types/dtos/(small_dtos)/RecommendationDto";
 import React from "react";
 import { FlatList, StyleSheet, View } from "react-native";
-import AnimeCharacterCard from "./AnimeCharacterCard";
+import AnimeRecommendationCard from "./AnimeRecommendationCard";
 
-interface Props {
-  edges: CharacterDto[] | null;
-}
-
-export default function AnimeCharactersGrid({ edges }: Props) {
+export default function AnimeRecommendationGrid({
+  edges,
+}: {
+  edges: RecommendationDto[]; // Array of recommendation edges
+}) {
   // Dynamic styles based on theme
   const styles = StyleSheet.create({
     container: {
@@ -21,8 +21,10 @@ export default function AnimeCharactersGrid({ edges }: Props) {
       data={edges}
       horizontal
       showsHorizontalScrollIndicator={false}
-      keyExtractor={(item) => item.node.id.toString()} // Use character ID as key
-      renderItem={({ item }) => <AnimeCharacterCard character={item} />}
+      keyExtractor={(item) => item.node.mediaRecommendation.id.toString()} // Use media recommendation ID as key
+      renderItem={({ item }) => (
+        <AnimeRecommendationCard node={item.node} rating={item.node.rating} />
+      )}
       ItemSeparatorComponent={() => <View style={{ width: 8 }} />} // Space between items in horizontal list
       contentContainerStyle={styles.container}
     />

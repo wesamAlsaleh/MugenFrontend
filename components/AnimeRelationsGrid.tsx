@@ -16,7 +16,6 @@ export default function AnimeRelationsGrid({ edges }: Props) {
   const styles = StyleSheet.create({
     container: {
       flexDirection: "row", // Arrange items in a row
-      flexWrap: "wrap", // Allow items to wrap to the next line
       justifyContent: "space-between", // Distribute space between items
     },
   });

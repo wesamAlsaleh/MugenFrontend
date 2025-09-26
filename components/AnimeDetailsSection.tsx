@@ -5,8 +5,8 @@ import AnimeCharacters from "./AnimeCharacters";
 import AnimeDescription from "./AnimeDescription";
 import AnimeGeneralInfo from "./AnimeGeneralInfo";
 import AnimeGenres from "./AnimeGenres";
+import AnimeRecommendations from "./AnimeRecommendations";
 import AnimeRelations from "./AnimeRelations";
-import AnimeStaff from "./AnimeStaff";
 import AnimeTrailer from "./AnimeTrailer";
 import Card from "./Card";
 
@@ -44,10 +44,10 @@ export default function AnimeDetailsSection({ animeDetails }: Props) {
       {/* Anime Related Section */}
       <AnimeRelations relations={animeDetails?.relations} />
 
-      {/* TODO: Anime Staff Section */}
-      <AnimeStaff />
-
-      {/* TODO: Anime Recommendations Section */}
+      {/* Anime Recommendations Section */}
+      <AnimeRecommendations
+        animeRecommendations={animeDetails?.recommendations!}
+      />
     </View>
   );
 }

@@ -45,6 +45,7 @@ export default function AnimeDetailScreen() {
       gap: 16, // Space between elements
       // marginTop: 16,
       paddingHorizontal: 16, // Horizontal padding for the content
+      marginBottom: 16, // Bottom margin to avoid content being cut off
     },
   });
 

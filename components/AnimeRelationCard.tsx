@@ -17,7 +17,7 @@ export default function AnimeRelationCard({ edge }: { edge: RelationDto }) {
   const styles = StyleSheet.create({
     cardContainer: {
       width: IsTablet() ? 140 : 120, // bigger width on tablets
-      height: IsTablet() ? 215 : 200, // bigger height on tablets
+      height: IsTablet() ? 210 : 200, // bigger height on tablets
       display: "flex",
       flexDirection: "column",
       // backgroundColor: theme.primary + "11", // Slightly transparent background

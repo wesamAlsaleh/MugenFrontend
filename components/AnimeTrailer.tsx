@@ -3,8 +3,10 @@ import { TrailerDto } from "@/types/dtos/TrailerDto";
 import { capitalizeFirstLetter } from "@/Utility/capitalizeFirstLetter";
 import { IsTablet } from "@/Utility/screenUtils";
 import { useRouter } from "expo-router";
+import { Play } from "lucide-react-native";
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import DetailsSection from "./DetailsSection";
 
 export default function AnimeTrailer({
   trailer,
@@ -23,10 +25,7 @@ export default function AnimeTrailer({
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
     container: {
-      display: "flex",
       flexDirection: "column",
-      gap: 8, // Space between Title and trailer
-      justifyContent: "space-between", // Space between title and see more
       width: "100%", // Full width of the parent
     },
     trailerContainer: {
@@ -36,14 +35,23 @@ export default function AnimeTrailer({
       alignItems: "center", // Vertically center the items
       gap: 8, // Space between title and see more
     },
-    title: {
-      fontSize: 18,
-      fontWeight: "bold",
-      color: theme.primaryText,
+    noTrailerContainer: {
+      justifyContent: "center",
+      alignItems: "center",
     },
-    subTitle: {
+    noTrailerText: {
       color: theme.secondaryText,
       fontWeight: "600",
+    },
+    playIconContainer: {
+      position: "absolute",
+      top: "50%", // Center vertically
+      left: "50%", // Center horizontally
+      zIndex: 1, // Ensure the icon is above the image
+      transform: [{ translateX: -25 }, { translateY: -25 }], // Center the icon exactly
+      backgroundColor: theme.primary + "cc", // Semi-transparent background
+      borderRadius: 8, // Circular background
+      padding: 10, // Padding around the icon
     },
     thumbnailContainer: {
       height: isTablet ? 400 : 300,
@@ -60,8 +68,8 @@ export default function AnimeTrailer({
   // If there's no trailer, don't render anything
   if (!trailer)
     return (
-      <View style={styles.container}>
-        <Text style={styles.subTitle}>No Trailer Available</Text>
+      <View style={styles.noTrailerContainer}>
+        <Text style={styles.noTrailerText}>No Trailer Available</Text>
       </View>
     );
 
@@ -80,28 +88,32 @@ export default function AnimeTrailer({
   };
 
   return (
-    <View style={styles.container}>
-      <View style={styles.trailerContainer}>
-        {/* Section Title */}
-        <Text style={styles.title}>Trailer</Text>
+    <DetailsSection
+      title="Trailer"
+      subTitle={`(${capitalizeFirstLetter(trailer.site)})`}
+      children={
+        <View style={styles.container}>
+          <TouchableOpacity
+            onPress={() => handleImagePress()}
+            activeOpacity={0.7}
+          >
+            <View style={styles.thumbnailContainer}>
+              {/* Play Icon */}
+              <View style={styles.playIconContainer}>
+                <Play color={theme.primaryText} />
+              </View>
 
-        {/* Trailer Source */}
-        <Text style={styles.subTitle}>
-          ({capitalizeFirstLetter(trailer.site)})
-        </Text>
-      </View>
-
-      {/* Trailer Thumbnail */}
-      <TouchableOpacity onPress={() => handleImagePress()} activeOpacity={0.7}>
-        <View style={styles.thumbnailContainer}>
-          <Image
-            source={{ uri: trailer.thumbnail }}
-            style={styles.thumbnailStyle}
-            resizeMode={isTablet ? "contain" : "cover"} // Adjust based on device
-          />
+              {/* Thumbnail */}
+              <Image
+                source={{ uri: trailer.thumbnail }}
+                style={styles.thumbnailStyle}
+                resizeMode={isTablet ? "contain" : "cover"} // Adjust based on device
+              />
+            </View>
+          </TouchableOpacity>
         </View>
-      </TouchableOpacity>
-    </View>
+      }
+    />
   );
 }
 
