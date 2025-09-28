@@ -1083,3625 +1083,1149 @@ const exploreAnimes = [
 ];
 
 const singleAnime = {
-  id: 20605,
-  idMal: 22319,
-  title: {
-    romaji: "Tokyo Ghoul",
-    english: "Tokyo Ghoul",
-    native: "東京喰種 トーキョーグール",
-    userPreferred: "Tokyo Ghoul",
-  },
-  type: "ANIME",
-  format: "TV",
-  status: "FINISHED",
-  description:
-    'The suspense horror/dark fantasy story is set in Tokyo, which is haunted by mysterious "ghouls" who are devouring humans. People are gripped by the fear of these ghouls whose identities are masked in mystery. An ordinary college student named Kaneki encounters Rize, a girl who is an avid reader like him, at the café he frequents. Little does he realize that his fate will change overnight.\n<br><br>\n(Source: Anime News Network)',
-  startDate: {
-    day: 4,
-    month: 7,
-    year: 2014,
-  },
-  endDate: {
-    day: 19,
-    month: 9,
-    year: 2014,
-  },
-  season: "SUMMER",
-  seasonYear: 2014,
-  episodes: 12,
-  duration: 24,
-  countryOfOrigin: "JP",
-  source: "MANGA",
-  hashtag: "#tkg_anime #東京喰種 ",
-  trailer: {
-    id: "XfQUjYsVBrE",
-    site: "youtube",
-    thumbnail: "https://i.ytimg.com/vi/XfQUjYsVBrE/hqdefault.jpg",
-  },
-  coverImage: {
-    color: "#fe5d28",
-    extraLarge:
-      "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
-    large:
-      "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b20605-k665mVkSug8D.jpg",
-    medium:
-      "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b20605-k665mVkSug8D.jpg",
-  },
-  bannerImage:
-    "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20605-RCJ7M71zLmrh.jpg",
-  genres: [
-    "Action",
-    "Drama",
-    "Horror",
-    "Mystery",
-    "Psychological",
-    "Supernatural",
+  data: [
+    {
+      id: 157960,
+      idMal: 53722,
+      title: {
+        romaji: "BULLET/BULLET",
+        english: "BULLET/BULLET",
+        native: "BULLET/BULLET",
+        userPreferred: "BULLET/BULLET",
+      },
+      type: "ANIME",
+      format: "ONA",
+      status: "FINISHED",
+      description:
+        "In the near future, civilization has collapsed, and the world has become a wasteland. Despite their poverty, the people use remnants of past civilizations to lead resilient lives. Gear works in a junk shop while also retrieving stolen goods alongside Qu-0213, a robot with four personalities, and White Bear, a gambler. One day, Gear finds himself thrust into a once-in-a-lifetime job to steal an important item. They soon find themselves up against deadly assassins, heart- pounding car chases, and explosive battles. What Gear and his team do not know yet is that the item they stole holds a secret that could shake the very foundation of this world.\n<br><br>\n(Source: Disney+)",
+      startDate: {
+        day: 16,
+        month: 7,
+        year: 2025,
+      },
+      endDate: {
+        day: 13,
+        month: 8,
+        year: 2025,
+      },
+      season: "SUMMER",
+      seasonYear: 2025,
+      episodes: 12,
+      duration: 25,
+      countryOfOrigin: "JP",
+      source: "ORIGINAL",
+      hashtag: " #BULLETBULLET",
+      trailer: {
+        id: "JxAWVHYDiZ4",
+        site: "youtube",
+        thumbnail: "https://i.ytimg.com/vi/JxAWVHYDiZ4/hqdefault.jpg",
+      },
+      coverImage: {
+        color: "#f1e4ae",
+        extraLarge:
+          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx157960-IrnEWE1pvoT3.jpg",
+        large:
+          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx157960-IrnEWE1pvoT3.jpg",
+        medium:
+          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx157960-IrnEWE1pvoT3.jpg",
+      },
+      bannerImage: null,
+      genres: [],
+      averageScore: 57,
+      meanScore: 59,
+      popularity: 6350,
+      trending: 2,
+      studios: {
+        edges: [
+          {
+            id: 34695,
+            isMain: true,
+            node: {
+              id: 7229,
+              name: "E&H Production",
+              siteUrl: "https://anilist.co/studio/7229",
+              isAnimationStudio: false,
+            },
+          },
+          {
+            id: 42087,
+            isMain: false,
+            node: {
+              id: 470,
+              name: "GAGA",
+              siteUrl: "https://anilist.co/studio/470",
+              isAnimationStudio: false,
+            },
+          },
+        ],
+      },
+      characters: {
+        edges: [
+          {
+            role: "MAIN",
+            node: {
+              id: 358700,
+              name: {
+                full: "Gear",
+                userPreferred: "Gear",
+              },
+              age: null,
+              gender: "Male",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358700-3SHcgd1ibjaQ.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358700-3SHcgd1ibjaQ.png",
+              },
+              siteUrl: "https://anilist.co/character/358700",
+            },
+            voiceActors: [
+              {
+                id: 95158,
+                name: {
+                  full: "Marina Inoue",
+                  userPreferred: "Marina Inoue",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95158-OLhgs8zv5xsp.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95158-OLhgs8zv5xsp.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/95158",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 358701,
+              name: {
+                full: "Shirokuma",
+                userPreferred: "Shirokuma",
+              },
+              age: null,
+              gender: null,
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358701-4N1qJ9Ls5n9U.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358701-4N1qJ9Ls5n9U.png",
+              },
+              siteUrl: "https://anilist.co/character/358701",
+            },
+            voiceActors: [
+              {
+                id: 101755,
+                name: {
+                  full: "Kazuhiro Yamaji",
+                  userPreferred: "Kazuhiro Yamaji",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n101755-LsVbHCwg6Pel.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n101755-LsVbHCwg6Pel.png",
+                },
+                siteUrl: "https://anilist.co/staff/101755",
+              },
+              {
+                id: 153005,
+                name: {
+                  full: "Duda Espinoza",
+                  userPreferred: "Duda Espinoza",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n153005-VlBCmdDrvuMe.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n153005-VlBCmdDrvuMe.png",
+                },
+                siteUrl: "https://anilist.co/staff/153005",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 358702,
+              name: {
+                full: "Noah",
+                userPreferred: "Noah",
+              },
+              age: null,
+              gender: "Female",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358702-I4T26JGhMV8J.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358702-I4T26JGhMV8J.png",
+              },
+              siteUrl: "https://anilist.co/character/358702",
+            },
+            voiceActors: [
+              {
+                id: 106787,
+                name: {
+                  full: "Asami Seto",
+                  userPreferred: "Asami Seto",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n106787-ojpoY7XEGYgc.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n106787-ojpoY7XEGYgc.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/106787",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 358703,
+              name: {
+                full: "Barrel",
+                userPreferred: "Barrel",
+              },
+              age: null,
+              gender: "Male",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358703-mzqAIKkF9Yq4.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358703-mzqAIKkF9Yq4.png",
+              },
+              siteUrl: "https://anilist.co/character/358703",
+            },
+            voiceActors: [
+              {
+                id: 112635,
+                name: {
+                  full: "Makoto Furukawa",
+                  userPreferred: "Makoto Furukawa",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n112635-ORlGvRvgf5Nq.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n112635-ORlGvRvgf5Nq.png",
+                },
+                siteUrl: "https://anilist.co/staff/112635",
+              },
+              {
+                id: 176924,
+                name: {
+                  full: "Daniel Müller",
+                  userPreferred: "Daniel Müller",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n176924-sl2o7slTUJIW.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n176924-sl2o7slTUJIW.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/176924",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 358704,
+              name: {
+                full: "Wheel",
+                userPreferred: "Wheel",
+              },
+              age: null,
+              gender: null,
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358704-5wnkFaUPFqH9.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358704-5wnkFaUPFqH9.png",
+              },
+              siteUrl: "https://anilist.co/character/358704",
+            },
+            voiceActors: [
+              {
+                id: 134224,
+                name: {
+                  full: "Takamasa Mogi",
+                  userPreferred: "Takamasa Mogi",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n134224-IcmvcW5NVUCa.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n134224-IcmvcW5NVUCa.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/134224",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 358705,
+              name: {
+                full: "Lynn",
+                userPreferred: "Lynn",
+              },
+              age: null,
+              gender: null,
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358705-IbHmKHoaUBTY.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358705-IbHmKHoaUBTY.png",
+              },
+              siteUrl: "https://anilist.co/character/358705",
+            },
+            voiceActors: [
+              {
+                id: 122697,
+                name: {
+                  full: "Yuuki Wakai",
+                  userPreferred: "Yuuki Wakai",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n122697-kpKnvR4VXxmB.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n122697-kpKnvR4VXxmB.png",
+                },
+                siteUrl: "https://anilist.co/staff/122697",
+              },
+              {
+                id: 331858,
+                name: {
+                  full: "Linn Jardim",
+                  userPreferred: "Linn Jardim",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n331858-oZ4kdPZv5qqE.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n331858-oZ4kdPZv5qqE.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/331858",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 358706,
+              name: {
+                full: "Qu-0213",
+                userPreferred: "Qu-0213",
+              },
+              age: null,
+              gender: null,
+              description: "Robot with four personalities.",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b358706-c5haKqqFlRc4.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b358706-c5haKqqFlRc4.png",
+              },
+              siteUrl: "https://anilist.co/character/358706",
+            },
+            voiceActors: [
+              {
+                id: 95008,
+                name: {
+                  full: "Rie Kugimiya",
+                  userPreferred: "Rie Kugimiya",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95008-2y0EeuSTHIri.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95008-2y0EeuSTHIri.png",
+                },
+                siteUrl: "https://anilist.co/staff/95008",
+              },
+              {
+                id: 95185,
+                name: {
+                  full: "Kana Hanazawa",
+                  userPreferred: "Kana Hanazawa",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95185-x8ZYvtN7SegC.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95185-x8ZYvtN7SegC.png",
+                },
+                siteUrl: "https://anilist.co/staff/95185",
+              },
+              {
+                id: 95001,
+                name: {
+                  full: "Tomokazu Seki",
+                  userPreferred: "Tomokazu Seki",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95001-vm0RtZhmlzhK.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95001-vm0RtZhmlzhK.png",
+                },
+                siteUrl: "https://anilist.co/staff/95001",
+              },
+              {
+                id: 95208,
+                name: {
+                  full: "Ai Orikasa",
+                  userPreferred: "Ai Orikasa",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95208-DIfpWvWN401M.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95208-DIfpWvWN401M.png",
+                },
+                siteUrl: "https://anilist.co/staff/95208",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363327,
+              name: {
+                full: "Lunch",
+                userPreferred: "Lunch",
+              },
+              age: null,
+              gender: "Male",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363327-nW6bsdq8gjal.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363327-nW6bsdq8gjal.png",
+              },
+              siteUrl: "https://anilist.co/character/363327",
+            },
+            voiceActors: [
+              {
+                id: 116243,
+                name: {
+                  full: "Nao Tamura",
+                  userPreferred: "Nao Tamura",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n116243-bf9fyhHD8Veb.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n116243-bf9fyhHD8Veb.png",
+                },
+                siteUrl: "https://anilist.co/staff/116243",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363326,
+              name: {
+                full: "Batting Center Saitou",
+                userPreferred: "Batting Center Saitou",
+              },
+              age: null,
+              gender: "Male",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363326-Ucx4zgPSvr7B.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363326-Ucx4zgPSvr7B.png",
+              },
+              siteUrl: "https://anilist.co/character/363326",
+            },
+            voiceActors: [
+              {
+                id: 95513,
+                name: {
+                  full: "Yuuichi Nakamura",
+                  userPreferred: "Yuuichi Nakamura",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95513-up9ZDuocHgRs.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95513-up9ZDuocHgRs.png",
+                },
+                siteUrl: "https://anilist.co/staff/95513",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363331,
+              name: {
+                full: "Dinner",
+                userPreferred: "Dinner",
+              },
+              age: null,
+              gender: null,
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363331-vWPysrq2nYaY.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363331-vWPysrq2nYaY.png",
+              },
+              siteUrl: "https://anilist.co/character/363331",
+            },
+            voiceActors: [
+              {
+                id: 95208,
+                name: {
+                  full: "Ai Orikasa",
+                  userPreferred: "Ai Orikasa",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95208-DIfpWvWN401M.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95208-DIfpWvWN401M.png",
+                },
+                siteUrl: "https://anilist.co/staff/95208",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363330,
+              name: {
+                full: "Destroinu",
+                userPreferred: "Destroinu",
+              },
+              age: null,
+              gender: null,
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363330-uPiE6GwGXqed.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363330-uPiE6GwGXqed.png",
+              },
+              siteUrl: "https://anilist.co/character/363330",
+            },
+            voiceActors: [
+              {
+                id: 106840,
+                name: {
+                  full: "Hironori Kondou",
+                  userPreferred: "Hironori Kondou",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n106840-AC03w0OTFovU.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n106840-AC03w0OTFovU.png",
+                },
+                siteUrl: "https://anilist.co/staff/106840",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363328,
+              name: {
+                full: "Afternoontea",
+                userPreferred: "Afternoontea",
+              },
+              age: null,
+              gender: "Female",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363328-vjVqGEU7jKxE.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363328-vjVqGEU7jKxE.png",
+              },
+              siteUrl: "https://anilist.co/character/363328",
+            },
+            voiceActors: [
+              {
+                id: 113511,
+                name: {
+                  full: "Ai Kakuma",
+                  userPreferred: "Ai Kakuma",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n113511-9zlSX9E2ne5G.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n113511-9zlSX9E2ne5G.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/113511",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363324,
+              name: {
+                full: "Breakfast",
+                userPreferred: "Breakfast",
+              },
+              age: null,
+              gender: "Male",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363324-axPkWlv7jJjz.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363324-axPkWlv7jJjz.png",
+              },
+              siteUrl: "https://anilist.co/character/363324",
+            },
+            voiceActors: [
+              {
+                id: 95409,
+                name: {
+                  full: "Yoshihisa Kawahara",
+                  userPreferred: "Yoshihisa Kawahara",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95409-87S6L0u8gQNf.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95409-87S6L0u8gQNf.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/95409",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363329,
+              name: {
+                full: "Sushimaru Tempura",
+                userPreferred: "Sushimaru Tempura",
+              },
+              age: null,
+              gender: null,
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363329-AuqRgdNflx5u.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363329-AuqRgdNflx5u.png",
+              },
+              siteUrl: "https://anilist.co/character/363329",
+            },
+            voiceActors: [
+              {
+                id: 133604,
+                name: {
+                  full: "Shinichirou Kamio",
+                  userPreferred: "Shinichirou Kamio",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n133604-lpjrxfjLdnCp.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n133604-lpjrxfjLdnCp.png",
+                },
+                siteUrl: "https://anilist.co/staff/133604",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 363325,
+              name: {
+                full: "Brunch",
+                userPreferred: "Brunch",
+              },
+              age: null,
+              gender: "Male",
+              description: null,
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b363325-TNL26GXPanq1.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b363325-TNL26GXPanq1.png",
+              },
+              siteUrl: "https://anilist.co/character/363325",
+            },
+            voiceActors: [
+              {
+                id: 95617,
+                name: {
+                  full: "Mayumi Shintani",
+                  userPreferred: "Mayumi Shintani",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95617-20JhQRgHpo1t.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95617-20JhQRgHpo1t.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/95617",
+              },
+            ],
+          },
+        ],
+      },
+      isAdult: false,
+      nextAiringEpisode: null,
+      siteUrl: "https://anilist.co/anime/157960",
+      relations: {
+        edges: [],
+      },
+      recommendations: {
+        edges: [
+          {
+            node: {
+              rating: 3,
+              mediaRecommendation: {
+                id: 112444,
+                title: {
+                  english: "APPARE-RANMAN!",
+                  native: "天晴爛漫！",
+                  romaji: "Appare-Ranman!",
+                  userPreferred: "Appare-Ranman!",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112444-S7bhKskrAqSI.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112444-S7bhKskrAqSI.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 13,
+                siteUrl: "https://anilist.co/anime/112444",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 3,
+              mediaRecommendation: {
+                id: 110353,
+                title: {
+                  english: "DECA-DENCE",
+                  native: "デカダンス",
+                  romaji: "Deca-Dence",
+                  userPreferred: "Deca-Dence",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110353-XGYSsii7qJeK.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110353-XGYSsii7qJeK.png",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/110353",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 4,
+              mediaRecommendation: {
+                id: 116566,
+                title: {
+                  english: "Akudama Drive",
+                  native: "アクダマドライブ",
+                  romaji: "Akudama Drive",
+                  userPreferred: "Akudama Drive",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx116566-PPIVQt359vQY.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx116566-PPIVQt359vQY.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/116566",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 3,
+              mediaRecommendation: {
+                id: 120377,
+                title: {
+                  english: "Cyberpunk: Edgerunners",
+                  native: "サイバーパンク エッジランナーズ",
+                  romaji: "Cyberpunk: Edgerunners",
+                  userPreferred: "Cyberpunk: Edgerunners",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx120377-ayZPoxiWt4Li.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx120377-ayZPoxiWt4Li.jpg",
+                },
+                type: "ANIME",
+                format: "ONA",
+                status: "FINISHED",
+                episodes: 10,
+                siteUrl: "https://anilist.co/anime/120377",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 99425,
+                title: {
+                  english: "Promare",
+                  native: "プロメア",
+                  romaji: "Promare",
+                  userPreferred: "Promare",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99425-CQ500X23zp4i.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx99425-CQ500X23zp4i.png",
+                },
+                type: "ANIME",
+                format: "MOVIE",
+                status: "FINISHED",
+                episodes: 1,
+                siteUrl: "https://anilist.co/anime/99425",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 131565,
+                title: {
+                  english: "takt op.Destiny",
+                  native: "takt op.Destiny",
+                  romaji: "takt op.Destiny",
+                  userPreferred: "takt op.Destiny",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx131565-3W2YEX6V3K3i.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131565-3W2YEX6V3K3i.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/131565",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 146625,
+                title: {
+                  english: "Engage Kiss",
+                  native: "Engage Kiss",
+                  romaji: "Engage Kiss",
+                  userPreferred: "Engage Kiss",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146625-DmXjpJ2y8fDn.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx146625-DmXjpJ2y8fDn.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 13,
+                siteUrl: "https://anilist.co/anime/146625",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 0,
+              mediaRecommendation: {
+                id: 20457,
+                title: {
+                  english: "Black Bullet",
+                  native: "ブラック・ブレット",
+                  romaji: "Black Bullet",
+                  userPreferred: "Black Bullet",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20457-ftrNiYhZzgoY.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20457-ftrNiYhZzgoY.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 13,
+                siteUrl: "https://anilist.co/anime/20457",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 0,
+              mediaRecommendation: {
+                id: 130591,
+                title: {
+                  english: "Sabikui Bisco",
+                  native: "錆喰いビスコ",
+                  romaji: "Sabikui Bisco",
+                  userPreferred: "Sabikui Bisco",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx130591-9O1cf7u6SfYa.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx130591-9O1cf7u6SfYa.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/130591",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 0,
+              mediaRecommendation: {
+                id: 151040,
+                title: {
+                  english: "TRIGUN STAMPEDE",
+                  native: "TRIGUN STAMPEDE",
+                  romaji: "TRIGUN STAMPEDE",
+                  userPreferred: "TRIGUN STAMPEDE",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151040-9QXRpaprfNmL.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx151040-9QXRpaprfNmL.png",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/151040",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 4,
+              mediaRecommendation: {
+                id: 1,
+                title: {
+                  english: "Cowboy Bebop",
+                  native: "カウボーイビバップ",
+                  romaji: "Cowboy Bebop",
+                  userPreferred: "Cowboy Bebop",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1-GCsPm7waJ4kS.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1-GCsPm7waJ4kS.png",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 26,
+                siteUrl: "https://anilist.co/anime/1",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 4087,
+                title: {
+                  english: "Michiko & Hatchin",
+                  native: "ミチコとハッチン",
+                  romaji: "Michiko to Hatchin",
+                  userPreferred: "Michiko to Hatchin",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx4087-TMc9A0GSKiJf.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx4087-TMc9A0GSKiJf.png",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 22,
+                siteUrl: "https://anilist.co/anime/4087",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 109946,
+                title: {
+                  english: "Super Crooks",
+                  native: "スーパー・クルックス",
+                  romaji: "Super Crooks",
+                  userPreferred: "Super Crooks",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109946-S05QNnNplFV2.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109946-S05QNnNplFV2.jpg",
+                },
+                type: "ANIME",
+                format: "ONA",
+                status: "FINISHED",
+                episodes: 13,
+                siteUrl: "https://anilist.co/anime/109946",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 0,
+              mediaRecommendation: {
+                id: 20773,
+                title: {
+                  english: "GANGSTA.",
+                  native: "GANGSTA.",
+                  romaji: "GANGSTA.",
+                  userPreferred: "GANGSTA.",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20773-yfJQMyHqZyJr.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20773-yfJQMyHqZyJr.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/20773",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 108478,
+                title: {
+                  english: "No Guns Life",
+                  native: "ノー・ガンズ・ライフ",
+                  romaji: "No Guns Life",
+                  userPreferred: "No Guns Life",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108478-yHMnmQCtHSDb.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108478-yHMnmQCtHSDb.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/108478",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 2,
+              mediaRecommendation: {
+                id: 105228,
+                title: {
+                  english: "Dorohedoro",
+                  native: "ドロヘドロ",
+                  romaji: "Dorohedoro",
+                  userPreferred: "Dorohedoro",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx105228-I4xr84QS9Pvk.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx105228-I4xr84QS9Pvk.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/105228",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 1,
+              mediaRecommendation: {
+                id: 411,
+                title: {
+                  english: "Gun x Sword",
+                  native: "ガン×ソード",
+                  romaji: "Gun x Sword",
+                  userPreferred: "Gun x Sword",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx411-row6MWWNQDzH.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx411-row6MWWNQDzH.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 26,
+                siteUrl: "https://anilist.co/anime/411",
+              },
+            },
+          },
+        ],
+      },
+    },
   ],
-  averageScore: 75,
-  meanScore: 75,
-  popularity: 646963,
-  trending: 6,
-  studios: {
-    edges: [
-      {
-        id: 15678,
-        isMain: true,
-        node: {
-          id: 1,
-          name: "Studio Pierrot",
-          siteUrl: "https://anilist.co/studio/1",
-          isAnimationStudio: true,
-        },
-      },
-      {
-        id: 36537,
-        isMain: false,
-        node: {
-          id: 751,
-          name: "Marvelous",
-          siteUrl: "https://anilist.co/studio/751",
-          isAnimationStudio: false,
-        },
-      },
-      {
-        id: 42995,
-        isMain: false,
-        node: {
-          id: 7567,
-          name: "TC Entertainment",
-          siteUrl: "https://anilist.co/studio/7567",
-          isAnimationStudio: false,
-        },
-      },
-      {
-        id: 42996,
-        isMain: false,
-        node: {
-          id: 1,
-          name: "Studio Pierrot",
-          siteUrl: "https://anilist.co/studio/1",
-          isAnimationStudio: true,
-        },
-      },
-    ],
-  },
-  characters: {
-    edges: [
-      {
-        role: "MAIN",
-        node: {
-          id: 87275,
-          name: {
-            full: "Ken Kaneki",
-            userPreferred: "Ken Kaneki",
-          },
-          age: "18-29",
-          gender: "Male",
-          description:
-            "__Height:__ 169 cm (5'6\")\n\nKen Kaneki was originally a human and a normal college student until he encountered a female ghoul named [Rize](https://anilist.co/character/88413/Rize-Kamishiro) who was posing as a human at the time. Rize, using Kaneki's crush on her as leverage, managed to lure him into an alley and tried to eat him but ended up dying when construction beams fell on top of her. Kaneki, already in a half-dead state from Rize's attempts at killing him, ends up in a hospital and has some of Rize's organs transplanted into his body. This results in him absorbing some of Rize's powers and characteristics, such as a ghoul eye, powers of regeneration, and the inability to stomach human food.\n\nTerrified and lost, Kaneki's life takes a dramatic turn from then on as he tries to find a place for himself in the world, realizing he now belongs to neither the human nor ghoul world and refusing to eat humans to sustain himself. Meeting some of the ​other ghouls, as well as humans, makes him realize that things aren't just black and white and that there are more to ghouls and humans than originally thought.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b87275-mb13EWZBdbh3.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b87275-mb13EWZBdbh3.png",
-          },
-          siteUrl: "https://anilist.co/character/87275",
-        },
-        voiceActors: [
-          {
-            id: 111635,
-            name: {
-              full: "Natsuki Hanae",
-              userPreferred: "Natsuki Hanae",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n111635-L385UcjTKCBq.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n111635-L385UcjTKCBq.png",
-            },
-            siteUrl: "https://anilist.co/staff/111635",
-          },
-          {
-            id: 111641,
-            name: {
-              full: "Austin Tindle",
-              userPreferred: "Austin Tindle",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n111641-DbiOaZhYsNsi.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n111641-DbiOaZhYsNsi.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/111641",
-          },
-          {
-            id: 106332,
-            name: {
-              full: "Ricardo Richter",
-              userPreferred: "Ricardo Richter",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n106332-LgDWZSskq8Ie.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n106332-LgDWZSskq8Ie.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/106332",
-          },
-          {
-            id: 116937,
-            name: {
-              full: "Alex Minei",
-              userPreferred: "Alex Minei",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/21937.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/21937.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/116937",
-          },
-          {
-            id: 192666,
-            name: {
-              full: "David Jenner",
-              userPreferred: "David Jenner",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/192666",
-          },
-          {
-            id: 182216,
-            name: {
-              full: "Miguel Ángel Leal ",
-              userPreferred: "Miguel Ángel Leal ",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n182216-NYnHyG9gPhEw.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n182216-NYnHyG9gPhEw.png",
-            },
-            siteUrl: "https://anilist.co/staff/182216",
-          },
-          {
-            id: 102303,
-            name: {
-              full: "Adrien Solis",
-              userPreferred: "Adrien Solis",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/7303.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/7303.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/102303",
-          },
-          {
-            id: 115092,
-            name: {
-              full: "Manuel Meli",
-              userPreferred: "Manuel Meli",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n115092-jlxDB7qMIxZJ.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n115092-jlxDB7qMIxZJ.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/115092",
-          },
-        ],
-      },
-      {
-        role: "MAIN",
-        node: {
-          id: 87277,
-          name: {
-            full: "Touka Kirishima",
-            userPreferred: "Touka Kirishima",
-          },
-          age: "17-28",
-          gender: "Female",
-          description:
-            "__Height:__ 156 cm (5'1\")\n\nTouka is a ghoul successfully posing as a human and working as a waitress at a cafe which serves as a gathering place for other ghouls, as well as a food resource.\n\nShe saves Kaneki's life at one point and acts as a reluctant guide to him and his adaptation to the ghoul society. She doesn't like Kaneki much and has no qualms about expressing her dislike for him. She is very serious, tough and hard-working, trying to keep their district as safe for ghouls and humans as possible. Her powers and strength are also quite great and she makes for a formidable opponent.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b87277-oUaqrI1iBzu6.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b87277-oUaqrI1iBzu6.png",
-          },
-          siteUrl: "https://anilist.co/character/87277",
-        },
-        voiceActors: [
-          {
-            id: 116517,
-            name: {
-              full: "Sora Amamiya",
-              userPreferred: "Sora Amamiya",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n116517-NQh6ewlCwzBN.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n116517-NQh6ewlCwzBN.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/116517",
-          },
-          {
-            id: 95659,
-            name: {
-              full: "Brina Palencia",
-              userPreferred: "Brina Palencia",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/659.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/659.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95659",
-          },
-          {
-            id: 138295,
-            name: {
-              full: "Sarah Alles",
-              userPreferred: "Sarah Alles",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n138295-MzjLNhO5Q7YT.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n138295-MzjLNhO5Q7YT.png",
-            },
-            siteUrl: "https://anilist.co/staff/138295",
-          },
-          {
-            id: 192708,
-            name: {
-              full: "Eva Bau",
-              userPreferred: "Eva Bau",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/192708",
-          },
-          {
-            id: 201032,
-            name: {
-              full: "Karen Hernández",
-              userPreferred: "Karen Hernández",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201032-QnHNQ8po7hUp.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201032-QnHNQ8po7hUp.png",
-            },
-            siteUrl: "https://anilist.co/staff/201032",
-          },
-          {
-            id: 213617,
-            name: {
-              full: "Tuty Nonato",
-              userPreferred: "Tuty Nonato",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n213617-tOzRw9DVyX7s.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n213617-tOzRw9DVyX7s.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/213617",
-          },
-          {
-            id: 116893,
-            name: {
-              full: "Marie Nonnenmacher",
-              userPreferred: "Marie Nonnenmacher",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/21893.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/21893.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/116893",
-          },
-          {
-            id: 115254,
-            name: {
-              full: "Ludovica Bebi",
-              userPreferred: "Ludovica Bebi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/20254.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/20254.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/115254",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88293,
-          name: {
-            full: "Hinami Fueguchi",
-            userPreferred: "Hinami Fueguchi",
-          },
-          age: "13-24",
-          gender: "Female",
-          description:
-            "__Height:__ 148 cm - 152 cm (4'10\" - 4'11\")\n\nHinami is a child ghoul whose parents were killed by ghoul investigators. Before, she and her mother seek help from the owner of the Antique Cafe to acquire food. Hinami is initially quite shy, but when she opens up, she is cheerful and earnest. Ken helps her learn kanji, as she cannot attend school, and is very eager to learn. Currently, she is living together with Touka Kirishima.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88293-4J36uyflNWvb.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88293-4J36uyflNWvb.png",
-          },
-          siteUrl: "https://anilist.co/character/88293",
-        },
-        voiceActors: [
-          {
-            id: 106404,
-            name: {
-              full: "Sumire Morohoshi",
-              userPreferred: "Sumire Morohoshi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n106404-uodatsBbsnJh.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n106404-uodatsBbsnJh.png",
-            },
-            siteUrl: "https://anilist.co/staff/106404",
-          },
-          {
-            id: 110441,
-            name: {
-              full: "Lara Woodhull",
-              userPreferred: "Lara Woodhull",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/15441.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/15441.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/110441",
-          },
-          {
-            id: 141337,
-            name: {
-              full: "Sarah Tkotsch",
-              userPreferred: "Sarah Tkotsch",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n141337-ucvmcETR1pts.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n141337-ucvmcETR1pts.png",
-            },
-            siteUrl: "https://anilist.co/staff/141337",
-          },
-          {
-            id: 201438,
-            name: {
-              full: "Zoe Salgado",
-              userPreferred: "Zoe Salgado",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201438-nZhR6375r5AP.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201438-nZhR6375r5AP.png",
-            },
-            siteUrl: "https://anilist.co/staff/201438",
-          },
-          {
-            id: 248555,
-            name: {
-              full: "Azumi Botsu",
-              userPreferred: "Azumi Botsu",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n248555-gvkiViJ79pRm.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n248555-gvkiViJ79pRm.png",
-            },
-            siteUrl: "https://anilist.co/staff/248555",
-          },
-          {
-            id: 216177,
-            name: {
-              full: "Lucille Boudonnat",
-              userPreferred: "Lucille Boudonnat",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/216177",
-          },
-          {
-            id: 176758,
-            name: {
-              full: "Vittoria Bartolomei",
-              userPreferred: "Vittoria Bartolomei",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n176758-gNcUQQmGda61.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n176758-gNcUQQmGda61.png",
-            },
-            siteUrl: "https://anilist.co/staff/176758",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88407,
-          name: {
-            full: "Koutarou Amon",
-            userPreferred: "Koutarou Amon",
-          },
-          age: "26\r",
-          gender: "Male",
-          description:
-            '__Height:__ 191 cm (6\'3")\n\nA first class police investigator who investigates Ghouls, also known as a Dove. He comes to the 20th ward with his mentor, Mado Kureo, to investigate Ghoul incidents in the area. He has a strong sense of justice, fervently believing it is the right and moral thing to do to exterminate the Ghouls. He hunts the Ghouls in order to prevent more human children from becoming orphaned like himself, and he often works after hours to achieve his goals.\n\nHe wields a "Quinque" (a weapon made from the "Kagune" of a Ghoul) that has the appearance of a pole-arm with a large cylindrical bludgeon at the end.',
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88407-YwE6D75Xskxl.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88407-YwE6D75Xskxl.png",
-          },
-          siteUrl: "https://anilist.co/character/88407",
-        },
-        voiceActors: [
-          {
-            id: 95020,
-            name: {
-              full: "Katsuyuki Konishi",
-              userPreferred: "Katsuyuki Konishi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95020-uOJO2IlwpcX0.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95020-uOJO2IlwpcX0.png",
-            },
-            siteUrl: "https://anilist.co/staff/95020",
-          },
-          {
-            id: 95202,
-            name: {
-              full: "Mike McFarland",
-              userPreferred: "Mike McFarland",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/202.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/202.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95202",
-          },
-          {
-            id: 117921,
-            name: {
-              full: "Florian Hoffmann",
-              userPreferred: "Florian Hoffmann",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/22921.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/22921.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/117921",
-          },
-          {
-            id: 192669,
-            name: {
-              full: "Arthur Machado",
-              userPreferred: "Arthur Machado",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n192669-5fSSlQD0LNP4.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n192669-5fSSlQD0LNP4.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/192669",
-          },
-          {
-            id: 201034,
-            name: {
-              full: "Carlos Reynoso",
-              userPreferred: "Carlos Reynoso",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201034-AjEkvaIrtUgp.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201034-AjEkvaIrtUgp.png",
-            },
-            siteUrl: "https://anilist.co/staff/201034",
-          },
-          {
-            id: 155419,
-            name: {
-              full: "Bruno Méyère",
-              userPreferred: "Bruno Méyère",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n155419-VjhmmUgtLJxz.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n155419-VjhmmUgtLJxz.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/155419",
-          },
-          {
-            id: 183877,
-            name: {
-              full: "Massimo Triggiani",
-              userPreferred: "Massimo Triggiani",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n183877-iRNCxA2MTCBd.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n183877-iRNCxA2MTCBd.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/183877",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88408,
-          name: {
-            full: "Yukinori Shinohara",
-            userPreferred: "Yukinori Shinohara",
-          },
-          age: "37",
-          gender: "Male",
-          description:
-            "A Special Class Ghoul Investigator. In the past, he acted as Koutarou Amon's instructor at the Academy.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88408-zezMB3WoVXd3.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88408-zezMB3WoVXd3.png",
-          },
-          siteUrl: "https://anilist.co/character/88408",
-        },
-        voiceActors: [
-          {
-            id: 102260,
-            name: {
-              full: "Yutaka Nakano",
-              userPreferred: "Yutaka Nakano",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n102260-OSLwIM0iBKFa.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n102260-OSLwIM0iBKFa.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/102260",
-          },
-          {
-            id: 95611,
-            name: {
-              full: "Brandon Potter",
-              userPreferred: "Brandon Potter",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/611.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/611.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95611",
-          },
-          {
-            id: 140947,
-            name: {
-              full: "Uwe Jellinek",
-              userPreferred: "Uwe Jellinek",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n140947-XsIwp0JAPO2q.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n140947-XsIwp0JAPO2q.png",
-            },
-            siteUrl: "https://anilist.co/staff/140947",
-          },
-          {
-            id: 182189,
-            name: {
-              full: "Víctor Covarrubias",
-              userPreferred: "Víctor Covarrubias",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n182189-6SjHGzZeYWVN.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n182189-6SjHGzZeYWVN.png",
-            },
-            siteUrl: "https://anilist.co/staff/182189",
-          },
-          {
-            id: 301044,
-            name: {
-              full: "Mauro Medeiros",
-              userPreferred: "Mauro Medeiros",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n301044-NlmLDpwqmozt.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n301044-NlmLDpwqmozt.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/301044",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88409,
-          name: {
-            full: "Nishiki Nishio",
-            userPreferred: "Nishiki Nishio",
-          },
-          age: "19-25",
-          gender: "Male",
-          description:
-            "__Height:__ 177 cm (5'9\")\n\nNishiki Nishio is a ghoul whose original feeding ground was taken from Rize. He is a sophomore in the Pharmaceutical Department of Kamii University and Kimi Nishino's boyfriend.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88409-rOaEex2Ml2ah.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88409-rOaEex2Ml2ah.png",
-          },
-          siteUrl: "https://anilist.co/character/88409",
-        },
-        voiceActors: [
-          {
-            id: 95186,
-            name: {
-              full: "Shintarou Asanuma",
-              userPreferred: "Shintarou Asanuma",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95186-XMdPPqYhMrwN.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95186-XMdPPqYhMrwN.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95186",
-          },
-          {
-            id: 95312,
-            name: {
-              full: "Eric Vale",
-              userPreferred: "Eric Vale",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95312-lixmVhwE8AXE.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95312-lixmVhwE8AXE.png",
-            },
-            siteUrl: "https://anilist.co/staff/95312",
-          },
-          {
-            id: 105706,
-            name: {
-              full: "Dirk Petrick",
-              userPreferred: "Dirk Petrick",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/10706.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/10706.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/105706",
-          },
-          {
-            id: 192709,
-            name: {
-              full: "Dario Torrent",
-              userPreferred: "Dario Torrent",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/192709",
-          },
-          {
-            id: 197596,
-            name: {
-              full: "Bruno  Casemiro",
-              userPreferred: "Bruno  Casemiro",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n197596-7Ym8Vmna0Ggu.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n197596-7Ym8Vmna0Ggu.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/197596",
-          },
-          {
-            id: 201439,
-            name: {
-              full: "César Echeverría",
-              userPreferred: "César Echeverría",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201439-s0uAP6PbVqKQ.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201439-s0uAP6PbVqKQ.png",
-            },
-            siteUrl: "https://anilist.co/staff/201439",
-          },
-          {
-            id: 139131,
-            name: {
-              full: "Jean-Marco Montalto",
-              userPreferred: "Jean-Marco Montalto",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n139131-IkMju3n42K4u.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n139131-IkMju3n42K4u.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/139131",
-          },
-          {
-            id: 165550,
-            name: {
-              full: "Emiliano Reggente",
-              userPreferred: "Emiliano Reggente",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n165550-n6huuSXIlI4T.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n165550-n6huuSXIlI4T.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/165550",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88410,
-          name: {
-            full: "Kimi Nishino",
-            userPreferred: "Kimi Nishino",
-          },
-          age: null,
-          gender: "Female",
-          description:
-            "Kimi Nishino is a assistant for Akihiro Kanou who aids in his ghoulification experiments, the previous human lover of Nishiki Nishio and a medical student at Kamii University.~!Although she is aware of his ghoul nature, she remained loyal to him and kept his secret. After the Owl Suppression Operation, he left her in order to keep her safe.!~",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88410.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88410.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88410",
-        },
-        voiceActors: [
-          {
-            id: 109321,
-            name: {
-              full: "Yurie Kobori",
-              userPreferred: "Yurie Kobori",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n109321-n3GJGoYqp8qi.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n109321-n3GJGoYqp8qi.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/109321",
-          },
-          {
-            id: 95313,
-            name: {
-              full: "Caitlin Glass",
-              userPreferred: "Caitlin Glass",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95313-zK3WpeNtACvm.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95313-zK3WpeNtACvm.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95313",
-          },
-          {
-            id: 140227,
-            name: {
-              full: "Franca Orlia",
-              userPreferred: "Franca Orlia",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/140227",
-          },
-          {
-            id: 205025,
-            name: {
-              full: "Nadia Lujambio",
-              userPreferred: "Nadia Lujambio",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n205025-D1N0VdUczuxq.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n205025-D1N0VdUczuxq.png",
-            },
-            siteUrl: "https://anilist.co/staff/205025",
-          },
-          {
-            id: 252886,
-            name: {
-              full: "Suelen Targin",
-              userPreferred: "Suelen Targin",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n252886-2MUaUgweiLqy.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n252886-2MUaUgweiLqy.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/252886",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88411,
-          name: {
-            full: "Ayato Kirishima",
-            userPreferred: "Ayato Kirishima",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "__Height:__ 159 cm (5'2\")\n\nAyato Kirishima is [Touka Kirishima](https://anilist.co/character/87277/Touka-Kirishima)'s younger brother. He grew up with his sister in the 20th ward but at some point of time, he disappeared. Currently, he is an executive of Aogiri Tree. An arrogant youth with a similar harsh attitude that resembles his sister. Other than physical looks, he shares many similarities with Touka such as his cold, hotblooded attitude and a habit for kicking people. However, he's more harsh compared to her and surprisingly nicer than his Aogiri superiors.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88411-dI6vqLy4pvHK.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88411-dI6vqLy4pvHK.png",
-          },
-          siteUrl: "https://anilist.co/character/88411",
-        },
-        voiceActors: [
-          {
-            id: 95672,
-            name: {
-              full: "Yuuki Kaji",
-              userPreferred: "Yuuki Kaji",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95672-RN4nm0OFwCyU.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95672-RN4nm0OFwCyU.png",
-            },
-            siteUrl: "https://anilist.co/staff/95672",
-          },
-          {
-            id: 95860,
-            name: {
-              full: "Todd Haberkorn",
-              userPreferred: "Todd Haberkorn",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95860-RxBJH1Kt2TUW.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95860-RxBJH1Kt2TUW.png",
-            },
-            siteUrl: "https://anilist.co/staff/95860",
-          },
-          {
-            id: 103757,
-            name: {
-              full: "René Dawn-Claude",
-              userPreferred: "René Dawn-Claude",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/8757.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/8757.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/103757",
-          },
-          {
-            id: 143680,
-            name: {
-              full: "Cesc Martínez",
-              userPreferred: "Cesc Martínez",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/143680",
-          },
-          {
-            id: 201031,
-            name: {
-              full: "Víctor Kuri",
-              userPreferred: "Víctor Kuri",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201031-J2FexLB7KVFY.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201031-J2FexLB7KVFY.png",
-            },
-            siteUrl: "https://anilist.co/staff/201031",
-          },
-          {
-            id: 236691,
-            name: {
-              full: "Gab Romúti",
-              userPreferred: "Gab Romúti",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n236691-sAMNCI0iqk5a.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n236691-sAMNCI0iqk5a.png",
-            },
-            siteUrl: "https://anilist.co/staff/236691",
-          },
-          {
-            id: 139130,
-            name: {
-              full: "Christophe Seugnet",
-              userPreferred: "Christophe Seugnet",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/139130",
-          },
-          {
-            id: 278404,
-            name: {
-              full: "Luca Mannocci",
-              userPreferred: "Luca Mannocci",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/278404",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88412,
-          name: {
-            full: "Juuzou Suzuya",
-            userPreferred: "Juuzou Suzuya",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "__Height:__ 160 cm (5'3\")\n\nA Rank 3 Ghoul Investigator. In the past, he went by the name Rei Suzuya. He is the partner of Yukinori Shinohara. He is a young man with androgynous appearance. He has many stitches used as both first-aid and fashion. His hair is tied with a stitching string in a roman numeral 13 pattern, with large pupils that leaves an eerie and frightening impression. ",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88412-sIOJUnIkyFRe.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88412-sIOJUnIkyFRe.png",
-          },
-          siteUrl: "https://anilist.co/character/88412",
-        },
-        voiceActors: [
-          {
-            id: 95008,
-            name: {
-              full: "Rie Kugimiya",
-              userPreferred: "Rie Kugimiya",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95008-2y0EeuSTHIri.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95008-2y0EeuSTHIri.png",
-            },
-            siteUrl: "https://anilist.co/staff/95008",
-          },
-          {
-            id: 103722,
-            name: {
-              full: "Maxey Whitehead",
-              userPreferred: "Maxey Whitehead",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n103722-4IYtnwwabhYI.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n103722-4IYtnwwabhYI.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/103722",
-          },
-          {
-            id: 101141,
-            name: {
-              full: "Katrin Zimmermann",
-              userPreferred: "Katrin Zimmermann",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/6141.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/6141.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/101141",
-          },
-          {
-            id: 198583,
-            name: {
-              full: "Matheus  Azri",
-              userPreferred: "Matheus  Azri",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n198583-DYmX5whjsMIB.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n198583-DYmX5whjsMIB.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/198583",
-          },
-          {
-            id: 197588,
-            name: {
-              full: "Denisse Leguizamo",
-              userPreferred: "Denisse Leguizamo",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n197588-MOmxBcIOs3l9.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n197588-MOmxBcIOs3l9.png",
-            },
-            siteUrl: "https://anilist.co/staff/197588",
-          },
-          {
-            id: 100999,
-            name: {
-              full: "Pascale Chemin",
-              userPreferred: "Pascale Chemin",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/5999.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/5999.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/100999",
-          },
-          {
-            id: 234183,
-            name: {
-              full: "Fabrizio Valezano",
-              userPreferred: "Fabrizio Valezano",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/234183",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88413,
-          name: {
-            full: "Rize Kamishiro",
-            userPreferred: "Rize Kamishiro",
-          },
-          age: "18-22",
-          gender: "Female",
-          description:
-            "__Height:__ 164 cm\n\nRize Kamishiro is a ghoul that was hanging out at Anteiku. She set her eyes on Ken Kaneki, but moments before eating him, she died in an accident and her organs were transplanted in Ken Kaneki, making him half-ghoul. ",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88413-FmAvV0hGSljG.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88413-FmAvV0hGSljG.png",
-          },
-          siteUrl: "https://anilist.co/character/88413",
-        },
-        voiceActors: [
-          {
-            id: 95185,
-            name: {
-              full: "Kana Hanazawa",
-              userPreferred: "Kana Hanazawa",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95185-x8ZYvtN7SegC.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95185-x8ZYvtN7SegC.png",
-            },
-            siteUrl: "https://anilist.co/staff/95185",
-          },
-          {
-            id: 95159,
-            name: {
-              full: "Monica Rial",
-              userPreferred: "Monica Rial",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95159-iTd65o5LhA62.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95159-iTd65o5LhA62.png",
-            },
-            siteUrl: "https://anilist.co/staff/95159",
-          },
-          {
-            id: 101100,
-            name: {
-              full: "Giuliana Jakobeit",
-              userPreferred: "Giuliana Jakobeit",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/6100.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/6100.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/101100",
-          },
-          {
-            id: 180553,
-            name: {
-              full: "Silvia Cabrera",
-              userPreferred: "Silvia Cabrera",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n180553-LUZBiYKtU59N.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n180553-LUZBiYKtU59N.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/180553",
-          },
-          {
-            id: 185302,
-            name: {
-              full: "Gláucia Franchi",
-              userPreferred: "Gláucia Franchi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n185302-6bEaJKjAvp2o.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n185302-6bEaJKjAvp2o.png",
-            },
-            siteUrl: "https://anilist.co/staff/185302",
-          },
-          {
-            id: 201029,
-            name: {
-              full: "Gabriela Pérez",
-              userPreferred: "Gabriela Pérez",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201029-sLwWFPCwwcdc.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201029-sLwWFPCwwcdc.png",
-            },
-            siteUrl: "https://anilist.co/staff/201029",
-          },
-          {
-            id: 104886,
-            name: {
-              full: "Nathalie Bienaimé",
-              userPreferred: "Nathalie Bienaimé",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n104886-1XdG9QHBeeIE.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n104886-1XdG9QHBeeIE.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/104886",
-          },
-          {
-            id: 115328,
-            name: {
-              full: "Eleonora Reti",
-              userPreferred: "Eleonora Reti",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/20328.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/20328.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/115328",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88414,
-          name: {
-            full: "Uta",
-            userPreferred: "Uta",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "__Height:__ 177 cm\n\nA ghoul that has his own art studio where he makes masks for other ghouls. He has a lot of piercings and tattoos on his body, making him look pretty intimidating, even as a normal-looking human. He's the one who also made a mask for Kaneki.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88414-r2Xd7jJeMrvR.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88414-r2Xd7jJeMrvR.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88414",
-        },
-        voiceActors: [
-          {
-            id: 95079,
-            name: {
-              full: "Takahiro Sakurai",
-              userPreferred: "Takahiro Sakurai",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95079-MdbWTLxPUvFf.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95079-MdbWTLxPUvFf.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95079",
-          },
-          {
-            id: 114283,
-            name: {
-              full: "Aaron Roberts",
-              userPreferred: "Aaron Roberts",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n114283-Th1dEKNmrHCQ.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n114283-Th1dEKNmrHCQ.png",
-            },
-            siteUrl: "https://anilist.co/staff/114283",
-          },
-          {
-            id: 142856,
-            name: {
-              full: "Daniel Gärtner",
-              userPreferred: "Daniel Gärtner",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/142856",
-          },
-          {
-            id: 202431,
-            name: {
-              full: "Guilherme Conradi",
-              userPreferred: "Guilherme Conradi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n202431-mYzxc05qtP52.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n202431-mYzxc05qtP52.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/202431",
-          },
-          {
-            id: 201437,
-            name: {
-              full: "Samuel  Oseguera",
-              userPreferred: "Samuel  Oseguera",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201437-CKi6DeTsdwv2.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201437-CKi6DeTsdwv2.png",
-            },
-            siteUrl: "https://anilist.co/staff/201437",
-          },
-          {
-            id: 172903,
-            name: {
-              full: "Gabriele Lopez",
-              userPreferred: "Gabriele Lopez",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/172903",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88415,
-          name: {
-            full: "Itori",
-            userPreferred: "Itori",
-          },
-          age: null,
-          gender: "Female",
-          description:
-            "Itori is an old friend of Yomo and Uta. She can be found in Helter Skelter bar, where she makes her share in the information web of the underworld. Itori is over friendly and talkative. She likes having fun and even doing pranks. Her bad point might be her using people like toys to get the information she wants.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88415.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88415.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88415",
-        },
-        voiceActors: [
-          {
-            id: 95823,
-            name: {
-              full: "Ayahi Takagaki",
-              userPreferred: "Ayahi Takagaki",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95823-gJC6Tr9HDOqy.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95823-gJC6Tr9HDOqy.png",
-            },
-            siteUrl: "https://anilist.co/staff/95823",
-          },
-          {
-            id: 95891,
-            name: {
-              full: "Jamie Marchi",
-              userPreferred: "Jamie Marchi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95891-QG8dyefPjUIz.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95891-QG8dyefPjUIz.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95891",
-          },
-          {
-            id: 105034,
-            name: {
-              full: "Kaya Marie Möller",
-              userPreferred: "Kaya Marie Möller",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n105034-cC6vL5S3FTU1.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n105034-cC6vL5S3FTU1.png",
-            },
-            siteUrl: "https://anilist.co/staff/105034",
-          },
-          {
-            id: 197595,
-            name: {
-              full: "Bianca Lua",
-              userPreferred: "Bianca Lua",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n197595-lDwWOjiN3QSH.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n197595-lDwWOjiN3QSH.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/197595",
-          },
-          {
-            id: 201441,
-            name: {
-              full: "Brenda Portillo",
-              userPreferred: "Brenda Portillo",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/201441",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88416,
-          name: {
-            full: "Enji Koma",
-            userPreferred: "Enji Koma",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "Enji Koma is a ghoul and a waiter at Anteiku. He is an expert coffee brewer.\nIn his youth, he was known as the Devil Ape and led the Apes ghoul gang.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88416.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88416.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88416",
-        },
-        voiceActors: [
-          {
-            id: 95756,
-            name: {
-              full: "Anri Katsu",
-              userPreferred: "Anri Katsu",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95756-MmmuyQK4Thzl.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95756-MmmuyQK4Thzl.png",
-            },
-            siteUrl: "https://anilist.co/staff/95756",
-          },
-          {
-            id: 114069,
-            name: {
-              full: "Tyson Rinehart",
-              userPreferred: "Tyson Rinehart",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/19069.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/19069.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/114069",
-          },
-          {
-            id: 201440,
-            name: {
-              full: "Sebastián Rosas",
-              userPreferred: "Sebastián Rosas",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201440-4R9ctedQN0xU.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201440-4R9ctedQN0xU.png",
-            },
-            siteUrl: "https://anilist.co/staff/201440",
-          },
-          {
-            id: 262675,
-            name: {
-              full: "César Tunas",
-              userPreferred: "César Tunas",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n262675-slLEZMSXod6k.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n262675-slLEZMSXod6k.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/262675",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88417,
-          name: {
-            full: "Taro-chan",
-            userPreferred: "Taro-chan",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "Taro is a scrapper of the Ghoul Restaurant and owned by Madam A. ",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88417.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88417.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88417",
-        },
-        voiceActors: [
-          {
-            id: 101165,
-            name: {
-              full: "Taketora",
-              userPreferred: "Taketora",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n101165-2t7jn6YxCnma.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n101165-2t7jn6YxCnma.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/101165",
-          },
-          {
-            id: 107567,
-            name: {
-              full: "Jonathan C. Osborne",
-              userPreferred: "Jonathan C. Osborne",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/12567.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/12567.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/107567",
-          },
-          {
-            id: 135842,
-            name: {
-              full: "Sven Gerhardt",
-              userPreferred: "Sven Gerhardt",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n135842-THUloFvy58Dg.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n135842-THUloFvy58Dg.png",
-            },
-            siteUrl: "https://anilist.co/staff/135842",
-          },
-          {
-            id: 180554,
-            name: {
-              full: "Cesar Lechiguero",
-              userPreferred: "Cesar Lechiguero",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n180554-7ixjtK5YmmW6.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n180554-7ixjtK5YmmW6.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/180554",
-          },
-          {
-            id: 201028,
-            name: {
-              full: "Luba Flores",
-              userPreferred: "Luba Flores",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201028-R5tF8RjXCbXr.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201028-R5tF8RjXCbXr.png",
-            },
-            siteUrl: "https://anilist.co/staff/201028",
-          },
-          {
-            id: 275358,
-            name: {
-              full: "Paulo Carvalho",
-              userPreferred: "Paulo Carvalho",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n275358-APXSiJbKwpgT.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n275358-APXSiJbKwpgT.png",
-            },
-            siteUrl: "https://anilist.co/staff/275358",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88418,
-          name: {
-            full: "Tatara",
-            userPreferred: "Tatara",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "A direct subordinate of the One-Eyed King and one of Aogiri Tree's leaders. He was a former member of the Chinese ghoul organization Chi She Lian. \n\nAs one of the Aogiri Tree leaders and a trusted subordinate working under the One-Eyed King, Tatara comes off as a rather loyal individual. He is portrayed as composed and stoic mostly. He often monitors the activities of the Aogiri executives, but kills in cold-blood when embarking on a mission. He is also proud of his immense stamina when fighting and the accuracy of his calculations as well. Tatara seems to have a taste for precision; as shown when he turns down Kaneki considering he's an artificial one-eyed ghoul. He appears to hold a grudge against Houji, to the extent that even the Quinque associated with him, is enough to make him enraged and lose his near unflappable composure.\n\nAs the second-in-command of Aogiri, it can be inferred that he is quite powerful.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88418-OyaEfoP3tf1e.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88418-OyaEfoP3tf1e.png",
-          },
-          siteUrl: "https://anilist.co/character/88418",
-        },
-        voiceActors: [
-          {
-            id: 95068,
-            name: {
-              full: "Kouji Yusa",
-              userPreferred: "Kouji Yusa",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95068-AbL4cVGlYaM8.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95068-AbL4cVGlYaM8.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95068",
-          },
-          {
-            id: 117629,
-            name: {
-              full: "Christopher Wehkamp",
-              userPreferred: "Christopher Wehkamp",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n117629-w22t54KeomD3.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n117629-w22t54KeomD3.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/117629",
-          },
-          {
-            id: 201028,
-            name: {
-              full: "Luba Flores",
-              userPreferred: "Luba Flores",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201028-R5tF8RjXCbXr.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201028-R5tF8RjXCbXr.png",
-            },
-            siteUrl: "https://anilist.co/staff/201028",
-          },
-          {
-            id: 104870,
-            name: {
-              full: "Jochen Haegele",
-              userPreferred: "Jochen Haegele",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/104870",
-          },
-          {
-            id: 302668,
-            name: {
-              full: "Daniel Ortega",
-              userPreferred: "Daniel Ortega",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n302668-B0CEf1237Yzl.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n302668-B0CEf1237Yzl.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/302668",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88419,
-          name: {
-            full: "Nico",
-            userPreferred: "Nico",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "__Species:__ Ghoul\n__Height:__ 175 cm\n__Affiliations:__ Clown Mask Ghoul Gang\n\nA gay ghoul (okama) in love. He was once acting together with Yamori and participating in Aogiri Tree.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88419.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88419.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88419",
-        },
-        voiceActors: [
-          {
-            id: 95591,
-            name: {
-              full: "Kenjirou Tsuda",
-              userPreferred: "Kenjirou Tsuda",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95591-WQGdD3ubbeoq.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95591-WQGdD3ubbeoq.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95591",
-          },
-          {
-            id: 95610,
-            name: {
-              full: "Christopher Bevins",
-              userPreferred: "Christopher Bevins",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95610-4FScrXVJmH3V.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95610-4FScrXVJmH3V.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95610",
-          },
-          {
-            id: 132509,
-            name: {
-              full: "Valentin Stilu",
-              userPreferred: "Valentin Stilu",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/132509",
-          },
-          {
-            id: 154552,
-            name: {
-              full: "César Marchetti",
-              userPreferred: "César Marchetti",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n154552-Q4131HeYuUYB.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n154552-Q4131HeYuUYB.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/154552",
-          },
-          {
-            id: 235063,
-            name: {
-              full: "Daniel Valladares",
-              userPreferred: "Daniel Valladares",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n235063-n158Cacm0LSb.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n235063-n158Cacm0LSb.png",
-            },
-            siteUrl: "https://anilist.co/staff/235063",
-          },
-          {
-            id: 138010,
-            name: {
-              full: "Jean-Pierre Leblan",
-              userPreferred: "Jean-Pierre Leblan",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/138010",
-          },
-          {
-            id: 167039,
-            name: {
-              full: "Alberto Caneva",
-              userPreferred: "Alberto Caneva",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/167039",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88421,
-          name: {
-            full: "Hideyoshi Nagachika",
-            userPreferred: "Hideyoshi Nagachika",
-          },
-          age: "18",
-          gender: "Male",
-          description:
-            "__Race:__ Human\n\nHideyoshi is a normal human and the best friend of Ken Kaneki. Hide is incredibly observant and can figure things out about people in a almost sherlock-like manner. He also becomes interested in things and works hard on them until he finds something else to interest him.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88421-F8yaeVfHjwYn.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88421-F8yaeVfHjwYn.png",
-          },
-          siteUrl: "https://anilist.co/character/88421",
-        },
-        voiceActors: [
-          {
-            id: 95600,
-            name: {
-              full: "Toshiyuki Toyonaga",
-              userPreferred: "Toshiyuki Toyonaga",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95600-giNVqkdeWKuF.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95600-giNVqkdeWKuF.png",
-            },
-            siteUrl: "https://anilist.co/staff/95600",
-          },
-          {
-            id: 119609,
-            name: {
-              full: "Clifford Chapin",
-              userPreferred: "Clifford Chapin",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n119609-0LGmxEBb7PS9.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n119609-0LGmxEBb7PS9.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/119609",
-          },
-          {
-            id: 135843,
-            name: {
-              full: "Jeffrey Wipprecht",
-              userPreferred: "Jeffrey Wipprecht",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n135843-xaYXxFAVhOGy.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n135843-xaYXxFAVhOGy.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/135843",
-          },
-          {
-            id: 197973,
-            name: {
-              full: "Victor Moreno",
-              userPreferred: "Victor Moreno",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n197973-KWV3gQP3BMEo.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n197973-KWV3gQP3BMEo.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/197973",
-          },
-          {
-            id: 201027,
-            name: {
-              full: "Erick Padilla",
-              userPreferred: "Erick Padilla",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201027-PnHBJvCd4Qaf.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201027-PnHBJvCd4Qaf.png",
-            },
-            siteUrl: "https://anilist.co/staff/201027",
-          },
-          {
-            id: 104910,
-            name: {
-              full: "Arnaud Laurent",
-              userPreferred: "Arnaud Laurent",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/9910.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/9910.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/104910",
-          },
-          {
-            id: 95776,
-            name: {
-              full: "Daniele Raffaeli",
-              userPreferred: "Daniele Raffaeli",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/776.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/776.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95776",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88422,
-          name: {
-            full: "Ryouko Fueguchi",
-            userPreferred: "Ryouko Fueguchi",
-          },
-          age: null,
-          gender: "Female",
-          description:
-            "[Hinami](https://anilist.co/character/88293/Hinami-Fueguchi)'s mother.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88422.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88422.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88422",
-        },
-        voiceActors: [
-          {
-            id: 95152,
-            name: {
-              full: "Fumiko Orikasa",
-              userPreferred: "Fumiko Orikasa",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95152-X9K5ciNGSX35.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95152-X9K5ciNGSX35.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95152",
-          },
-          {
-            id: 95472,
-            name: {
-              full: "Colleen Clinkenbeard",
-              userPreferred: "Colleen Clinkenbeard",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95472-fznpewUW95vm.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95472-fznpewUW95vm.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95472",
-          },
-          {
-            id: 105701,
-            name: {
-              full: "Nicole Hannak",
-              userPreferred: "Nicole Hannak",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/10701.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/10701.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/105701",
-          },
-          {
-            id: 180553,
-            name: {
-              full: "Silvia Cabrera",
-              userPreferred: "Silvia Cabrera",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n180553-LUZBiYKtU59N.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n180553-LUZBiYKtU59N.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/180553",
-          },
-          {
-            id: 165971,
-            name: {
-              full: "Roberta De Roberto",
-              userPreferred: "Roberta De Roberto",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/165971",
-          },
-          {
-            id: 315046,
-            name: {
-              full: "Rennata Airoldi",
-              userPreferred: "Rennata Airoldi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n315046-uEHGPriRhIuB.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n315046-uEHGPriRhIuB.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/315046",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88423,
-          name: {
-            full: "Kureo Mado",
-            userPreferred: "Kureo Mado",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            '__Height:__ 177 cm\n\nA senior first class investigator, or a "Dove," who hunts Ghouls. He is Amon\'s mentor and partner. He hunts Ghouls with a maniacal glee, and believes that all Ghouls are lesser than humans, calling them "trash," and mocking them for trying to "imitate" human behavior. Mado is a fanatic about collecting Ghoul\'s "Kagune" (their extra limbs) and making them into "Quinque," or weapons that Doves use to kill Ghouls.',
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88423-H6fFZMWeFj25.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88423-H6fFZMWeFj25.png",
-          },
-          siteUrl: "https://anilist.co/character/88423",
-        },
-        voiceActors: [
-          {
-            id: 95243,
-            name: {
-              full: "Tooru Ookawa",
-              userPreferred: "Tooru Ookawa",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95243-zhk18RRqSAmx.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95243-zhk18RRqSAmx.png",
-            },
-            siteUrl: "https://anilist.co/staff/95243",
-          },
-          {
-            id: 104978,
-            name: {
-              full: "Kenny Green",
-              userPreferred: "Kenny Green",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n104978-LUeUklhFVPZy.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n104978-LUeUklhFVPZy.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/104978",
-          },
-          {
-            id: 138580,
-            name: {
-              full: "Axel Lutter",
-              userPreferred: "Axel Lutter",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n138580-0EoAOyyoZ9m8.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n138580-0EoAOyyoZ9m8.png",
-            },
-            siteUrl: "https://anilist.co/staff/138580",
-          },
-          {
-            id: 180550,
-            name: {
-              full: "Rafael Ordonez Arrieta",
-              userPreferred: "Rafael Ordonez Arrieta",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n180550-Y5KSh3Yoa1DP.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n180550-Y5KSh3Yoa1DP.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/180550",
-          },
-          {
-            id: 190009,
-            name: {
-              full: "Arturo Mercado",
-              userPreferred: "Arturo Mercado",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n190009-gjbZlyWBemZX.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n190009-gjbZlyWBemZX.png",
-            },
-            siteUrl: "https://anilist.co/staff/190009",
-          },
-          {
-            id: 261663,
-            name: {
-              full: "Marco Faustino",
-              userPreferred: "Marco Faustino",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/261663",
-          },
-          {
-            id: 138010,
-            name: {
-              full: "Jean-Pierre Leblan",
-              userPreferred: "Jean-Pierre Leblan",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/138010",
-          },
-          {
-            id: 234145,
-            name: {
-              full: "Stefano Santerini",
-              userPreferred: "Stefano Santerini",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/234145",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88424,
-          name: {
-            full: "Shuu Tsukiyama",
-            userPreferred: "Shuu Tsukiyama",
-          },
-          age: "26",
-          gender: "Male",
-          description:
-            "__Height:__ 180 cm\n\nShuu Tsukiyama was the infamous Gourmet ghoul of the 20th ward. He was a fourth-year student studying Social Welfare at the Department of Human Sciences at Seinan Gakuin University. He comes from the extremely wealthy and influential Tsukiyama family which his father, Mirumo Tsukiyama was the head of. Tsukiyama himself became the head of his family after the Tsukiyama Family Extermination Operation. He was also a member of the Ghoul Restaurant, known as MM until he betrayed them.\n\nHe joined Kaneki's group with the hidden intention of eating Ken Kaneki, obsessed with his scent and taste but eventually came to genuinely care for Kaneki. Two years later, his severe depression and anorexia after Kaneki's apparent demise left him emaciated and required constant care from his family servants. After finding out Kaneki was alive and meeting him, he recovers, being able to walk and eat on his own as well as take measures to help Kaneki regain his memories.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88424-mFPgcZlCuODC.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88424-mFPgcZlCuODC.png",
-          },
-          siteUrl: "https://anilist.co/character/88424",
-        },
-        voiceActors: [
-          {
-            id: 95065,
-            name: {
-              full: "Mamoru Miyano",
-              userPreferred: "Mamoru Miyano",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95065-eyynywrhombR.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95065-eyynywrhombR.png",
-            },
-            siteUrl: "https://anilist.co/staff/95065",
-          },
-          {
-            id: 96602,
-            name: {
-              full: "J. Michael Tatum",
-              userPreferred: "J. Michael Tatum",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n96602-ztTfuo3nzu5t.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n96602-ztTfuo3nzu5t.png",
-            },
-            siteUrl: "https://anilist.co/staff/96602",
-          },
-          {
-            id: 102378,
-            name: {
-              full: "Dirk Stollberg",
-              userPreferred: "Dirk Stollberg",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n102378-gdiNI8WYR9dS.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n102378-gdiNI8WYR9dS.png",
-            },
-            siteUrl: "https://anilist.co/staff/102378",
-          },
-          {
-            id: 153004,
-            name: {
-              full: "Felipe Grinnan",
-              userPreferred: "Felipe Grinnan",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n153004-CgGmVAsohWRg.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n153004-CgGmVAsohWRg.png",
-            },
-            siteUrl: "https://anilist.co/staff/153004",
-          },
-          {
-            id: 117161,
-            name: {
-              full: "Arturo Mercado Jr.",
-              userPreferred: "Arturo Mercado Jr.",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n117161-8wyhZ0iyNcYr.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n117161-8wyhZ0iyNcYr.png",
-            },
-            siteUrl: "https://anilist.co/staff/117161",
-          },
-          {
-            id: 151643,
-            name: {
-              full: "Federico Di Pofi",
-              userPreferred: "Federico Di Pofi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/151643",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88428,
-          name: {
-            full: "Yakumo Oomori",
-            userPreferred: "Yakumo Oomori",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "A white-haired brute with sharp lizard eyes. Yamori is ghoul who is as scary as he looks. Normally in a entirely white suit and black dress shirt, he resembles a typical gangster.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/88428.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/88428.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88428",
-        },
-        voiceActors: [
-          {
-            id: 100928,
-            name: {
-              full: "Rintarou Nishi",
-              userPreferred: "Rintarou Nishi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n100928-OfFb5f55VSFB.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n100928-OfFb5f55VSFB.png",
-            },
-            siteUrl: "https://anilist.co/staff/100928",
-          },
-          {
-            id: 95253,
-            name: {
-              full: "Christopher Sabat",
-              userPreferred: "Christopher Sabat",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95253-Z7Yqog73M7E8.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95253-Z7Yqog73M7E8.png",
-            },
-            siteUrl: "https://anilist.co/staff/95253",
-          },
-          {
-            id: 149195,
-            name: {
-              full: "Joachim Kaps",
-              userPreferred: "Joachim Kaps",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/149195",
-          },
-          {
-            id: 197831,
-            name: {
-              full: "Caio César Oliveira",
-              userPreferred: "Caio César Oliveira",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n197831-nmcizhqtEN76.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n197831-nmcizhqtEN76.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/197831",
-          },
-          {
-            id: 201035,
-            name: {
-              full: "Mauricio Vázquez",
-              userPreferred: "Mauricio Vázquez",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n201035-gRWvtYedjH5d.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n201035-gRWvtYedjH5d.png",
-            },
-            siteUrl: "https://anilist.co/staff/201035",
-          },
-          {
-            id: 104868,
-            name: {
-              full: "Frédéric Souterelle",
-              userPreferred: "Frédéric Souterelle",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n104868-7WbmksR5cloP.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n104868-7WbmksR5cloP.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/104868",
-          },
-          {
-            id: 245237,
-            name: {
-              full: "Fabrizio Russotto",
-              userPreferred: "Fabrizio Russotto",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/245237",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88838,
-          name: {
-            full: "Akira Mado",
-            userPreferred: "Akira Mado",
-          },
-          age: "21 (Tokyo Ghoul), 24 (Tokyo Ghoul:re)",
-          gender: "Female",
-          description:
-            "__Species:__ Human\n__Height:__ 164 cm\n__Affiliations:__ CCG\n__Quinque:__ Amatsu (Koukaku/Bikaku)\n__Likes:__ making quinques, solving puzzles and cats\n\nAkira Mado is a Rank 2 Ghoul Investigator and Kureo's daughter. She is currently partnered with Koutarou Amon.\n\nShe is an intelligent woman and seems to be always serious about work and her daily routine in general. Like her father, she has deep insight and intuition that helps her in investigation and determining what is going on around her while on the field. She shares her father's \"quinque-mania,\" but it is not as extreme as his was.\n\nAkira remains professional in most situations, no matter who she is faced with, and she isn't one to admit her own feelings on a subject unless provoked to a certain degree. Seen through her interactions with others, it is most likely that she would prefer to make a quinque rather than to interact with someone else. ",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88838-LWDgYMTqb1pd.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88838-LWDgYMTqb1pd.png",
-          },
-          siteUrl: "https://anilist.co/character/88838",
-        },
-        voiceActors: [
-          {
-            id: 106787,
-            name: {
-              full: "Asami Seto",
-              userPreferred: "Asami Seto",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n106787-ojpoY7XEGYgc.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n106787-ojpoY7XEGYgc.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/106787",
-          },
-          {
-            id: 113057,
-            name: {
-              full: "Morgan Lauré",
-              userPreferred: "Morgan Lauré",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/18057.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/18057.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/113057",
-          },
-          {
-            id: 137082,
-            name: {
-              full: "Antje Thiele",
-              userPreferred: "Antje Thiele",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n137082-HfhaOwwgT7Zk.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n137082-HfhaOwwgT7Zk.png",
-            },
-            siteUrl: "https://anilist.co/staff/137082",
-          },
-          {
-            id: 182192,
-            name: {
-              full: "Leyla Rangel",
-              userPreferred: "Leyla Rangel",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n182192-JCVBbGHC63TL.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n182192-JCVBbGHC63TL.png",
-            },
-            siteUrl: "https://anilist.co/staff/182192",
-          },
-          {
-            id: 253291,
-            name: {
-              full: "Adriana Chiovatto",
-              userPreferred: "Adriana Chiovatto",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n253291-SPJLfYrwQy7J.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n253291-SPJLfYrwQy7J.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/253291",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 88946,
-          name: {
-            full: "Kishou Arima",
-            userPreferred: "Kishou Arima",
-          },
-          age: "29",
-          gender: "Male",
-          description:
-            "__Height:__ 180 cm\n__Quinque:__ IXA (Koukaku), Narukami (Ukaku), Yukimura 1/3 (Koukaku) \n\nKishou Arima is a famed Special Class Ghoul Investigator known as the CCG's Reaper. He is undefeated as a Ghoul Investigator and at some point was formerly partnered with Take Hirako.\n\nHis investigative skills and prowess in combat has led many investigators such as [Koutarou Amon](https://anilist.co/character/88407/Koutarou-Amon) to admire him.\n\n__Tokyo Ghoul:Re__\n\n~!He later passes down his Yukimura 1/3 (Koukaku) quinque to [Sasaki Haise](https://anilist.co/character/87275/Ken-Kaneki), a rank 1 investigator and mentor of Quinx squad.\n\nAlong with [Akira Mado](https://anilist.co/character/88838/Akira-Mado), he is the overseer of the Quinx squad and keeps a check on Sasaki Haise along with the Quinx members.!~",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b88946-YbTQAGJAdpoH.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b88946-YbTQAGJAdpoH.jpg",
-          },
-          siteUrl: "https://anilist.co/character/88946",
-        },
-        voiceActors: [
-          {
-            id: 95087,
-            name: {
-              full: "Daisuke Namikawa",
-              userPreferred: "Daisuke Namikawa",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95087-6dlBBbejsPyg.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95087-6dlBBbejsPyg.png",
-            },
-            siteUrl: "https://anilist.co/staff/95087",
-          },
-          {
-            id: 108235,
-            name: {
-              full: "Alex Organ",
-              userPreferred: "Alex Organ",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/13235.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/13235.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/108235",
-          },
-          {
-            id: 182551,
-            name: {
-              full: "Ricardo Tejedo",
-              userPreferred: "Ricardo Tejedo",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n182551-z5pxnDy9L0DJ.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n182551-z5pxnDy9L0DJ.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/182551",
-          },
-          {
-            id: 198591,
-            name: {
-              full: "Guilherme de Barros",
-              userPreferred: "Guilherme de Barros",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n198591-SUn0HtX1Nxoa.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n198591-SUn0HtX1Nxoa.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/198591",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 125567,
-          name: {
-            full: "Noro",
-            userPreferred: "Noro",
-          },
-          age: null,
-          gender: "Male",
-          description:
-            "He is one of the direct subordinates of the King of an Eye and one of the leaders of the Aogiri Tree, next to Tatara.\nIn the past he was called Noroi and was responsible for raising Eto, when Kuzen surrendered in District 24.\n\nHe is a giant who intimidates with an overwhelming silence, seems to communicate only through actions, not words.",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/125567-V8XLbbHt8xis.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/125567-V8XLbbHt8xis.jpg",
-          },
-          siteUrl: "https://anilist.co/character/125567",
-        },
-        voiceActors: [
-          {
-            id: 95371,
-            name: {
-              full: "Kenji Hamada",
-              userPreferred: "Kenji Hamada",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95371-nyA7w7nPrlPr.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95371-nyA7w7nPrlPr.png",
-            },
-            siteUrl: "https://anilist.co/staff/95371",
-          },
-          {
-            id: 266731,
-            name: {
-              full: "Andrei Scafi",
-              userPreferred: "Andrei Scafi",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n266731-jZO5MlYZPc5g.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n266731-jZO5MlYZPc5g.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/266731",
-          },
-        ],
-      },
-      {
-        role: "SUPPORTING",
-        node: {
-          id: 125884,
-          name: {
-            full: "Seidou Takizawa",
-            userPreferred: "Seidou Takizawa",
-          },
-          age: "21-31",
-          gender: "Male",
-          description:
-            "__Height:__ 171 cm\n\nTakizawa is a Rank 2 Ghoul Investigator. A classmate of [Akira Mado](https://anilist.co/character/88838/Akira-Mado) at the Academy, he is partnered with Kousuke Houji and assigned to the 20th ward to investigate the Gourmet. He greatly respects [Kishou Arima](https://anilist.co/character/88946/Kishou-Arima) and [Koutarou Amon](https://anilist.co/character/88407/Koutarou-Amon) and admires their achievements.\n\n~!Though he was declared among the casualties of the raid in the 20th Ward, it is revealed that he had actually survived as artificial one-eyed ghoul. He is now a member of Aogiri Tree. As an artificial one-eyed ghoul, he is known as Owl. After betraying Aogiri and killing [Tatara](https://anilist.co/character/88418/Tatara), Takizawa reunited with Akira Mado, and became a member of Ken Kaneki's organization, Goat. !~",
-          image: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/character/large/b125884-x9UNA2Lp31pf.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/character/medium/b125884-x9UNA2Lp31pf.jpg",
-          },
-          siteUrl: "https://anilist.co/character/125884",
-        },
-        voiceActors: [
-          {
-            id: 95792,
-            name: {
-              full: "Shinnosuke Tachibana",
-              userPreferred: "Shinnosuke Tachibana",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n95792-5413Ip70mSdV.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n95792-5413Ip70mSdV.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/95792",
-          },
-          {
-            id: 103686,
-            name: {
-              full: "Micah Solusod",
-              userPreferred: "Micah Solusod",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/8686.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/8686.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/103686",
-          },
-          {
-            id: 137561,
-            name: {
-              full: "Alessandro Campaiola",
-              userPreferred: "Alessandro Campaiola",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n137561-rdMXsdya6WJS.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n137561-rdMXsdya6WJS.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/137561",
-          },
-          {
-            id: 139697,
-            name: {
-              full: "Heiko Akrap",
-              userPreferred: "Heiko Akrap",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n139697-r4IWu8JrAUW8.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n139697-r4IWu8JrAUW8.png",
-            },
-            siteUrl: "https://anilist.co/staff/139697",
-          },
-          {
-            id: 180561,
-            name: {
-              full: "Hector Navarro",
-              userPreferred: "Hector Navarro",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/default.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/default.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/180561",
-          },
-          {
-            id: 179920,
-            name: {
-              full: "Rodolfo Novaes",
-              userPreferred: "Rodolfo Novaes",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n179920-na8WBFpfCzX7.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n179920-na8WBFpfCzX7.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/179920",
-          },
-          {
-            id: 194029,
-            name: {
-              full: "Elliot Leguizamo",
-              userPreferred: "Elliot Leguizamo",
-            },
-            image: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/staff/large/n194029-TmzaVZBtRwwD.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/staff/medium/n194029-TmzaVZBtRwwD.jpg",
-            },
-            siteUrl: "https://anilist.co/staff/194029",
-          },
-        ],
-      },
-    ],
-  },
-  isAdult: true,
-  nextAiringEpisode: null,
-  siteUrl: "https://anilist.co/anime/20605",
-  relations: {
-    edges: [
-      {
-        relationType: "ADAPTATION",
-        node: {
-          id: 63327,
-          title: {
-            english: "Tokyo Ghoul",
-            native: "東京喰種 トーキョーグール",
-            romaji: "Tokyo Ghoul",
-            userPreferred: "Tokyo Ghoul",
-          },
-          coverImage: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx63327-glC9cDxYBja9.png",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx63327-glC9cDxYBja9.png",
-          },
-          type: "MANGA",
-          format: "MANGA",
-          status: "FINISHED",
-          episodes: null,
-          siteUrl: "https://anilist.co/manga/63327",
-        },
-      },
-      {
-        relationType: "PREQUEL",
-        node: {
-          id: 21326,
-          title: {
-            english: null,
-            native: "東京喰種トーキョーグール【PINTO】",
-            romaji: "Tokyo Ghoul: [PINTO]",
-            userPreferred: "Tokyo Ghoul: [PINTO]",
-          },
-          coverImage: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21326-Vmunxqzj1umc.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21326-Vmunxqzj1umc.jpg",
-          },
-          type: "ANIME",
-          format: "OVA",
-          status: "FINISHED",
-          episodes: 1,
-          siteUrl: "https://anilist.co/anime/21326",
-        },
-      },
-      {
-        relationType: "SEQUEL",
-        node: {
-          id: 20850,
-          title: {
-            english: "Tokyo Ghoul √A",
-            native: "東京喰種[トーキョーグール]√A",
-            romaji: "Tokyo Ghoul √A",
-            userPreferred: "Tokyo Ghoul √A",
-          },
-          coverImage: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20850-glDf9EMKeCwe.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20850-glDf9EMKeCwe.jpg",
-          },
-          type: "ANIME",
-          format: "TV",
-          status: "FINISHED",
-          episodes: 12,
-          siteUrl: "https://anilist.co/anime/20850",
-        },
-      },
-      {
-        relationType: "PREQUEL",
-        node: {
-          id: 21132,
-          title: {
-            english: null,
-            native: "東京喰種トーキョーグール [JACK]",
-            romaji: "Tokyo Ghoul: [JACK]",
-            userPreferred: "Tokyo Ghoul: [JACK]",
-          },
-          coverImage: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21132-nY3Ifx1GYQ6f.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21132-nY3Ifx1GYQ6f.jpg",
-          },
-          type: "ANIME",
-          format: "OVA",
-          status: "FINISHED",
-          episodes: 1,
-          siteUrl: "https://anilist.co/anime/21132",
-        },
-      },
-      {
-        relationType: "OTHER",
-        node: {
-          id: 195457,
-          title: {
-            english: null,
-            native:
-              "「unravel」×『東京喰種』TV Animation 10th Anniversary Collaboration MV",
-            romaji:
-              "「unravel」×『Tokyo Ghoul』TV Animation 10th Anniversary Collaboration MV",
-            userPreferred:
-              "「unravel」×『Tokyo Ghoul』TV Animation 10th Anniversary Collaboration MV",
-          },
-          coverImage: {
-            large:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195457-aPAOYhTGWhVw.jpg",
-            medium:
-              "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195457-aPAOYhTGWhVw.jpg",
-          },
-          type: "ANIME",
-          format: "MUSIC",
-          status: "FINISHED",
-          episodes: 1,
-          siteUrl: "https://anilist.co/anime/195457",
-        },
-      },
-    ],
-  },
-  recommendations: {
-    edges: [
-      {
-        node: {
-          rating: 2,
-          mediaRecommendation: {
-            id: 33,
-            title: {
-              english: "Berserk",
-              native: "剣風伝奇ベルセルク",
-              romaji: "Kenpuu Denki Berserk",
-              userPreferred: "Kenpuu Denki Berserk",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx33-PSwfE5B0gejI.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx33-PSwfE5B0gejI.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 25,
-            siteUrl: "https://anilist.co/anime/33",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 15,
-          mediaRecommendation: {
-            id: 20958,
-            title: {
-              english: "Attack on Titan Season 2",
-              native: "進撃の巨人 Season２",
-              romaji: "Shingeki no Kyojin Season 2",
-              userPreferred: "Shingeki no Kyojin Season 2",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20958-HuFJyr54Mmir.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20958-HuFJyr54Mmir.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/20958",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 675,
-          mediaRecommendation: {
-            id: 20623,
-            title: {
-              english: "Parasyte -the maxim-",
-              native: "寄生獣 セイの格率",
-              romaji: "Kiseijuu: Sei no Kakuritsu",
-              userPreferred: "Kiseijuu: Sei no Kakuritsu",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20623-dUARfggnNDOe.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20623-dUARfggnNDOe.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 24,
-            siteUrl: "https://anilist.co/anime/20623",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 98,
-          mediaRecommendation: {
-            id: 21341,
-            title: {
-              english: "AJIN: Demi-Human",
-              native: "亜人",
-              romaji: "Ajin",
-              userPreferred: "Ajin",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21341-Pyc7SkMEuGsl.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21341-Pyc7SkMEuGsl.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 13,
-            siteUrl: "https://anilist.co/anime/21341",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 7,
-          mediaRecommendation: {
-            id: 7724,
-            title: {
-              english: "Shiki",
-              native: "屍鬼",
-              romaji: "Shiki",
-              userPreferred: "Shiki",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx7724-NwNnRsI34eDa.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx7724-NwNnRsI34eDa.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 22,
-            siteUrl: "https://anilist.co/anime/7724",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 37,
-          mediaRecommendation: {
-            id: 16498,
-            title: {
-              english: "Attack on Titan",
-              native: "進撃の巨人",
-              romaji: "Shingeki no Kyojin",
-              userPreferred: "Shingeki no Kyojin",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx16498-buvcRTBx4NSm.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx16498-buvcRTBx4NSm.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 25,
-            siteUrl: "https://anilist.co/anime/16498",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 4,
-          mediaRecommendation: {
-            id: 777,
-            title: {
-              english: "Hellsing Ultimate",
-              native: "HELLSING OVA",
-              romaji: "HELLSING OVA",
-              userPreferred: "HELLSING OVA",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx777-F6547pSAR2Zd.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx777-F6547pSAR2Zd.jpg",
-            },
-            type: "ANIME",
-            format: "OVA",
-            status: "FINISHED",
-            episodes: 10,
-            siteUrl: "https://anilist.co/anime/777",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 1,
-          mediaRecommendation: {
-            id: 101915,
-            title: {
-              english: "MECHA-UDE",
-              native: "メカウデ",
-              romaji: "Mecha-ude",
-              userPreferred: "Mecha-ude",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx101915-8jenmbt9QYiR.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx101915-8jenmbt9QYiR.jpg",
-            },
-            type: "ANIME",
-            format: "OVA",
-            status: "FINISHED",
-            episodes: 1,
-            siteUrl: "https://anilist.co/anime/101915",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 91,
-          mediaRecommendation: {
-            id: 6880,
-            title: {
-              english: "Deadman Wonderland",
-              native: "デッドマン・ワンダーランド",
-              romaji: "Deadman Wonderland",
-              userPreferred: "Deadman Wonderland",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx6880-qZ1jIqIYpST2.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx6880-qZ1jIqIYpST2.png",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/6880",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 7,
-          mediaRecommendation: {
-            id: 21799,
-            title: {
-              english: "AJIN: Demi-Human 2",
-              native: "亜人 2",
-              romaji: "Ajin 2",
-              userPreferred: "Ajin 2",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21799-0WB0vWJJ7mFX.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21799-0WB0vWJJ7mFX.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 13,
-            siteUrl: "https://anilist.co/anime/21799",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 27,
-          mediaRecommendation: {
-            id: 10620,
-            title: {
-              english: "The Future Diary",
-              native: "未来日記",
-              romaji: "Mirai Nikki",
-              userPreferred: "Mirai Nikki",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx10620-dUZeNej0W4QN.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx10620-dUZeNej0W4QN.png",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 26,
-            siteUrl: "https://anilist.co/anime/10620",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 60,
-          mediaRecommendation: {
-            id: 99531,
-            title: {
-              english: "Devils' Line",
-              native: "デビルズライン",
-              romaji: "Devils' Line",
-              userPreferred: "Devils' Line",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99531-UUrozP70Wlmg.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx99531-UUrozP70Wlmg.png",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/99531",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 119,
-          mediaRecommendation: {
-            id: 226,
-            title: {
-              english: "Elfen Lied",
-              native: "エルフェンリート",
-              romaji: "Elfen Lied",
-              userPreferred: "Elfen Lied",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx226-MibyRKhIrnTe.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx226-MibyRKhIrnTe.png",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 13,
-            siteUrl: "https://anilist.co/anime/226",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 2,
-          mediaRecommendation: {
-            id: 97995,
-            title: {
-              english:
-                "YU-NO: A Girl Who Chants Love at the Bound of This World",
-              native: "この世の果てで恋を唄う少女YU-NO",
-              romaji: "Kono Yo no Hate de Koi wo Utau Shoujo YU-NO",
-              userPreferred: "Kono Yo no Hate de Koi wo Utau Shoujo YU-NO",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97995-VO6rXNU0fmBq.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97995-VO6rXNU0fmBq.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 26,
-            siteUrl: "https://anilist.co/anime/97995",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 19,
-          mediaRecommendation: {
-            id: 18153,
-            title: {
-              english: "Beyond the Boundary",
-              native: "境界の彼方",
-              romaji: "Kyoukai no Kanata",
-              userPreferred: "Kyoukai no Kanata",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx18153-oDqA9zQzQPOq.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx18153-oDqA9zQzQPOq.png",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/18153",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 1,
-          mediaRecommendation: {
-            id: 18277,
-            title: {
-              english: "Strike the Blood",
-              native: "ストライク・ザ・ブラッド",
-              romaji: "Strike the Blood",
-              userPreferred: "Strike the Blood",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx18277-Vwm314Nr6vsg.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx18277-Vwm314Nr6vsg.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 24,
-            siteUrl: "https://anilist.co/anime/18277",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 3,
-          mediaRecommendation: {
-            id: 1860,
-            title: {
-              english: "Tokyo Majin",
-              native: "東京魔人學園剣風帖　龖（トウ）",
-              romaji: "Tokyo Majin Gakuen Kenpucho: Tou",
-              userPreferred: "Tokyo Majin Gakuen Kenpucho: Tou",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1860-1TRWh93iE2Kf.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1860-1TRWh93iE2Kf.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 14,
-            siteUrl: "https://anilist.co/anime/1860",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 7,
-          mediaRecommendation: {
-            id: 21560,
-            title: {
-              english: "Berserk (2016)",
-              native: "ベルセルク",
-              romaji: "Berserk",
-              userPreferred: "Berserk",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21560-6iifjdssfebJ.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21560-6iifjdssfebJ.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/21560",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 22,
-          mediaRecommendation: {
-            id: 101759,
-            title: {
-              english: "The Promised Neverland",
-              native: "約束のネバーランド",
-              romaji: "Yakusoku no Neverland",
-              userPreferred: "Yakusoku no Neverland",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101759-8UR7r9MNVpz2.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101759-8UR7r9MNVpz2.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/101759",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 33,
-          mediaRecommendation: {
-            id: 11111,
-            title: {
-              english: "Another",
-              native: "アナザー",
-              romaji: "Another",
-              userPreferred: "Another",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11111-gvvE5bBYsyFo.png",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11111-gvvE5bBYsyFo.png",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/11111",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 19,
-          mediaRecommendation: {
-            id: 108241,
-            title: {
-              english: "Gleipnir",
-              native: "グレイプニル",
-              romaji: "Gleipnir",
-              userPreferred: "Gleipnir",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108241-Mc28QvkdUkfp.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108241-Mc28QvkdUkfp.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 13,
-            siteUrl: "https://anilist.co/anime/108241",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 30,
-          mediaRecommendation: {
-            id: 21665,
-            title: {
-              english: "B: The Beginning",
-              native: "B: The Beginning",
-              romaji: "B: The Beginning",
-              userPreferred: "B: The Beginning",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx21665-QnenQOaxzhpf.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx21665-QnenQOaxzhpf.jpg",
-            },
-            type: "ANIME",
-            format: "ONA",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/21665",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 23,
-          mediaRecommendation: {
-            id: 19315,
-            title: {
-              english: null,
-              native: "ピューパ",
-              romaji: "Pupa",
-              userPreferred: "Pupa",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx19315-dWHH0pRxVCjq.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx19315-dWHH0pRxVCjq.jpg",
-            },
-            type: "ANIME",
-            format: "TV_SHORT",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/19315",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 43,
-          mediaRecommendation: {
-            id: 100240,
-            title: {
-              english: "Tokyo Ghoul:re",
-              native: "東京喰種-トーキョーグール-:re",
-              romaji: "Tokyo Ghoul:re",
-              userPreferred: "Tokyo Ghoul:re",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100240-vJNaKd5HwPJ2.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx100240-vJNaKd5HwPJ2.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 12,
-            siteUrl: "https://anilist.co/anime/100240",
-          },
-        },
-      },
-      {
-        node: {
-          rating: 13,
-          mediaRecommendation: {
-            id: 9919,
-            title: {
-              english: "Blue Exorcist",
-              native: "青の祓魔師",
-              romaji: "Ao no Exorcist",
-              userPreferred: "Ao no Exorcist",
-            },
-            coverImage: {
-              large:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx9919-nXS7JOZrWHfS.jpg",
-              medium:
-                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx9919-nXS7JOZrWHfS.jpg",
-            },
-            type: "ANIME",
-            format: "TV",
-            status: "FINISHED",
-            episodes: 25,
-            siteUrl: "https://anilist.co/anime/9919",
-          },
-        },
-      },
-    ],
+  userList: {
+    inFavorites: false,
   },
 };
 

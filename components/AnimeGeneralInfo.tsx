@@ -3,8 +3,8 @@ import { AnimeDetails } from "@/types/Anime";
 import {
   formatMediaDates,
   FormatMediaDuration,
+  formatMediaSource,
   formatMediaStudios,
-  formatMediaType,
 } from "@/Utility/mediaUtils";
 import { useRouter } from "expo-router";
 import React from "react";
@@ -83,7 +83,10 @@ export default function AnimeGeneralInfo({
     <View style={styles.container}>
       {/* Anime Source and Episode Duration */}
       <View style={styles.rowContainer}>
-        <RowItem label="Source" value={formatMediaType(animeDetails.source!)} />
+        <RowItem
+          label="Source"
+          value={formatMediaSource(animeDetails.source!)}
+        />
         <RowItem
           label="Episode Duration"
           value={FormatMediaDuration(animeDetails.duration!)}

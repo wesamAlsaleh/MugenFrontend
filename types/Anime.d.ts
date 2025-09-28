@@ -50,4 +50,9 @@ type AnimeDetails = Anime & {
   recommendations: RecommendationsDto | null;
 };
 
-export { Anime, AnimeDetails };
+type UserLists = {
+  progressStatus?: string | null;
+  inFavorites?: boolean | null;
+};
+
+export { Anime, AnimeDetails, UserLists };

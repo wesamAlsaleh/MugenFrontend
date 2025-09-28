@@ -4,17 +4,22 @@ import AnimeDetailsHeader from "@/components/AnimeDetailsHeader";
 import AnimeDetailsSection from "@/components/AnimeDetailsSection";
 import { singleAnime } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
-import { AnimeDetails } from "@/types/Anime";
+import { AnimeDetails, UserLists } from "@/types/Anime";
 import { useLocalSearchParams } from "expo-router";
 import React, { useEffect, useState } from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+type AnimeDetailsResponse = {
+  data: AnimeDetails[];
+  userList?: UserLists | null;
+};
+
 export default function AnimeDetailScreen() {
   const { id } = useLocalSearchParams(); // get the id from URL
 
   // State to store anime details
-  const [animeDetails, setAnimeDetails] = useState<AnimeDetails>();
+  const [animeDetails, setAnimeDetails] = useState<AnimeDetailsResponse>();
   const [isLoading, setIsLoading] = useState<boolean>(true); // Loading state
 
   // Get the theme colors
@@ -65,6 +70,10 @@ export default function AnimeDetailScreen() {
     return <View></View>;
   }
 
+  // Prepare the anime details data
+  const animeDetailsData = animeDetails?.data[0];
+  const userListData = animeDetails?.userList;
+
   return (
     <SafeAreaView
       style={styles.safeAreaStyle} // Safe area style
@@ -77,18 +86,23 @@ export default function AnimeDetailScreen() {
         showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
       >
         {/* Header Container */}
-        <AnimeDetailsHeader animeDetails={animeDetails!} />
+        <AnimeDetailsHeader animeDetails={animeDetailsData!} />
 
         {/* Page Content */}
         <View style={styles.pageContent}>
           {/* Adult Content Warning */}
-          <AnimeAdultsContentWarning adultContent={animeDetails?.isAdult!} />
+          <AnimeAdultsContentWarning
+            adultContent={animeDetailsData?.isAdult!}
+          />
 
-          {/* TODO: Action Buttons */}
-          <ActionBar />
+          {/* Action Buttons */}
+          <ActionBar
+            animeRating={animeDetailsData?.averageScore!}
+            userList={userListData!}
+          />
 
           {/* Anime Details */}
-          <AnimeDetailsSection animeDetails={animeDetails!} />
+          <AnimeDetailsSection animeDetails={animeDetailsData!} />
         </View>
       </ScrollView>
     </SafeAreaView>

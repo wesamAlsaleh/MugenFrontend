@@ -37,8 +37,7 @@ export default function Card(props: CardProps) {
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: 20,
-    marginBottom: 10,
+    marginVertical: 10,
   },
   cardContainer: {
     borderRadius: 12,

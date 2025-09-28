@@ -49,8 +49,9 @@ export default function AnimeTrailer({
       left: "50%", // Center horizontally
       zIndex: 1, // Ensure the icon is above the image
       transform: [{ translateX: -25 }, { translateY: -25 }], // Center the icon exactly
-      backgroundColor: theme.primary + "cc", // Semi-transparent background
-      borderRadius: 8, // Circular background
+      borderWidth: 2,
+      borderColor: theme.primary + "cc", // Semi-transparent background,
+      borderRadius: 40, // Rounded corners
       padding: 10, // Padding around the icon
     },
     thumbnailContainer: {
@@ -100,7 +101,7 @@ export default function AnimeTrailer({
             <View style={styles.thumbnailContainer}>
               {/* Play Icon */}
               <View style={styles.playIconContainer}>
-                <Play color={theme.primaryText} />
+                <Play color={theme.primary} />
               </View>
 
               {/* Thumbnail */}

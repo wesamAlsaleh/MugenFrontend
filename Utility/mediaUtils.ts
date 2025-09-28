@@ -289,6 +289,15 @@ const formatMediaRelations = (relation: string) => {
   }
 };
 
+/**
+ * Formats a media character role string into a more user-friendly format.
+ *
+ * @param role - The role of the media character as a string.
+ *               Expected values include "MAIN", "SUPPORTING", "ANTAGONIST", "BACKGROUND", or any other string.
+ * @returns A formatted string representing the role.
+ *          Returns "Main" for "MAIN", "Supporting" for "SUPPORTING", "Antagonist" for "ANTAGONIST",
+ *          "Background" for "BACKGROUND", or the original role string for unrecognized values.
+ */
 const formatMediaCharacterRole = (role: string) => {
   // Type check to ensure role is valid
   if (!role) return "";
@@ -300,11 +309,52 @@ const formatMediaCharacterRole = (role: string) => {
       return "Supporting";
     case "ANTAGONIST":
       return "Antagonist";
+    case "BACKGROUND":
+      return "Background";
     default:
       return role;
   }
 };
 
+const formatMediaSource = (source: string) => {
+  // Type check to ensure source is valid
+  if (!source) return "";
+
+  switch (source) {
+    case "ORIGINAL":
+      return "Original";
+    case "MANGA":
+      return "Manga";
+    case "LIGHT_NOVEL":
+      return "Light Novel";
+    case "VISUAL_NOVEL":
+      return "Visual Novel";
+    case "VIDEO_GAME":
+      return "Video Game";
+    case "OTHER":
+      return "Other";
+    case "NOVEL":
+      return "Novel";
+    case "DOUJINSHI":
+      return "Doujinshi";
+    case "ANIME":
+      return "Anime";
+    case "WEB_NOVEL":
+      return "Web Novel";
+    case "LIVE_ACTION":
+      return "Live Action";
+    case "GAME":
+      return "Game";
+    case "COMIC":
+      return "Comic";
+    case "MULTIMEDIA_PROJECT":
+      return "Multimedia Project";
+    case "PICTURE_BOOK":
+      return "Picture Book";
+    default:
+      return source;
+  }
+};
 export {
   formatMediaCharacterRole,
   formatMediaDates,
@@ -313,6 +363,7 @@ export {
   formatMediaFormat,
   formatMediaRelations,
   formatMediaSeason,
+  formatMediaSource,
   formatMediaStatus,
   formatMediaStudios,
   formatMediaType,
