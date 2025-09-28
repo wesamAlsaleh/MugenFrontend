@@ -38,7 +38,10 @@ export default function UserFavorite({
     <TouchableOpacity style={{}} onPress={() => {}} activeOpacity={0.7}>
       <View style={styles.container}>
         {inFavorites ? (
-          <HeartMinus size={28} color={styles.icon.color} />
+          <>
+            <HeartMinus size={28} color={styles.icon.color} />
+            <Text style={styles.text}>Remove from Favorites</Text>
+          </>
         ) : (
           <>
             <HeartPlus size={28} color={styles.icon.color} />

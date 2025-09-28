@@ -27,6 +27,13 @@ interface Props {
  * @param children Content to be rendered inside the BottomSheet
  * @returns Bottom sheet component to be used in various screens (page)
  *
+ * @Usage
+ * First, wrap the parent component with `GestureHandlerRootView` from `react-native-gesture-handler` to make it work as expected.
+ * Second, declare a ref using `useRef<BottomSheet>(null)` and pass it to the `bottomSheetRef` prop.
+ * Third, define the snap points as an array of strings {{in a useMemo}} (e.g., `["25%", "50%"]`) and pass it to the `snapPoints` prop.
+ * Fourth, use the `CustomBottomSheet` component and pass the `bottomSheetRef`, `snapPoints`, and the content as `children`.
+ * Finally, control the bottom sheet using the ref (e.g., `bottomSheetRef.current?.expand()` to open, `bottomSheetRef.current?.close()` to close).
+ *
  * @example
  * const bottomSheetRef = useRef<BottomSheet>(null);
  *

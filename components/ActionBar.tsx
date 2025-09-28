@@ -10,9 +10,16 @@ import UserWatchStatus from "./UserWatchStatus";
 interface Props {
   animeRating?: number;
   userList?: UserLists | null;
+  openBottomSheet?: () => void;
+  closeBottomSheet?: () => void;
 }
 
-export default function ActionBar({ animeRating, userList }: Props) {
+export default function ActionBar({
+  animeRating,
+  userList,
+  openBottomSheet,
+  closeBottomSheet,
+}: Props) {
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
     cardWrapper: {
@@ -36,7 +43,11 @@ export default function ActionBar({ animeRating, userList }: Props) {
             <AnilistRating rating={animeRating!} />
 
             {/* User List Actions Button */}
-            <UserWatchStatus progressStatus={userList?.progressStatus!} />
+            <UserWatchStatus
+              progressStatus={userList?.progressStatus!}
+              openBottomSheet={openBottomSheet!}
+              closeBottomSheet={closeBottomSheet!}
+            />
 
             {/* User Favorite Action Button */}
             <UserFavorite inFavorites={userList?.inFavorites!} />

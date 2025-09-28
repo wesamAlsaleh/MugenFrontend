@@ -355,6 +355,41 @@ const formatMediaSource = (source: string) => {
       return source;
   }
 };
+
+/**
+ * Formats a watch status string into a more user-friendly format.
+ *
+ * @param status - The watch status string to format. Expected values are:
+ *   - "WATCHING": Returns "Watching".
+ *   - "COMPLETED": Returns "Completed".
+ *   - "PAUSED": Returns "Paused".
+ *   - "DROPPED": Returns "Dropped".
+ *   - "PLANNING": Returns "Planning".
+ *   If the input does not match any of these values, the function returns the input as-is.
+ *   If the input is falsy, an empty string is returned.
+ *
+ * @returns A formatted string representing the watch status, or the input string if no match is found.
+ */
+const formatWatchStatus = (status: string) => {
+  // Type check to ensure status is valid
+  if (!status) return "";
+
+  switch (status) {
+    case "WATCHING":
+      return "Watching";
+    case "COMPLETED":
+      return "Completed";
+    case "PAUSED":
+      return "Paused";
+    case "DROPPED":
+      return "Dropped";
+    case "PLANNING":
+      return "Planning";
+    default:
+      return status;
+  }
+};
+
 export {
   formatMediaCharacterRole,
   formatMediaDates,
@@ -367,4 +402,5 @@ export {
   formatMediaStatus,
   formatMediaStudios,
   formatMediaType,
+  formatWatchStatus,
 };

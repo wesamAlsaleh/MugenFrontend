@@ -2,12 +2,18 @@ import ActionBar from "@/components/ActionBar";
 import AnimeAdultsContentWarning from "@/components/AnimeAdultsContentWarning";
 import AnimeDetailsHeader from "@/components/AnimeDetailsHeader";
 import AnimeDetailsSection from "@/components/AnimeDetailsSection";
+import CustomBottomSheet from "@/components/BottomSheet";
+import UserWatchStatusSheetContent from "@/components/UserWatchStatusSheetContent";
 import { singleAnime } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
 import { AnimeDetails, UserLists } from "@/types/Anime";
+import { formatWatchStatus } from "@/Utility/mediaUtils";
+import { IsTablet } from "@/Utility/screenUtils";
+import BottomSheet from "@gorhom/bottom-sheet";
 import { useLocalSearchParams } from "expo-router";
-import React, { useEffect, useState } from "react";
-import { ScrollView, StyleSheet, View } from "react-native";
+import React, { useEffect, useRef, useState } from "react";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 type AnimeDetailsResponse = {
@@ -54,6 +60,22 @@ export default function AnimeDetailScreen() {
     },
   });
 
+  // Ref to control BottomSheet
+  const bottomSheetRef = useRef<BottomSheet>(null);
+
+  // Define snap points for the bottom sheet
+  const snapPoints = React.useMemo(() => [IsTablet() ? "40%" : "36%"], []);
+
+  // Function to handle opening the bottom sheet
+  const openBottomSheet = () => {
+    bottomSheetRef.current?.expand();
+  };
+
+  // Function to handle closing the bottom sheet
+  const closeBottomSheet = () => {
+    bottomSheetRef.current?.close();
+  };
+
   // Fetch anime details when the component mounts or id changes
   useEffect(() => {
     // TODO: Fetch anime details using the id
@@ -65,46 +87,75 @@ export default function AnimeDetailScreen() {
     setIsLoading(false);
   }, [id]);
 
-  // If loading, you can return a loading indicator here
-  if (isLoading) {
-    return <View></View>;
-  }
-
   // Prepare the anime details data
   const animeDetailsData = animeDetails?.data[0];
   const userListData = animeDetails?.userList;
 
+  // State to manage user watch status
+  const [watchStatus, setWatchStatus] = useState<string | null>();
+
+  useEffect(() => {
+    // Set the user watch status from user list data
+    setWatchStatus(formatWatchStatus(userListData?.progressStatus!) || null);
+  }, [userListData]);
+
+  // If loading, you can return a loading indicator here
+  if (isLoading) {
+    // TODO: Show a simple loading view for now
+    return (
+      <View>
+        <Text>Loading...</Text>
+      </View>
+    );
+  }
+
   return (
-    <SafeAreaView
-      style={styles.safeAreaStyle} // Safe area style
-      edges={["top", "left", "right", "bottom"]} // Safe area for all edges
-    >
-      {/* ScrollView for main content */}
-      <ScrollView
-        style={styles.scrollView} // Set background color based on theme and make it take full height "screen"
-        contentContainerStyle={styles.container} // Add padding to the main container
-        showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
+    <GestureHandlerRootView>
+      <SafeAreaView
+        style={styles.safeAreaStyle} // Safe area style
+        edges={["top", "left", "right", "bottom"]} // Safe area for all edges
       >
-        {/* Header Container */}
-        <AnimeDetailsHeader animeDetails={animeDetailsData!} />
+        {/* ScrollView for main content */}
+        <ScrollView
+          style={styles.scrollView} // Set background color based on theme and make it take full height "screen"
+          contentContainerStyle={styles.container} // Add padding to the main container
+          showsVerticalScrollIndicator={false} // Hide vertical scroll indicator
+        >
+          {/* Header Container */}
+          <AnimeDetailsHeader animeDetails={animeDetailsData!} />
 
-        {/* Page Content */}
-        <View style={styles.pageContent}>
-          {/* Adult Content Warning */}
-          <AnimeAdultsContentWarning
-            adultContent={animeDetailsData?.isAdult!}
+          {/* Page Content */}
+          <View style={styles.pageContent}>
+            {/* Adult Content Warning */}
+            <AnimeAdultsContentWarning
+              adultContent={animeDetailsData?.isAdult!}
+            />
+
+            {/* Action Buttons */}
+            <ActionBar
+              animeRating={animeDetailsData?.averageScore!}
+              userList={userListData!}
+              openBottomSheet={openBottomSheet}
+              closeBottomSheet={closeBottomSheet}
+            />
+
+            {/* Anime Details */}
+            <AnimeDetailsSection animeDetails={animeDetailsData!} />
+          </View>
+        </ScrollView>
+      </SafeAreaView>
+
+      {/* Bottom sheet mounted at the screen level */}
+      <CustomBottomSheet
+        bottomSheetRef={bottomSheetRef}
+        snapPoints={snapPoints}
+        children={
+          <UserWatchStatusSheetContent
+            watchStatus={watchStatus}
+            setWatchStatus={setWatchStatus}
           />
-
-          {/* Action Buttons */}
-          <ActionBar
-            animeRating={animeDetailsData?.averageScore!}
-            userList={userListData!}
-          />
-
-          {/* Anime Details */}
-          <AnimeDetailsSection animeDetails={animeDetailsData!} />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+        }
+      />
+    </GestureHandlerRootView>
   );
 }

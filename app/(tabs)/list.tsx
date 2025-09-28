@@ -1,6 +1,12 @@
 import StatusSelector from "@/components/StatusSelector";
 import { useTheme } from "@/hooks/use-theme";
-import { CircleCheck, Clock, Pause, Play, X } from "lucide-react-native";
+import {
+  CircleCheck,
+  CircleMinus,
+  CirclePause,
+  CirclePlay,
+  Clock,
+} from "lucide-react-native";
 import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
@@ -28,13 +34,13 @@ export default function ListScreen() {
     {
       label: "Watching",
       value: "Watching",
-      icon: <Play size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CirclePlay size={18} color={dynamicStyles.iconColor.color} />,
       default: true,
     },
     {
       label: "Paused",
       value: "Paused",
-      icon: <Pause size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CirclePause size={18} color={dynamicStyles.iconColor.color} />,
     },
     {
       label: "Completed",
@@ -44,7 +50,7 @@ export default function ListScreen() {
     {
       label: "Dropped",
       value: "Dropped",
-      icon: <X size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CircleMinus size={18} color={dynamicStyles.iconColor.color} />,
     },
   ];
 
