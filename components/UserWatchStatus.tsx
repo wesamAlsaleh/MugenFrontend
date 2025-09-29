@@ -8,8 +8,9 @@ import {
   Clock,
   Plus,
 } from "lucide-react-native";
-import React, { ReactNode } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from "react";
+import { StyleSheet, TouchableOpacity } from "react-native";
+import BarContent from "./BarContent";
 
 export default function UserWatchStatus({
   progressStatus,
@@ -26,6 +27,8 @@ export default function UserWatchStatus({
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
     container: {
+      height: "100%", // Full height of the parent container
+      minWidth: 100, // Ensures stable width
       // Center the content
       justifyContent: "center",
       alignItems: "center",
@@ -35,6 +38,7 @@ export default function UserWatchStatus({
     },
     icon: {
       color: theme.primary, // Use primary color from theme
+      position: "fixed", // Prevent layout shift on icon change
     },
     text: {
       color: theme.secondaryText, // Use text color from theme
@@ -43,70 +47,71 @@ export default function UserWatchStatus({
       textAlign: "center",
       lineHeight: 18,
       includeFontPadding: false, // Remove extra padding for better alignment
+      width: 100, // Fixed width to prevent layout shift
+      flexWrap: "wrap", // Allow text to wrap if too long
+      backgroundColor: "green", // Prevent background color issues on status change
     },
   });
-
-  // Handle press event
-  const handlePress = () => {
-    openBottomSheet!();
-  };
-
-  // Status Component for reuse
-  const Status = ({ status, icon }: { status: string; icon: ReactNode }) => {
-    return (
-      <View style={styles.container}>
-        {icon}
-        <Text style={styles.text}>{status}</Text>
-      </View>
-    );
-  };
 
   // Handle Status Display
   const renderStatus = (status: string | null) => {
     switch (status) {
       case "WATCHING":
         return (
-          <Status
-            status={formatWatchStatus(status)}
+          <BarContent
+            text={formatWatchStatus(status)}
             icon={<CirclePlay size={28} color={styles.icon.color} />}
           />
         );
       case "COMPLETED":
         return (
-          <Status
-            status={formatWatchStatus(status)}
+          <BarContent
+            text={formatWatchStatus(status)}
             icon={<CircleCheck size={28} color={styles.icon.color} />}
           />
         );
       case "PAUSED":
         return (
-          <Status
-            status={formatWatchStatus(status)}
+          <BarContent
+            text={formatWatchStatus(status)}
             icon={<CirclePause size={28} color={styles.icon.color} />}
           />
         );
       case "DROPPED":
         return (
-          <Status
-            status={formatWatchStatus(status)}
+          <BarContent
+            text={formatWatchStatus(status)}
             icon={<CircleMinus size={28} color={styles.icon.color} />}
           />
         );
       case "PLANNING":
         return (
-          <Status
-            status={formatWatchStatus(status)}
+          <BarContent
+            text={formatWatchStatus(status)}
             icon={<Clock size={28} color={styles.icon.color} />}
           />
         );
+      case null:
+        return (
+          <BarContent
+            text="Add to Watchlist"
+            icon={<Plus size={28} color={styles.icon.color} />}
+          />
+        );
+      // Should never reach here
       default:
         return (
-          <Status
-            status="Add to Watchlist" // Should never reach here
+          <BarContent
+            text="Add to Watchlist"
             icon={<Plus size={28} color={styles.icon.color} />}
           />
         );
     }
+  };
+
+  // Handle press event
+  const handlePress = () => {
+    openBottomSheet!();
   };
 
   return (
@@ -115,16 +120,7 @@ export default function UserWatchStatus({
       onPress={() => handlePress()}
       activeOpacity={0.7}
     >
-      <View style={styles.container}>
-        {progressStatus ? (
-          renderStatus(progressStatus)
-        ) : (
-          <>
-            <Plus size={28} color={styles.icon.color} />
-            <Text style={styles.text}>Add to Watchlist</Text>
-          </>
-        )}
-      </View>
+      {renderStatus(progressStatus!)}
     </TouchableOpacity>
   );
 }

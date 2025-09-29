@@ -23,20 +23,21 @@ export default function ActionBar({
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
     cardWrapper: {
-      width: "100%", // Full width of the parent container
       alignItems: "center", // Center the card
     },
     container: {
       flexDirection: "row",
       width: "100%", // Full width of the card container
       justifyContent: "space-between", // Space buttons evenly
+      minHeight: 80, // Minimum height for better touch area
     },
   });
 
   return (
     <View style={styles.cardWrapper}>
       <Card
-        width={IsTablet() ? "40%" : "100%"} // Fixed width for tablets, full width for phones
+        width={IsTablet() ? "100%" : "100%"} // Fixed width for tablets, full width for phones
+        height={90}
         cardContent={
           <View style={styles.container}>
             {/* Anilist Rating */}

@@ -1,7 +1,8 @@
 import { useTheme } from "@/hooks/use-theme";
 import { Star } from "lucide-react-native";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import BarContent from "./BarContent";
 
 export default function AnilistRating({ rating }: { rating: number }) {
   // Get the theme colors
@@ -10,7 +11,8 @@ export default function AnilistRating({ rating }: { rating: number }) {
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
     container: {
-      flexDirection: "column",
+      height: "100%", // Full height of the parent container
+      minWidth: 100, // Ensures stable width
       // Center the content
       justifyContent: "center",
       alignItems: "center",
@@ -35,12 +37,10 @@ export default function AnilistRating({ rating }: { rating: number }) {
   const ratingOutOf10 = rating ? `${(rating / 10).toFixed(1)} / 10` : "N/A";
 
   return (
-    <View style={styles.container}>
-      {/* Rating Icon */}
-      <Star color={styles.icon.color} size={24} />
-
-      {/* Anime Rating */}
-      <Text style={styles.text}>{ratingOutOf10} </Text>
-    </View>
+    <BarContent
+      icon={<Star color={styles.icon.color} size={28} />}
+      text={ratingOutOf10}
+      specialTextStyle={{ fontSize: 14, fontWeight: "600" }}
+    />
   );
 }
