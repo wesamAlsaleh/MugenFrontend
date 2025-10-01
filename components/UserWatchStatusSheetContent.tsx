@@ -13,11 +13,13 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 interface Props {
   watchStatus?: string | null;
   setWatchStatus?: (status: string | null) => void;
+  closeBottomSheet?: () => void;
 }
 
 export default function UserWatchStatusSheetContent({
   watchStatus,
   setWatchStatus,
+  closeBottomSheet,
 }: Props) {
   // Get the theme styles
   const theme = useTheme();
@@ -63,7 +65,12 @@ export default function UserWatchStatusSheetContent({
     // Function to handle option selection
     const handleOptionSelect = () => {
       // Update the watch status
-      setWatchStatus?.(normalizedStatus); // By default, the server will deselect if the same status is selected
+      setWatchStatus?.(normalizedStatus);
+
+      // TODO: Update the watch status in the backend
+
+      // Optionally close the bottom sheet here if needed
+      closeBottomSheet?.();
     };
 
     return (
@@ -88,8 +95,8 @@ export default function UserWatchStatusSheetContent({
     );
   };
 
-  // Log the current watch status that will be sent to the API
-  console.log("Current Watch Status:", watchStatus);
+  // Logging for debugging
+  console.log("Anime Progress status ready to sent:", watchStatus);
 
   return (
     <View style={styles.container}>

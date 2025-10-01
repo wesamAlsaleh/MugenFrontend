@@ -32,22 +32,17 @@ export default function AnimeDetailsHeader({
       width: "100%",
       height: isTablet ? 400 : 300, // Taller header on tablets
       flexDirection: "column", // Stack children vertically
-      position: "relative", // TODO: Add comment
       overflow: "hidden", // Ensures children don’t overflow (important for animations or parallax)
       marginBottom: isTablet ? 10 : 20, // Space below header to accommodate overlapping anime image
-    },
-    headerBackground: {
-      width: "100%",
-      height: "100%",
-      // position: "absolute", // Position absolutely to cover the entire header
+      // backgroundColor: "green", // Debugging purpose only
     },
     bannerImage: {
       width: "100%", // Full width of the header
-      height: "60%", // Cover top half the header height (60% to leave space for anime image)
+      height: isTablet ? "60%" : "50%", // Cover top half the header height (60% to leave space for anime image)
       resizeMode: "cover", // Cover the entire area
       backgroundColor: "#f0f0f0", // Fallback background in case image fails
     },
-    // This container holds the anime image and name, it takes the other half of the header
+    // This container holds the anime image and name, it takes the other half of the header (40%)
     subHeader: {
       flexDirection: "row", // Align items horizontally
       flex: 1, // Take up remaining space in header (40%)
@@ -68,7 +63,7 @@ export default function AnimeDetailsHeader({
       borderRadius: 8, // Rounded corners
       backgroundColor: "#e0e0e0", // Fallback background in case image fails
       // Positioning the image to overlap the banner
-      marginTop: isTablet ? -90 : -60, // Pull the image up to overlap the banner
+      marginTop: isTablet ? -80 : -20, // Pull the image up to overlap the banner
       marginLeft: 16, // Space from the left edge
       marginRight: 16, // Space between image and text
     },
@@ -80,9 +75,10 @@ export default function AnimeDetailsHeader({
     animeName: {
       fontSize: isTablet ? 24 : 18, // Larger text on tablets
       fontWeight: "bold",
-      flexShrink: 1, // Allow text to shrink if needed
       color: theme.primaryText, // Set text color based on theme
       marginTop: 8, // Align with the top of the image
+      // flexShrink: 1, // Allow text to shrink if needed
+      // backgroundColor: theme.primary + "cc", // Debugging purpose only
     },
     animeDetailsSubContainer: {
       flexDirection: "row",
@@ -113,7 +109,15 @@ export default function AnimeDetailsHeader({
         {/* Anime Details */}
         <View style={styles.animeDetailsContainer}>
           {/* Anime Title */}
-          <Text style={styles.animeName} numberOfLines={2} ellipsizeMode="tail">
+          <Text
+            style={styles.animeName}
+            numberOfLines={isTablet ? 2 : 3}
+            ellipsizeMode="tail"
+            onLongPress={() => {
+              // TODO: Copy to clipboard
+              // Optionally, you can show a toast or alert to inform the user
+            }}
+          >
             {animeDetails?.title.userPreferred}
             {animeDetails?.title.userPreferred}
             {animeDetails?.title.userPreferred}
@@ -124,7 +128,7 @@ export default function AnimeDetailsHeader({
 
           {/* Anime Details Container */}
           <View style={styles.animeDetailsSubContainer}>
-            {/* Anime Status */}
+            {/* Anime Airing Status */}
             <Badge
               content={formatMediaStatus(animeDetails?.status)}
               bgColor={styles.statusBadgeStyle.color}

@@ -6,6 +6,8 @@ interface CardProps {
   cardContent: React.ReactNode;
   width?: DimensionValue; // only fixed if provided
   height?: DimensionValue; // only fixed if provided
+  marginTop?: number; // optional margin top
+  marginBottom?: number; // optional margin bottom
 }
 
 export default function Card(props: CardProps) {
@@ -17,6 +19,10 @@ export default function Card(props: CardProps) {
 
   // Dynamic styles
   const dynamicStyles = {
+    container: {
+      marginTop: props.marginTop ?? 0,
+      marginBottom: props.marginBottom ?? 0,
+    },
     cardContainer: {
       backgroundColor: theme.cardBackgroundColor,
       borderColor: theme.cardBorderColor,
@@ -26,7 +32,7 @@ export default function Card(props: CardProps) {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={dynamicStyles.container}>
       <View style={[styles.cardContainer, dynamicStyles.cardContainer]}>
         {/* Card content goes here */}
         {props.cardContent}
@@ -36,9 +42,6 @@ export default function Card(props: CardProps) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    marginVertical: 10,
-  },
   cardContainer: {
     borderRadius: 12,
     display: "flex",

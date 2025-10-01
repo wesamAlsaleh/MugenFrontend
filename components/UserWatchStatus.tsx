@@ -26,34 +26,13 @@ export default function UserWatchStatus({
 
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
-    container: {
-      height: "100%", // Full height of the parent container
-      minWidth: 100, // Ensures stable width
-      // Center the content
-      justifyContent: "center",
-      alignItems: "center",
-      // Padding for touch area
-      padding: 8,
-      gap: 4, // Space between icon and text
-    },
     icon: {
       color: theme.primary, // Use primary color from theme
       position: "fixed", // Prevent layout shift on icon change
     },
-    text: {
-      color: theme.secondaryText, // Use text color from theme
-      fontSize: 12,
-      fontWeight: "500",
-      textAlign: "center",
-      lineHeight: 18,
-      includeFontPadding: false, // Remove extra padding for better alignment
-      width: 100, // Fixed width to prevent layout shift
-      flexWrap: "wrap", // Allow text to wrap if too long
-      backgroundColor: "green", // Prevent background color issues on status change
-    },
   });
 
-  // Handle Status Display
+  // Render watch status based on progressStatus prop
   const renderStatus = (status: string | null) => {
     switch (status) {
       case "WATCHING":

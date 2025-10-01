@@ -153,6 +153,7 @@ export default function AnimeDetailScreen() {
           <UserWatchStatusSheetContent
             watchStatus={watchStatus}
             setWatchStatus={setWatchStatus}
+            closeBottomSheet={closeBottomSheet}
           />
         }
       />

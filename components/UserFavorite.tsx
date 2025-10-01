@@ -1,6 +1,6 @@
 import { useTheme } from "@/hooks/use-theme";
 import { HeartMinus, HeartPlus } from "lucide-react-native";
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, TouchableOpacity } from "react-native";
 import BarContent from "./BarContent";
 
@@ -12,6 +12,11 @@ export default function UserFavorite({
   // Get the theme styles
   const theme = useTheme();
 
+  //State to manage favorite status
+  const [isFavorite, setIsFavorite] = useState<boolean | null>(
+    inFavorites ?? null
+  );
+
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
     icon: {
@@ -19,7 +24,7 @@ export default function UserFavorite({
     },
   });
 
-  // Function to render favorite status based on inFavorites prop
+  // Render favorite status based on inFavorites prop
   const renderFavoriteStatus = (inFav: boolean | null) => {
     switch (inFav) {
       // In favorites show remove option
@@ -59,12 +64,17 @@ export default function UserFavorite({
 
   // Handle press event
   const handlePress = () => {
-    // TODO: Implement favorite toggle logic
+    // Toggle favorite status (local state)
+    setIsFavorite((prev) => (prev === null ? true : !prev));
+
+    console.log("Favorite status ready to sent:", isFavorite);
+
+    //TODO: Update the favorite status in the backend
   };
 
   return (
     <TouchableOpacity onPress={handlePress} activeOpacity={0.7}>
-      {renderFavoriteStatus(inFavorites!)}
+      {renderFavoriteStatus(isFavorite)}
     </TouchableOpacity>
   );
 }

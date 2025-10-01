@@ -10,26 +10,8 @@ export default function AnilistRating({ rating }: { rating: number }) {
 
   // Dynamic styles based on theme and device type
   const styles = StyleSheet.create({
-    container: {
-      height: "100%", // Full height of the parent container
-      minWidth: 100, // Ensures stable width
-      // Center the content
-      justifyContent: "center",
-      alignItems: "center",
-      // Padding for touch area
-      padding: 8,
-      gap: 4, // Space between icon and text
-    },
     icon: {
       color: theme.primary,
-    },
-    text: {
-      color: theme.secondaryText,
-      fontSize: 14,
-      fontWeight: "500",
-      textAlign: "center",
-      lineHeight: 18,
-      includeFontPadding: false, // Remove extra padding for better alignment
     },
   });
 
