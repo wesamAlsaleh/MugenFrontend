@@ -19,6 +19,10 @@ export const themes = {
     cardBackgroundColor: "#f9f9f9",
     cardBorderColor: "#e5e7eb",
 
+    // Input field colors
+    inputBackgroundColor: "#ffffff",
+    inputBorderColor: "#d1d5db",
+
     // Text colors
     primaryText: "#000000",
     secondaryText: "#6b7280",
@@ -30,6 +34,7 @@ export const themes = {
 
     // Interactive colors
     success: "#22c55e",
+    secondary: "#6b7280",
     warning: "#fbbf24",
     error: "#ef4444",
 
@@ -69,6 +74,10 @@ export const themes = {
     cardBackgroundColor: "#2f2f2f",
     cardBorderColor: "#3d3d3d",
 
+    // Input field colors
+    inputBackgroundColor: "#1f1f1f",
+    inputBorderColor: "#3d3d3d",
+
     // Text colors
     primaryText: "#ffffff",
     secondaryText: "#d1d5db",
@@ -80,6 +89,7 @@ export const themes = {
 
     // Interactive colors
     success: "#22c55e",
+    secondary: "#6b7280",
     warning: "#fbbf24",
     error: "#ef4444",
 

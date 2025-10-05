@@ -8,15 +8,18 @@ import {
   Clock,
 } from "lucide-react-native";
 import { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function ListScreen() {
   // Get the theme
   const theme = useTheme();
 
   // Dynamic styles based on the theme
-  const dynamicStyles = {
+  const styles = {
     container: {
+      flex: 1,
+      paddingHorizontal: 16, // Screen padding (16 on left and right, total 32)
+      gap: 12, // Gap between status selector and results
       backgroundColor: theme.backgroundColor,
     },
     iconColor: {
@@ -29,35 +32,35 @@ export default function ListScreen() {
     {
       label: "Planning",
       value: "Planning",
-      icon: <Clock size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <Clock size={18} color={styles.iconColor.color} />,
     },
     {
       label: "Watching",
       value: "Watching",
-      icon: <CirclePlay size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CirclePlay size={18} color={styles.iconColor.color} />,
       default: true,
     },
     {
       label: "Paused",
       value: "Paused",
-      icon: <CirclePause size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CirclePause size={18} color={styles.iconColor.color} />,
     },
     {
       label: "Completed",
       value: "Completed",
-      icon: <CircleCheck size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CircleCheck size={18} color={styles.iconColor.color} />,
     },
     {
       label: "Dropped",
       value: "Dropped",
-      icon: <CircleMinus size={18} color={dynamicStyles.iconColor.color} />,
+      icon: <CircleMinus size={18} color={styles.iconColor.color} />,
     },
   ];
 
   const [status, setStatus] = useState<string>("Watching");
 
   return (
-    <View style={[styles.container, dynamicStyles.container]}>
+    <View style={styles.container}>
       {/* Status Selector */}
       <StatusSelector
         options={statuses}
@@ -70,11 +73,3 @@ export default function ListScreen() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: 16, // Screen padding (16 on left and right, total 32)
-    gap: 12, // Gap between status selector and results
-  },
-});

@@ -2913,6 +2913,15 @@ const studioDataSample = {
   },
 };
 
+const userData = {
+  id: 5,
+  username: "Avocado",
+  email: "wesammuneer7@gmail.com",
+  role: "USER",
+  preferredLanguage: "EN",
+  createdAt: "2025-09-02T23:32:08",
+};
+
 export {
   exploreAnimes,
   genres,
@@ -2920,4 +2929,5 @@ export {
   studioDataSample,
   thisSeasonAnimes,
   ThisSeasonTopAnimes,
+  userData,
 };
