@@ -36,7 +36,7 @@ export default function ActionBar({
   return (
     <View style={styles.cardWrapper}>
       <Card
-        width={IsTablet() ? "100%" : "100%"} // Fixed width for tablets, full width for phones
+        width={IsTablet() ? "45%" : "100%"} // Fixed width for tablets, full width for phones
         height={90}
         cardContent={
           <View style={styles.container}>

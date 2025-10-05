@@ -1085,61 +1085,121 @@ const exploreAnimes = [
 const singleAnime = {
   data: [
     {
-      id: 173780,
-      idMal: 57907,
+      id: 171046,
+      idMal: 57433,
       title: {
-        romaji: "Tate no Yuusha no Nariagari Season 4",
-        english: "The Rising of the Shield Hero Season 4",
-        native: "盾の勇者の成り上がり Season 4",
-        userPreferred: "Tate no Yuusha no Nariagari Season 4",
+        romaji: "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
+        english: "Rascal Does Not Dream of Santa Claus",
+        native: "青春ブタ野郎はサンタクロースの夢を見ない",
+        userPreferred: "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
       },
       type: "ANIME",
       format: "TV",
       status: "FINISHED",
       description:
-        "The fourth season of <i>Tate no Yuusha no Nariagari</i>.\n<br><br>\nAs Naofumi prepares for the Phoenix’s return, assassins from Q’ten Lo target Raphtalia, mistaking her for a throne usurper. To resolve the conflict, Naofumi journeys to Siltvelt, where he is hailed as a demi-human savior, but not all welcome him. In politically volatile Q’ten Lo, Raphtalia becomes a revolutionary symbol. Amid rising chaos, can Naofumi unite his allies and guide them to salvation?\n<br><br>\n(Source: Crunchyroll News)",
+        "Sequel to the film <i>Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai</i>.\n<br><br>\n After encountering various girls going through Puberty Syndrome, Sakuta Azusagawa's high school days have come to a close, and he is now a university student. He enrolls at a university in Kanazawa-hakkei alongside his girlfriend Mai Sakurajima, a nationally famed actress. Off campus, he stumbles upon an out-of-season miniskirt Santa. Precognitive dreams, an anonymous online singer, poltergeists buzzing on social media... A mysterious tale with enigmatic phenomenons surrounding girls with wavering hearts starts again. Puberty continues...\n<br><br> \n(Source: Crunchyroll)",
       startDate: {
-        day: 9,
+        day: 5,
         month: 7,
         year: 2025,
       },
       endDate: {
-        day: 24,
+        day: 27,
         month: 9,
         year: 2025,
       },
       season: "SUMMER",
       seasonYear: 2025,
-      episodes: 12,
+      episodes: 13,
       duration: 24,
       countryOfOrigin: "JP",
       source: "LIGHT_NOVEL",
-      hashtag: "#盾の勇者の成り上がり #shieldhero",
+      hashtag: "#青ブタ",
       trailer: {
-        id: "XNzt2ER1o4k",
+        id: "WZeyt8KrrqY",
         site: "youtube",
-        thumbnail: "https://i.ytimg.com/vi/XNzt2ER1o4k/hqdefault.jpg",
+        thumbnail: "https://i.ytimg.com/vi/WZeyt8KrrqY/hqdefault.jpg",
       },
       coverImage: {
-        color: "#5078e4",
+        color: "#e4c928",
         extraLarge:
-          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173780-O7v1YfXg61JT.png",
+          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171046-9leqLiNuOqNu.png",
         large:
-          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173780-O7v1YfXg61JT.png",
+          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171046-9leqLiNuOqNu.png",
         medium:
-          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx173780-O7v1YfXg61JT.png",
+          "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171046-9leqLiNuOqNu.png",
       },
       bannerImage:
-        "https://s4.anilist.co/file/anilistcdn/media/anime/banner/173780-HImv1cYbvOlp.jpg",
-      genres: ["Action", "Adventure", "Fantasy"],
-      averageScore: 70,
-      meanScore: 70,
-      popularity: 48661,
-      trending: 64,
+        "https://s4.anilist.co/file/anilistcdn/media/anime/banner/171046-PjeeUUfeaVyR.jpg",
+      genres: ["Drama", "Mystery", "Psychological", "Romance", "Supernatural"],
+      averageScore: 81,
+      meanScore: 81,
+      popularity: 54333,
+      trending: 314,
       studios: {
         edges: [
           {
-            id: 40505,
+            id: 39156,
+            isMain: false,
+            node: {
+              id: 17,
+              name: "Aniplex",
+              siteUrl: "https://anilist.co/studio/17",
+              isAnimationStudio: false,
+            },
+          },
+          {
+            id: 42108,
+            isMain: true,
+            node: {
+              id: 6222,
+              name: "CloverWorks",
+              siteUrl: "https://anilist.co/studio/6222",
+              isAnimationStudio: true,
+            },
+          },
+          {
+            id: 44549,
+            isMain: false,
+            node: {
+              id: 6377,
+              name: "ABC Animation",
+              siteUrl: "https://anilist.co/studio/6377",
+              isAnimationStudio: false,
+            },
+          },
+          {
+            id: 44550,
+            isMain: false,
+            node: {
+              id: 6622,
+              name: "Nagoya Broadcasting Network",
+              siteUrl: "https://anilist.co/studio/6622",
+              isAnimationStudio: false,
+            },
+          },
+          {
+            id: 44551,
+            isMain: false,
+            node: {
+              id: 6222,
+              name: "CloverWorks",
+              siteUrl: "https://anilist.co/studio/6222",
+              isAnimationStudio: true,
+            },
+          },
+          {
+            id: 44552,
+            isMain: false,
+            node: {
+              id: 6259,
+              name: "TOKYO MX",
+              siteUrl: "https://anilist.co/studio/6259",
+              isAnimationStudio: false,
+            },
+          },
+          {
+            id: 44553,
             isMain: false,
             node: {
               id: 6698,
@@ -1149,82 +1209,12 @@ const singleAnime = {
             },
           },
           {
-            id: 40950,
-            isMain: true,
-            node: {
-              id: 290,
-              name: "Kinema Citrus",
-              siteUrl: "https://anilist.co/studio/290",
-              isAnimationStudio: true,
-            },
-          },
-          {
-            id: 44408,
+            id: 44554,
             isMain: false,
             node: {
-              id: 6421,
-              name: "Crunchyroll",
-              siteUrl: "https://anilist.co/studio/6421",
-              isAnimationStudio: false,
-            },
-          },
-          {
-            id: 44409,
-            isMain: false,
-            node: {
-              id: 6424,
-              name: "Sammy",
-              siteUrl: "https://anilist.co/studio/6424",
-              isAnimationStudio: false,
-            },
-          },
-          {
-            id: 44410,
-            isMain: false,
-            node: {
-              id: 323,
-              name: "Nippon Columbia",
-              siteUrl: "https://anilist.co/studio/323",
-              isAnimationStudio: false,
-            },
-          },
-          {
-            id: 44411,
-            isMain: false,
-            node: {
-              id: 689,
-              name: "NTT Docomo",
-              siteUrl: "https://anilist.co/studio/689",
-              isAnimationStudio: false,
-            },
-          },
-          {
-            id: 44412,
-            isMain: false,
-            node: {
-              id: 6339,
-              name: "Good Smile Company",
-              siteUrl: "https://anilist.co/studio/6339",
-              isAnimationStudio: false,
-            },
-          },
-          {
-            id: 44413,
-            isMain: false,
-            node: {
-              id: 238,
-              name: "AT-X",
-              siteUrl: "https://anilist.co/studio/238",
-              isAnimationStudio: false,
-            },
-          },
-          {
-            id: 44414,
-            isMain: false,
-            node: {
-              id: 61,
-              name: "Frontier Works",
-              siteUrl: "https://anilist.co/studio/61",
+              id: 6616,
+              name: "BS11",
+              siteUrl: "https://anilist.co/studio/6616",
               isAnimationStudio: false,
             },
           },
@@ -1235,22 +1225,22 @@ const singleAnime = {
           {
             role: "MAIN",
             node: {
-              id: 88889,
+              id: 127222,
               name: {
-                full: "Raphtalia",
-                userPreferred: "Raphtalia",
+                full: "Mai Sakurajima",
+                userPreferred: "Mai Sakurajima",
               },
-              age: "10 (mentally), 18 (biologically)",
+              age: "17-18",
               gender: "Female",
               description:
-                "**Race:** Raccoon & Tanuki\n\nRaphtalia is a Tanuki-type Demi-Human who was the first real member of the Shield Hero's party after he purchased her as a slave.\n\n~!Raphtalia later obtain one of the eight vassal weapons from another world granting her the title of Vassal Weapon Wielder and Katana Hero. Due to the passive effects of the Vassal Weapons her slave curse seal was removed.!~",
+                "__Height:__ 162 cm (5'4\")\n\nA 3rd-year student at Minegahara High School. She is serious and polite, but has a strong will.\n\nWell known, famous actress, who is currently on hiatus. Because her life had always revolved around her work in entertainment, she remains isolated at school.\n\n(Source: Aniplex USA)",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b88889-CWYytVbCOPsV.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b127222-Jh5hhP7vZ7s1.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b88889-CWYytVbCOPsV.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b127222-Jh5hhP7vZ7s1.png",
               },
-              siteUrl: "https://anilist.co/character/88889",
+              siteUrl: "https://anilist.co/character/127222",
             },
             voiceActors: [
               {
@@ -1267,55 +1257,27 @@ const singleAnime = {
                 },
                 siteUrl: "https://anilist.co/staff/106787",
               },
-              {
-                id: 126242,
-                name: {
-                  full: "Erica Mendez",
-                  userPreferred: "Erica Mendez",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n126242-LjdhLN4TV53X.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n126242-LjdhLN4TV53X.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/126242",
-              },
-              {
-                id: 244217,
-                name: {
-                  full: "Mari Guedes",
-                  userPreferred: "Mari Guedes",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n244217-bxt9IgoUgDPm.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n244217-bxt9IgoUgDPm.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/244217",
-              },
             ],
           },
           {
             role: "MAIN",
             node: {
-              id: 88817,
+              id: 127221,
               name: {
-                full: "Naofumi Iwatani",
-                userPreferred: "Naofumi Iwatani",
+                full: "Sakuta Azusagawa",
+                userPreferred: "Sakuta Azusagawa",
               },
-              age: "20",
+              age: "16-17",
               gender: "Male",
               description:
-                "A university student that was summoned to another world as the Shield Hero. Typically unsociable, he's friendly and easy-going to those close to him.\n\n~!After being abandoned by [Malty](https://anilist.co/character/129808) and being treated as a criminal by the people of the world, He unlocked the curse series. The sin he has unlocked is Wrath (against the people of the world).!~",
+                "**Height:**  172 cm (5'7\")\n\nA strange 2nd year student in high school, who doesn't have a cellphone in this day and age. He is currently an outcast at school due to rumors of a violent past... but doesn't seem to care.\n~!Sakuta eventually starts dating Mai Sakurajima!~\n(Source: Aniplex USA)",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b88817-Aku5CuN6wO2z.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/n127221-Wxg4xFtW4kaJ.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b88817-Aku5CuN6wO2z.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/n127221-Wxg4xFtW4kaJ.png",
               },
-              siteUrl: "https://anilist.co/character/88817",
+              siteUrl: "https://anilist.co/character/127221",
             },
             voiceActors: [
               {
@@ -1332,55 +1294,152 @@ const singleAnime = {
                 },
                 siteUrl: "https://anilist.co/staff/115156",
               },
+            ],
+          },
+          {
+            role: "MAIN",
+            node: {
+              id: 350441,
+              name: {
+                full: "Miniskirt Santa",
+                userPreferred: "Miniskirt Santa",
+              },
+              age: null,
+              gender: "Female",
+              description:
+                '__Height:__ 161cm\n\nA miniskirt-wearing Santa calling herself "Touko Kirishima". She claims she\'s been handing out presents—Adolescence Syndrome.',
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b350441-hdQABUVKOxZm.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b350441-hdQABUVKOxZm.png",
+              },
+              siteUrl: "https://anilist.co/character/350441",
+            },
+            voiceActors: [
               {
-                id: 127812,
+                id: 118602,
                 name: {
-                  full: "Stephen Fu",
-                  userPreferred: "Stephen Fu",
+                  full: "Reina Ueda",
+                  userPreferred: "Reina Ueda",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n127812-ZiGRPr4l7R52.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n118602-SFsQabl6KLu9.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n127812-ZiGRPr4l7R52.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n118602-SFsQabl6KLu9.png",
                 },
-                siteUrl: "https://anilist.co/staff/127812",
+                siteUrl: "https://anilist.co/staff/118602",
               },
               {
-                id: 125007,
+                id: 152955,
                 name: {
-                  full: "Renan Alonso",
-                  userPreferred: "Renan Alonso",
+                  full: "Maureen Price",
+                  userPreferred: "Maureen Price",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n125007-2NGGCGqXr2NB.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n152955-0NDurgUmN4BV.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n125007-2NGGCGqXr2NB.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n152955-0NDurgUmN4BV.jpg",
                 },
-                siteUrl: "https://anilist.co/staff/125007",
+                siteUrl: "https://anilist.co/staff/152955",
               },
             ],
           },
           {
             role: "MAIN",
             node: {
-              id: 136955,
+              id: 264045,
               name: {
-                full: "Atla",
-                userPreferred: "Atla",
+                full: "Ikumi Akagi",
+                userPreferred: "Ikumi Akagi",
               },
               age: null,
-              gender: null,
+              gender: "Female",
               description:
-                "A cursed slave of Naofumi Iwatani and the sister of Fohl. She carries a hereditary illness in which she cannot see or walk, and has an expected short life expectancy. Naofumi, however, restores her health with a Yggrasil Medicine, curing her. She is still blind but can sense the ki of other beings. Due to Naofumi being her savior, she holds strong romantic feelings toward him.\n\n~!Atla later dies. Soon after her death, Naofumi absorbed her into his shield. She then becomes a spirit the resides within the Legendary Shield.!~",
+                "Sakuta's classmate from middle school who seems to share a troubled past with him. She currently attends the same college as Sakuta. She's highly intelligent, and appears to have a number of secrets.",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b136955-4zoLeh3POM1e.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b264045-DenCJsXEmYCG.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b136955-4zoLeh3POM1e.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b264045-DenCJsXEmYCG.png",
               },
-              siteUrl: "https://anilist.co/character/136955",
+              siteUrl: "https://anilist.co/character/264045",
+            },
+            voiceActors: [
+              {
+                id: 152204,
+                name: {
+                  full: "Aya Yamane",
+                  userPreferred: "Aya Yamane",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n152204-KPn660ma9Qyv.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n152204-KPn660ma9Qyv.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/152204",
+              },
+            ],
+          },
+          {
+            role: "MAIN",
+            node: {
+              id: 144797,
+              name: {
+                full: "Uzuki Hirokawa",
+                userPreferred: "Uzuki Hirokawa",
+              },
+              age: null,
+              gender: "Female",
+              description:
+                "The lead singer of idol group Sweet Bullet. Her nickname is Zukky.",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b144797-4Wbf9gYygNNC.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b144797-4Wbf9gYygNNC.png",
+              },
+              siteUrl: "https://anilist.co/character/144797",
+            },
+            voiceActors: [
+              {
+                id: 116517,
+                name: {
+                  full: "Sora Amamiya",
+                  userPreferred: "Sora Amamiya",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n116517-NQh6ewlCwzBN.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n116517-NQh6ewlCwzBN.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/116517",
+              },
+            ],
+          },
+          {
+            role: "MAIN",
+            node: {
+              id: 308060,
+              name: {
+                full: "Sara Himeji",
+                userPreferred: "Sara Himeji",
+              },
+              age: null,
+              gender: "Female",
+              description:
+                "__Height:__ 154 cm\n\nA first-year student at Minegahara High with excellent grades, and one of Sakuta's students at cram school.",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b308060-5VBtm5YbfAEx.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b308060-5VBtm5YbfAEx.png",
+              },
+              siteUrl: "https://anilist.co/character/308060",
             },
             voiceActors: [
               {
@@ -1397,417 +1456,101 @@ const singleAnime = {
                 },
                 siteUrl: "https://anilist.co/staff/121961",
               },
-              {
-                id: 153210,
-                name: {
-                  full: "Lisa Reimold",
-                  userPreferred: "Lisa Reimold",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n153210-ETA5pvFZthaW.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n153210-ETA5pvFZthaW.png",
-                },
-                siteUrl: "https://anilist.co/staff/153210",
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 127840,
+              name: {
+                full: "Tomoe Koga",
+                userPreferred: "Tomoe Koga",
               },
+              age: "15-16",
+              gender: "Female",
+              description:
+                "__Height:__ 150 cm (4'11\")\n\nA typical 1st year high-school student at Minegahara High School who can take hints, but is slightly scatterbrained. Being overly concerned about how people look at her, she hides her Hakata accent, which comes out when she panics or is relaxed.\n\n(Source: Aniplex USA, edited)",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b127840-z2LUox2R2Ivg.jpg",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b127840-z2LUox2R2Ivg.jpg",
+              },
+              siteUrl: "https://anilist.co/character/127840",
+            },
+            voiceActors: [
               {
-                id: 316931,
+                id: 106184,
                 name: {
-                  full: "Isabelle Marques",
-                  userPreferred: "Isabelle Marques",
+                  full: "Nao Touyama",
+                  userPreferred: "Nao Touyama",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n316931-OkAhjZ2WNwSr.png",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n106184-rFA0sHFJrbk4.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n316931-OkAhjZ2WNwSr.png",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n106184-rFA0sHFJrbk4.png",
                 },
-                siteUrl: "https://anilist.co/staff/316931",
+                siteUrl: "https://anilist.co/staff/106184",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 127633,
+              name: {
+                full: "Rio Futaba",
+                userPreferred: "Rio Futaba",
+              },
+              age: "16-17",
+              gender: "Female",
+              description:
+                "__Height__: 155cm (5'1\")\n__Talent:__ Explaining any strange phenomenon with science\n\nShe is Sakuta's classmate, who is always cool and calm, always willing to give various advice on puberty syndrome. She is also the sole member of the Science Club, and known as an eccentric person at the school. \n\n(Source: Aniplex USA)",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b127633-FcCwWK5sQRhK.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b127633-FcCwWK5sQRhK.png",
+              },
+              siteUrl: "https://anilist.co/character/127633",
+            },
+            voiceActors: [
+              {
+                id: 112215,
+                name: {
+                  full: "Atsumi Tanezaki",
+                  userPreferred: "Atsumi Tanezaki",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n112215-kfABGD8W2YSJ.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n112215-kfABGD8W2YSJ.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/112215",
               },
             ],
           },
           {
             role: "MAIN",
             node: {
-              id: 126828,
+              id: 127841,
               name: {
-                full: "Filo",
-                userPreferred: "Filo",
+                full: "Nodoka Toyohama",
+                userPreferred: "Nodoka Toyohama",
               },
               age: null,
               gender: "Female",
               description:
-                "**Age:** <1 (mentally), 10 (physically)\n**Race:** Filolial\n\nFilo was originally hatched from a monster egg which Naofumi purchased from the slave trader.\n\nFilo grew at an abnormally fast rate and in just a few days grown into a fully grown Filolial later developing into a rare species of Filolial Queen where she was later given the ability to transform into a humanoid form strongly resembling a Angel and the ability to talk due to her association with the Shield Hero and the effects of the Legendary Shield.",
+                "__Height:__ 158cm (5'2\")\n__Talent:__ Changing clothes quickly\n\nMai's half-sister, related through her father. A member of the idol group \"Sweet Bullet\" and designated as the most fashionable within the group. Despite her flashy looks, she attends an elite all girls' high school. She is confident and can be competitive.\n\n(Source: Aniplex USA)",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b126828-nZDnMK4Bw7f9.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b127841-UY9wQq6dW9SY.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b126828-nZDnMK4Bw7f9.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b127841-UY9wQq6dW9SY.png",
               },
-              siteUrl: "https://anilist.co/character/126828",
-            },
-            voiceActors: [
-              {
-                id: 100250,
-                name: {
-                  full: "Rina Hidaka",
-                  userPreferred: "Rina Hidaka",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n100250-L8WsoaLevibT.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n100250-L8WsoaLevibT.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/100250",
-              },
-              {
-                id: 120212,
-                name: {
-                  full: "Brianna Knickerbocker",
-                  userPreferred: "Brianna Knickerbocker",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n120212-s8ziqBtQLQWy.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n120212-s8ziqBtQLQWy.png",
-                },
-                siteUrl: "https://anilist.co/staff/120212",
-              },
-              {
-                id: 176945,
-                name: {
-                  full: "Amanda Tavares",
-                  userPreferred: "Amanda Tavares",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n176945-j0SIOVCvG28s.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n176945-j0SIOVCvG28s.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/176945",
-              },
-            ],
-          },
-          {
-            role: "MAIN",
-            node: {
-              id: 188514,
-              name: {
-                full: "Fohl ",
-                userPreferred: "Fohl ",
-              },
-              age: null,
-              gender: "Male",
-              description:
-                "A cursed slave of Naofumi Iwatani and the brother of Atla.\n",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b188514-lQWAWOWDYy6X.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b188514-lQWAWOWDYy6X.png",
-              },
-              siteUrl: "https://anilist.co/character/188514",
-            },
-            voiceActors: [
-              {
-                id: 119871,
-                name: {
-                  full: "Kouhei Amasaki",
-                  userPreferred: "Kouhei Amasaki",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n119871-Tz1rIT1YahPu.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n119871-Tz1rIT1YahPu.png",
-                },
-                siteUrl: "https://anilist.co/staff/119871",
-              },
-              {
-                id: 260142,
-                name: {
-                  full: "Kieran Regan",
-                  userPreferred: "Kieran Regan",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n260142-gQRdPPCMUjtN.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n260142-gQRdPPCMUjtN.png",
-                },
-                siteUrl: "https://anilist.co/staff/260142",
-              },
-              {
-                id: 233205,
-                name: {
-                  full: "Caio Freire",
-                  userPreferred: "Caio Freire",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n233205-47ce0Ap6P1bJ.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n233205-47ce0Ap6P1bJ.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/233205",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 136788,
-              name: {
-                full: "Eclair Seaetto",
-                userPreferred: "Eclair Seaetto",
-              },
-              age: null,
-              gender: null,
-              description:
-                "She serves as an overseer for Naofumi Iwatani's village. Eclair also serves as a martial arts instructor for Naofumi's slaves.\n",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b136788-R4A8YUHZSTAb.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b136788-R4A8YUHZSTAb.png",
-              },
-              siteUrl: "https://anilist.co/character/136788",
-            },
-            voiceActors: [
-              {
-                id: 119922,
-                name: {
-                  full: "Ruriko Aoki",
-                  userPreferred: "Ruriko Aoki",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/24922-GZMYC1vTwn4W.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/24922-GZMYC1vTwn4W.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/119922",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 136794,
-              name: {
-                full: "Rishia Ivyred",
-                userPreferred: "Rishia Ivyred",
-              },
-              age: "17",
-              gender: "Female",
-              description:
-                "__Race__: Human\n\nRishia is the daughter of the House of Ivyred, a noble family. Due to an unfortunate string of events, the family had grown poor and she was forcefully taken as ransom by a neighboring family in exchange for gold. She was rescued by The Bow Hero, whom she would later devote her life to.\n\n~!To show her gratitude and support for her savior, Rishia would go on to join Itsuki's party. She would then be treated as an errand girl, carrying food and supplies for the Bow Hero's party, leaving her talent in magic unused and untapped.!~",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b136794-yoJxRXGAGMlo.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b136794-yoJxRXGAGMlo.png",
-              },
-              siteUrl: "https://anilist.co/character/136794",
-            },
-            voiceActors: [
-              {
-                id: 120401,
-                name: {
-                  full: "Natsuko Hara",
-                  userPreferred: "Natsuko Hara",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n120401-d2ZRGd57NIbZ.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n120401-d2ZRGd57NIbZ.png",
-                },
-                siteUrl: "https://anilist.co/staff/120401",
-              },
-              {
-                id: 102359,
-                name: {
-                  full: "Kira Buckland",
-                  userPreferred: "Kira Buckland",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n102359-RiZkWxL5YXCW.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n102359-RiZkWxL5YXCW.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/102359",
-              },
-              {
-                id: 357684,
-                name: {
-                  full: "Bia Santos",
-                  userPreferred: "Bia Santos",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n357684-whC3TIo68v3h.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n357684-whC3TIo68v3h.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/357684",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 129812,
-              name: {
-                full: "Ren Amaki",
-                userPreferred: "Ren Amaki",
-              },
-              age: "16",
-              gender: "Male",
-              description:
-                "A high school student who was summoned to another world as the Sword Hero. He's considered a bishounen and tends to stay quiet.\n\n~!After his companions die, he fell into despair, and, thus, he followed [Malty](https://anilist.co/character/129808) when she offered kind words to him. After being abandoned by her, he had a brief stint as a bandit, after which he came under the Female Knight's tutelage. He also unlocked the curse series after being abandoned by Malty. His sins are Greed (For Power) and Gluttony (For Power).!~",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b129812-mNAmoHxmHCwd.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b129812-mNAmoHxmHCwd.png",
-              },
-              siteUrl: "https://anilist.co/character/129812",
-            },
-            voiceActors: [
-              {
-                id: 106817,
-                name: {
-                  full: "Yoshitsugu Matsuoka",
-                  userPreferred: "Yoshitsugu Matsuoka",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n106817-mioGQjbTWWQ6.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n106817-mioGQjbTWWQ6.png",
-                },
-                siteUrl: "https://anilist.co/staff/106817",
-              },
-              {
-                id: 135507,
-                name: {
-                  full: "Alan Lee",
-                  userPreferred: "Alan Lee",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n135507-0kYKNtNiQp3U.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n135507-0kYKNtNiQp3U.png",
-                },
-                siteUrl: "https://anilist.co/staff/135507",
-              },
-              {
-                id: 243746,
-                name: {
-                  full: "Leandro Luna",
-                  userPreferred: "Leandro Luna",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n243746-alrofYvwVphy.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n243746-alrofYvwVphy.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/243746",
-              },
-            ],
-          },
-          {
-            role: "MAIN",
-            node: {
-              id: 187435,
-              name: {
-                full: "Sadeena",
-                userPreferred: "Sadeena",
-              },
-              age: "23",
-              gender: "Female",
-              description:
-                "__Race:__ Killer Whale\n\nSadeena was born and grew up in Q'ten Lo islands in a special lineage related to the devotion of the God Water Dragon and the Heavenly Emperor. At some point in her adolescence, she became the head priest of the Water Dragon and became friends with the heir of Q'ten Lo throne, Raphtalia's father. After that, under unknown circumstances, she decided to follow Raphtalia's parents when they decided to elope from the country, leaving behind her old life.\n\nAfter leaving their country, she and Raphtalia's parents settle down in Melromarc's Seaetto territory, as the governor was receiving great quantities of immigrants as part of the Queen's initiative to create a Demi-human protected district. Once she rescued Keel from drowning in the ocean.\n\nSadeena went far away for fishing, in times of wave, unable to return in time to rescue the villagers. Raphtalia and the surviving villagers believe that the catastrophe of the wave and it's monster could be subsumed if Sadeena was present. Sadeena herself regrets not being there in the village in times of the wave. ",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b187435-gHaN7xEqVEe9.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b187435-gHaN7xEqVEe9.png",
-              },
-              siteUrl: "https://anilist.co/character/187435",
-            },
-            voiceActors: [
-              {
-                id: 95070,
-                name: {
-                  full: "Ami Koshimizu",
-                  userPreferred: "Ami Koshimizu",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95070-klkIfKz1VItS.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95070-klkIfKz1VItS.png",
-                },
-                siteUrl: "https://anilist.co/staff/95070",
-              },
-              {
-                id: 297763,
-                name: {
-                  full: "Alice Himora",
-                  userPreferred: "Alice Himora",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n297763-sWjLcnPVvfvn.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n297763-sWjLcnPVvfvn.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/297763",
-              },
-              {
-                id: 199070,
-                name: {
-                  full: "Nathalia Guillen",
-                  userPreferred: "Nathalia Guillen",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n199070-yBeJgzjLB8Q1.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n199070-yBeJgzjLB8Q1.png",
-                },
-                siteUrl: "https://anilist.co/staff/199070",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 129813,
-              name: {
-                full: "Melty Q Melromarc",
-                userPreferred: "Melty Q Melromarc",
-              },
-              age: null,
-              gender: "Female",
-              description:
-                "The second princess of Melromarc.\n\nMelty is in many ways the exact opposite of her sister, Malty. This includes their personality, appearance, magic specialty (water vs fire), and color schemes (blue and white against red and brown).",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b129813-quaY4dr807yx.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b129813-quaY4dr807yx.png",
-              },
-              siteUrl: "https://anilist.co/character/129813",
+              siteUrl: "https://anilist.co/character/127841",
             },
             voiceActors: [
               {
@@ -1824,777 +1567,335 @@ const singleAnime = {
                 },
                 siteUrl: "https://anilist.co/staff/108639",
               },
-              {
-                id: 137751,
-                name: {
-                  full: "Jackie Lastra",
-                  userPreferred: "Jackie Lastra",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n137751-I70bWGLNZZNZ.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n137751-I70bWGLNZZNZ.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/137751",
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 127613,
+              name: {
+                full: "Kaede Azusagawa",
+                userPreferred: "Kaede Azusagawa",
               },
+              age: "15",
+              gender: "Female",
+              description:
+                "__Height:__ 5'4\" (162 cm)\n\nShe is the younger sister of Sakuta Azusagawa. \n\n~!Suffered amnesia and gained a different personality after her ordeal with Adolescence Syndrome stemming from online bullying. Since then, she has lived with Sakuta and has not attended school.!~",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b127613-LBtFkMJfUWpg.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b127613-LBtFkMJfUWpg.png",
+              },
+              siteUrl: "https://anilist.co/character/127613",
+            },
+            voiceActors: [
               {
-                id: 197179,
+                id: 112209,
                 name: {
-                  full: "Mayara Stefane",
-                  userPreferred: "Mayara Stefane",
+                  full: "Yurika Kubo",
+                  userPreferred: "Yurika Kubo",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n197179-9BV32T8fBvC6.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n112209-6rgze0vZlnG6.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n197179-9BV32T8fBvC6.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n112209-6rgze0vZlnG6.png",
                 },
-                siteUrl: "https://anilist.co/staff/197179",
+                siteUrl: "https://anilist.co/staff/112209",
               },
             ],
           },
           {
             role: "SUPPORTING",
             node: {
-              id: 129808,
+              id: 127843,
               name: {
-                full: "Malty Melromarc",
-                userPreferred: "Malty Melromarc",
+                full: "Shouko Makinohara",
+                userPreferred: "Shouko Makinohara",
               },
               age: null,
               gender: "Female",
               description:
-                "The first princess of Melromarc who betrayed [Naofumi Iwatani](https://anilist.co/character/88817) in the beginning of the series. She is notorious for manipulating other people in order to satisfy her selfish desires.",
+                "__Height:__ 150cm (4'11\")\n__Talent:__ Early to bed, early to rise\n\nA girl who has the same first and last name as Sakuta's first crush. She is a shy middle school girl, but reliable and kind.\n\nShe bumps into Sakuta, while holding an umbrella over an abandoned cat in the rain.\n\n~!It is later revealed that the older Shouko that Sakuta encounters is from the future, and is able to return to the past due to her puberty syndrome.!~\n\n(Source: Aniplex USA)",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b129808-T5fd863K9TOI.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/n127843-nz8GbQ9rhB8R.jpg",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b129808-T5fd863K9TOI.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/n127843-nz8GbQ9rhB8R.jpg",
               },
-              siteUrl: "https://anilist.co/character/129808",
+              siteUrl: "https://anilist.co/character/127843",
             },
             voiceActors: [
               {
-                id: 114371,
+                id: 106297,
                 name: {
-                  full: "Sarah Emi Bridcutt",
-                  userPreferred: "Sarah Emi Bridcutt",
+                  full: "Inori Minase",
+                  userPreferred: "Inori Minase",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n114371-OEVE30OTFBsk.png",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n106297-DYjwI6p4yZNJ.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n114371-OEVE30OTFBsk.png",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n106297-DYjwI6p4yZNJ.jpg",
                 },
-                siteUrl: "https://anilist.co/staff/114371",
+                siteUrl: "https://anilist.co/staff/106297",
               },
             ],
           },
           {
             role: "SUPPORTING",
             node: {
-              id: 129814,
+              id: 308059,
               name: {
-                full: "Itsuki Kawasumi",
-                userPreferred: "Itsuki Kawasumi",
+                full: "Miori Mitou",
+                userPreferred: "Miori Mitou",
               },
-              age: "17",
-              gender: "Male",
+              age: null,
+              gender: "Female",
               description:
-                "A high school student summoned to another world as the Bow Hero. He is usually calm and well-mannered. However, He has a messiah complex, and is pretty much a justice maniac. He vanquishes evildoers without thinking of the consequences of his actions. However, this is just because he is immature. He doesn't actually have any bad intentions.\n\n~!When the Spirit Turtle revived, Itsuki and the party was forced to challenge it, but the party ran away, leaving him as a sacrifice to the Turtle.!~",
+                "A beautiful college girl in Sakuta's class. She follows trends and dresses up, but rather than to impress she does it exclusively for herself. Like Sakuta, she doesn't own a phone and is not easily dissuaded—has declared herself a potential friend.",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b129814-yinjCKhaHQcb.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b308059-R5JulNdzdhOr.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b129814-yinjCKhaHQcb.png",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b308059-R5JulNdzdhOr.png",
               },
-              siteUrl: "https://anilist.co/character/129814",
+              siteUrl: "https://anilist.co/character/308059",
             },
             voiceActors: [
               {
-                id: 118591,
+                id: 121821,
                 name: {
-                  full: "Yoshitaka Yamaya",
-                  userPreferred: "Yoshitaka Yamaya",
+                  full: "Manaka Iwami",
+                  userPreferred: "Manaka Iwami",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n118591-rOO8iwizHVUV.png",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n121821-LLWUOipBoYxJ.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n118591-rOO8iwizHVUV.png",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n121821-LLWUOipBoYxJ.png",
                 },
-                siteUrl: "https://anilist.co/staff/118591",
-              },
-              {
-                id: 116481,
-                name: {
-                  full: "Erik Scott Kimerer",
-                  userPreferred: "Erik Scott Kimerer",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n116481-9J6UOy14w8Wx.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n116481-9J6UOy14w8Wx.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/116481",
-              },
-              {
-                id: 328555,
-                name: {
-                  full: "Matosu",
-                  userPreferred: "Matosu",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n328555-sweJzEzaIKqf.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n328555-sweJzEzaIKqf.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/328555",
+                siteUrl: "https://anilist.co/staff/121821",
               },
             ],
           },
           {
             role: "SUPPORTING",
             node: {
-              id: 133723,
+              id: 351198,
               name: {
-                full: "Aultcray Melromarc XXXII",
-                userPreferred: "Aultcray Melromarc XXXII",
+                full: "Kento Yamada",
+                userPreferred: "Kento Yamada",
               },
               age: null,
               gender: "Male",
               description:
-                "The king of Melromarc. He shows obvious favoritism towards his daughter [Malty](https://anilist.co/character/129808) and animosity towards the Shield Hero [Naofumi Iwatani](https://anilist.co/character/88817).\n~!\nIt was revealed that Aultcray is the Wand Hero who led his country in a war against demi-humans and beastmen. Through that experience, he holds hatred towards non-human species and promotes the idea of human supremacy in Melromarc. He shows biased hatred towards Naofumi because the Shield Hero is revered as the protector of demi-humans and beastmen.\n\nWhen Queen Mirelia Q Melromarc comes back to Melromarc after resolving diplomatic issues, she strips Aultcray of his authorities due to his ineptitude to properly lead the people and officially changed his name to Trash as punishment for his abuse of power.!~\n\n~!The king's real name was Luge Lances Forbrey and used the alias Luge Lancarose to hide the fact that he was of royal blood when he battled in the front lines during the war. The name Aultcray Melromarc XXXII was adopted when he married Mirelia and became king.\n\nHe was the third legitimate heir to the throne of Forbrey, but lost that privilege when the Hakuko race killed his parents and loved ones. Due to that fact that Forbrey did nothing to retaliate against the Hakuko residing in Siltvelt due to political reasons, Luge began to despise both countries and moved to the human supremacy-promoting country of Melromarc. He later challenged and defeated the Hakuko king.!~",
+                "A first-year at Minegahara and one of Sakuta's students alongside Juri at cram school. Sara is in his class, and he has a thing for her.",
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/n133723-Qc5ZIRbGCmWh.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b351198-R2jv0M2Thfpu.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/n133723-Qc5ZIRbGCmWh.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b351198-R2jv0M2Thfpu.png",
               },
-              siteUrl: "https://anilist.co/character/133723",
+              siteUrl: "https://anilist.co/character/351198",
             },
             voiceActors: [
               {
-                id: 102260,
+                id: 120129,
                 name: {
-                  full: "Yutaka Nakano",
-                  userPreferred: "Yutaka Nakano",
+                  full: "Yuuya Hirose",
+                  userPreferred: "Yuuya Hirose",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n102260-OSLwIM0iBKFa.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n120129-V8zB2m0la0IW.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n102260-OSLwIM0iBKFa.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n120129-V8zB2m0la0IW.png",
                 },
-                siteUrl: "https://anilist.co/staff/102260",
-              },
-              {
-                id: 104613,
-                name: {
-                  full: "Tatá Guarnieri",
-                  userPreferred: "Tatá Guarnieri",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/9613.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/9613.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/104613",
+                siteUrl: "https://anilist.co/staff/120129",
               },
             ],
           },
           {
             role: "SUPPORTING",
             node: {
-              id: 129809,
+              id: 365262,
               name: {
-                full: "Motoyasu Kitamura",
-                userPreferred: "Motoyasu Kitamura",
-              },
-              age: "21",
-              gender: "Male",
-              description:
-                "A university student summoned to another world as the Spear Hero. He is an easy-going and handsome womanizer.\n\n~!After being abandoned by [Malty](https://anilist.co/character/129808), He has developed an obsession for Filolials. After Fio tried to cheer him up, he can now only see women as pigs in the literal sense. He raised three Filolials, called Kuu, Marin and Midori because he couldn't get Fios attention. He also unlocks the curse series. His sins are Lust (for Fio) and Envy (for Naofumis position of being loved by Fio).!~",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b129809-wYFq4QSlFVha.jpg",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b129809-wYFq4QSlFVha.jpg",
-              },
-              siteUrl: "https://anilist.co/character/129809",
-            },
-            voiceActors: [
-              {
-                id: 118745,
-                name: {
-                  full: "Makoto\r\n Takahashi",
-                  userPreferred: "Makoto\r\n Takahashi",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n118745-uWnMSqzJf8Ul.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n118745-uWnMSqzJf8Ul.png",
-                },
-                siteUrl: "https://anilist.co/staff/118745",
-              },
-              {
-                id: 129501,
-                name: {
-                  full: "Xander Mobus",
-                  userPreferred: "Xander Mobus",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n129501-yf0OVJ24zxNv.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n129501-yf0OVJ24zxNv.png",
-                },
-                siteUrl: "https://anilist.co/staff/129501",
-              },
-              {
-                id: 244043,
-                name: {
-                  full: "Vitor Paranhos",
-                  userPreferred: "Vitor Paranhos",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n244043-EbaLjIDNRVFU.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n244043-EbaLjIDNRVFU.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/244043",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 363129,
-              name: {
-                full: "Jaralis",
-                userPreferred: "Jaralis",
+                full: "Takumi Fukuyama",
+                userPreferred: "Takumi Fukuyama",
               },
               age: null,
               gender: "Male",
+              description:
+                "He is a first-year Statistical Sciences student at Yokohama City University",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b365262-ePw6N6XTD9tY.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b365262-ePw6N6XTD9tY.png",
+              },
+              siteUrl: "https://anilist.co/character/365262",
+            },
+            voiceActors: [
+              {
+                id: 129952,
+                name: {
+                  full: "Mutsuki Iwanaka",
+                  userPreferred: "Mutsuki Iwanaka",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n129952-ONqSM6ixI6pq.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n129952-ONqSM6ixI6pq.png",
+                },
+                siteUrl: "https://anilist.co/staff/129952",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 370925,
+              name: {
+                full: "Ranko Nakago",
+                userPreferred: "Ranko Nakago",
+              },
+              age: null,
+              gender: "Female",
+              description: "The tallest member of Sweet Bullet.",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b370925-Ijn7fIGHBLzF.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b370925-Ijn7fIGHBLzF.png",
+              },
+              siteUrl: "https://anilist.co/character/370925",
+            },
+            voiceActors: [
+              {
+                id: 126963,
+                name: {
+                  full: "Sayumi Suzushiro",
+                  userPreferred: "Sayumi Suzushiro",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n126963-GnhNcLWFeKmy.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n126963-GnhNcLWFeKmy.png",
+                },
+                siteUrl: "https://anilist.co/staff/126963",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 351197,
+              name: {
+                full: "Juri Yoshiwa",
+                userPreferred: "Juri Yoshiwa",
+              },
+              age: null,
+              gender: "Female",
+              description:
+                "A Minegahara first-year in Sakuta's cram school class. She appears to have an interest in Kento, another of Sakuta's students.",
+              image: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b351197-pt2Mtg2qc3Oi.png",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b351197-pt2Mtg2qc3Oi.png",
+              },
+              siteUrl: "https://anilist.co/character/351197",
+            },
+            voiceActors: [
+              {
+                id: 298382,
+                name: {
+                  full: "Yuuki Yamamoto",
+                  userPreferred: "Yuuki Yamamoto",
+                },
+                image: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n298382-uVSZFizlMIbl.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n298382-uVSZFizlMIbl.jpg",
+                },
+                siteUrl: "https://anilist.co/staff/298382",
+              },
+            ],
+          },
+          {
+            role: "SUPPORTING",
+            node: {
+              id: 285128,
+              name: {
+                full: "Ryouko Hanawa",
+                userPreferred: "Ryouko Hanawa",
+              },
+              age: null,
+              gender: "Female",
               description: null,
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b285128-RZU9irEAq7sP.jpg",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/default.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b285128-RZU9irEAq7sP.jpg",
               },
-              siteUrl: "https://anilist.co/character/363129",
+              siteUrl: "https://anilist.co/character/285128",
             },
             voiceActors: [
               {
-                id: 102914,
+                id: 97123,
                 name: {
-                  full: "Jirou Saitou",
-                  userPreferred: "Jirou Saitou",
+                  full: "Natsuki Aikawa",
+                  userPreferred: "Natsuki Aikawa",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n102914-7ygW5ZSwODbF.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/2123.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n102914-7ygW5ZSwODbF.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/2123.jpg",
                 },
-                siteUrl: "https://anilist.co/staff/102914",
-              },
-              {
-                id: 317778,
-                name: {
-                  full: "Evan Lee",
-                  userPreferred: "Evan Michael Lee",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n317778-CbnepTfGDjw9.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n317778-CbnepTfGDjw9.png",
-                },
-                siteUrl: "https://anilist.co/staff/317778",
-              },
-              {
-                id: 195092,
-                name: {
-                  full: "Guilherme Marques",
-                  userPreferred: "Guilherme Marques",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n195092-e5zNFTfGRO2F.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n195092-e5zNFTfGRO2F.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/195092",
+                siteUrl: "https://anilist.co/staff/97123",
               },
             ],
           },
           {
             role: "SUPPORTING",
             node: {
-              id: 363130,
+              id: 144795,
               name: {
-                full: "Werner",
-                userPreferred: "Werner",
+                full: "Fumika Nanjou",
+                userPreferred: "Fumika Nanjou",
               },
               age: null,
-              gender: "Male",
+              gender: "Female",
               description: null,
               image: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/large/b144795-1a7VVmegZr4F.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/default.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/character/medium/b144795-1a7VVmegZr4F.png",
               },
-              siteUrl: "https://anilist.co/character/363130",
+              siteUrl: "https://anilist.co/character/144795",
             },
             voiceActors: [
               {
-                id: 128426,
+                id: 101560,
                 name: {
-                  full: "Takeo Ootsuka",
-                  userPreferred: "Takeo Ootsuka",
+                  full: "Satomi Satou",
+                  userPreferred: "Satomi Satou",
                 },
                 image: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n128426-hJ2OOYDVy8OJ.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/large/n101560-YN8w6EZZtIhb.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n128426-hJ2OOYDVy8OJ.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n101560-YN8w6EZZtIhb.jpg",
                 },
-                siteUrl: "https://anilist.co/staff/128426",
-              },
-              {
-                id: 156141,
-                name: {
-                  full: "Brian Anderson",
-                  userPreferred: "Brian Anderson",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n156141-3xQpmsBCSYHa.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n156141-3xQpmsBCSYHa.png",
-                },
-                siteUrl: "https://anilist.co/staff/156141",
-              },
-              {
-                id: 190340,
-                name: {
-                  full: "Fábio Campos",
-                  userPreferred: "Fábio Campos",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n190340-v5uDkJaD3jVv.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n190340-v5uDkJaD3jVv.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/190340",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 196393,
-              name: {
-                full: "S'yne Lokk",
-                userPreferred: "S'yne Lokk",
-              },
-              age: "15-",
-              gender: "Female",
-              description:
-                "S'yne Lokk is one of the Vassal Wielders of a fallen world. She now lives in Raphtalia's World, she is the Sewing Hero.\n\n(Source: Shield-Hero Wiki)",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b196393-D0F2N9g1GsXy.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b196393-D0F2N9g1GsXy.png",
-              },
-              siteUrl: "https://anilist.co/character/196393",
-            },
-            voiceActors: [
-              {
-                id: 118923,
-                name: {
-                  full: "Maria Naganawa",
-                  userPreferred: "Maria Naganawa",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n118923-bYbaw5gwD25l.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n118923-bYbaw5gwD25l.png",
-                },
-                siteUrl: "https://anilist.co/staff/118923",
-              },
-              {
-                id: 153210,
-                name: {
-                  full: "Lisa Reimold",
-                  userPreferred: "Lisa Reimold",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n153210-ETA5pvFZthaW.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n153210-ETA5pvFZthaW.png",
-                },
-                siteUrl: "https://anilist.co/staff/153210",
-              },
-              {
-                id: 351756,
-                name: {
-                  full: "Vitoria Oliveira",
-                  userPreferred: "Vitoria Oliveira",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n351756-PZxnz4bCsi4N.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n351756-PZxnz4bCsi4N.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/351756",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 136790,
-              name: {
-                full: "Fitoria",
-                userPreferred: "Fitoria",
-              },
-              age: null,
-              gender: "Female",
-              description:
-                "Fitoria is the queen of the Filolials, who rules over them all.\n\nShe has silver hair with thin streaks of light blue, cut in a short bob with three tufts of hair standing up vertically from the crown of her head, like cowlicks. Her eyes are red and her face is small and well composed. She's dressed in a red and white gothic lolita-style dress. She's about the same height as Filo.",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b136790-6TkN3qYelIhk.jpg",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b136790-6TkN3qYelIhk.jpg",
-              },
-              siteUrl: "https://anilist.co/character/136790",
-            },
-            voiceActors: [
-              {
-                id: 95489,
-                name: {
-                  full: "Cristina Valenzuela",
-                  userPreferred: "Cristina Danielle Valenzuela",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95489-oq44nRsWj8NN.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95489-oq44nRsWj8NN.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/95489",
-              },
-              {
-                id: 197970,
-                name: {
-                  full: "Beta Cinalli",
-                  userPreferred: "Beta Cinalli",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n197970-DnTlRjBZbaoh.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n197970-DnTlRjBZbaoh.png",
-                },
-                siteUrl: "https://anilist.co/staff/197970",
-              },
-              {
-                id: 95115,
-                name: {
-                  full: "Sakura Tange",
-                  userPreferred: "Sakura Tange",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95115-AtF7VsdIk51q.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95115-AtF7VsdIk51q.png",
-                },
-                siteUrl: "https://anilist.co/staff/95115",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 135198,
-              name: {
-                full: "Mirellia Q Melromarc",
-                userPreferred: "Mirellia Q Melromarc",
-              },
-              age: null,
-              gender: "Female",
-              description:
-                "The queen of Melromarc. She holds the true power of the crown and is generally a just ruler. She is known for her diplomacy and negotiation skills.",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b135198-ImEXzNG3srwI.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b135198-ImEXzNG3srwI.png",
-              },
-              siteUrl: "https://anilist.co/character/135198",
-            },
-            voiceActors: [
-              {
-                id: 128359,
-                name: {
-                  full: "Katelyn Gault",
-                  userPreferred: "Katelyn Gault",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n128359-KeErKW6SUyAP.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n128359-KeErKW6SUyAP.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/128359",
-              },
-              {
-                id: 95195,
-                name: {
-                  full: "Kikuko Inoue",
-                  userPreferred: "Kikuko Inoue",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95195-nLvtZl5sCK0D.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95195-nLvtZl5sCK0D.png",
-                },
-                siteUrl: "https://anilist.co/staff/95195",
-              },
-              {
-                id: 233203,
-                name: {
-                  full: "Lilian Prado",
-                  userPreferred: "Lilian Prado",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n233203-Z41IJQjrWm1G.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n233203-Z41IJQjrWm1G.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/233203",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 320659,
-              name: {
-                full: "Wyndia",
-                userPreferred: "Wyndia",
-              },
-              age: null,
-              gender: "Female",
-              description:
-                "Wyndia was raised by the Dragon Emperor called Gaelion. She and Gaelion lived in the mountains peacefully. ~!Hearing news of the Dragon Emperor, Ren went into the mountains to kill the dragon. While unaware that Wyndia was under the dragons care, Ren killed Gaelion whose corpse later turned into a zombie dragon.!~",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b320659-fMjSa33T5Lta.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b320659-fMjSa33T5Lta.png",
-              },
-              siteUrl: "https://anilist.co/character/320659",
-            },
-            voiceActors: [
-              {
-                id: 297763,
-                name: {
-                  full: "Alice Himora",
-                  userPreferred: "Alice Himora",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n297763-sWjLcnPVvfvn.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n297763-sWjLcnPVvfvn.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/297763",
-              },
-              {
-                id: 287064,
-                name: {
-                  full: "Kika Zangari",
-                  userPreferred: "Kika Zangari",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n287064-tVT60gQLi6iv.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n287064-tVT60gQLi6iv.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/287064",
-              },
-              {
-                id: 260902,
-                name: {
-                  full: "Hana Hishikawa",
-                  userPreferred: "Hana Hishikawa",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n260902-ohids5dn665e.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n260902-ohids5dn665e.png",
-                },
-                siteUrl: "https://anilist.co/staff/260902",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 188520,
-              name: {
-                full: "Raph ",
-                userPreferred: "Raph ",
-              },
-              age: null,
-              gender: null,
-              description: "A monster Naofumi created using his shield. ",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b188520-IfksunovvFL6.jpg",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b188520-IfksunovvFL6.jpg",
-              },
-              siteUrl: "https://anilist.co/character/188520",
-            },
-            voiceActors: [
-              {
-                id: 244217,
-                name: {
-                  full: "Mari Guedes",
-                  userPreferred: "Mari Guedes",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n244217-bxt9IgoUgDPm.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n244217-bxt9IgoUgDPm.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/244217",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 136792,
-              name: {
-                full: "Keel",
-                userPreferred: "Keel",
-              },
-              age: "10 (initial), 15 (post-level)",
-              gender: "Female",
-              description:
-                "__Race:__ Wanui\n\nKeel was born and raised in the same village as Raphtalia. Naofumi bought her as a slave in order to rebuild the village destroyed by the first wave.",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b136792-xxCXzkPuyvwr.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b136792-xxCXzkPuyvwr.png",
-              },
-              siteUrl: "https://anilist.co/character/136792",
-            },
-            voiceActors: [
-              {
-                id: 119740,
-                name: {
-                  full: "Natsumi Fujiwara",
-                  userPreferred: "Natsumi Fujiwara",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n119740-EEZ5DErQhOht.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n119740-EEZ5DErQhOht.png",
-                },
-                siteUrl: "https://anilist.co/staff/119740",
-              },
-              {
-                id: 176954,
-                name: {
-                  full: "Bruna Nogueira",
-                  userPreferred: "Bruna Nogueira",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n176954-6ZX9X0hOU20I.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n176954-6ZX9X0hOU20I.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/176954",
-              },
-            ],
-          },
-          {
-            role: "SUPPORTING",
-            node: {
-              id: 133724,
-              name: {
-                full: "Erhard",
-                userPreferred: "Erhard",
-              },
-              age: null,
-              gender: "Male",
-              description:
-                "Erhard is a blacksmith and a weapon shop owner in the castle town of Melromarc. His shop is the only shop in Melromarc to sell shields while others don't for religious reasons.",
-              image: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/character/large/b133724-DKBQxDroRlQG.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/character/medium/b133724-DKBQxDroRlQG.png",
-              },
-              siteUrl: "https://anilist.co/character/133724",
-            },
-            voiceActors: [
-              {
-                id: 108323,
-                name: {
-                  full: "Affonso Amajones",
-                  userPreferred: "Affonso Amajones",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n108323-gPvXawqV6veh.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n108323-gPvXawqV6veh.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/108323",
-              },
-              {
-                id: 95025,
-                name: {
-                  full: "Hiroki Yasumoto",
-                  userPreferred: "Hiroki Yasumoto",
-                },
-                image: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/staff/large/n95025-LGHr4VufmfCc.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/staff/medium/n95025-LGHr4VufmfCc.jpg",
-                },
-                siteUrl: "https://anilist.co/staff/95025",
+                siteUrl: "https://anilist.co/staff/101560",
               },
             ],
           },
@@ -2602,99 +1903,151 @@ const singleAnime = {
       },
       isAdult: false,
       nextAiringEpisode: null,
-      siteUrl: "https://anilist.co/anime/173780",
+      siteUrl: "https://anilist.co/anime/171046",
       relations: {
         edges: [
           {
-            relationType: "ADAPTATION",
+            relationType: "PREQUEL",
             node: {
-              id: 85743,
+              id: 161474,
               title: {
-                english: "The Rising of the Shield Hero",
-                native: "盾の勇者の成り上がり",
-                romaji: "Tate no Yuusha no Nariagari",
-                userPreferred: "Tate no Yuusha no Nariagari",
+                english: "Rascal Does Not Dream of a Knapsack Kid",
+                native: "青春ブタ野郎はランドセルガールの夢を見ない",
+                romaji: "Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai",
+                userPreferred:
+                  "Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai",
               },
               coverImage: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85743-CoWEORg0SS0B.png",
+                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx161474-ZDfmmlJQQngN.jpg",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85743-CoWEORg0SS0B.png",
+                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx161474-ZDfmmlJQQngN.jpg",
+              },
+              type: "ANIME",
+              format: "MOVIE",
+              status: "FINISHED",
+              episodes: 1,
+              siteUrl: "https://anilist.co/anime/161474",
+            },
+          },
+          {
+            relationType: "ADAPTATION",
+            node: {
+              id: 165656,
+              title: {
+                english: "Rascal Does Not Dream of Santa Claus",
+                native: "青春ブタ野郎はサンタクロースの夢を見ない",
+                romaji: "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
+                userPreferred:
+                  "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
+              },
+              coverImage: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx165656-buXoBGpePldl.jpg",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx165656-buXoBGpePldl.jpg",
               },
               type: "MANGA",
               format: "NOVEL",
-              status: "RELEASING",
-              episodes: null,
-              siteUrl: "https://anilist.co/manga/85743",
-            },
-          },
-          {
-            relationType: "PREQUEL",
-            node: {
-              id: 111322,
-              title: {
-                english: "The Rising of the Shield Hero Season 3",
-                native: "盾の勇者の成り上がり Season 3",
-                romaji: "Tate no Yuusha no Nariagari Season 3",
-                userPreferred: "Tate no Yuusha no Nariagari Season 3",
-              },
-              coverImage: {
-                large:
-                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx111322-2jQMDQva4YD7.png",
-                medium:
-                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx111322-2jQMDQva4YD7.png",
-              },
-              type: "ANIME",
-              format: "TV",
               status: "FINISHED",
-              episodes: 12,
-              siteUrl: "https://anilist.co/anime/111322",
+              episodes: null,
+              siteUrl: "https://anilist.co/manga/165656",
             },
           },
           {
-            relationType: "ALTERNATIVE",
+            relationType: "ADAPTATION",
             node: {
-              id: 85442,
+              id: 145167,
               title: {
-                english: "The Rising of the Shield Hero",
-                native: "盾の勇者の成り上がり",
-                romaji: "Tate no Yuusha no Nariagari",
-                userPreferred: "Tate no Yuusha no Nariagari",
+                english: "Rascal Does Not Dream of a Lost Singer",
+                native: "青春ブタ野郎は迷えるシンガーの夢を見ない",
+                romaji: "Seishun Buta Yarou wa Mayoeru Singer no Yume wo Minai",
+                userPreferred:
+                  "Seishun Buta Yarou wa Mayoeru Singer no Yume wo Minai",
               },
               coverImage: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85442-pIcvm2OjfTjR.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx145167-e4JxDlxOiuTC.jpg",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx85442-pIcvm2OjfTjR.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx145167-e4JxDlxOiuTC.jpg",
               },
               type: "MANGA",
-              format: "MANGA",
-              status: "RELEASING",
+              format: "NOVEL",
+              status: "FINISHED",
               episodes: null,
-              siteUrl: "https://anilist.co/manga/85442",
+              siteUrl: "https://anilist.co/manga/145167",
+            },
+          },
+          {
+            relationType: "ADAPTATION",
+            node: {
+              id: 145168,
+              title: {
+                english: "Rascal Does Not Dream of a Nightingale",
+                native: "青春ブタ野郎はナイチンゲールの夢を見ない",
+                romaji: "Seishun Buta Yarou wa Nightingale no Yume wo Minai",
+                userPreferred:
+                  "Seishun Buta Yarou wa Nightingale no Yume wo Minai",
+              },
+              coverImage: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx145168-foNTdUD6p2kj.jpg",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx145168-foNTdUD6p2kj.jpg",
+              },
+              type: "MANGA",
+              format: "NOVEL",
+              status: "FINISHED",
+              episodes: null,
+              siteUrl: "https://anilist.co/manga/145168",
+            },
+          },
+          {
+            relationType: "ADAPTATION",
+            node: {
+              id: 154986,
+              title: {
+                english: "Rascal Does Not Dream of His Student",
+                native: "青春ブタ野郎はマイスチューデントの夢を見ない",
+                romaji: "Seishun Buta Yarou wa My Student no Yume wo Minai",
+                userPreferred:
+                  "Seishun Buta Yarou wa My Student no Yume wo Minai",
+              },
+              coverImage: {
+                large:
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx154986-am7R6c4ag36D.jpg",
+                medium:
+                  "https://s4.anilist.co/file/anilistcdn/media/manga/cover/small/bx154986-am7R6c4ag36D.jpg",
+              },
+              type: "MANGA",
+              format: "NOVEL",
+              status: "FINISHED",
+              episodes: null,
+              siteUrl: "https://anilist.co/manga/154986",
             },
           },
           {
             relationType: "SEQUEL",
             node: {
-              id: 199185,
+              id: 199340,
               title: {
                 english: null,
-                native: "盾の勇者の成り上がり Season 5",
-                romaji: "Tate no Yuusha no Nariagari Season 5",
-                userPreferred: "Tate no Yuusha no Nariagari Season 5",
+                native: "青春ブタ野郎はディアフレンドの夢を見ない",
+                romaji: "Seishun Buta Yarou wa Dear Friend no Yume wo Minai",
+                userPreferred:
+                  "Seishun Buta Yarou wa Dear Friend no Yume wo Minai",
               },
               coverImage: {
                 large:
-                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199185-RGLM0cd5T0Kn.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199340-UPytrB6apzmA.png",
                 medium:
-                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199185-RGLM0cd5T0Kn.jpg",
+                  "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199340-UPytrB6apzmA.png",
               },
               type: "ANIME",
-              format: "TV",
+              format: "MOVIE",
               status: "NOT_YET_RELEASED",
-              episodes: null,
-              siteUrl: "https://anilist.co/anime/199185",
+              episodes: 1,
+              siteUrl: "https://anilist.co/anime/199340",
             },
           },
         ],
@@ -2703,317 +2056,103 @@ const singleAnime = {
         edges: [
           {
             node: {
-              rating: 7,
+              rating: -1,
               mediaRecommendation: {
-                id: 101280,
+                id: 143338,
                 title: {
-                  english: "That Time I Got Reincarnated as a Slime",
-                  native: "転生したらスライムだった件",
-                  romaji: "Tensei Shitara Slime Datta Ken",
-                  userPreferred: "Tensei Shitara Slime Datta Ken",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101280-tDxCVJm714nt.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101280-tDxCVJm714nt.jpg",
-                },
-                type: "ANIME",
-                format: "TV",
-                status: "FINISHED",
-                episodes: 24,
-                siteUrl: "https://anilist.co/anime/101280",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 4,
-              mediaRecommendation: {
-                id: 129898,
-                title: {
-                  english:
-                    "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
-                  native: "世界最高の暗殺者、異世界貴族に転生する",
+                  english: "The Angel Next Door Spoils Me Rotten",
+                  native: "お隣の天使様にいつの間にか駄目人間にされていた件",
                   romaji:
-                    "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru",
+                    "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
                   userPreferred:
-                    "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru",
+                    "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx129898-FRUzDtPhRigt.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143338-zhyDVYgEzsm5.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129898-FRUzDtPhRigt.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx143338-zhyDVYgEzsm5.png",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
                 episodes: 12,
-                siteUrl: "https://anilist.co/anime/129898",
+                siteUrl: "https://anilist.co/anime/143338",
               },
             },
           },
           {
             node: {
-              rating: 8,
+              rating: 31,
               mediaRecommendation: {
-                id: 154473,
+                id: 5081,
                 title: {
-                  english:
-                    "Arifureta: From Commonplace to World's Strongest Season 3",
-                  native: "ありふれた職業で世界最強 3rd season",
-                  romaji: "Arifureta Shokugyou de Sekai Saikyou 3rd season",
-                  userPreferred:
-                    "Arifureta Shokugyou de Sekai Saikyou 3rd season",
+                  english: "Bakemonogatari",
+                  native: "化物語",
+                  romaji: "Bakemonogatari",
+                  userPreferred: "Bakemonogatari",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx154473-o55309dVGP3G.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx5081-9GocceQ5Z865.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx154473-o55309dVGP3G.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx5081-9GocceQ5Z865.jpg",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
-                episodes: 16,
-                siteUrl: "https://anilist.co/anime/154473",
+                episodes: 15,
+                siteUrl: "https://anilist.co/anime/5081",
               },
             },
           },
           {
             node: {
-              rating: 1,
+              rating: 22,
               mediaRecommendation: {
-                id: 119661,
+                id: 154768,
                 title: {
-                  english:
-                    "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
-                  native: "Re:ゼロから始める異世界生活 2nd Season Part 2",
-                  romaji:
-                    "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
-                  userPreferred:
-                    "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+                  english: "My Dress-Up Darling Season 2",
+                  native: "その着せ替え人形は恋をする Season 2",
+                  romaji: "Sono Bisque Doll wa Koi wo Suru Season 2",
+                  userPreferred: "Sono Bisque Doll wa Koi wo Suru Season 2",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119661-GDbUZxrZMz01.png",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx154768-DHHvNd4MjV1p.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx119661-GDbUZxrZMz01.png",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx154768-DHHvNd4MjV1p.jpg",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
                 episodes: 12,
-                siteUrl: "https://anilist.co/anime/119661",
+                siteUrl: "https://anilist.co/anime/154768",
               },
             },
           },
           {
             node: {
-              rating: 7,
+              rating: 11,
               mediaRecommendation: {
-                id: 21355,
+                id: 17074,
                 title: {
-                  english: "Re:ZERO -Starting Life in Another World-",
-                  native: "Re:ゼロから始める異世界生活",
-                  romaji: "Re:Zero kara Hajimeru Isekai Seikatsu",
-                  userPreferred: "Re:Zero kara Hajimeru Isekai Seikatsu",
+                  english: "Monogatari Series Second Season",
+                  native: "〈物語〉シリーズ セカンドシーズン",
+                  romaji: "Monogatari Series: Second Season",
+                  userPreferred: "Monogatari Series: Second Season",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21355-wRVUrGxpvIQQ.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx17074-xMhVAZsEDH66.png",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21355-wRVUrGxpvIQQ.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx17074-xMhVAZsEDH66.png",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
-                episodes: 25,
-                siteUrl: "https://anilist.co/anime/21355",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 8,
-              mediaRecommendation: {
-                id: 20832,
-                title: {
-                  english: "Overlord",
-                  native: "オーバーロード",
-                  romaji: "Overlord",
-                  userPreferred: "Overlord",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20832-vUNm5zrYWifc.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20832-vUNm5zrYWifc.jpg",
-                },
-                type: "ANIME",
-                format: "TV",
-                status: "FINISHED",
-                episodes: 13,
-                siteUrl: "https://anilist.co/anime/20832",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 5,
-              mediaRecommendation: {
-                id: 103632,
-                title: {
-                  english: "So I'm a Spider, So What?",
-                  native: "蜘蛛ですが、なにか？",
-                  romaji: "Kumo desu ga, Nani ka?",
-                  userPreferred: "Kumo desu ga, Nani ka?",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx103632-2wsy9wFUdm1C.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx103632-2wsy9wFUdm1C.jpg",
-                },
-                type: "ANIME",
-                format: "TV",
-                status: "FINISHED",
-                episodes: 24,
-                siteUrl: "https://anilist.co/anime/103632",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 3,
-              mediaRecommendation: {
-                id: 108465,
-                title: {
-                  english: "Mushoku Tensei: Jobless Reincarnation",
-                  native: "無職転生 ～異世界行ったら本気だす～",
-                  romaji: "Mushoku Tensei: Isekai Ittara Honki Dasu",
-                  userPreferred: "Mushoku Tensei: Isekai Ittara Honki Dasu",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108465-1ANspF1EWyFx.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108465-1ANspF1EWyFx.jpg",
-                },
-                type: "ANIME",
-                format: "TV",
-                status: "FINISHED",
-                episodes: 11,
-                siteUrl: "https://anilist.co/anime/108465",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 5,
-              mediaRecommendation: {
-                id: 186052,
-                title: {
-                  english: "The Water Magician",
-                  native: "水属性の魔法使い",
-                  romaji: "Mizu Zokusei no Mahou Tsukai",
-                  userPreferred: "Mizu Zokusei no Mahou Tsukai",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186052-zq8h0Qo0O0sP.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186052-zq8h0Qo0O0sP.jpg",
-                },
-                type: "ANIME",
-                format: "TV",
-                status: "FINISHED",
-                episodes: 12,
-                siteUrl: "https://anilist.co/anime/186052",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 1,
-              mediaRecommendation: {
-                id: 111729,
-                title: {
-                  english:
-                    "Arifureta: From Commonplace to World's Strongest Specials",
-                  native: "ありふれた職業で世界最強",
-                  romaji: "Arifureta Shokugyou de Sekai Saikyou Specials",
-                  userPreferred:
-                    "Arifureta Shokugyou de Sekai Saikyou Specials",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx111729-NEhPwaytwM0O.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx111729-NEhPwaytwM0O.jpg",
-                },
-                type: "ANIME",
-                format: "SPECIAL",
-                status: "FINISHED",
-                episodes: 2,
-                siteUrl: "https://anilist.co/anime/111729",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 1,
-              mediaRecommendation: {
-                id: 143846,
-                title: {
-                  english: null,
-                  native:
-                    "ありふれた職業で世界最強 2nd season 未放送エピソード",
-                  romaji:
-                    "Arifureta Shokugyou de Sekai Saikyou 2nd season Special",
-                  userPreferred:
-                    "Arifureta Shokugyou de Sekai Saikyou 2nd season Special",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143846-LtV3VNCt1E6l.png",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx143846-LtV3VNCt1E6l.png",
-                },
-                type: "ANIME",
-                format: "SPECIAL",
-                status: "FINISHED",
-                episodes: 1,
-                siteUrl: "https://anilist.co/anime/143846",
-              },
-            },
-          },
-          {
-            node: {
-              rating: 1,
-              mediaRecommendation: {
-                id: 146921,
-                title: {
-                  english:
-                    "Arifureta - From Commonplace to World's Strongest: The Miraculous Meeting and the Phantasmagorical Adventure",
-                  native: "ありふれた職業で世界最強 幻の冒険と奇跡の邂逅",
-                  romaji:
-                    "Arifureta Shokugyou de Sekai Saikyou: Maboroshi no Bouken to Kiseki no Kaigou",
-                  userPreferred:
-                    "Arifureta Shokugyou de Sekai Saikyou: Maboroshi no Bouken to Kiseki no Kaigou",
-                },
-                coverImage: {
-                  large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx146921-HyTSsd1ardxq.jpg",
-                  medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx146921-HyTSsd1ardxq.jpg",
-                },
-                type: "ANIME",
-                format: "OVA",
-                status: "FINISHED",
-                episodes: 1,
-                siteUrl: "https://anilist.co/anime/146921",
+                episodes: 26,
+                siteUrl: "https://anilist.co/anime/17074",
               },
             },
           },
@@ -3021,24 +2160,78 @@ const singleAnime = {
             node: {
               rating: 2,
               mediaRecommendation: {
-                id: 100668,
+                id: 124080,
                 title: {
-                  english: "Arifureta: From Commonplace to World's Strongest",
-                  native: "ありふれた職業で世界最強",
-                  romaji: "Arifureta Shokugyou de Sekai Saikyou",
-                  userPreferred: "Arifureta Shokugyou de Sekai Saikyou",
+                  english: "Horimiya",
+                  native: "ホリミヤ",
+                  romaji: "Horimiya",
+                  userPreferred: "Horimiya",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx100668-DvOn5bMOt4cy.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124080-oeviACzGv5Vx.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx100668-DvOn5bMOt4cy.jpg",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124080-oeviACzGv5Vx.jpg",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
                 episodes: 13,
-                siteUrl: "https://anilist.co/anime/100668",
+                siteUrl: "https://anilist.co/anime/124080",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 10,
+              mediaRecommendation: {
+                id: 108489,
+                title: {
+                  english: "My Teen Romantic Comedy SNAFU Climax!",
+                  native: "やはり俺の青春ラブコメはまちがっている。完",
+                  romaji:
+                    "Yahari Ore no Seishun Love Come wa Machigatteiru. Kan",
+                  userPreferred:
+                    "Yahari Ore no Seishun Love Come wa Machigatteiru. Kan",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108489-yGmYCE6dhFta.png",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108489-yGmYCE6dhFta.png",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 12,
+                siteUrl: "https://anilist.co/anime/108489",
+              },
+            },
+          },
+          {
+            node: {
+              rating: 37,
+              mediaRecommendation: {
+                id: 101291,
+                title: {
+                  english: "Rascal Does Not Dream of Bunny Girl Senpai",
+                  native: "青春ブタ野郎はバニーガール先輩の夢を見ない",
+                  romaji:
+                    "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+                  userPreferred:
+                    "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+                },
+                coverImage: {
+                  large:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101291-wfEdgPqtfU0l.jpg",
+                  medium:
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101291-wfEdgPqtfU0l.jpg",
+                },
+                type: "ANIME",
+                format: "TV",
+                status: "FINISHED",
+                episodes: 13,
+                siteUrl: "https://anilist.co/anime/101291",
               },
             },
           },
@@ -3046,28 +2239,24 @@ const singleAnime = {
             node: {
               rating: 3,
               mediaRecommendation: {
-                id: 173694,
+                id: 11887,
                 title: {
-                  english:
-                    "Failure Frame: I Became the Strongest and Annihilated Everything with Low-Level Spells",
-                  native:
-                    "ハズレ枠の【状態異常スキル】で最強になった俺がすべてを蹂躙するまで",
-                  romaji:
-                    "Hazure Waku no [Joutai Ijou Skill] de Saikyou ni Natta Ore ga Subete wo Juurin Suru made",
-                  userPreferred:
-                    "Hazure Waku no [Joutai Ijou Skill] de Saikyou ni Natta Ore ga Subete wo Juurin Suru made",
+                  english: "Kokoro Connect",
+                  native: "ココロコネクト",
+                  romaji: "Kokoro Connect",
+                  userPreferred: "Kokoro Connect",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx173694-XcwGOMBxboOO.png",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11887-ypZTwcRqopiL.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx173694-XcwGOMBxboOO.png",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11887-ypZTwcRqopiL.jpg",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
-                episodes: 12,
-                siteUrl: "https://anilist.co/anime/173694",
+                episodes: 13,
+                siteUrl: "https://anilist.co/anime/11887",
               },
             },
           },
@@ -3075,24 +2264,24 @@ const singleAnime = {
             node: {
               rating: 1,
               mediaRecommendation: {
-                id: 151807,
+                id: 14741,
                 title: {
-                  english: "Solo Leveling",
-                  native: "俺だけレベルアップな件",
-                  romaji: "Ore dake Level Up na Ken",
-                  userPreferred: "Ore dake Level Up na Ken",
+                  english: "Love, Chunibyo & Other Delusions",
+                  native: "中二病でも恋がしたい!",
+                  romaji: "Chuunibyou demo Koi ga Shitai!",
+                  userPreferred: "Chuunibyou demo Koi ga Shitai!",
                 },
                 coverImage: {
                   large:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx151807-it355ZgzquUd.png",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx14741-CGXEIeUe2roA.jpg",
                   medium:
-                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx151807-it355ZgzquUd.png",
+                    "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx14741-CGXEIeUe2roA.jpg",
                 },
                 type: "ANIME",
                 format: "TV",
                 status: "FINISHED",
                 episodes: 12,
-                siteUrl: "https://anilist.co/anime/151807",
+                siteUrl: "https://anilist.co/anime/14741",
               },
             },
           },
@@ -3101,8 +2290,626 @@ const singleAnime = {
     },
   ],
   userList: {
-    progressStatus: "COMPLETED",
-    inFavorites: true,
+    progressStatus: null,
+    inFavorites: false,
+  },
+};
+
+const studioDataSample = {
+  data: {
+    name: "CloverWorks",
+    media: {
+      edges: [
+        {
+          node: {
+            id: 186712,
+            title: {
+              english: null,
+              romaji: "Bocchi the Rock! 2nd Season",
+              userPreferred: "Bocchi the Rock! 2nd Season",
+              native: "ぼっち・ざ・ろっく！ 2期",
+            },
+            coverImage: {
+              color: "#f1d65d",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186712-d5I2TjUQcHuI.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186712-d5I2TjUQcHuI.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186712-d5I2TjUQcHuI.jpg",
+            },
+            startDate: {
+              day: null,
+              month: null,
+              year: null,
+            },
+            season: null,
+            seasonYear: null,
+            averageScore: null,
+            meanScore: null,
+            type: "ANIME",
+            status: "NOT_YET_RELEASED",
+            format: "TV",
+            episodes: null,
+            genres: ["Comedy", "Music", "Slice of Life"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 199340,
+            title: {
+              english: "Rascal Does Not Dream of a Dear Friend",
+              romaji: "Seishun Buta Yarou wa Dear Friend no Yume wo Minai",
+              userPreferred:
+                "Seishun Buta Yarou wa Dear Friend no Yume wo Minai",
+              native: "青春ブタ野郎はディアフレンドの夢を見ない",
+            },
+            coverImage: {
+              color: "#c9e4f1",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199340-UPytrB6apzmA.png",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199340-UPytrB6apzmA.png",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199340-UPytrB6apzmA.png",
+            },
+            startDate: {
+              day: null,
+              month: null,
+              year: 2026,
+            },
+            season: null,
+            seasonYear: null,
+            averageScore: null,
+            meanScore: null,
+            type: "ANIME",
+            status: "NOT_YET_RELEASED",
+            format: "MOVIE",
+            episodes: 1,
+            genres: ["Drama", "Psychological", "Romance", "Supernatural"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 178972,
+            title: {
+              english: null,
+              romaji: "GROTESQQQUE",
+              userPreferred: "GROTESQQQUE",
+              native: "GROTESQQQUE -グロテスク-",
+            },
+            coverImage: {
+              color: "#f1785d",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178972-Kw1UB8nDDfQM.png",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178972-Kw1UB8nDDfQM.png",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178972-Kw1UB8nDDfQM.png",
+            },
+            startDate: {
+              day: null,
+              month: null,
+              year: 2026,
+            },
+            season: null,
+            seasonYear: null,
+            averageScore: null,
+            meanScore: null,
+            type: "ANIME",
+            status: "NOT_YET_RELEASED",
+            format: null,
+            episodes: 3,
+            genres: [],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 177937,
+            title: {
+              english: "SPY x FAMILY Season 3",
+              romaji: "SPY×FAMILY Season 3",
+              userPreferred: "SPY×FAMILY Season 3",
+              native: "SPY×FAMILY Season 3",
+            },
+            coverImage: {
+              color: "#e4935d",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177937-Tzgg6rAdhCoH.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177937-Tzgg6rAdhCoH.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177937-Tzgg6rAdhCoH.jpg",
+            },
+            startDate: {
+              day: 4,
+              month: 10,
+              year: 2025,
+            },
+            season: "FALL",
+            seasonYear: 2025,
+            averageScore: 78,
+            meanScore: 80,
+            type: "ANIME",
+            status: "RELEASING",
+            format: "TV",
+            episodes: 13,
+            genres: ["Action", "Comedy", "Slice of Life", "Supernatural"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 198033,
+            title: {
+              english: null,
+              romaji: "Ano Hi no Kanojotachi: day09 Miu Takigawa",
+              userPreferred: "Ano Hi no Kanojotachi: day09 Miu Takigawa",
+              native: "あの日の彼女たち day09 滝川みう",
+            },
+            coverImage: {
+              color: "#1a506b",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198033-QQZBxTxFTwu9.png",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198033-QQZBxTxFTwu9.png",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198033-QQZBxTxFTwu9.png",
+            },
+            startDate: {
+              day: 28,
+              month: 8,
+              year: 2025,
+            },
+            season: "SUMMER",
+            seasonYear: 2025,
+            averageScore: null,
+            meanScore: 74,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "SPECIAL",
+            episodes: 1,
+            genres: ["Slice of Life"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 181444,
+            title: {
+              english: "The Fragrant Flower Blooms With Dignity",
+              romaji: "Kaoru Hana wa Rin to Saku",
+              userPreferred: "Kaoru Hana wa Rin to Saku",
+              native: "薫る花は凛と咲く",
+            },
+            coverImage: {
+              color: "#a1d6f1",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx181444-Ut9DDUZdfHwg.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx181444-Ut9DDUZdfHwg.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx181444-Ut9DDUZdfHwg.jpg",
+            },
+            startDate: {
+              day: 6,
+              month: 7,
+              year: 2025,
+            },
+            season: "SUMMER",
+            seasonYear: 2025,
+            averageScore: 87,
+            meanScore: 87,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 13,
+            genres: ["Comedy", "Drama", "Romance"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 154768,
+            title: {
+              english: "My Dress-Up Darling Season 2",
+              romaji: "Sono Bisque Doll wa Koi wo Suru Season 2",
+              userPreferred: "Sono Bisque Doll wa Koi wo Suru Season 2",
+              native: "その着せ替え人形は恋をする Season 2",
+            },
+            coverImage: {
+              color: "#e4a15d",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154768-DHHvNd4MjV1p.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx154768-DHHvNd4MjV1p.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx154768-DHHvNd4MjV1p.jpg",
+            },
+            startDate: {
+              day: 6,
+              month: 7,
+              year: 2025,
+            },
+            season: "SUMMER",
+            seasonYear: 2025,
+            averageScore: 83,
+            meanScore: 83,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 12,
+            genres: ["Comedy", "Ecchi", "Romance", "Slice of Life"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 171046,
+            title: {
+              english: "Rascal Does Not Dream of Santa Claus",
+              romaji: "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
+              userPreferred:
+                "Seishun Buta Yarou wa Santa Claus no Yume wo Minai",
+              native: "青春ブタ野郎はサンタクロースの夢を見ない",
+            },
+            coverImage: {
+              color: "#e4c928",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171046-9leqLiNuOqNu.png",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171046-9leqLiNuOqNu.png",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171046-9leqLiNuOqNu.png",
+            },
+            startDate: {
+              day: 5,
+              month: 7,
+              year: 2025,
+            },
+            season: "SUMMER",
+            seasonYear: 2025,
+            averageScore: 81,
+            meanScore: 81,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 13,
+            genres: [
+              "Drama",
+              "Mystery",
+              "Psychological",
+              "Romance",
+              "Supernatural",
+            ],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 192976,
+            title: {
+              english: null,
+              romaji: "Kireigoto",
+              userPreferred: "Kireigoto",
+              native: "綺麗事",
+            },
+            coverImage: {
+              color: "#0da1e4",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192976-pPRLmhhiTubA.png",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192976-pPRLmhhiTubA.png",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx192976-pPRLmhhiTubA.png",
+            },
+            startDate: {
+              day: 19,
+              month: 5,
+              year: 2025,
+            },
+            season: null,
+            seasonYear: null,
+            averageScore: 69,
+            meanScore: 78,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "MUSIC",
+            episodes: 1,
+            genres: ["Psychological"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 179054,
+            title: {
+              english: "Black Butler: Emerald Witch Arc",
+              romaji: "Kuroshitsuji: Midori no Majo-hen",
+              userPreferred: "Kuroshitsuji: Midori no Majo-hen",
+              native: "黒執事 -緑の魔女編-",
+            },
+            coverImage: {
+              color: "#f1f1c9",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179054-HmN0Za4T157B.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx179054-HmN0Za4T157B.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx179054-HmN0Za4T157B.jpg",
+            },
+            startDate: {
+              day: 5,
+              month: 4,
+              year: 2025,
+            },
+            season: "SPRING",
+            seasonYear: 2025,
+            averageScore: 81,
+            meanScore: 81,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 13,
+            genres: ["Action", "Comedy", "Fantasy", "Mystery", "Supernatural"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 178680,
+            title: {
+              english: "WIND BREAKER Season 2",
+              romaji: "WIND BREAKER Season 2",
+              userPreferred: "WIND BREAKER Season 2",
+              native: "WIND BREAKER Season 2",
+            },
+            coverImage: {
+              color: "#e4c9ae",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178680-nIAhCizY46ZU.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178680-nIAhCizY46ZU.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178680-nIAhCizY46ZU.jpg",
+            },
+            startDate: {
+              day: 4,
+              month: 4,
+              year: 2025,
+            },
+            season: "SPRING",
+            seasonYear: 2025,
+            averageScore: 77,
+            meanScore: 77,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 12,
+            genres: ["Action", "Comedy", "Drama"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 189581,
+            title: {
+              english: null,
+              romaji: "7FATES: CHAKHO",
+              userPreferred: "7FATES: CHAKHO",
+              native: "7FATES: CHAKHO",
+            },
+            coverImage: {
+              color: "#50e4d6",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189581-XkZZWUWgun9Z.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189581-XkZZWUWgun9Z.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189581-XkZZWUWgun9Z.jpg",
+            },
+            startDate: {
+              day: 3,
+              month: 4,
+              year: 2025,
+            },
+            season: null,
+            seasonYear: null,
+            averageScore: 64,
+            meanScore: 70,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "SPECIAL",
+            episodes: 1,
+            genres: [],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 189576,
+            title: {
+              english: null,
+              romaji: "The Star Seekers Hoshi wo Ou Shounen-tachi",
+              userPreferred: "The Star Seekers Hoshi wo Ou Shounen-tachi",
+              native: "The Star Seekers 星を追う少年たち",
+            },
+            coverImage: {
+              color: "#f12850",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189576-y68XRkiD9BSK.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189576-y68XRkiD9BSK.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189576-y68XRkiD9BSK.jpg",
+            },
+            startDate: {
+              day: 3,
+              month: 4,
+              year: 2025,
+            },
+            season: null,
+            seasonYear: null,
+            averageScore: null,
+            meanScore: 65,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "SPECIAL",
+            episodes: 1,
+            genres: [],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 167742,
+            title: {
+              english: "UniteUp! -Uni:Birth-",
+              romaji: "UniteUp!: Uni:Birth",
+              userPreferred: "UniteUp!: Uni:Birth",
+              native: "UniteUp! -Uni:Birth-",
+            },
+            coverImage: {
+              color: "#e4c935",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167742-fFAj38cj7Wxo.png",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx167742-fFAj38cj7Wxo.png",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx167742-fFAj38cj7Wxo.png",
+            },
+            startDate: {
+              day: 11,
+              month: 1,
+              year: 2025,
+            },
+            season: "WINTER",
+            seasonYear: 2025,
+            averageScore: 63,
+            meanScore: 67,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 12,
+            genres: ["Music"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 167143,
+            title: {
+              english:
+                "I May Be a Guild Receptionist, but I’ll Solo Any Boss to Clock Out on Time",
+              romaji:
+                "Guild no Uketsukejou desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu",
+              userPreferred:
+                "Guild no Uketsukejou desu ga, Zangyou wa Iya nanode Boss wo Solo Toubatsu Shiyou to Omoimasu",
+              native:
+                "ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います",
+            },
+            coverImage: {
+              color: "#fec950",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167143-iY2ho0I0KnYF.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx167143-iY2ho0I0KnYF.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx167143-iY2ho0I0KnYF.jpg",
+            },
+            startDate: {
+              day: 11,
+              month: 1,
+              year: 2025,
+            },
+            season: "WINTER",
+            seasonYear: 2025,
+            averageScore: 66,
+            meanScore: 66,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "TV",
+            episodes: 12,
+            genres: ["Action", "Adventure", "Comedy", "Fantasy"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 171109,
+            title: {
+              english: null,
+              romaji: "Fureru.",
+              userPreferred: "Fureru.",
+              native: "ふれる。",
+            },
+            coverImage: {
+              color: "#2878e4",
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171109-L8VMss7mdCKU.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171109-L8VMss7mdCKU.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171109-L8VMss7mdCKU.jpg",
+            },
+            startDate: {
+              day: 4,
+              month: 10,
+              year: 2024,
+            },
+            season: "FALL",
+            seasonYear: 2024,
+            averageScore: 63,
+            meanScore: 67,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "MOVIE",
+            episodes: 1,
+            genres: ["Drama", "Supernatural"],
+          },
+          isMainStudio: true,
+        },
+        {
+          node: {
+            id: 171099,
+            title: {
+              english: "BOCCHI THE ROCK! Recap Part 2",
+              romaji: "Bocchi the Rock! Re:Re:",
+              userPreferred: "Bocchi the Rock! Re:Re:",
+              native: "ぼっち・ざ・ろっく！ Re:Re: ",
+            },
+            coverImage: {
+              color: null,
+              extraLarge:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171099-JexoHylkSZ6r.jpg",
+              large:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171099-JexoHylkSZ6r.jpg",
+              medium:
+                "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171099-JexoHylkSZ6r.jpg",
+            },
+            startDate: {
+              day: 9,
+              month: 8,
+              year: 2024,
+            },
+            season: "SUMMER",
+            seasonYear: 2024,
+            averageScore: 84,
+            meanScore: 85,
+            type: "ANIME",
+            status: "FINISHED",
+            format: "MOVIE",
+            episodes: 1,
+            genres: ["Comedy", "Music", "Slice of Life"],
+          },
+          isMainStudio: true,
+        },
+      ],
+    },
+    isAnimationStudio: true,
   },
 };
 
@@ -3110,6 +2917,7 @@ export {
   exploreAnimes,
   genres,
   singleAnime,
+  studioDataSample,
   thisSeasonAnimes,
   ThisSeasonTopAnimes,
 };

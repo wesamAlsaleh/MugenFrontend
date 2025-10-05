@@ -74,6 +74,8 @@ const formatMediaFormat = (format: string) => {
       return "Novel";
     case "ONE_SHOT":
       return "One Shot";
+    case "SPECIAL":
+      return "Special";
     default:
       return format;
   }
@@ -195,7 +197,7 @@ const formatMediaStudios = (studios: StudiosDto | null) => {
   // Iterate through the edges to separate main studios and producers
   studios.edges.forEach((studio) => {
     if (studio.isMain) {
-      main.push({ name: studio.node.name, id: studio.id });
+      main.push({ name: studio.node.name, id: studio.node.id });
     } else {
       producers.push(studio.node.name);
     }

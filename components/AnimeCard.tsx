@@ -44,11 +44,6 @@ export default function AnimeCard({
     router.push({ pathname: "/anime/[id]", params: { id: anime.id } });
   };
 
-  // TODO: If loading, show a skeleton
-  if (loading) {
-    // return <SkeletonAnimeCard cardWidth={cardWidth} />;
-  }
-
   return (
     <TouchableOpacity onPress={handlePress} activeOpacity={0.8}>
       <View style={[styles.container, dynamicStyles.container]}>

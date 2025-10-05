@@ -50,6 +50,7 @@ type AnimeDetails = Anime & {
   recommendations: RecommendationsDto | null;
 };
 
+// Additional type for user lists
 type UserLists = {
   progressStatus?: string | null;
   inFavorites?: boolean | null;

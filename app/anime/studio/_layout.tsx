@@ -9,7 +9,7 @@ export default function AnimeStudioLayout() {
     <Stack>
       <Stack.Screen
         name="[id]"
-        options={{ headerShown: true, headerTitle: "Studio Details" }}
+        options={{ headerShown: false, headerTitle: "Studio Details" }}
       />
     </Stack>
   );
