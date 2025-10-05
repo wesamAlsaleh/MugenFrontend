@@ -102,6 +102,8 @@ export default function Button({
       justifyContent: "center", // Center horizontally
       backgroundColor: getBackgroundColor(variant),
       padding: getPadding(size),
+      borderWidth: 1,
+      borderColor: getBackgroundColor(variant),
       borderRadius: 8,
       opacity: disabled || loading ? 0.6 : 1, // Dim the button if disabled or loading
       gap: icon ? 8 : 0, // Space between icon and text if icon exists

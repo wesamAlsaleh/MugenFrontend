@@ -1,10 +1,13 @@
+import Button from "@/components/Button";
 import UserChangePassword from "@/components/UserChangePassword";
 import UserProfile from "@/components/UserProfile";
 import { userData } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
 import { User } from "@/types/User";
+import { LogOutIcon } from "lucide-react-native";
 import { useEffect, useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ProfileScreen() {
   // Get the theme colors
@@ -16,10 +19,12 @@ export default function ProfileScreen() {
 
   // Dynamic styles based on the theme
   const styles = StyleSheet.create({
+    safeViewContainer: {
+      flex: 1, // Full height
+      backgroundColor: theme.backgroundColor, // Theme background color
+    },
     container: {
-      flex: 1,
       paddingHorizontal: 16,
-      backgroundColor: theme.backgroundColor,
     },
   });
 
@@ -32,13 +37,27 @@ export default function ProfileScreen() {
   }, []);
 
   return (
-    <View style={styles.container}>
-      {/* User Profile Card */}
-      <UserProfile username={user?.username!} email={user?.email!} />
+    <SafeAreaView style={styles.safeViewContainer} edges={["top", "bottom"]}>
+      <ScrollView
+        style={styles.container}
+        showsHorizontalScrollIndicator={false}
+      >
+        {/* User Profile Card */}
+        <UserProfile username={user?.username!} email={user?.email!} />
 
-      {/* Change Password Card */}
-      <UserChangePassword />
-      {/* Logout Button */}
-    </View>
+        {/* Change Password Card */}
+        <UserChangePassword />
+
+        {/* Logout Button */}
+        <Button
+          title="Logout"
+          onPress={() => {}}
+          variant="danger"
+          icon={<LogOutIcon color={theme.primaryText} />}
+          iconPosition="left"
+          // style={{ marginBottom: 20 }}
+        />
+      </ScrollView>
+    </SafeAreaView>
   );
 }

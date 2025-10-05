@@ -95,7 +95,7 @@ export default function UserProfile({
   }, [username, email]);
 
   // Function to handle saving changes
-  const handleSaveChanges = () => {
+  const handlePress = () => {
     // TODO: Send the updated username and email to the server (localUsername, localEmail)
   };
 
@@ -111,7 +111,7 @@ export default function UserProfile({
   return (
     <Card
       width={"100%"} // Full width of the page
-      marginTop={20}
+      marginBottom={16}
       cardContent={
         <View style={styles.cardWrapper}>
           {/* Header */}
@@ -163,7 +163,7 @@ export default function UserProfile({
             {/* Save Changes button */}
             <Button
               title="Save Changes"
-              onPress={handleSaveChanges}
+              onPress={handlePress}
               style={{ marginVertical: 12 }}
             />
           </View>
