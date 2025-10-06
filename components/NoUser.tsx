@@ -21,6 +21,14 @@ export default function NoUser() {
       gap: 16, // Space between elements
       backgroundColor: theme.backgroundColor, // Theme background color
     },
+    text: {
+      fontSize: 16,
+      color: theme.primaryText, // Theme text color
+      textAlign: "center",
+      marginHorizontal: 20, // Margin for better readability
+      fontFamily: "System", // Default system font
+      fontWeight: "500", // Medium weight
+    },
   });
 
   // Handle button press to navigate to login screen
@@ -31,10 +39,15 @@ export default function NoUser() {
   return (
     <View style={styles.container}>
       {/* Text */}
-      <Text>Please log in to access your profile.</Text>
+      <Text style={styles.text}>Please log in to access your profile</Text>
 
       {/* Redirect Button */}
-      <Button variant="primary" title="Login" onPress={onPress} />
+      <Button
+        variant="primary"
+        title="Login"
+        onPress={onPress}
+        textStyle={{ fontSize: 16, fontWeight: "600" }}
+      />
     </View>
   );
 }
