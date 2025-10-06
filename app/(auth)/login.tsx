@@ -13,7 +13,7 @@ export default function LoginScreen() {
   // Router Instance
   const router = useRouter();
 
-  // State for input fields can be added here if needed
+  // State for input fields
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
