@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
+import NoUser from "@/components/NoUser";
 import UserChangePassword from "@/components/UserChangePassword";
-import UserProfile from "@/components/UserProfile";
 import { userData } from "@/constants/dummyData";
 import { useTheme } from "@/hooks/use-theme";
 import { User } from "@/types/User";
@@ -13,9 +13,8 @@ export default function ProfileScreen() {
   // Get the theme colors
   const theme = useTheme();
 
-  // State to hold user data
+  // TODO: Replace with actual user data from context
   const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
 
   // Dynamic styles based on the theme
   const styles = StyleSheet.create({
@@ -28,13 +27,16 @@ export default function ProfileScreen() {
     },
   });
 
+  // TODO: No need for useEffect once context is implemented
   useEffect(() => {
     // TODO: Get the user data from context
     setUser(userData);
-
-    //
-    setLoading(false);
   }, []);
+
+  // If no user data, show login button
+  if (user) {
+    return <NoUser />;
+  }
 
   return (
     <SafeAreaView style={styles.safeViewContainer} edges={["top", "bottom"]}>
@@ -43,7 +45,7 @@ export default function ProfileScreen() {
         showsHorizontalScrollIndicator={false}
       >
         {/* User Profile Card */}
-        <UserProfile username={user?.username!} email={user?.email!} />
+        {/* <UserProfile username={user?.username!} email={user?.email!} /> */}
 
         {/* Change Password Card */}
         <UserChangePassword />
